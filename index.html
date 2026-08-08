@@ -498,6 +498,95 @@
                 section[id] {
             scroll-margin-top: 90px;
         }
+                /* GLOBAL EBOOK DISTRIBUTION */
+
+        .distribution-section {
+            background: #f7f8fa;
+        }
+
+        .distribution-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .distribution-card {
+            background: #ffffff;
+            border: 1px solid #e1e5eb;
+            border-radius: 12px;
+            padding: 26px;
+        }
+
+        .distribution-number {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #667085;
+            margin-bottom: 18px;
+        }
+
+        .distribution-card h3 {
+            font-size: 21px;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .distribution-card p {
+            color: #667085;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .distribution-tags {
+            border-top: 1px solid #e1e5eb;
+            padding-top: 14px;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #344054;
+        }
+
+        .distribution-proof {
+            margin-top: 30px;
+            padding: 24px 26px;
+            background: #ffffff;
+            border: 1px solid #e1e5eb;
+            border-radius: 12px;
+        }
+
+        .distribution-proof strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .distribution-proof p {
+            color: #667085;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .distribution-proof p:last-child {
+            margin-bottom: 0;
+        }
+
+        .distribution-action {
+            margin-top: 24px;
+        }
+
+        @media (max-width: 850px) {
+
+            .distribution-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 520px) {
+
+            .distribution-grid {
+                grid-template-columns: 1fr;
+            }
+        }
         /* MOBILE */
 
         @media (max-width: 850px) {
@@ -1505,7 +1594,214 @@
 
 <!-- FUTURE SECTIONS -->
 
-<section id="distribution" style="display:none;"></section>
+<!-- 06 GLOBAL EBOOK DISTRIBUTION -->
+
+<section class="distribution-section" id="distribution">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                06
+            </div>
+
+            <h2>
+                Global Ebook Distribution
+            </h2>
+
+            <p class="section-intro">
+                My ebooks are distributed through a multi-channel
+                publishing network connecting commercial retailers,
+                subscription platforms and library services.
+            </p>
+
+        </div>
+
+
+        <div class="distribution-grid">
+
+
+            <article class="distribution-card">
+
+                <div class="distribution-number">
+                    01
+                </div>
+
+                <h3>
+                    Global Retail
+                </h3>
+
+                <p>
+                    Major ebook retailers and regional booksellers
+                    across international markets.
+                </p>
+
+                <div class="distribution-tags">
+                    Amazon Kindle · Apple Books · Google Play ·
+                    Kobo · Barnes & Noble
+                </div>
+
+            </article>
+
+
+            <article class="distribution-card">
+
+                <div class="distribution-number">
+                    02
+                </div>
+
+                <h3>
+                    Subscription Platforms
+                </h3>
+
+                <p>
+                    Subscription and reading applications providing
+                    additional routes to discover and read the books.
+                </p>
+
+                <div class="distribution-tags">
+                    BookBeat · Kobo Plus · Perlego · Skoobe ·
+                    YouScribe
+                </div>
+
+            </article>
+
+
+            <article class="distribution-card">
+
+                <div class="distribution-number">
+                    03
+                </div>
+
+                <h3>
+                    Library Services
+                </h3>
+
+                <p>
+                    Digital library distribution extends discovery
+                    beyond commercial bookstores.
+                </p>
+
+                <div class="distribution-tags">
+                    Odilo
+                </div>
+
+            </article>
+
+
+            <article class="distribution-card">
+
+                <div class="distribution-number">
+                    04
+                </div>
+
+                <h3>
+                    Africa
+                </h3>
+
+                <p>
+                    Regional commercial discovery through local
+                    digital publishing and marketplace channels.
+                </p>
+
+                <div class="distribution-tags">
+                    Regional availability
+                </div>
+
+            </article>
+
+
+            <article class="distribution-card">
+
+                <div class="distribution-number">
+                    05
+                </div>
+
+                <h3>
+                    Latin America
+                </h3>
+
+                <p>
+                    Commercial availability is already discoverable
+                    through regional booksellers and local storefronts.
+                </p>
+
+                <div class="distribution-tags">
+                    Mexico · Argentina · Chile
+                </div>
+
+            </article>
+
+
+            <article class="distribution-card">
+
+                <div class="distribution-number">
+                    06
+                </div>
+
+                <h3>
+                    Worldwide Network
+                </h3>
+
+                <p>
+                    StreetLib provides the publishing infrastructure
+                    connecting these distribution channels.
+                </p>
+
+                <div class="distribution-tags">
+                    Global digital distribution
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <div class="distribution-proof">
+
+            <strong>
+                Distribution footprint
+            </strong>
+
+            <p>
+                Current StreetLib configuration:
+                15 retail channels selected,
+                9 subscription platforms selected,
+                and 1 library service selected.
+            </p>
+
+            <p>
+                The selected network is used to make publications
+                discoverable across commercial, subscription and
+                library channels.
+            </p>
+
+        </div>
+
+
+        <div class="distribution-action">
+
+            <a class="book-link"
+               <a class="book-link"
+   href="https://www.streetlib.com/distribution-partners"
+   target="_blank"
+   rel="noopener">
+    View StreetLib Distribution Network →
+</a>
+               target="_blank"
+               rel="noopener">
+                View StreetLib Distribution Network →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <section id="contact" style="display:none;"></section>
 
 
