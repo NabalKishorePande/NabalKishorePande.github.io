@@ -316,7 +316,105 @@
             color: #c8ced8;
             font-size: 14px;
         }
+        /* FEATURED BOOKS */
 
+        .books-section {
+            background: #f7f8fa;
+        }
+
+        .book-cluster {
+            margin-bottom: 60px;
+        }
+
+        .book-cluster:last-child {
+            margin-bottom: 0;
+        }
+
+        .cluster-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #667085;
+            margin-bottom: 20px;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .book-card {
+            background: #ffffff;
+            border: 1px solid #e1e5eb;
+            border-radius: 12px;
+            padding: 20px;
+            transition: 0.2s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-4px);
+            border-color: #aeb7c4;
+        }
+
+        .book-cover {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #eef1f5;
+            margin-bottom: 20px;
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .book-card h3 {
+            font-size: 19px;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        .book-card h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .book-meta {
+            font-size: 13px;
+            color: #667085;
+            margin-bottom: 16px;
+        }
+
+        .book-link {
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .book-link:hover {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 850px) {
+
+            .book-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 520px) {
+
+            .book-grid {
+                grid-template-columns: 1fr;
+            }
+        }
         /* MOBILE */
 
         @media (max-width: 850px) {
@@ -736,9 +834,426 @@
 </section>
 
 
-<!-- FUTURE SECTIONS -->
+<!-- 04 FEATURED BOOKS -->
 
-<section id="books" style="display:none;"></section>
+<section class="books-section" id="books">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-number">
+                04
+            </div>
+
+            <h2>
+                Featured Books
+            </h2>
+
+            <p class="section-intro">
+                A curated selection of books and decision resources
+                representing the research, publishing and professional
+                mobility work behind Funded Abroad India and FRYX Research.
+            </p>
+
+        </div>
+
+
+        <!-- CLUSTER 1 -->
+
+        <div class="book-cluster">
+
+            <div class="cluster-title">
+                Scholarship Preparation Intelligence
+            </div>
+
+            <div class="book-grid">
+
+
+                <article class="book-card">
+
+                    <a class="book-cover"
+                       href="https://fundedabroadindia.gumroad.com/l/scholarship-intelligence-library?wanted=true"
+                       target="_blank"
+                       rel="noopener">
+
+                        <img
+                            src="scholarship-intelligence-library-2026.png"
+                            alt="Scholarship Intelligence Library 2026"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <h3>
+                        <a href="https://fundedabroadindia.gumroad.com/l/scholarship-intelligence-library?wanted=true"
+                           target="_blank"
+                           rel="noopener">
+                            Scholarship Intelligence Library 2026
+                        </a>
+                    </h3>
+
+                    <div class="book-meta">
+                        Gumroad · Decision Guides
+                    </div>
+
+                    <a class="book-link"
+                       href="https://fundedabroadindia.gumroad.com/l/scholarship-intelligence-library?wanted=true"
+                       target="_blank"
+                       rel="noopener">
+                        Explore Book →
+                    </a>
+
+                </article>
+
+
+                <article class="book-card">
+
+                    <a class="book-cover"
+                       href="https://fundedabroadindia.gumroad.com/l/the-selection-blueprint-2027?wanted=true"
+                       target="_blank"
+                       rel="noopener">
+
+                        <img
+                            src="selection-blueprint-2027-operating-manual.png"
+                            alt="The Selection Blueprint 2027 Operating Manual"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <h3>
+                        <a href="https://fundedabroadindia.gumroad.com/l/the-selection-blueprint-2027?wanted=true"
+                           target="_blank"
+                           rel="noopener">
+                            The Selection Blueprint 2027
+                        </a>
+                    </h3>
+
+                    <div class="book-meta">
+                        Gumroad · Operating Manual
+                    </div>
+
+                    <a class="book-link"
+                       href="https://fundedabroadindia.gumroad.com/l/the-selection-blueprint-2027?wanted=true"
+                       target="_blank"
+                       rel="noopener">
+                        Explore Book →
+                    </a>
+
+                </article>
+
+
+                <article class="book-card">
+
+                    <a class="book-cover"
+                       href="https://fundedabroadindia.gumroad.com/l/funded-masters-compass-2027?wanted=true"
+                       target="_blank"
+                       rel="noopener">
+
+                        <img
+                            src="scholarship-intelligence-compass-free-guide.jpg"
+                            alt="Scholarship Intelligence Compass"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <h3>
+                        <a href="https://fundedabroadindia.gumroad.com/l/funded-masters-compass-2027?wanted=true"
+                           target="_blank"
+                           rel="noopener">
+                            Scholarship Intelligence Compass
+                        </a>
+                    </h3>
+
+                    <div class="book-meta">
+                        Gumroad · Free Guide
+                    </div>
+
+                    <a class="book-link"
+                       href="https://fundedabroadindia.gumroad.com/l/funded-masters-compass-2027?wanted=true"
+                       target="_blank"
+                       rel="noopener">
+                        Explore Guide →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- CLUSTER 2 -->
+
+        <div class="book-cluster">
+
+            <div class="cluster-title">
+                Research & Decision Systems
+            </div>
+
+            <div class="book-grid">
+
+
+                <article class="book-card">
+
+                    <a class="book-cover"
+                       href="https://leanpub.com/researchproductionsystem"
+                       target="_blank"
+                       rel="noopener">
+
+                        <img
+                            src="research-production-system.png"
+                            alt="Research Production System"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <h3>
+                        <a href="https://leanpub.com/researchproductionsystem"
+                           target="_blank"
+                           rel="noopener">
+                            Research Production System™
+                        </a>
+                    </h3>
+
+                    <div class="book-meta">
+                        Leanpub · Research Systems
+                    </div>
+
+                    <a class="book-link"
+                       href="https://leanpub.com/researchproductionsystem"
+                       target="_blank"
+                       rel="noopener">
+                        Explore Book →
+                    </a>
+
+                </article>
+
+
+                <article class="book-card">
+
+                    <a class="book-cover"
+                       href="https://leanpub.com/executive-decision-defense-playbook-2026"
+                       target="_blank"
+                       rel="noopener">
+
+                        <img
+                            src="executive-decision-defense-playbook.png"
+                            alt="The Executive Decision Defense Playbook"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <h3>
+                        <a href="https://leanpub.com/executive-decision-defense-playbook-2026"
+                           target="_blank"
+                           rel="noopener">
+                            The Executive Decision Defense Playbook™
+                        </a>
+                    </h3>
+
+                    <div class="book-meta">
+                        Leanpub · Decision Systems
+                    </div>
+
+                    <a class="book-link"
+                       href="https://leanpub.com/executive-decision-defense-playbook-2026"
+                       target="_blank"
+                       rel="noopener">
+                        Explore Book →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- CLUSTER 3 -->
+
+        <div class="book-cluster">
+
+            <div class="cluster-title">
+                Global Career & AI Systems
+            </div>
+
+            <div class="book-grid">
+
+
+                <article class="book-card">
+
+                    <a class="book-cover"
+                       href="https://www.ebay.com/itm/366441564901"
+                       target="_blank"
+                       rel="noopener">
+
+                        <img
+                            src="academic-word-engine-global-career-mobility.jpg"
+                            alt="The Academic Word Engine"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <h3>
+                        <a href="https://www.ebay.com/itm/366441564901"
+                           target="_blank"
+                           rel="noopener">
+                            The Academic Word Engine
+                        </a>
+                    </h3>
+
+                    <div class="book-meta">
+                        Paperback · Global Career Mobility
+                    </div>
+
+                    <a class="book-link"
+                       href="https://www.ebay.com/itm/366441564901"
+                       target="_blank"
+                       rel="noopener">
+                        View Book →
+                    </a>
+
+                </article>
+
+
+                <article class="book-card">
+
+                    <a class="book-cover"
+                       href="https://www.amazon.in/Structured-C1-AI-Systems-Reasoning-ebook/dp/B0GKPL8DQJ"
+                       target="_blank"
+                       rel="noopener">
+
+                        <img
+                            src="structured-c1-ai-systems.jpg"
+                            alt="Structured C1 AI Systems"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <h3>
+                        <a href="https://www.amazon.in/Structured-C1-AI-Systems-Reasoning-ebook/dp/B0GKPL8DQJ"
+                           target="_blank"
+                           rel="noopener">
+                            Structured C1 AI Systems
+                        </a>
+                    </h3>
+
+                    <div class="book-meta">
+                        Amazon India · AI & Systems
+                    </div>
+
+                    <a class="book-link"
+                       href="https://www.amazon.in/Structured-C1-AI-Systems-Reasoning-ebook/dp/B0GKPL8DQJ"
+                       target="_blank"
+                       rel="noopener">
+                        View on Amazon →
+                    </a>
+
+                </article>
+
+
+                <article class="book-card">
+
+                    <a class="book-cover"
+                       href="https://www.amazon.in/Cognitive-Test-Readiness-Framework-Training-ebook/dp/B0G6K2DYNG"
+                       target="_blank"
+                       rel="noopener">
+
+                        <img
+                            src="cognitive-test-readiness-framework.jpg"
+                            alt="Cognitive Test Readiness Framework"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <h3>
+                        <a href="https://www.amazon.in/Cognitive-Test-Readiness-Framework-Training-ebook/dp/B0G6K2DYNG"
+                           target="_blank"
+                           rel="noopener">
+                            Cognitive Test Readiness Framework
+                        </a>
+                    </h3>
+
+                    <div class="book-meta">
+                        Amazon India · Global Learners
+                    </div>
+
+                    <a class="book-link"
+                       href="https://www.amazon.in/Cognitive-Test-Readiness-Framework-Training-ebook/dp/B0G6K2DYNG"
+                       target="_blank"
+                       rel="noopener">
+                        View on Amazon →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- CLUSTER 4 -->
+
+        <div class="book-cluster">
+
+            <div class="cluster-title">
+                Verified Published Work
+            </div>
+
+            <div class="book-grid">
+
+
+                <article class="book-card">
+
+                    <a class="book-cover"
+                       href="https://search.worldcat.org/title/1482654705"
+                       target="_blank"
+                       rel="noopener">
+
+                        <img
+                            src="diy-home-improvement-nabal-kishore-pande.jpg"
+                            alt="DIY Home Improvement"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <h3>
+                        <a href="https://search.worldcat.org/title/1482654705"
+                           target="_blank"
+                           rel="noopener">
+                            DIY Home Improvement
+                        </a>
+                    </h3>
+
+                    <div class="book-meta">
+                        WorldCat · Library Evidence
+                    </div>
+
+                    <a class="book-link"
+                       href="https://search.worldcat.org/title/1482654705"
+                       target="_blank"
+                       rel="noopener">
+                        View WorldCat Record →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 <section id="distribution" style="display:none;"></section>
 <section id="contact" style="display:none;"></section>
 
