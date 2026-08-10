@@ -1244,6 +1244,125 @@
 .card.fryx-research-card .text-link {
     font-size: 14px !important;
 }
+        /* FINAL RESEARCH ARCHIVE OVERRIDE */
+
+.research-archive-section {
+    display: block !important;
+    width: 100%;
+    background: #ffffff;
+    clear: both;
+}
+
+.research-archive-section .container {
+    display: block;
+    width: min(1120px, 92%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.research-archive-section .section-header {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    margin-bottom: 42px;
+}
+
+.research-archive-section .research-archive-intro {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    margin-bottom: 35px;
+}
+
+.research-archive-section .archive-summary {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.research-archive-section .archive-group {
+    display: block;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.research-archive-section .archive-group-title {
+    display: block;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.research-archive-section .archive-list {
+    display: grid !important;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px;
+    align-items: stretch;
+}
+
+.research-archive-section .archive-item {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    background: #f7f8fa;
+    border: 1px solid #e1e5eb;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.research-archive-section .archive-item h3 {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.research-archive-section .archive-item h3 a {
+    display: inline;
+    text-decoration: none;
+}
+
+.research-archive-section .archive-doi {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #667085;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.research-archive-section .archive-doi a {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+
+    .research-archive-section .archive-list {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 520px) {
+
+    .research-archive-section .archive-item {
+        padding: 17px;
+    }
+
+    .research-archive-section .archive-item h3 {
+        font-size: 15px;
+    }
+
+}
     </style>
 </head>
 
@@ -3373,7 +3492,9 @@
 
 <div class="section-number">
     
-    <12-- COMPLETE RESEARCH ARCHIVE -->
+</div>
+    
+    <-- COMPLETE RESEARCH ARCHIVE -->
 
 <section id="research-archive" class="research-archive-section">
 
@@ -3382,8 +3503,8 @@
         <div class="section-header">
 
             <div class="section-number">
-                05
-            </div>
+    12
+</div>
 
             <h2>
                 Complete Research Archive
@@ -3777,7 +3898,7 @@
 
 </section>
 
-<!-- 13 CONTACT -->
+<!--  CONTACT -->
 
 <section class="contact-section" id="contact">
 
@@ -3786,8 +3907,8 @@
         <div class="section-header">
 
             <div class="section-number">
-                12
-            </div>
+    13
+</div>
 
             <h2>
                 Contact
