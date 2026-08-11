@@ -1,4056 +1,639 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-IN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Nabal Kishore Pande | Funded Abroad India</title>
-
-    <meta name="description"
-          content="Nabal Kishore Pande | Independent Researcher and Author | FRYX Research | Funded Abroad India | Decision Systems, Research Frameworks, Execution Intelligence and Scholarship Preparation Intelligence">
-
-    <meta name="author" content="Nabal Kishore Pande">
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7f8fa;
-            color: #172033;
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .container {
-            width: min(1120px, 92%);
-            margin: auto;
-        }
-
-        /* NAVIGATION */
-
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(255,255,255,0.96);
-            border-bottom: 1px solid #e5e7eb;
-            backdrop-filter: blur(8px);
-        }
-
-        .nav-inner {
-            min-height: 68px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .brand {
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: -0.3px;
-        }
-
-        .brand span {
-            display: block;
-            font-size: 12px;
-            font-weight: 500;
-            color: #667085;
-            margin-top: 2px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            font-size: 14px;
-            color: #475467;
-        }
-
-        .nav-links a:hover {
-            color: #111827;
-        }
-
-        /* HERO */
-
-        .hero {
-            background: #ffffff;
-            padding: 90px 0 80px;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.6fr 0.8fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .eyebrow {
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #52606d;
-            margin-bottom: 18px;
-        }
-
-        h1 {
-            font-size: clamp(42px, 6vw, 68px);
-            line-height: 1.05;
-            letter-spacing: -2.5px;
-            margin-bottom: 18px;
-        }
-
-        .hero-title {
-            font-size: 22px;
-            color: #344054;
-            margin-bottom: 24px;
-        }
-
-        .hero-text {
-            max-width: 720px;
-            font-size: 18px;
-            color: #475467;
-            margin-bottom: 32px;
-        }
-
-        .identity-line {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 28px;
-        }
-
-        .button-row {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 20px;
-            border: 1px solid #172033;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 700;
-            transition: 0.2s ease;
-        }
-
-        .button.primary {
-            background: #172033;
-            color: white;
-        }
-
-        .button:hover {
-            transform: translateY(-1px);
-            opacity: 0.9;
-        }
-
-      .portrait {
-    min-height: 360px;
-    border: 1px solid #d9dee7;
-    border-radius: 12px;
-    background: #eef1f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.portrait img {
-    width: 100%;
-    height: 100%;
-    min-height: 360px;
-    object-fit: cover;
-    display: block;
-}
-
-        /* SECTIONS */
-
-        section {
-            padding: 80px 0;
-        }
-
-        .section-header {
-            max-width: 760px;
-            margin-bottom: 42px;
-        }
-
-        .section-number {
-            font-size: 13px;
-            font-weight: 700;
-            color: #667085;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: clamp(30px, 4vw, 44px);
-            line-height: 1.15;
-            letter-spacing: -1.2px;
-            margin-bottom: 14px;
-        }
-
-        .section-intro {
-            font-size: 17px;
-            color: #667085;
-        }
-
-        /* HUBS */
-
-        .hub-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            border: 1px solid #e1e5eb;
-            border-radius: 10px;
-            padding: 28px;
-            transition: 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-            border-color: #b8c0cc;
-        }
-
-        .card-label {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            color: #667085;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-
-        .card h3 {
-            font-size: 21px;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            color: #667085;
-            font-size: 15px;
-            margin-bottom: 20px;
-        }
-
-        .text-link {
-            font-size: 14px;
-            font-weight: 700;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
-
-        /* IDENTITY */
-
-        .identity-section {
-            background: #ffffff;
-        }
-
-        .identity-group {
-            margin-bottom: 45px;
-        }
-
-        .identity-group:last-child {
-            margin-bottom: 0;
-        }
-
-        .identity-group h3 {
-            font-size: 23px;
-            margin-bottom: 8px;
-        }
-
-        .identity-group p {
-            color: #667085;
-            margin-bottom: 20px;
-            max-width: 720px;
-        }
-
-        .link-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 12px;
-        }
-
-        .profile-link {
-            background: #f7f8fa;
-            border: 1px solid #e1e5eb;
-            border-radius: 8px;
-            padding: 15px 16px;
-            font-size: 14px;
-            font-weight: 700;
-        }
-
-        .profile-link:hover {
-            background: #ffffff;
-            border-color: #9aa4b2;
-        }
-
-        /* FOOTER PLACEHOLDER */
-
-        .temporary-footer {
-            background: #172033;
-            color: #ffffff;
-            padding: 35px 0;
-            margin-top: 0;
-        }
-
-        .temporary-footer p {
-            color: #c8ced8;
-            font-size: 14px;
-        }
-        /* FEATURED BOOKS */
-
-        .books-section {
-            background: #f7f8fa;
-        }
-
-        .book-cluster {
-            margin-bottom: 60px;
-        }
-
-        .book-cluster:last-child {
-            margin-bottom: 0;
-        }
-
-        .cluster-title {
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #667085;
-            margin-bottom: 20px;
-        }
-
-        .book-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-        }
-
-        .book-card {
-            background: #ffffff;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-            padding: 20px;
-            transition: 0.2s ease;
-        }
-
-        .book-card:hover {
-            transform: translateY(-4px);
-            border-color: #aeb7c4;
-        }
-
-        .book-cover {
-            display: block;
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            overflow: hidden;
-            border-radius: 8px;
-            background: #eef1f5;
-            margin-bottom: 20px;
-        }
-
-        .book-cover img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .book-card h3 {
-            font-size: 19px;
-            line-height: 1.3;
-            margin-bottom: 8px;
-        }
-
-        .book-card h3 a:hover {
-            text-decoration: underline;
-        }
-
-        .book-meta {
-            font-size: 13px;
-            color: #667085;
-            margin-bottom: 16px;
-        }
-
-        .book-link {
-            font-size: 14px;
-            font-weight: 700;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
-
-        .book-link:hover {
-            opacity: 0.7;
-        }
-.fryx-research-card h3 {
-    font-size: 21px;
-    line-height: 1.3;
-    margin-bottom: 12px;
-}
-
-.fryx-research-card p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.fryx-research-card .text-link {
-    font-size: 14px;
-}
-        @media (max-width: 850px) {
-
-            .book-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 520px) {
-
-            .book-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-               /* BIBLIOGRAPHIC EVIDENCE */
-
-        .evidence-section {
-            background: #ffffff;
-        }
-
-        .evidence-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
-        }
-
-        .evidence-card {
-            background: #f7f8fa;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-            padding: 30px;
-        }
-
-        .evidence-label {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.8px;
-            text-transform: uppercase;
-            color: #667085;
-            margin-bottom: 14px;
-        }
-
-        .evidence-card h3 {
-            font-size: 22px;
-            line-height: 1.3;
-            margin-bottom: 10px;
-        }
-
-        .evidence-author {
-            color: #667085;
-            margin-bottom: 24px;
-        }
-
-        .evidence-details {
-            border-top: 1px solid #d9dee7;
-            border-bottom: 1px solid #d9dee7;
-            padding: 18px 0;
-            margin-bottom: 20px;
-        }
-
-        .evidence-details p {
-            font-size: 14px;
-            margin-bottom: 7px;
-        }
-
-        .evidence-details p:last-child {
-            margin-bottom: 0;
-        }
-
-        .library-evidence {
-            margin-bottom: 24px;
-        }
-
-        .library-evidence strong {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .library-evidence p {
-            color: #667085;
-            font-size: 14px;
-            margin-bottom: 8px;
-        }
-
-        .library-evidence p:last-child {
-            margin-bottom: 0;
-        }
-
-        @media (max-width: 850px) {
-
-            .evidence-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-                section[id] {
-            scroll-margin-top: 90px;
-        }
-                /* GLOBAL EBOOK DISTRIBUTION */
-
-        .distribution-section {
-            background: #f7f8fa;
-        }
-
-        .distribution-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .distribution-card {
-            background: #ffffff;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-            padding: 26px;
-        }
-
-        .distribution-number {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #667085;
-            margin-bottom: 18px;
-        }
-
-        .distribution-card h3 {
-            font-size: 21px;
-            line-height: 1.3;
-            margin-bottom: 12px;
-        }
-
-        .distribution-card p {
-            color: #667085;
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 18px;
-        }
-
-        .distribution-tags {
-            border-top: 1px solid #e1e5eb;
-            padding-top: 14px;
-            font-size: 13px;
-            line-height: 1.6;
-            color: #344054;
-        }
-
-        .distribution-proof {
-            margin-top: 30px;
-            padding: 24px 26px;
-            background: #ffffff;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-        }
-
-        .distribution-proof strong {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .distribution-proof p {
-            color: #667085;
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 8px;
-        }
-
-        .distribution-proof p:last-child {
-            margin-bottom: 0;
-        }
-
-        .distribution-action {
-            margin-top: 24px;
-        }
-
-        @media (max-width: 850px) {
-
-            .distribution-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 520px) {
-
-            .distribution-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-                /* SECTION ANCHOR SPACING */
-
-    section[id] {
-        scroll-margin-top: 120px;
-    }
-                /* REGIONAL COMMERCIAL FOOTPRINT */
-
-        .regional-section {
-            background: #ffffff;
-        }
-
-        .regional-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .regional-card {
-            background: #f7f8fa;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-            padding: 26px;
-        }
-
-        .regional-number {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #667085;
-            margin-bottom: 18px;
-        }
-
-        .regional-card h3 {
-            font-size: 21px;
-            line-height: 1.3;
-            margin-bottom: 12px;
-        }
-
-        .regional-card p {
-            color: #667085;
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 18px;
-        }
-
-        .regional-links {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .regional-proof {
-            margin-top: 30px;
-            padding: 24px 26px;
-            background: #f7f8fa;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-        }
-
-        .regional-proof strong {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .regional-proof p {
-            color: #667085;
-            font-size: 14px;
-            line-height: 1.6;
-            margin: 0;
-        }
-                @media (max-width: 520px) {
-
-            .regional-grid {
-                grid-template-columns: 1fr;
-            }
-
-        }
-                /* CORE RESEARCH IDENTITY */
-
-        .identity-section {
-            background: #f7f8fa;
-        }
-
-        .identity-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .identity-card {
-            background: #ffffff;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-            padding: 26px;
-        }
-
-        .identity-number {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #667085;
-            margin-bottom: 18px;
-        }
-
-        .identity-card h3 {
-            font-size: 21px;
-            line-height: 1.3;
-            margin-bottom: 12px;
-        }
-
-        .identity-card p {
-            color: #667085;
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 18px;
-        }
-
-        .identity-proof {
-            margin-top: 30px;
-            padding: 24px 26px;
-            background: #ffffff;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-        }
-
-        .identity-proof strong {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .identity-proof p {
-            color: #667085;
-            font-size: 14px;
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        @media (max-width: 850px) {
-
-            .identity-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 520px) {
-
-            .identity-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-                /* RESEARCH DISTRIBUTION & PUBLISHING */
-
-        .publishing-section {
-            background: #ffffff;
-        }
-
-        .publishing-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .publishing-card {
-            background: #f7f8fa;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-            padding: 26px;
-        }
-
-        .publishing-number {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #667085;
-            margin-bottom: 18px;
-        }
-
-        .publishing-card h3 {
-            font-size: 21px;
-            line-height: 1.3;
-            margin-bottom: 12px;
-        }
-
-        .publishing-card p {
-            color: #667085;
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 18px;
-        }
-
-        .publishing-proof {
-            margin-top: 30px;
-            padding: 24px 26px;
-            background: #f7f8fa;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-        }
-
-        .publishing-proof strong {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .publishing-proof p {
-            color: #667085;
-            font-size: 14px;
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        @media (max-width: 850px) {
-
-            .publishing-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 520px) {
-
-            .publishing-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        /* CONNECT & FOLLOW */
-
-.social-section {
-    background: #f7f8fa;
-}
-
-.social-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.social-card {
-    background: #ffffff;
-    border: 1px solid #e1e5eb;
-    border-radius: 12px;
-    padding: 24px;
-}
-
-.social-primary {
-    border-color: #cfd5dd;
-}
-
-.social-number {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #667085;
-    margin-bottom: 16px;
-}
-
-.social-card h3 {
-    font-size: 19px;
-    line-height: 1.3;
-    margin-bottom: 6px;
-}
-
-.social-platform {
-    font-size: 13px;
-    font-weight: 700;
-    color: #667085;
-    margin-bottom: 14px;
-}
-
-.social-card p {
-    color: #667085;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 18px;
-}
-
-.social-proof {
-    margin-top: 30px;
-    padding: 24px 26px;
-    background: #ffffff;
-    border: 1px solid #e1e5eb;
-    border-radius: 12px;
-}
-
-.social-proof strong {
-    display: block;
-    margin-bottom: 8px;
-}
-
-.social-proof p {
-    color: #667085;
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0;
-}
-
-@media (max-width: 1000px) {
-
-    .social-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 520px) {
-
-    .social-grid {
-        grid-template-columns: 1fr;
-    }
-}
-        /* FUNDED ABROAD INDIA CTA */
-
-.funded-cta-section {
-    background: #001435;
-    color: #ffffff;
-}
-
-.funded-cta-section .section-number {
-    color: #E7AB3D;
-}
-
-.funded-cta-section .section-header h2 {
-    color: #ffffff;
-}
-
-.funded-cta-section .section-intro {
-    color: #d9e0eb;
-}
-
-.funded-cta-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.funded-cta-card {
-    background: #ffffff;
-    color: #001435;
-    border: 1px solid #E7AB3D;
-    border-radius: 12px;
-    padding: 28px;
-}
-
-.funded-cta-label {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: #E7AB3D;
-    margin-bottom: 14px;
-}
-
-.funded-cta-card h3 {
-    font-size: 21px;
-    line-height: 1.3;
-    margin-bottom: 12px;
-}
-
-.funded-cta-card p {
-    color: #667085;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.funded-cta-link {
-    color: #001435;
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-.funded-cta-main {
-    margin-top: 30px;
-    padding: 26px;
-    border: 1px solid #E7AB3D;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.funded-cta-main p {
-    color: #d9e0eb;
-    margin-bottom: 18px;
-}
-
-.funded-cta-button {
-    display: inline-block;
-    background: #E7AB3D;
-    color: #001435;
-    padding: 13px 22px;
-    border-radius: 7px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-@media (max-width: 850px) {
-
-    .funded-cta-grid {
-        grid-template-columns: 1fr;
-    }
-}
-        /* CONTACT */
-
-.contact-section {
-    background: #ffffff;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 50px;
-}
-
-.contact-details h3 {
-    font-size: 25px;
-    margin-bottom: 14px;
-}
-
-.contact-details p {
-    color: #667085;
-    line-height: 1.7;
-    margin-bottom: 8px;
-}
-
-.contact-form {
-    display: grid;
-    gap: 16px;
-}
-
-.contact-form label {
-    font-size: 14px;
-    font-weight: 700;
-    color: #001435;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #d0d5dd;
-    border-radius: 7px;
-    padding: 12px 14px;
-    font-family: inherit;
-    font-size: 14px;
-}
-
-.contact-form textarea {
-    min-height: 150px;
-    resize: vertical;
-}
-
-.contact-form button {
-    width: fit-content;
-    border: 0;
-    border-radius: 7px;
-    padding: 13px 24px;
-    background: #001435;
-    color: #ffffff;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background: #E7AB3D;
-    color: #001435;
-}
-
-@media (max-width: 700px) {
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-}
-        /* COMPLETE RESEARCH ARCHIVE */
-
-.research-archive-section {
-    background: #ffffff;
-}
-
-.research-archive-intro {
-    max-width: 760px;
-    margin-bottom: 35px;
-}
-
-.research-archive-intro p {
-    color: #667085;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.archive-summary {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-bottom: 35px;
-}
-
-.archive-badge {
-    display: inline-block;
-    padding: 9px 14px;
-    background: #f7f8fa;
-    border: 1px solid #e1e5eb;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 700;
-    color: #344054;
-}
-
-.archive-group {
-    margin-bottom: 45px;
-}
-
-.archive-group:last-child {
-    margin-bottom: 0;
-}
-
-.archive-group-title {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #667085;
-    margin-bottom: 18px;
-}
-
-.archive-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-}
-
-.archive-item {
-    background: #f7f8fa;
-    border: 1px solid #e1e5eb;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.archive-item h3 {
-    font-size: 16px;
-    line-height: 1.45;
-    margin-bottom: 10px;
-}
-
-.archive-item h3 a {
-    text-decoration: none;
-}
-
-.archive-item h3 a:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.archive-doi {
-    font-size: 13px;
-    color: #667085;
-    word-break: break-word;
-}
-
-.archive-doi a {
-    font-weight: 700;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.archive-doi a:hover {
-    opacity: 0.7;
-}
-
-@media (max-width: 850px) {
-    .archive-list {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 520px) {
-    .archive-item {
-        padding: 17px;
-    }
-
-    .archive-item h3 {
-        font-size: 15px;
-    }
-}
-        /* MOBILE */
-
-        @media (max-width: 850px) {
-
-            .hero-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .portrait {
-                min-height: 280px;
-            }
-
-            .hub-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .link-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .nav-inner {
-                align-items: flex-start;
-                padding: 15px 0;
-                flex-direction: column;
-            }
-
-            .nav-links {
-                gap: 12px;
-            }
-        }
-
-        @media (max-width: 520px) {
-
-            .hero {
-                padding: 65px 0 55px;
-            }
-
-            section {
-                padding: 60px 0;
-            }
-
-            .link-grid {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                letter-spacing: -1.5px;
-            }
-        }
-        .card.fryx-research-card h3 {
-    font-size: 21px !important;
-    line-height: 1.3 !important;
-    margin-bottom: 12px !important;
-}
-
-.card.fryx-research-card p {
-    font-size: 14px !important;
-    line-height: 1.6 !important;
-}
-
-.card.fryx-research-card .text-link {
-    font-size: 14px !important;
-}
-        /* FINAL RESEARCH ARCHIVE OVERRIDE */
-
-.research-archive-section {
-    display: block !important;
-    width: 100%;
-    background: #ffffff;
-    clear: both;
-}
-
-.research-archive-section .container {
-    display: block;
-    width: min(1120px, 92%);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.research-archive-section .section-header {
-    display: block;
-    width: 100%;
-    max-width: 760px;
-    margin-bottom: 42px;
-}
-
-.research-archive-section .research-archive-intro {
-    display: block;
-    width: 100%;
-    max-width: 760px;
-    margin-bottom: 35px;
-}
-
-.research-archive-section .archive-summary {
-    display: flex;
-    width: 100%;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-bottom: 35px;
-}
-
-.research-archive-section .archive-group {
-    display: block;
-    width: 100%;
-    margin-bottom: 45px;
-}
-
-.research-archive-section .archive-group-title {
-    display: block;
-    width: 100%;
-    margin-bottom: 18px;
-}
-
-.research-archive-section .archive-list {
-    display: grid !important;
-    width: 100%;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 14px;
-    align-items: stretch;
-}
-
-.research-archive-section .archive-item {
-    display: block;
-    width: 100%;
-    min-width: 0;
-    background: #f7f8fa;
-    border: 1px solid #e1e5eb;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.research-archive-section .archive-item h3 {
-    display: block;
-    margin: 0 0 10px 0;
-    font-size: 16px;
-    line-height: 1.45;
-}
-
-.research-archive-section .archive-item h3 a {
-    display: inline;
-    text-decoration: none;
-}
-
-.research-archive-section .archive-doi {
-    display: block;
-    width: 100%;
-    font-size: 13px;
-    line-height: 1.5;
-    color: #667085;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-}
-
-.research-archive-section .archive-doi a {
-    font-weight: 700;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-/* TABLET */
-
-@media (max-width: 850px) {
-
-    .research-archive-section .archive-list {
-        grid-template-columns: 1fr !important;
-    }
-
-}
-
-/* MOBILE */
-
-@media (max-width: 520px) {
-
-    .research-archive-section .archive-item {
-        padding: 17px;
-    }
-
-    .research-archive-section .archive-item h3 {
-        font-size: 15px;
-    }
-
-}
-        /* FINAL CONTRAST FIX - RESEARCH ARCHIVE */
-
-.research-archive-section .section-intro {
-    color: #475467 !important;
-}
-
-.research-archive-section .research-archive-intro p {
-    color: #475467 !important;
-}
-
-.research-archive-section .archive-group-title {
-    color: #475467 !important;
-}
-
-.research-archive-section .archive-item {
-    background: #f7f8fa;
-    border-color: #d0d5dd;
-}
-
-.research-archive-section .archive-item h3,
-.research-archive-section .archive-item h3 a {
-    color: #1d2939 !important;
-}
-
-.research-archive-section .archive-doi {
-    color: #475467 !important;
-}
-
-.research-archive-section .archive-doi a {
-    color: #344054 !important;
-}
-
-.research-archive-section .archive-badge {
-    color: #344054 !important;
-    background: #f8fafc;
-    border-color: #d0d5dd;
-}
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Nabal Kishore Pande | Decision Systems, Research & Scholarship Preparation Intelligence</title>
+  <meta name="author" content="Nabal Kishore Pande">
+  <meta name="description" content="Nabal Kishore Pande is an independent researcher and author working across decision systems, research frameworks, execution intelligence and scholarship preparation intelligence.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#111827">
+  <link rel="canonical" href="https://nabalkishorepande.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nabal Kishore Pande | Decision Systems, Research & Scholarship Preparation Intelligence">
+  <meta property="og:description" content="Independent research, decision systems, execution intelligence and scholarship preparation intelligence, presented through practical frameworks and public research infrastructure.">
+  <meta property="og:url" content="https://nabalkishorepande.github.io/">
+  <meta property="og:site_name" content="Nabal Kishore Pande">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="https://nabalkishorepande.github.io/er-nabal-kishore-pande-scholarship-researcher.jpg">
+  <meta property="og:image:alt" content="Nabal Kishore Pande, independent researcher and author">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nabal Kishore Pande | Decision Systems, Research & Scholarship Preparation Intelligence">
+  <meta name="twitter:description" content="Independent research across decision systems, research frameworks, execution intelligence and scholarship preparation intelligence.">
+  <meta name="twitter:image" content="https://nabalkishorepande.github.io/er-nabal-kishore-pande-scholarship-researcher.jpg">
+  <meta name="twitter:image:alt" content="Nabal Kishore Pande, independent researcher and author">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://nabalkishorepande.github.io/#person",
+        "name": "Nabal Kishore Pande",
+        "url": "https://nabalkishorepande.github.io/",
+        "image": "https://nabalkishorepande.github.io/er-nabal-kishore-pande-scholarship-researcher.jpg",
+        "jobTitle": "Independent Researcher & Author",
+        "description": "Independent researcher and author working across decision systems, research frameworks, execution intelligence and scholarship preparation intelligence.",
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Pithoragarh, Uttarakhand, India"
+        },
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "ORCID",
+            "value": "0009-0007-3325-9966",
+            "url": "https://orcid.org/0009-0007-3325-9966"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "Wikidata",
+            "value": "Q137731110",
+            "url": "https://www.wikidata.org/wiki/Q137731110"
+          }
+        ],
+        "sameAs": [
+          "https://orcid.org/0009-0007-3325-9966",
+          "https://www.wikidata.org/wiki/Q137731110",
+          "https://github.com/NabalKishorePande",
+          "https://www.linkedin.com/in/nabal-kishore-pande-05400b372/",
+          "https://independentresearcher.academia.edu/NabalKishorePande",
+          "https://search.worldcat.org/search?q=au=%22Pande%2C%20Nabal%20Kishore%22"
+        ],
+        "knowsAbout": [
+          "Decision Systems",
+          "Research Frameworks",
+          "Execution Intelligence",
+          "Scholarship Preparation Intelligence",
+          "International Education",
+          "Evidence-Based Publishing",
+          "Professional Portability"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nabalkishorepande.github.io/#website",
+        "url": "https://nabalkishorepande.github.io/",
+        "name": "Nabal Kishore Pande",
+        "publisher": {
+          "@id": "https://nabalkishorepande.github.io/#person"
+        },
+        "inLanguage": "en-IN"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="site-brand" href="#start">Nabal Kishore Pande</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        Menu
+      </button>
+      <div class="site-menu" id="site-menu">
+        <a href="#routes">Routes</a>
+        <a href="#scholarship">Scholarship</a>
+        <a href="#decisions">Decisions</a>
+        <a href="#research">Research</a>
+        <a href="#publishing">Publishing</a>
+        <a href="#follow">Follow</a>
+        <a href="#discovery">Discovery</a>
+        <a href="#questions">Questions</a>
+        <a href="#action">Action</a>
+      </div>
+    </nav>
+  </header>
 
-<nav>
-    <div class="container nav-inner">
+  <main id="main">
 
-        <a href="#top" class="brand">
-            Funded Abroad India
-            <span>Research • Books • Decision Systems</span>
-        </a>
-
-        <div class="nav-links">
-            <a href="#hubs">Hubs</a>
-            <a href="#identity">Research</a>
-            <a href="#books">Books</a>
-            <a href="#distribution">Distribution</a>
-            <a href="#contact">Contact</a>
+    <!-- HERO / ORIENTATION -->
+    <section class="section theme-orientation" id="start" aria-labelledby="hero-title">
+      <div class="section-shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent Researcher &amp; Author</p>
+          <h1 id="hero-title">Nabal Kishore Pande</h1>
+          <p class="hero-domain">
+            Decision Systems · Research Frameworks · Execution Intelligence · Scholarship Preparation Intelligence
+          </p>
+          <p class="hero-proposition">
+            I build practical decision infrastructure where evidence, research and execution need to work together.
+          </p>
+          <p class="hero-support">
+            Research, frameworks, operating systems and preparation tools for people working through complex academic, professional and international decisions.
+          </p>
+          <div class="action-row" aria-label="Primary routes">
+            <a class="button button-primary" href="#decisions">Explore the Systems</a>
+            <a class="button button-secondary" href="#scholarship">Scholarship Intelligence</a>
+            <a class="button button-secondary" href="#research">Review the Research</a>
+          </div>
         </div>
 
-    </div>
-</nav>
+        <figure class="hero-visual">
+          <img
+            src="er-nabal-kishore-pande-scholarship-researcher.jpg"
+            alt="Nabal Kishore Pande, independent researcher and author"
+            width="1200"
+            height="1500"
+            fetchpriority="high"
+          >
+        </figure>
+      </div>
+    </section>
 
+    <!-- ROUTES -->
+    <section class="section theme-routes" id="routes" aria-labelledby="routes-title">
+      <div class="section-shell">
+        <header class="section-heading">
+          <p class="section-kicker">Orientation</p>
+          <h2 id="routes-title">What are you trying to solve?</h2>
+          <p class="section-lead">Choose the route that matches the decision in front of you.</p>
+        </header>
 
-<!-- 01 HERO / IDENTITY -->
+        <div class="route-grid">
+          <article class="route-card">
+            <p class="card-index">International study</p>
+            <h3>Preparing for International Study</h3>
+            <p>Prepare before you invest heavily in applications. Scholarship Preparation Intelligence brings eligibility, readiness, evidence, fit, opportunity value and execution into one preparation logic.</p>
+            <a class="text-link" href="#scholarship">Enter Scholarship Intelligence</a>
+          </article>
 
-<header class="hero" id="top">
+          <article class="route-card">
+            <p class="card-index">Complex decisions</p>
+            <h3>Making Better Decisions</h3>
+            <p>Work through complex choices with clearer evidence, explicit reasoning and controlled execution.</p>
+            <a class="text-link" href="#decisions">Enter Decision Systems</a>
+          </article>
 
-    <div class="container hero-grid">
+          <article class="route-card">
+            <p class="card-index">Research &amp; knowledge</p>
+            <h3>Building and Using Research</h3>
+            <p>Follow the evidence, inspect the record and use research as a reusable asset.</p>
+            <a class="text-link" href="#research">Enter the Research Record</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <div>
+    <!-- SCHOLARSHIP -->
+    <section class="section theme-scholarship" id="scholarship" aria-labelledby="scholarship-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading-light">
+          <p class="section-kicker">Scholarship Preparation Intelligence</p>
+          <h2 id="scholarship-title">Prepare before you apply.</h2>
+          <p class="section-lead">Evidence before assumption. Decisions before effort.</p>
+        </header>
 
-            <div class="eyebrow">
-                FRYX Research | Funded Abroad India
+        <div class="scholarship-intro">
+          <p>International scholarship preparation is treated as a decision problem, not simply an opportunity-search problem.</p>
+          <p>The framework covers eligibility, readiness, evidence, fit, opportunity selection, application preparation and execution.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <h3>Assess</h3>
+            <p>Determine whether the opportunity, profile and preparation state are sufficiently aligned.</p>
+          </article>
+          <article class="process-card">
+            <h3>Build</h3>
+            <p>Strengthen the evidence, documentation and preparation that materially affect the application.</p>
+          </article>
+          <article class="process-card">
+            <h3>Select</h3>
+            <p>Prioritise opportunities according to fit, feasibility and preparation cost.</p>
+          </article>
+          <article class="process-card">
+            <h3>Execute</h3>
+            <p>Move from preparation to a controlled application process.</p>
+          </article>
+        </div>
+
+        <div class="resource-grid">
+          <article class="resource-card resource-primary">
+            <figure class="resource-visual">
+              <img
+                src="scholarship-intelligence-compass-free-guide.jpg"
+                alt="Scholarship Intelligence Compass free guide"
+                loading="lazy"
+               decoding="async">
+            </figure>
+            <div class="resource-copy">
+              <p class="card-label">Free resource</p>
+              <h3>Scholarship Intelligence Compass</h3>
+              <p>A free entry resource for evidence-based scholarship preparation and for understanding preparation before opportunity hunting.</p>
+              <a class="button button-light" href="https://fundedabroadindia.gumroad.com/l/funded-masters-compass-2027?wanted=true" target="_blank" rel="noopener">Access the Compass</a>
             </div>
+          </article>
 
-            <h1>
-                Nabal Kishore Pande
-            </h1>
-
-            <div class="hero-title">
-                Independent Researcher | Author
+          <article class="resource-card">
+            <figure class="resource-visual">
+              <img
+                src="selection-blueprint-2027-operating-manual.png"
+                alt="The Selection Blueprint 2027 Operating Manual"
+                loading="lazy"
+               decoding="async">
+            </figure>
+            <div class="resource-copy">
+              <p class="card-label">Preparation system</p>
+              <h3>The Selection Blueprint 2027</h3>
+              <p>A structured preparation system for applicants pursuing fully funded Master's scholarships, built around planning, readiness and opportunity evaluation.</p>
+              <a class="button button-light" href="https://fundedabroadindia.gumroad.com/l/the-selection-blueprint-2027?wanted=true" target="_blank" rel="noopener">Examine the Blueprint</a>
             </div>
+          </article>
 
-            <div class="identity-line">
-                Research • Decision Systems • Publishing • Scholarship Preparation Intelligence
+          <article class="resource-card">
+            <div class="resource-copy">
+              <p class="card-label">Live membership</p>
+              <h3>Scholarship Intelligence Library 2026</h3>
+              <p>An expanding digital platform containing research, frameworks, guides, tools, templates, datasets and implementation resources.</p>
+              <a class="button button-light" href="https://fundedabroadindia.gumroad.com/l/scholarship-intelligence-library?wanted=true" target="_blank" rel="noopener">Explore the Library</a>
             </div>
-
-            <p class="hero-text">
-                I build practical decision infrastructure through research,
-                books, frameworks, datasets, and structured systems designed
-                to help people move from information to defensible decisions.
-            </p>
-
-            <div class="button-row">
-
-                <a class="button primary" href="#books">
-                    Explore Books
-                </a>
-
-                <a class="button" href="#identity">
-                    Research Profile
-                </a>
-
-                <a class="button"
-                   href="https://fundedabroadindia.blogspot.com/"
-                   target="_blank"
-                   rel="noopener">
-                    Funded Abroad India
-                </a>
-
-            </div>
-
+          </article>
         </div>
 
+        <aside class="boundary-note">
+          <strong>Evidence boundary:</strong> These resources are designed to improve preparation and decision quality. They do not guarantee admission, funding or scholarship success.
+        </aside>
+      </div>
+    </section>
 
-       <div class="portrait">
+    <!-- DECISIONS -->
+    <section class="section theme-decisions" id="decisions" aria-labelledby="decisions-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading-light">
+          <p class="section-kicker">Decision Systems</p>
+          <h2 id="decisions-title">Make the reasoning visible.</h2>
+          <p class="section-lead">Information becomes useful when it can support a defensible decision.</p>
+        </header>
 
-    <img
-        src="er-nabal-kishore-pande-scholarship-researcher.jpg"
-        alt="Nabal Kishore Pande"
-    >
+        <figure class="feature-infographic">
+          <img
+            src="evidence-research-decision-execution-intelligence-framework.png"
+            alt="Evidence, research, decision and execution intelligence framework"
+            loading="lazy"
+           decoding="async">
+        </figure>
 
-</div>
-
-    </div>
-
-</header>
-
-
-<!-- 02 PRIMARY HUBS -->
-
-<section id="hubs">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-                02
-            </div>
-
-            <h2>
-                Primary Hubs
-            </h2>
-
-            <p class="section-intro">
-                The main public destinations for Funded Abroad India
-                and the emerging FRYX Research infrastructure.
-            </p>
-
+        <div class="decision-grid">
+          <article class="decision-stage">
+            <h3>Evidence</h3>
+            <p>What is known, verified or still uncertain?</p>
+          </article>
+          <article class="decision-stage">
+            <h3>Interpretation</h3>
+            <p>What does the available evidence actually mean?</p>
+          </article>
+          <article class="decision-stage">
+            <h3>Decision</h3>
+            <p>Which option deserves time, resources or further investigation?</p>
+          </article>
+          <article class="decision-stage">
+            <h3>Execution</h3>
+            <p>What should happen next, and under what conditions?</p>
+          </article>
+          <article class="decision-stage decision-stage-wide">
+            <h3>Reusable Intelligence</h3>
+            <p>What should be captured so the work does not have to start again from zero?</p>
+          </article>
         </div>
 
-
-        <div class="hub-grid">
-
-            <div class="card">
-
-                <div class="card-label">
-                    Funded Abroad India
-                </div>
-
-                <h3>
-                    Central Research & Publishing Hub
-                </h3>
-
-                <p>
-                    The main web destination for scholarship preparation
-                    intelligence, research, books and decision resources.
-                </p>
-
-                <a class="text-link"
-                   href="https://sites.google.com/view/ernabalkishorepandedecisionsys/home"
-                   target="_blank"
-                   rel="noopener">
-                    Open Google Sites →
-                </a>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="card-label">
-                    Funded Abroad India
-                </div>
-
-                <h3>
-                    Research Repository
-                </h3>
-
-                <p>
-                    Long-form articles, research notes and published
-                    material from the Funded Abroad India project.
-                </p>
-
-                <a class="text-link"
-                   href="https://fundedabroadindia.blogspot.com/"
-                   target="_blank"
-                   rel="noopener">
-                    Open Blogger →
-                </a>
-
-            </div>
-
-
-          <div class="card">
-
-    <div class="card-label">
-        FRYX Research
-    </div>
-
-    <h3>
-        Research Infrastructure
-    </h3>
-
-    <p>
-        GitHub research infrastructure for systems,
-        datasets, documentation and future open research work.
-    </p>
-
-    <a class="text-link"
-       href="https://nabalkishorepande.github.io/"
-       target="_blank"
-       rel="noopener">
-        GitHub Web Page — Live →
-    </a>
-
-</div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- 03 AUTHOR & RESEARCH IDENTITY -->
-
-<section class="identity-section" id="identity">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-                03
-            </div>
-
-            <h2>
-                Author & Research Identity
-            </h2>
-
-            <p class="section-intro">
-                A connected research and publishing identity across
-                persistent research records, professional discovery,
-                bibliographic systems and publishing platforms.
-            </p>
-
-        </div>
-
-
-        <!-- CORE RESEARCH -->
-
-        <div class="identity-group">
-
-            <h3>
-                3.1 Core Research
-            </h3>
-
-            <p>
-                Research identity, provenance and open research infrastructure.
-            </p>
-
-            <div class="link-grid">
-
-                <a class="profile-link"
-                   href="https://orcid.org/0009-0007-3325-9966"
-                   target="_blank"
-                   rel="noopener">
-                    ORCID
-                </a>
-
-                <a class="profile-link"
-                   href="https://github.com/NabalKishorePande"
-                   target="_blank"
-                   rel="noopener">
-                    GitHub
-                </a>
-
-                <a class="profile-link"
-                   href="https://doi.org/10.5281/zenodo.19555606"
-                   target="_blank"
-                   rel="noopener">
-                    Zenodo
-                </a>
-
-                <a class="profile-link"
-                   href="https://doi.org/10.17605/OSF.IO/T63E4"
-                   target="_blank"
-                   rel="noopener">
-                    OSF
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- RESEARCH DISTRIBUTION -->
-
-        <div class="identity-group">
-
-            <h3>
-                3.2 Research Distribution
-            </h3>
-
-            <p>
-                Professional, academic, bibliographic and public
-                research discovery.
-            </p>
-
-            <div class="link-grid">
-
-                <a class="profile-link"
-                   href="https://www.linkedin.com/in/nabal-kishore-pande-05400b372/"
-                   target="_blank"
-                   rel="noopener">
-                    LinkedIn
-                </a>
-
-                <a class="profile-link"
-                   href="https://search.worldcat.org/search?q=au=%22Pande%2C%20Nabal%20Kishore%22"
-                   target="_blank"
-                   rel="noopener">
-                    WorldCat
-                </a>
-
-                <a class="profile-link"
-                   href="https://independentresearcher.academia.edu/NabalKishorePande"
-                   target="_blank"
-                   rel="noopener">
-                    Academia.edu
-                </a>
-
-                <a class="profile-link"
-                   href="https://fundedabroadindia.medium.com/"
-                   target="_blank"
-                   rel="noopener">
-                    Medium
-                </a>
-
-                <a class="profile-link"
-                   href="https://www.slideshare.net/nabalpandey/slideshows"
-                   target="_blank"
-                   rel="noopener">
-                    SlideShare
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- PREMIER DISTRIBUTION -->
-
-        <div class="identity-group">
-
-            <h3>
-                3.3 Premier Distribution Channels
-            </h3>
-
-            <p>
-                Reader-facing publishing and direct access to books
-                and research resources.
-            </p>
-
-            <div class="link-grid">
-
-                <a class="profile-link"
-                   href="https://www.amazon.com/stores/NABAL-KISHORE-PANDE/author/B0CZS7H3LK"
-                   target="_blank"
-                   rel="noopener">
-                    Amazon Author
-                </a>
-
-                <a class="profile-link"
-                   href="https://leanpub.com/u/nabalkishorepande"
-                   target="_blank"
-                   rel="noopener">
-                    Leanpub
-                </a>
-
-                <a class="profile-link"
-                   href="https://fundedabroadindia.gumroad.com/"
-                   target="_blank"
-                   rel="noopener">
-                    Gumroad
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- 04 FEATURED BOOKS -->
-
-<section class="books-section" id="books">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-                04
-            </div>
-
-            <h2>
-                Featured Books
-            </h2>
-
-            <p class="section-intro">
-                A curated selection of books and decision resources
-                representing the research, publishing and professional
-                mobility work behind Funded Abroad India and FRYX Research.
-            </p>
-
-        </div>
-
-
-        <!-- CLUSTER 1 -->
-
-        <div class="book-cluster">
-
-            <div class="cluster-title">
-                Scholarship Preparation Intelligence
-            </div>
-
-            <div class="book-grid">
-
-
-                <article class="book-card">
-
-                    <a class="book-cover"
-                       href="https://fundedabroadindia.gumroad.com/l/scholarship-intelligence-library?wanted=true"
-                       target="_blank"
-                       rel="noopener">
-
-                        <img
-                            src="scholarship-intelligence-library-2026.png"
-                            alt="Scholarship Intelligence Library 2026"
-                            loading="lazy"
-                        >
-
-                    </a>
-
-                    <h3>
-                        <a href="https://fundedabroadindia.gumroad.com/l/scholarship-intelligence-library?wanted=true"
-                           target="_blank"
-                           rel="noopener">
-                            Scholarship Intelligence Library 2026
-                        </a>
-                    </h3>
-
-                    <div class="book-meta">
-                        Gumroad · Decision Guides
-                    </div>
-
-                    <a class="book-link"
-                       href="https://fundedabroadindia.gumroad.com/l/scholarship-intelligence-library?wanted=true"
-                       target="_blank"
-                       rel="noopener">
-                        Explore Book →
-                    </a>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <a class="book-cover"
-                       href="https://fundedabroadindia.gumroad.com/l/the-selection-blueprint-2027?wanted=true"
-                       target="_blank"
-                       rel="noopener">
-
-                        <img
-                            src="selection-blueprint-2027-operating-manual.png"
-                            alt="The Selection Blueprint 2027 Operating Manual"
-                            loading="lazy"
-                        >
-
-                    </a>
-
-                    <h3>
-                        <a href="https://fundedabroadindia.gumroad.com/l/the-selection-blueprint-2027?wanted=true"
-                           target="_blank"
-                           rel="noopener">
-                            The Selection Blueprint 2027
-                        </a>
-                    </h3>
-
-                    <div class="book-meta">
-                        Gumroad · Operating Manual
-                    </div>
-
-                    <a class="book-link"
-                       href="https://fundedabroadindia.gumroad.com/l/the-selection-blueprint-2027?wanted=true"
-                       target="_blank"
-                       rel="noopener">
-                        Explore Book →
-                    </a>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <a class="book-cover"
-                       href="https://fundedabroadindia.gumroad.com/l/funded-masters-compass-2027?wanted=true"
-                       target="_blank"
-                       rel="noopener">
-
-                        <img
-                            src="scholarship-intelligence-compass-free-guide.jpg"
-                            alt="Scholarship Intelligence Compass"
-                            loading="lazy"
-                        >
-
-                    </a>
-
-                    <h3>
-                        <a href="https://fundedabroadindia.gumroad.com/l/funded-masters-compass-2027?wanted=true"
-                           target="_blank"
-                           rel="noopener">
-                            Scholarship Intelligence Compass
-                        </a>
-                    </h3>
-
-                    <div class="book-meta">
-                        Gumroad · Free Guide
-                    </div>
-
-                    <a class="book-link"
-                       href="https://fundedabroadindia.gumroad.com/l/funded-masters-compass-2027?wanted=true"
-                       target="_blank"
-                       rel="noopener">
-                        Explore Guide →
-                    </a>
-
-                </article>
-
-            </div>
-
-        </div>
-
-
-        <!-- CLUSTER 2 -->
-
-        <div class="book-cluster">
-
-            <div class="cluster-title">
-                Research & Decision Systems
-            </div>
-
-            <div class="book-grid">
-
-
-                <article class="book-card">
-
-                    <a class="book-cover"
-                       href="https://leanpub.com/researchproductionsystem"
-                       target="_blank"
-                       rel="noopener">
-
-                        <img
-                            src="research-production-system.png"
-                            alt="Research Production System"
-                            loading="lazy"
-                        >
-
-                    </a>
-
-                    <h3>
-                        <a href="https://leanpub.com/researchproductionsystem"
-                           target="_blank"
-                           rel="noopener">
-                            Research Production System™
-                        </a>
-                    </h3>
-
-                    <div class="book-meta">
-                        Leanpub · Research Systems
-                    </div>
-
-                    <a class="book-link"
-                       href="https://leanpub.com/researchproductionsystem"
-                       target="_blank"
-                       rel="noopener">
-                        Explore Book →
-                    </a>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <a class="book-cover"
-                       href="https://leanpub.com/executive-decision-defense-playbook-2026"
-                       target="_blank"
-                       rel="noopener">
-
-                        <img
-                            src="executive-decision-defense-playbook.png"
-                            alt="The Executive Decision Defense Playbook"
-                            loading="lazy"
-                        >
-
-                    </a>
-
-                    <h3>
-                        <a href="https://leanpub.com/executive-decision-defense-playbook-2026"
-                           target="_blank"
-                           rel="noopener">
-                            The Executive Decision Defense Playbook™
-                        </a>
-                    </h3>
-
-                    <div class="book-meta">
-                        Leanpub · Decision Systems
-                    </div>
-
-                    <a class="book-link"
-                       href="https://leanpub.com/executive-decision-defense-playbook-2026"
-                       target="_blank"
-                       rel="noopener">
-                        Explore Book →
-                    </a>
-
-                </article>
-
-            </div>
-
-        </div>
-
-
-        <!-- CLUSTER 3 -->
-
-        <div class="book-cluster">
-
-            <div class="cluster-title">
-                Global Career & AI Systems
-            </div>
-
-            <div class="book-grid">
-
-
-                <article class="book-card">
-
-                    <a class="book-cover"
-                       href="https://www.ebay.com/itm/366441564901"
-                       target="_blank"
-                       rel="noopener">
-
-                        <img
-                            src="academic-word-engine-global-career-mobility.jpg"
-                            alt="The Academic Word Engine"
-                            loading="lazy"
-                        >
-
-                    </a>
-
-                    <h3>
-                        <a href="https://www.ebay.com/itm/366441564901"
-                           target="_blank"
-                           rel="noopener">
-                            The Academic Word Engine
-                        </a>
-                    </h3>
-
-                    <div class="book-meta">
-                        Paperback · Global Career Mobility
-                    </div>
-
-                    <a class="book-link"
-                       href="https://www.ebay.com/itm/366441564901"
-                       target="_blank"
-                       rel="noopener">
-                        View Book →
-                    </a>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <a class="book-cover"
-                       href="https://www.amazon.in/Structured-C1-AI-Systems-Reasoning-ebook/dp/B0GKPL8DQJ"
-                       target="_blank"
-                       rel="noopener">
-
-                        <img
-                            src="structured-c1-ai-systems.jpg"
-                            alt="Structured C1 AI Systems"
-                            loading="lazy"
-                        >
-
-                    </a>
-
-                    <h3>
-                        <a href="https://www.amazon.in/Structured-C1-AI-Systems-Reasoning-ebook/dp/B0GKPL8DQJ"
-                           target="_blank"
-                           rel="noopener">
-                            Structured C1 AI Systems
-                        </a>
-                    </h3>
-
-                    <div class="book-meta">
-                        Amazon India · AI & Systems
-                    </div>
-
-                    <a class="book-link"
-                       href="https://www.amazon.in/Structured-C1-AI-Systems-Reasoning-ebook/dp/B0GKPL8DQJ"
-                       target="_blank"
-                       rel="noopener">
-                        View on Amazon →
-                    </a>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <a class="book-cover"
-                       href="https://www.amazon.in/Cognitive-Test-Readiness-Framework-Training-ebook/dp/B0G6K2DYNG"
-                       target="_blank"
-                       rel="noopener">
-
-                        <img
-                            src="cognitive-test-readiness-framework.jpg"
-                            alt="Cognitive Test Readiness Framework"
-                            loading="lazy"
-                        >
-
-                    </a>
-
-                    <h3>
-                        <a href="https://www.amazon.in/Cognitive-Test-Readiness-Framework-Training-ebook/dp/B0G6K2DYNG"
-                           target="_blank"
-                           rel="noopener">
-                            Cognitive Test Readiness Framework
-                        </a>
-                    </h3>
-
-                    <div class="book-meta">
-                        Amazon India · Global Learners
-                    </div>
-
-                    <a class="book-link"
-                       href="https://www.amazon.in/Cognitive-Test-Readiness-Framework-Training-ebook/dp/B0G6K2DYNG"
-                       target="_blank"
-                       rel="noopener">
-                        View on Amazon →
-                    </a>
-
-                </article>
-
-            </div>
-
-        </div>
-
-
-        <!-- CLUSTER 4 -->
-
-        <div class="book-cluster">
-
-            <div class="cluster-title">
-                Verified Published Work
-            </div>
-
-            <div class="book-grid">
-
-
-                <article class="book-card">
-
-                    <a class="book-cover"
-                       href="https://search.worldcat.org/title/1482654705"
-                       target="_blank"
-                       rel="noopener">
-
-                        <img
-                            src="diy-home-improvement-nabal-kishore-pande.jpg"
-                            alt="DIY Home Improvement"
-                            loading="lazy"
-                        >
-
-                    </a>
-
-                    <h3>
-                        <a href="https://search.worldcat.org/title/1482654705"
-                           target="_blank"
-                           rel="noopener">
-                            DIY Home Improvement
-                        </a>
-                    </h3>
-
-                    <div class="book-meta">
-                        WorldCat · Library Evidence
-                    </div>
-
-                    <a class="book-link"
-                       href="https://search.worldcat.org/title/1482654705"
-                       target="_blank"
-                       rel="noopener">
-                        View WorldCat Record →
-                    </a>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    </div>
-
-</section>
-
-
-<!-- 05 PUBLISHED & BIBLIOGRAPHIC EVIDENCE -->
-
-<section class="evidence-section" id="evidence">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-                05
-            </div>
-
-            <h2>
-                Published & Bibliographically Identified Work
-            </h2>
-
-            <p class="section-intro">
-                Selected publications have ISBN and WorldCat records,
-                providing independent bibliographic evidence of published work.
-            </p>
-
-        </div>
-
-
-        <div class="evidence-grid">
-
-
-            <!-- DIY HOME IMPROVEMENT -->
-
-            <article class="evidence-card">
-
-                <div class="evidence-label">
-                    eBook · 2024
-                </div>
-
-                <h3>
-                    DIY Home Improvement:
-                    Transform Your Space on a Budget
-                </h3>
-
-                <p class="evidence-author">
-                    Author: Nabal Kishore Pande
-                </p>
-
-                <div class="evidence-details">
-
-                    <p>
-                        <strong>ISBN:</strong>
-                        9781633486157
-                    </p>
-
-                    <p>
-                        <strong>ISBN-10:</strong>
-                        163348615X
-                    </p>
-
-                    <p>
-                        <strong>OCLC:</strong>
-                        1482654705
-                    </p>
-
-                    <p>
-                        <strong>Publisher:</strong>
-                        Scribl, 2024
-                    </p>
-
-                </div>
-
-                <div class="library-evidence">
-
-                    <strong>Library evidence</strong>
-
-                    <p>
-                        University of Arts in Belgrade,
-                        Faculty of Music, Serbia
-                    </p>
-
-                    <p>
-                        Universität Marburg,
-                        Universitätsbibliothek, Germany
-                    </p>
-
-                </div>
-
-                <a class="book-link"
-                   href="https://search.worldcat.org/title/1482654705"
-                   target="_blank"
-                   rel="noopener">
-                    View WorldCat Record →
-                </a>
-
-            </article>
-
-
-            <!-- THE ACADEMIC WORD ENGINE -->
-
-            <article class="evidence-card">
-
-                <div class="evidence-label">
-                    Print Book · 2025
-                </div>
-
-                <h3>
-                    The Academic Word Engine
-                </h3>
-
-                <p class="evidence-author">
-                    Author: Nabal Kishore Pande
-                </p>
-
-                <div class="evidence-details">
-
-                    <p>
-                        <strong>ISBN:</strong>
-                        9789334380378
-                    </p>
-
-                    <p>
-                        <strong>ISBN-10:</strong>
-                        9334380373
-                    </p>
-
-                    <p>
-                        <strong>OCLC:</strong>
-                        1563979749
-                    </p>
-
-                    <p>
-                        <strong>Publisher:</strong>
-                        A+ TEST SUCCESS, 2025
-                    </p>
-
-                </div>
-
-                <div class="library-evidence">
-
-                    <strong>Bibliographic evidence</strong>
-
-                    <p>
-                        WorldCat bibliographic record for the
-                        English print edition.
-                    </p>
-
-                </div>
-
-                <a class="book-link"
-                   href="https://search.worldcat.org/title/1563979749"
-                   target="_blank"
-                   rel="noopener">
-                    View WorldCat Record →
-                </a>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- FUTURE SECTIONS -->
-
-<!-- 06 GLOBAL EBOOK DISTRIBUTION -->
-
-<section class="distribution-section" id="distribution">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-                06
-            </div>
-
-            <h2>
-                Global Ebook Distribution
-            </h2>
-
-            <p class="section-intro">
-                My ebooks are distributed through a multi-channel
-                publishing network connecting commercial retailers,
-                subscription platforms and library services.
-            </p>
-
-        </div>
-
-
-        <div class="distribution-grid">
-
-
-            <article class="distribution-card">
-
-                <div class="distribution-number">
-                    01
-                </div>
-
-                <h3>
-                    Global Retail
-                </h3>
-
-                <p>
-                    Major ebook retailers and regional booksellers
-                    across international markets.
-                </p>
-
-                <div class="distribution-tags">
-                    Amazon Kindle · Apple Books · Google Play ·
-                    Kobo · Barnes & Noble
-                </div>
-
-            </article>
-
-
-            <article class="distribution-card">
-
-                <div class="distribution-number">
-                    02
-                </div>
-
-                <h3>
-                    Subscription Platforms
-                </h3>
-
-                <p>
-                    Subscription and reading applications providing
-                    additional routes to discover and read the books.
-                </p>
-
-                <div class="distribution-tags">
-                    BookBeat · Kobo Plus · Perlego · Skoobe ·
-                    YouScribe
-                </div>
-
-            </article>
-
-
-            <article class="distribution-card">
-
-                <div class="distribution-number">
-                    03
-                </div>
-
-                <h3>
-                    Library Services
-                </h3>
-
-                <p>
-                    Digital library distribution extends discovery
-                    beyond commercial bookstores.
-                </p>
-
-                <div class="distribution-tags">
-                    Odilo
-                </div>
-
-            </article>
-
-
-            <article class="distribution-card">
-
-                <div class="distribution-number">
-                    04
-                </div>
-
-                <h3>
-                    Africa
-                </h3>
-
-                <p>
-                    Regional commercial discovery through local
-                    digital publishing and marketplace channels.
-                </p>
-
-                <div class="distribution-tags">
-                    Regional availability
-                </div>
-
-            </article>
-
-
-            <article class="distribution-card">
-
-                <div class="distribution-number">
-                    05
-                </div>
-
-                <h3>
-                    Latin America
-                </h3>
-
-                <p>
-                    Commercial availability is already discoverable
-                    through regional booksellers and local storefronts.
-                </p>
-
-                <div class="distribution-tags">
-                    Mexico · Argentina · Chile
-                </div>
-
-            </article>
-
-
-            <article class="distribution-card">
-
-                <div class="distribution-number">
-                    06
-                </div>
-
-                <h3>
-                    Worldwide Network
-                </h3>
-
-                <p>
-                    StreetLib provides the publishing infrastructure
-                    connecting these distribution channels.
-                </p>
-
-                <div class="distribution-tags">
-                    Global digital distribution
-                </div>
-
-            </article>
-
-
-        </div>
-
-
-        <div class="distribution-proof">
-
-            <strong>
-                Distribution footprint
-            </strong>
-
-            <p>
-                Current StreetLib configuration:
-                15 retail channels selected,
-                9 subscription platforms selected,
-                and 1 library service selected.
-            </p>
-
-            <p>
-                The selected network is used to make publications
-                discoverable across commercial, subscription and
-                library channels.
-            </p>
-
-        </div>
-
-
-        <div class="distribution-action">
-
-         <div class="distribution-action">
-
-    <a class="book-link"
-       href="https://www.streetlib.com/distribution-partners"
-       target="_blank"
-       rel="noopener">
-        View StreetLib Distribution Network →
-    </a>
-
-</div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- 07 REGIONAL COMMERCIAL FOOTPRINT -->
-
-<section class="regional-section" id="regional">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-                07
-            </div>
-
-            <h2>
-                Regional Commercial Footprint
-            </h2>
-
-            <p class="section-intro">
-                Selected publications are also discoverable through
-                regional booksellers and digital storefronts outside
-                the primary international retail network.
-            </p>
-
-        </div>
-
-
-        <div class="regional-grid">
-
-
-            <!-- AFRICA -->
-
-            <article class="regional-card">
-
-                <div class="regional-number">
-                    01
-                </div>
-
-                <h3>
-                    Africa
-                </h3>
-
-                <p>
-                    Commercial discovery through a regional
-                    digital publishing marketplace.
-                </p>
-
-                <a class="book-link"
-                   href="https://selar.com/y115677671"
-                   target="_blank"
-                   rel="noopener">
-                    View African Marketplace Record →
-                </a>
-
-            </article>
-
-
-            <!-- MEXICO -->
-
-            <article class="regional-card">
-
-                <div class="regional-number">
-                    02
-                </div>
-
-                <h3>
-                    Mexico
-                </h3>
-
-                <p>
-                    An author/editorial listing is available through
-                    Librerías Gandhi.
-                </p>
-
-                <a class="book-link"
-                   href="https://www.gandhi.com.mx/er--nabal-kishore-pande"
-                   target="_blank"
-                   rel="noopener">
-                    View Mexico Listing →
-                </a>
-
-            </article>
-
-
-            <!-- ARGENTINA -->
-
-            <article class="regional-card">
-
-                <div class="regional-number">
-                    03
-                </div>
-
-                <h3>
-                    Argentina
-                </h3>
-
-                <p>
-                    Kobo Argentina lists publications under the
-                    Nabal Kishore Pande author identities.
-                </p>
-
-                <div class="regional-links">
-
-                    <a class="book-link"
-                       href="https://www.kobo.com/ar/es/ebook/riches-route"
-                       target="_blank"
-                       rel="noopener">
-                        Riches Route →
-                    </a>
-
-                    <a class="book-link"
-                       href="https://www.kobo.com/ar/es/ebook/sunny-and-magical-forest-adventures"
-                       target="_blank"
-                       rel="noopener">
-                        Sunny and Magical Forest Adventures →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- CHILE -->
-
-            <article class="regional-card">
-
-                <div class="regional-number">
-                    04
-                </div>
-
-                <h3>
-                    Chile
-                </h3>
-
-                <p>
-                    Kobo Chile provides a directly discoverable
-                    local storefront listing.
-                </p>
-
-                <a class="book-link"
-                   href="https://www.kobo.com/cl/es/ebook/post-by-ghost"
-                   target="_blank"
-                   rel="noopener">
-                    View Chile Listing →
-                </a>
-
-            </article>
-
-
-        </div>
-
-
-        <div class="regional-proof">
-
-            <strong>
-                Evidence principle
-            </strong>
-
-            <p>
-                These links are presented as selected regional
-                discovery evidence, not as a complete list of
-                every country or storefront where a publication
-                may be available.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- 08 CORE RESEARCH IDENTITY -->
-
-<section class="identity-section" id="identity">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-                08
-            </div>
-
-            <h2>
-                Core Research Identity
-            </h2>
-
-            <p class="section-intro">
-                Primary research, author, professional and
-                persistent-identifier records used to establish
-                a consistent public research identity.
-            </p>
-
-        </div>
-
-
-        <div class="identity-grid">
-
-
-            <article class="identity-card">
-
-                <div class="identity-number">01</div>
-
-                <h3>ORCID</h3>
-
-                <p>
-                    Persistent researcher identifier connecting
-                    publications and research activity to one
-                    author identity.
-                </p>
-
-                <a class="book-link"
-                   href="https://orcid.org/0009-0007-3325-9966"
-                   target="_blank"
-                   rel="noopener">
-                    View ORCID Record →
-                </a>
-
-            </article>
-
-
-            <article class="identity-card">
-
-                <div class="identity-number">02</div>
-
-                <h3>GitHub</h3>
-
-                <p>
-                    Open research and publishing repository for
-                    decision systems, frameworks, datasets and
-                    supporting digital infrastructure.
-                </p>
-
-                <a class="book-link"
-                   href="https://github.com/NabalKishorePande"
-                   target="_blank"
-                   rel="noopener">
-                    View GitHub →
-                </a>
-
-            </article>
-
-
-            <article class="identity-card">
-
-                <div class="identity-number">03</div>
-
-                <h3>LinkedIn</h3>
-
-                <p>
-                    Professional identity and public research
-                    communication profile associated with FRYX Research.
-                </p>
-
-                <a class="book-link"
-                   href="https://www.linkedin.com/in/nabal-kishore-pande-05400b372/"
-                   target="_blank"
-                   rel="noopener">
-                    View LinkedIn Profile →
-                </a>
-
-            </article>
-
-
-            <article class="identity-card">
-
-                <div class="identity-number">04</div>
-
-                <h3>WorldCat</h3>
-
-                <p>
-                    International library discovery and
-                    bibliographic record infrastructure for
-                    published works.
-                </p>
-
-                <a class="book-link"
-                   href="https://search.worldcat.org/search?q=NABAL+KISHORE+PANDE"
-                   target="_blank"
-                   rel="noopener">
-                    View WorldCat Records →
-                </a>
-
-            </article>
-
-
-            <article class="identity-card">
-
-                <div class="identity-number">05</div>
-
-                <h3>Academia.edu</h3>
-
-                <p>
-                    Research profile containing papers,
-                    research interests and scholarly materials.
-                </p>
-
-                <a class="book-link"
-                   href="https://independentresearcher.academia.edu/NabalKishorePande"
-                   target="_blank"
-                   rel="noopener">
-                    View Research Profile →
-                </a>
-
-            </article>
-
-
-            <article class="identity-card">
-
-                <div class="identity-number">06</div>
-
-                <h3>Zenodo</h3>
-
-                <p>
-                    DOI-based research record providing a
-                    persistent citation and archival route.
-                </p>
-
-                <a class="book-link"
-                   href="https://doi.org/10.5281/zenodo.20794624"
-                   target="_blank"
-                   rel="noopener">
-                    View Zenodo Record →
-                </a>
-
-            </article>
-
-
-            <article class="identity-card">
-
-                <div class="identity-number">07</div>
-
-                <h3>OSF</h3>
-
-                <p>
-                    Open research infrastructure supporting
-                    project-level documentation and reproducible
-                    research work.
-                </p>
-
-                <a class="book-link"
-                   href="https://osf.io/q7b5u/"
-                   target="_blank"
-                   rel="noopener">
-                    View OSF Project →
-                </a>
-
-            </article>
-
-
-        </div>
-
-
-        <div class="identity-proof">
-
-            <strong>
-                Identity principle
-            </strong>
-
-            <p>
-                These records serve different functions. Together
-                they connect author identity, professional identity,
-                persistent identifiers, library discovery and
-                open research infrastructure.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- 09 RESEARCH DISTRIBUTION & PUBLISHING -->
-
-<section class="publishing-section" id="publishing">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-                09
-            </div>
-
-            <h2>
-                Research Distribution & Publishing
-            </h2>
-
-            <p class="section-intro">
-                Research, articles, books and practical resources are
-                distributed through established publishing and knowledge
-                platforms.
-            </p>
-
-        </div>
-
-
-        <div class="publishing-grid">
-
-
-            <!-- MEDIUM -->
-
-            <article class="publishing-card">
-
-                <div class="publishing-number">
-                    01
-                </div>
-
-                <h3>
-                    Medium
-                </h3>
-
-                <p>
-                    Research articles and public writing on decision
-                    systems, scholarship preparation, research frameworks
-                    and execution intelligence.
-                </p>
-
-                <a class="book-link"
-                   href="https://fundedabroadindia.medium.com/"
-                   target="_blank"
-                   rel="noopener">
-                    View Medium Publication →
-                </a>
-
-            </article>
-
-
-            <!-- SLIDESHARE -->
-
-            <article class="publishing-card">
-
-                <div class="publishing-number">
-                    02
-                </div>
-
-                <h3>
-                    SlideShare
-                </h3>
-
-                <p>
-                    Research briefings, frameworks, presentations and
-                    structured knowledge resources.
-                </p>
-
-                <a class="book-link"
-                   href="https://www.slideshare.net/nabalpandey"
-                   target="_blank"
-                   rel="noopener">
-                    View SlideShare Profile →
-                </a>
-
-            </article>
-
-
-            <!-- AMAZON -->
-
-            <article class="publishing-card">
-
-                <div class="publishing-number">
-                    03
-                </div>
-
-                <h3>
-                    Amazon Author
-                </h3>
-
-                <p>
-                    Author profile supporting book discovery through
-                    the Amazon publishing ecosystem.
-                </p>
-
-                <a class="book-link"
-                   href="https://amazon.com/author/nabal"
-                   target="_blank"
-                   rel="noopener">
-                    View Amazon Author Profile →
-                </a>
-
-            </article>
-
-
-            <!-- LEANPUB -->
-
-            <article class="publishing-card">
-
-                <div class="publishing-number">
-                    04
-                </div>
-
-                <h3>
-                    Leanpub
-                </h3>
-
-                <p>
-                    Research-led books and technical frameworks published
-                    through an author-controlled publishing platform.
-                </p>
-
-                <a class="book-link"
-                   href="https://leanpub.com/u/fryx-research"
-                   target="_blank"
-                   rel="noopener">
-                    View Leanpub Author Page →
-                </a>
-
-            </article>
-
-
-            <!-- GUMROAD -->
-
-            <article class="publishing-card">
-
-                <div class="publishing-number">
-                    05
-                </div>
-
-                <h3>
-                    Gumroad
-                </h3>
-
-                <p>
-                    Practical decision guides, scholarship preparation
-                    resources and implementation products.
-                </p>
-
-                <a class="book-link"
-                   href="https://fundedabroadindia.gumroad.com/"
-                   target="_blank"
-                   rel="noopener">
-                    View Funded Abroad India →
-                </a>
-
-            </article>
-
-
-        </div>
-
-
-        <div class="publishing-proof">
-
-            <strong>
-                Publishing principle
-            </strong>
-
-            <p>
-                These platforms serve different distribution functions.
-                Together they extend research from long-form writing and
-                books to practical guides, presentations and structured
-                implementation resources.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- 10 CONNECT & FOLLOW -->
-
-<section class="social-section" id="social">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-                10
-            </div>
-
-            <h2>
-                Connect & Follow
-            </h2>
-
-            <p class="section-intro">
-                Follow my research, scholarship preparation work,
-                publishing activity and ongoing discussions across
-                the platforms where I publish and communicate.
-            </p>
-
-        </div>
-
-
-        <div class="social-grid">
-
-
-            <article class="social-card social-primary">
-
-                <div class="social-number">
-                    01
-                </div>
-
-                <h3>
-                    Abroad & Ahead
-                </h3>
-
-                <div class="social-platform">
-                    LinkedIn Newsletter
-                </div>
-
-                <p>
-                    Recurring research and scholarship-preparation
-                    intelligence from Funded Abroad India.
-                </p>
-
-                <a class="book-link"
-                   href="https://www.linkedin.com/newsletters/abroad-ahead-7390199016950603777/"
-                   target="_blank"
-                   rel="noopener">
-                    Subscribe to Abroad & Ahead →
-                </a>
-
-            </article>
-
-
-            <article class="social-card social-primary">
-
-                <div class="social-number">
-                    02
-                </div>
-
-                <h3>
-                    Funded Abroad India
-                </h3>
-
-                <div class="social-platform">
-                    Medium
-                </div>
-
-                <p>
-                    Long-form research, scholarship preparation
-                    frameworks and decision intelligence.
-                </p>
-
-                <a class="book-link"
-                   href="https://fundedabroadindia.medium.com/"
-                   target="_blank"
-                   rel="noopener">
-                    Read on Medium →
-                </a>
-
-            </article>
-
-
-            <article class="social-card social-primary">
-
-                <div class="social-number">
-                    03
-                </div>
-
-                <h3>
-                    Funded Abroad India
-                </h3>
-
-                <div class="social-platform">
-                    Tumblr
-                </div>
-
-                <p>
-                    HTML-based publishing used for content
-                    distribution and search discovery.
-                </p>
-
-                <a class="book-link"
-                   href="https://www.tumblr.com/blog/funded-abroad-india"
-                   target="_blank"
-                   rel="noopener">
-                    Read on Tumblr →
-                </a>
-
-            </article>
-
-
-            <article class="social-card social-primary">
-
-                <div class="social-number">
-                    04
-                </div>
-
-                <h3>
-                    Scholarship Intelligence
-                </h3>
-
-                <div class="social-platform">
-                    Bluesky
-                </div>
-
-                <p>
-                    Short-form scholarship intelligence,
-                    discussion and research conversations.
-                </p>
-
-                <a class="book-link"
-                   href="https://bsky.app/profile/nabalkpande.bsky.social"
-                   target="_blank"
-                   rel="noopener">
-                    Join the Discussion →
-                </a>
-
-            </article>
-
-
-            <article class="social-card">
-
-                <div class="social-number">
-                    05
-                </div>
-
-                <h3>
-                    Nabal Kishore Pande
-                </h3>
-
-                <div class="social-platform">
-                    Facebook
-                </div>
-
-                <p>
-                    Public profile and wider audience connection.
-                </p>
-
-                <a class="book-link"
-                   href="https://www.facebook.com/profile.php?id=61552943706709"
-                   target="_blank"
-                   rel="noopener">
-                    Follow on Facebook →
-                </a>
-
-            </article>
-
-
-            <article class="social-card">
-
-                <div class="social-number">
-                    06
-                </div>
-
-                <h3>
-                    Nabal Kishore Pande
-                </h3>
-
-                <div class="social-platform">
-                    Instagram
-                </div>
-
-                <p>
-                    Author profile and visual communication.
-                </p>
-
-                <a class="book-link"
-                   href="https://www.instagram.com/nabal_kishore_pande/"
-                   target="_blank"
-                   rel="noopener">
-                    Follow on Instagram →
-                </a>
-
-            </article>
-
-
-            <article class="social-card">
-
-                <div class="social-number">
-                    07
-                </div>
-
-                <h3>
-                    Funded Abroad India
-                </h3>
-
-                <div class="social-platform">
-                    Pinterest
-                </div>
-
-                <p>
-                    Visual discovery for scholarship and
-                    preparation resources.
-                </p>
-
-                <a class="book-link"
-                   href="https://in.pinterest.com/fundedabroadindia/"
-                   target="_blank"
-                   rel="noopener">
-                    Explore Pinterest →
-                </a>
-
-            </article>
-
-
-            <article class="social-card">
-
-                <div class="social-number">
-                    08
-                </div>
-
-                <h3>
-                    Nabal Kishore Pande
-                </h3>
-
-                <div class="social-platform">
-                    X
-                </div>
-
-                <p>
-                    Short-form updates and public distribution
-                    of research and scholarship intelligence.
-                </p>
-
-                <a class="book-link"
-                   href="https://x.com/NabalKPande"
-                   target="_blank"
-                   rel="noopener">
-                    Follow on X →
-                </a>
-
-            </article>
-
-
-        </div>
-
-
-        <div class="social-proof">
-
-            <strong>
-                Follow the research where it happens
-            </strong>
-
-            <p>
-                The first four channels support recurring publishing
-                and discussion. The remaining profiles provide
-                additional routes for audience discovery and contact.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- 11 FUNDED ABROAD INDIA -->
-
-<section class="funded-cta-section" id="resources">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-                11
-            </div>
-
-            <h2>
-                Funded Abroad India
-            </h2>
-
-            <p class="section-intro">
-                Practical scholarship preparation resources built around
-                evidence, decision guidance and execution.
-            </p>
-
-        </div>
-
-
-        <div class="funded-cta-grid">
-
-
-            <article class="funded-cta-card">
-
-                <div class="funded-cta-label">
-                    FREE
-                </div>
-
-                <h3>
-                    Scholarship Intelligence Compass
-                </h3>
-
-                <p>
-                    A free guide for understanding, discovering and
-                    filtering fully funded Master's scholarship opportunities.
-                </p>
-
-                <a class="funded-cta-link"
-                   href="https://fundedabroadindia.gumroad.com/l/funded-masters-compass-2027?wanted=true"
-                   target="_blank"
-                   rel="noopener">
-                    Explore Free Guide →
-                </a>
-
-            </article>
-
-
-            <article class="funded-cta-card">
-
-                <div class="funded-cta-label">
-                    FLAGSHIP
-                </div>
-
-                <h3>
-                    Scholarship Intelligence Library 2026
-                </h3>
-
-                <p>
-                    A structured collection of decision guides for applicants
-                    preparing for fully funded international education.
-                </p>
-
-                <a class="funded-cta-link"
-                   href="https://fundedabroadindia.gumroad.com/l/scholarship-intelligence-library?wanted=true"
-                   target="_blank"
-                   rel="noopener">
-                    Explore Flagship Resource →
-                </a>
-
-            </article>
-
-
-            <article class="funded-cta-card">
-
-                <div class="funded-cta-label">
-                    MEMBERSHIP
-                </div>
-
-                <h3>
-                    Funded Abroad India
-                </h3>
-
-                <p>
-                    Continuing access to scholarship preparation resources,
-                    decision systems and practical implementation material.
-                </p>
-
-                <a class="funded-cta-link"
-                   href="https://fundedabroadindia.gumroad.com/"
-                   target="_blank"
-                   rel="noopener">
-                    Explore Membership →
-                </a>
-
-            </article>
-
-
-        </div>
-
-
-        <div class="funded-cta-main">
-
-            <p>
-                Start with the free guide, explore the flagship resources,
-                or join the wider Funded Abroad India ecosystem.
-            </p>
-
-            <a class="funded-cta-button"
-               href="https://fundedabroadindia.gumroad.com/"
-               target="_blank"
-               rel="noopener">
-                Explore Funded Abroad India →
-            </a>
-
-        </div>
-
-    </div>
-
-<div class="section-number">
-    
-</div>
-    
-    <-- COMPLETE RESEARCH ARCHIVE -->
-
-<section id="research-archive" class="research-archive-section">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-    12
-</div>
-
-            <h2>
-                Complete Research Archive
-            </h2>
-
-            <p class="section-intro">
-                Persistent research records across Zenodo and OSF, providing direct DOI-based access to published research works and frameworks.
-            </p>
-
-        </div>
-
-        <div class="research-archive-intro">
-
-            <p>
-                This archive provides direct access to the research record. Each work is linked through its persistent DOI rather than through a secondary distribution page.
-            </p>
-
-        </div>
-
-        <div class="archive-summary">
-
-            <span class="archive-badge">
-                18 Persistent Research Records
-            </span>
-
-            <span class="archive-badge">
-                13 Zenodo / DOI Records
-            </span>
-
-            <span class="archive-badge">
-                5 OSF Records
-            </span>
-
-        </div>
-
-
-        <!-- ZENODO / DOI RECORDS -->
-
-        <div class="archive-group">
-
-            <div class="archive-group-title">
-                Zenodo / DOI Research Records
-            </div>
-
-            <div class="archive-list">
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.18937722" target="_blank" rel="noopener">
-                            Autonomous Research Governance: A Conceptual Framework for Discovery-Driven Institutional Governance
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.18937722" target="_blank" rel="noopener">
-                            10.5281/zenodo.18937722
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.18939167" target="_blank" rel="noopener">
-                            NabalKishorePande/memory-revolution: Autonomous Science Research – Initial Framework Release
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.18939167" target="_blank" rel="noopener">
-                            10.5281/zenodo.18939167
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.6084/m9.figshare.31770184" target="_blank" rel="noopener">
-                            AI-Accelerated Learning Systems: A Data-Driven Framework for Cognitive Productivity and Human–AI Knowledge Collaboration
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.6084/m9.figshare.31770184" target="_blank" rel="noopener">
-                            10.6084/m9.figshare.31770184
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.19274302" target="_blank" rel="noopener">
-                            Execution Systems Under Cognitive Load: A Data-Driven Model for Converting Knowledge into Consistent Output
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.19274302" target="_blank" rel="noopener">
-                            10.5281/zenodo.19274302
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.19555606" target="_blank" rel="noopener">
-                            Execution Compression System (ECS): A Constraint-Based Framework for Reducing Decision Load and Improving Execution in Governance Systems
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.19555606" target="_blank" rel="noopener">
-                            10.5281/zenodo.19555606
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.20353772" target="_blank" rel="noopener">
-                            The Mathematics of Reality Filtration: A Systems-Theoretical Framework for Quantifying Ecological Invisibility and Mediated Existence
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.20353772" target="_blank" rel="noopener">
-                            10.5281/zenodo.20353772
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.20488424" target="_blank" rel="noopener">
-                            Operator Reflections: AI as Infrastructure
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.20488424" target="_blank" rel="noopener">
-                            10.5281/zenodo.20488424
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.20588521" target="_blank" rel="noopener">
-                            The Evidence Gap: Why Capability Often Fails to Become Opportunity in Modern Labor Markets
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.20588521" target="_blank" rel="noopener">
-                            10.5281/zenodo.20588521
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.20689156" target="_blank" rel="noopener">
-                            Longitudinal Cohort Study on Mid-Career Professional Trajectories and Template Adherence
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.20689156" target="_blank" rel="noopener">
-                            10.5281/zenodo.20689156
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.20794624" target="_blank" rel="noopener">
-                            Opportunity Intelligence: A Five-Filter Framework for Educational Opportunity Selection Under Conditions of Information Overload
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.20794624" target="_blank" rel="noopener">
-                            10.5281/zenodo.20794624
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.21305125" target="_blank" rel="noopener">
-                            Scholarship Intelligence Infrastructure (v2.0.0): Decision Systems for Fully Funded International Education
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.21305125" target="_blank" rel="noopener">
-                            10.5281/zenodo.21305125
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.21551747" target="_blank" rel="noopener">
-                            Scholarship Intelligence Report: A Comparative Policy Analysis of Selection Logic, Funding Architecture and Regional Coverage Across Ten Major International Scholarship Programmes
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.21551747" target="_blank" rel="noopener">
-                            10.5281/zenodo.21551747
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.5281/zenodo.21757374" target="_blank" rel="noopener">
-                            Nabal Kishore Pande: Decision Systems &amp; Research Frameworks Portfolio
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.5281/zenodo.21757374" target="_blank" rel="noopener">
-                            10.5281/zenodo.21757374
-                        </a>
-                    </div>
-
-                </article>
-
-            </div>
-
-        </div>
-
-
-        <!-- OSF RECORDS -->
-
-        <div class="archive-group">
-
-            <div class="archive-group-title">
-                OSF Research Records
-            </div>
-
-            <div class="archive-list">
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.17605/OSF.IO/Q7B5U" target="_blank" rel="noopener">
-                            AI-Accelerated Learning Systems and the NeuroGenesis Framework: A Research Project on Human–AI Cognitive Systems
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.17605/OSF.IO/Q7B5U" target="_blank" rel="noopener">
-                            10.17605/OSF.IO/Q7B5U
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.17605/OSF.IO/UDJ7B" target="_blank" rel="noopener">
-                            Scholarship Funding in Africa: Regional Evidence Review
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.17605/OSF.IO/UDJ7B" target="_blank" rel="noopener">
-                            10.17605/OSF.IO/UDJ7B
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.17605/OSF.IO/MHTQ7" target="_blank" rel="noopener">
-                            AI-Driven Workforce Reorganization (2026–2031): Institutional Convergence, Structural Bifurcation, and Governance Velocity
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.17605/OSF.IO/MHTQ7" target="_blank" rel="noopener">
-                            10.17605/OSF.IO/MHTQ7
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.17605/OSF.IO/T63E4" target="_blank" rel="noopener">
-                            Scholarship Funding Systems, Educational Access, and Applicant Barriers in Developing Economies: A PRISMA-ScR Scoping Review
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.17605/OSF.IO/T63E4" target="_blank" rel="noopener">
-                            10.17605/OSF.IO/T63E4
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <article class="archive-item">
-
-                    <h3>
-                        <a href="https://doi.org/10.17605/OSF.IO/BWGYS" target="_blank" rel="noopener">
-                            The Procedural Access Framework (PAF): Explaining Hidden Barriers to Higher Education Funding Access
-                        </a>
-                    </h3>
-
-                    <div class="archive-doi">
-                        DOI:
-                        <a href="https://doi.org/10.17605/OSF.IO/BWGYS" target="_blank" rel="noopener">
-                            10.17605/OSF.IO/BWGYS
-                        </a>
-                    </div>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--  CONTACT -->
-
-<section class="contact-section" id="contact">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-number">
-    13
-</div>
-
-            <h2>
-                Contact
-            </h2>
-
-            <p class="section-intro">
-                For research, publishing, scholarship preparation,
-                decision systems and professional enquiries.
-            </p>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-
-            <div class="contact-details">
-
-                <h3>
-                    Nabal Kishore Pande
-                </h3>
-
-                <p>
-                    Independent Researcher & Author
-                </p>
-
-                <p>
-                    Funded Abroad India
-                </p>
-
-                <p>
-                    Pithoragarh, India
-                </p>
-
-                <p>
-                    <strong>Email:</strong>
-                    Ernawal67@gmail.com
-                </p>
-
-            </div>
-
-
-            <form class="contact-form">
-
-                <label for="name">
-                    Name
-                </label>
-
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                >
-
-
-                <label for="email">
-                    Email *
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                >
-
-
-                <label for="message">
-                    Message
-                </label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    required
-                ></textarea>
-
-
-                <button type="submit">
-                    Send Message
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- TEMPORARY FOOTER -->
-
-<footer class="temporary-footer">
-
-    <div class="container">
-
-        <p>
-            © 2026 Nabal Kishore Pande |
-            FRYX Research | Funded Abroad India
+        <p class="section-statement">
+          Projects are designed to produce reusable frameworks, operating systems, datasets or execution models rather than one-off information.
         </p>
+      </div>
+    </section>
 
+    <!-- RESEARCH -->
+    <section class="section theme-research" id="research" aria-labelledby="research-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading-light">
+          <p class="section-kicker">Research Infrastructure</p>
+          <h2 id="research-title">Research should remain inspectable.</h2>
+          <p class="section-lead">The public record is distributed across systems that serve different research functions.</p>
+        </header>
+
+        <div class="evidence-strip">
+          <div>
+            <strong>17</strong>
+            <span>persistent research records</span>
+          </div>
+          <div>
+            <strong>12</strong>
+            <span>Zenodo records</span>
+          </div>
+          <div>
+            <strong>5</strong>
+            <span>OSF projects</span>
+          </div>
+        </div>
+
+        <div class="research-taxonomy">
+          <article class="research-theme">
+            <h3>Autonomous Science, AI &amp; Governance</h3>
+            <p>Research concerning emerging AI-enabled systems, governance and autonomous science.</p>
+          </article>
+          <article class="research-theme">
+            <h3>Execution, Decision &amp; Labour-Market Systems</h3>
+            <p>Research concerning decision systems, execution intelligence and professional or labour-market conditions.</p>
+          </article>
+          <article class="research-theme">
+            <h3>Opportunity &amp; Scholarship Intelligence</h3>
+            <p>Research concerning opportunity structures, scholarship systems, funding and applicant barriers.</p>
+          </article>
+          <article class="research-theme">
+            <h3>Higher Education Access &amp; Institutional Systems</h3>
+            <p>Research concerning educational access, funding and institutional conditions.</p>
+          </article>
+        </div>
+
+        <div class="research-actions">
+          <a class="button button-research" href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Nabal%20Kishore%20Pande%22" target="_blank" rel="noopener">Browse Zenodo Records</a>
+          <a class="button button-research-outline" href="https://doi.org/10.17605/OSF.IO/Q7B5U" target="_blank" rel="noopener">Browse OSF Projects</a>
+        </div>
+
+        <div class="research-principle">
+          <h3>One platform is not the complete record.</h3>
+          <p>Each research system serves a different function. Persistent repositories, identity records, technical infrastructure and bibliographic discovery should therefore be read as complementary evidence layers.</p>
+        </div>
+
+        <p class="boundary-note boundary-note-dark">
+          <strong>Evidence boundary:</strong> Persistent repository records establish a public research record. They do not, by themselves, establish peer review, university affiliation, institutional endorsement or scholarly acceptance.
+        </p>
+      </div>
+    </section>
+
+    <!-- PUBLISHING -->
+    <section class="section theme-publishing" id="publishing" aria-labelledby="publishing-title">
+      <div class="section-shell">
+        <header class="section-heading">
+          <p class="section-kicker">Publishing &amp; Distribution</p>
+          <h2 id="publishing-title">Research becomes more useful when it can travel.</h2>
+          <p class="section-lead">Selected systems and published records connect research, professional use and public access.</p>
+        </header>
+
+        <figure class="feature-infographic">
+          <img
+            src="nabal-kishore-pande-research-publishing-scholarship-intelligence-ecosystem.png"
+            alt="Research, publishing and scholarship intelligence ecosystem"
+            loading="lazy"
+           decoding="async">
+        </figure>
+
+        <div class="publication-layout">
+          <div class="publication-group">
+            <p class="card-label">Research-led &amp; professional systems</p>
+
+            <article class="publication-card">
+              <img src="research-production-system.png" alt="Research Production System" loading="lazy" decoding="async">
+              <div>
+                <h3>Research Production System</h3>
+                <p>A systems approach to turning research questions, evidence and outputs into reusable intellectual assets.</p>
+                <a class="text-link" href="https://leanpub.com/researchproductionsystem" target="_blank" rel="noopener">Explore on Leanpub</a>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <img src="executive-decision-defense-playbook.png" alt="The Executive Decision Defense Playbook" loading="lazy" decoding="async">
+              <div>
+                <h3>The Executive Decision Defense Playbook</h3>
+                <p>A decision framework for examining assumptions, evidence, risk and defensibility before committing to action.</p>
+                <a class="text-link" href="https://leanpub.com/executive-decision-defense-playbook-2026" target="_blank" rel="noopener">Explore on Leanpub</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="publication-group">
+            <p class="card-label">Bibliographic record</p>
+
+            <article class="bibliographic-card">
+              <h3>The Academic Word Engine</h3>
+              <p>ISBN <strong>9789334380378</strong></p>
+              <p>OCLC <strong>1563979749</strong></p>
+              <a class="text-link" href="https://search.worldcat.org/search?q=au=%22Pande%2C%20Nabal%20Kishore%22" target="_blank" rel="noopener">View bibliographic record</a>
+            </article>
+
+            <article class="bibliographic-card">
+              <h3>DIY Home Improvement</h3>
+              <p>ISBN <strong>9781633486157</strong></p>
+              <p>OCLC <strong>1482654705</strong></p>
+              <p>WorldCat evidence documents library catalogue presence in the detailed record.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="storefront-actions">
+          <a class="button button-publishing" href="https://www.amazon.in/s?k=Nabal+Kishore+Pande" target="_blank" rel="noopener">View Commercial Books</a>
+        </div>
+
+        <p class="boundary-note">
+          <strong>Bibliographic boundary:</strong> ISBN and WorldCat/OCLC records establish publication and catalogue evidence. They do not, by themselves, establish peer review or institutional endorsement.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOLLOW -->
+    <section class="section theme-follow" id="follow" aria-labelledby="follow-title">
+      <div class="section-shell">
+        <header class="section-heading">
+          <p class="section-kicker">Professional Presence</p>
+          <h2 id="follow-title">Follow the work.</h2>
+          <p class="section-lead">Each channel serves a distinct role in the wider research and publishing ecosystem.</p>
+        </header>
+
+        <div class="platform-grid">
+          <article class="platform-card">
+            <p class="card-label">Professional network</p>
+            <h3>LinkedIn</h3>
+            <p>Professional research, publishing updates and public-facing work.</p>
+            <a class="button button-dark" href="https://www.linkedin.com/in/nabal-kishore-pande-05400b372/" target="_blank" rel="noopener">Follow on LinkedIn</a>
+          </article>
+
+          <article class="platform-card">
+            <p class="card-label">Long-form publishing</p>
+            <h3>Medium</h3>
+            <p>Long-form analysis, research writing and practical interpretation.</p>
+            <a class="button button-dark" href="https://fundedabroadindia.medium.com/" target="_blank" rel="noopener">Read on Medium</a>
+          </article>
+
+          <article class="platform-card">
+            <p class="card-label">Scholarship research</p>
+            <h3>Funded Abroad India</h3>
+            <p>A long-term research and publishing initiative advancing Scholarship Preparation Intelligence.</p>
+            <a class="button button-dark" href="https://fundedabroadindia.blogspot.com/" target="_blank" rel="noopener">Explore Funded Abroad India</a>
+          </article>
+
+          <article class="platform-card">
+            <p class="card-label">Open infrastructure</p>
+            <h3>GitHub</h3>
+            <p>Open technical infrastructure, documentation, datasets and project files.</p>
+            <a class="button button-dark" href="https://github.com/NabalKishorePande" target="_blank" rel="noopener">Inspect the Infrastructure</a>
+          </article>
+
+          <article class="platform-card">
+            <p class="card-label">Research distribution</p>
+            <h3>Academia.edu</h3>
+            <p>Research distribution and public discovery.</p>
+            <a class="button button-dark" href="https://independentresearcher.academia.edu/NabalKishorePande" target="_blank" rel="noopener">View the Research Profile</a>
+          </article>
+
+          <article class="platform-card">
+            <p class="card-label">Newsletter</p>
+            <h3>Abroad &amp; Ahead</h3>
+            <p>Continuing scholarship and research intelligence through the LinkedIn Newsletter.</p>
+            <a class="button button-dark" href="https://www.linkedin.com/newsletters/abroad-ahead-7390199016950603777/" target="_blank" rel="noopener">Subscribe to Abroad &amp; Ahead</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOVERY -->
+    <section class="section theme-discovery" id="discovery" aria-labelledby="discovery-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading-light">
+          <p class="section-kicker">Search Architecture</p>
+          <h2 id="discovery-title">Designed for people first. Structured for intelligent search.</h2>
+          <p class="section-lead">The information architecture connects stable entities, meaningful relationships, useful questions and persistent records.</p>
+        </header>
+
+        <div class="discovery-grid">
+          <article class="discovery-card">
+            <h3>Search</h3>
+            <p>Clear topics, headings and pathways help people locate relevant information without navigating a catalogue of disconnected pages.</p>
+          </article>
+          <article class="discovery-card">
+            <h3>Answers</h3>
+            <p>High-intent questions are addressed directly so useful information can be understood without reading an entire article.</p>
+          </article>
+          <article class="discovery-card">
+            <h3>Entities</h3>
+            <p>People, publications, research records, projects, platforms and geographic context are connected consistently.</p>
+          </article>
+        </div>
+
+        <div class="search-stack" aria-label="Search architecture terms">
+          <span>SEO</span>
+          <span>AEO</span>
+          <span>GEO</span>
+          <span>AI Search</span>
+          <span>Structured Data</span>
+          <span>Entity Discovery</span>
+        </div>
+
+        <p class="section-statement">
+          The objective is durable search quality, not keyword density or short-term ranking claims.
+        </p>
+      </div>
+    </section>
+
+    <!-- QUESTIONS -->
+    <section class="section theme-questions" id="questions" aria-labelledby="questions-title">
+      <div class="section-shell narrow-shell">
+        <header class="section-heading">
+          <p class="section-kicker">High-intent orientation</p>
+          <h2 id="questions-title">Questions that matter.</h2>
+          <p class="section-lead">Direct answers for visitors who need to understand the work before taking the next step.</p>
+        </header>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>What is Scholarship Preparation Intelligence?</summary>
+            <p>A preparation approach that treats international scholarship applications as a decision problem involving eligibility, readiness, evidence, fit, opportunity selection and execution.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How is this different from scholarship hunting?</summary>
+            <p>The focus is not on collecting large numbers of opportunities. The focus is on deciding which opportunities deserve serious preparation and whether the applicant is ready to pursue them.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What does the broader research work focus on?</summary>
+            <p>Decision Systems, Research Frameworks, Execution Intelligence and Scholarship Preparation Intelligence, with related work across research infrastructure, professional portability and evidence-based publishing.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Where can the research record be verified?</summary>
+            <p>Persistent research records are maintained through research infrastructure including Zenodo and OSF, alongside identity and bibliographic systems serving different verification functions.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Are scholarship outcomes guaranteed?</summary>
+            <p>No. The resources provide evidence, preparation systems and decision guidance. They do not guarantee admission, funding or scholarship outcomes.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can the published work be independently verified?</summary>
+            <p>Where bibliographic or persistent records exist, identifiers such as ISBN, OCLC and DOI provide external verification routes.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL ACTION -->
+    <section class="section theme-action" id="action" aria-labelledby="action-title">
+      <div class="section-shell action-shell">
+        <header class="section-heading section-heading-light">
+          <p class="section-kicker">Next move</p>
+          <h2 id="action-title">Choose the next decision worth making.</h2>
+          <p class="section-lead">Use the route that matches your immediate need.</p>
+        </header>
+
+        <div class="final-actions">
+          <div>
+            <p class="card-label">Research &amp; professional enquiries</p>
+            <h3>Initiate a research conversation.</h3>
+            <p>For relevant research, publishing or professional enquiries.</p>
+            <a class="button button-light" href="mailto:ernawal67@gmail.com">Initiate a Research Conversation</a>
+          </div>
+        </div>
+
+        <div class="contact-record">
+          <span>Pithoragarh, Uttarakhand, India</span>
+          <span>Independent Researcher &amp; Author</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>
+        <strong>Nabal Kishore Pande</strong>
+        <p>Decision Systems · Research Frameworks · Execution Intelligence · Scholarship Preparation Intelligence</p>
+      </div>
+      <p class="footer-note">
+        The site presents documented research, publications, resources and professional work. Claims are limited to the evidence available in the underlying records.
+      </p>
     </div>
+  </footer>
 
-</footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('#site-menu');
 
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('is-open', !expanded);
+      });
 
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          toggle.setAttribute('aria-expanded', 'false');
+          menu.classList.remove('is-open');
+        });
+      });
+    }
+  </script>
 </body>
 </html>
