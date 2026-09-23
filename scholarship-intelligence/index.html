@@ -4,154 +4,1352 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Scholarship Intelligence | Nabal Kishore Pande</title>
+  <title>Scholarship Intelligence | Scholarship Preparation &amp; Decision Systems</title>
 
   <meta name="description"
-        content="Scholarship Intelligence: structured scholarship preparation, evaluation, evidence, eligibility, decision processes, research, and practical application.">
+        content="Scholarship Intelligence provides structured scholarship preparation, evaluation, evidence, eligibility, verification, decision-making, research, and practical systems for scholarship applicants.">
+
+  <meta name="author" content="Nabal Kishore Pande">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://nabalkishorepande.github.io/scholarship-intelligence/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+        content="Scholarship Intelligence | Scholarship Preparation &amp; Decision Systems">
+  <meta property="og:description"
+        content="Structured scholarship preparation, evaluation, evidence, eligibility, verification, decision-making, research, and practical systems.">
+  <meta property="og:url"
+        content="https://nabalkishorepande.github.io/scholarship-intelligence/">
+  <meta property="og:image"
+        content="https://nabalkishorepande.github.io/p02-scholarship-intelligence-workflow-infographic.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+        content="Scholarship Intelligence | Scholarship Preparation &amp; Decision Systems">
+  <meta name="twitter:description"
+        content="Structured scholarship preparation, evaluation, evidence, eligibility, verification, decision-making, research, and practical systems.">
+  <meta name="twitter:image"
+        content="https://nabalkishorepande.github.io/p02-scholarship-intelligence-workflow-infographic.png">
 
   <style>
+    :root {
+      --text: #172033;
+      --muted: #5F6B7A;
+      --background: #F8FAFC;
+      --surface: #FFFFFF;
+      --border: #E2E8F0;
+      --link: #2563EB;
+      --link-hover: #1D4ED8;
+      --dark: #0F172A;
+
+      --accent: #047857;
+      --accent-dark: #065F46;
+      --accent-light: #ECFDF5;
+
+      --max-width: 1180px;
+      --radius: 12px;
+      --shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+    }
+
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      color: #172033;
-      background: #F8FAFC;
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      color: var(--text);
+      background: var(--background);
       line-height: 1.7;
+      font-size: 16px;
     }
 
-    header {
-      background: #FFFFFF;
-      border-bottom: 1px solid #E2E8F0;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
 
-    nav {
-      max-width: 1100px;
-      margin: auto;
-      padding: 18px 24px;
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
-    nav a {
-      color: #2563EB;
+    a:hover,
+    a:focus {
+      color: var(--link-hover);
+    }
+
+    a:focus-visible {
+      outline: 3px solid rgba(37, 99, 235, 0.25);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      color: var(--dark);
       text-decoration: none;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+
+    .brand:hover {
+      color: var(--dark);
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px 18px;
+    }
+
+    .main-nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.92rem;
       font-weight: 600;
     }
 
-    main {
-      max-width: 1100px;
-      margin: 50px auto;
+    .main-nav a:hover {
+      color: var(--link);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
       padding: 0 24px;
     }
 
+    main {
+      padding: 48px 0 72px;
+    }
+
     .hero {
-      background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-top: 4px solid #047857;
-      border-radius: 12px;
-      padding: 40px;
-      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--accent);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 42px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
     }
 
     h1 {
-      margin-top: 0;
-      color: #047857;
-      font-size: clamp(2rem, 5vw, 3rem);
+      margin: 0;
+      color: var(--dark);
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+
+    .hero-intro {
+      max-width: 900px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .hero-links {
+      margin-top: 26px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+    }
+
+    .section {
+      margin-top: 28px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--accent);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 34px;
+    }
+
+    .section h2 {
+      margin: 0 0 16px;
+      color: var(--dark);
+      font-size: clamp(1.55rem, 3vw, 2.15rem);
       line-height: 1.2;
+      letter-spacing: -0.02em;
     }
 
-    h2 {
-      color: #172033;
+    .section h3 {
+      margin: 24px 0 8px;
+      color: var(--text);
+      font-size: 1.15rem;
+    }
+
+    .section p {
+      margin: 0 0 16px;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .workflow-figure {
+      margin: 28px 0 0;
+    }
+
+    .workflow-figure img {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #FFFFFF;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    .workflow-grid,
+    .object-grid,
+    .framework-grid,
+    .resource-grid,
+    .publishing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px;
+    }
+
+    .card h3 {
       margin-top: 0;
     }
 
-    .identity {
-      color: #5F6B7A;
-      font-size: 1.1rem;
-      max-width: 800px;
+    .workflow-card {
+      border-top: 4px solid var(--accent);
     }
 
-    .status {
-      margin-top: 30px;
-      padding: 20px;
-      background: #F8FAFC;
-      border: 1px solid #E2E8F0;
+    .framework-card {
+      border-top: 4px solid var(--accent);
+    }
+
+    .resource-card {
+      border-top: 4px solid var(--accent);
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .step-number {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 3px 8px;
+      border-radius: 5px;
+      background: var(--accent-light);
+      color: var(--accent-dark);
+      font-size: 0.75rem;
+      font-weight: 800;
+    }
+
+    .framework {
+      margin-top: 26px;
+      padding: 24px;
+      background: var(--accent-light);
+      border: 1px solid #A7F3D0;
       border-radius: 10px;
     }
 
-    .links {
-      margin-top: 30px;
+    .framework-flow {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      font-weight: 700;
+      color: var(--accent-dark);
     }
 
-    .links a {
-      display: inline-block;
-      padding: 10px 16px;
-      border: 1px solid #E2E8F0;
-      border-radius: 8px;
+    .framework-flow span {
+      padding: 8px 12px;
       background: #FFFFFF;
-      color: #2563EB;
-      text-decoration: none;
-      font-weight: 600;
+      border: 1px solid #A7F3D0;
+      border-radius: 7px;
     }
 
-    footer {
-      max-width: 1100px;
-      margin: 50px auto;
-      padding: 0 24px 40px;
-      color: #5F6B7A;
+    .arrow {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .product-label {
+      display: inline-block;
+      align-self: flex-start;
+      margin-bottom: 10px;
+      padding: 4px 9px;
+      border-radius: 5px;
+      background: var(--accent-light);
+      color: var(--accent-dark);
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .product-price {
+      margin: 4px 0 12px;
+      color: var(--accent-dark);
+      font-weight: 800;
+    }
+
+    .product-link {
+      margin-top: auto;
+      padding-top: 14px;
+      font-weight: 700;
+    }
+
+    .publishing-list {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    .relationship {
+      margin-top: 22px;
+      padding: 20px;
+      border-left: 4px solid var(--accent);
+      background: var(--background);
+      border-radius: 8px;
+    }
+
+    .relationship strong {
+      color: var(--dark);
+    }
+
+    .navigation-panel {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .navigation-panel a {
+      display: block;
+      padding: 16px;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .navigation-panel a:hover {
+      color: var(--link);
+      box-shadow: var(--shadow);
+    }
+
+    .site-footer {
+      background: var(--dark);
+      color: #CBD5E1;
+      padding: 36px 0;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .footer-title {
+      margin: 0 0 8px;
+      color: #FFFFFF;
+      font-weight: 800;
+    }
+
+    .footer-text {
+      margin: 0;
       font-size: 0.9rem;
     }
+
+    .footer-links {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+    }
+
+    .footer-links a {
+      color: #CBD5E1;
+    }
+
+    @media (max-width: 900px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .main-nav {
+        justify-content: flex-start;
+      }
+
+      .workflow-grid,
+      .object-grid,
+      .framework-grid,
+      .resource-grid,
+      .publishing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .navigation-panel {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 0 16px;
+      }
+
+      .header-inner {
+        padding: 14px 16px;
+      }
+
+      main {
+        padding: 24px 0 48px;
+      }
+
+      .hero,
+      .section {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .framework-flow {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .arrow {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Scholarship Intelligence",
+    "url": "https://nabalkishorepande.github.io/scholarship-intelligence/",
+    "description": "Structured scholarship preparation, evaluation, evidence, eligibility, verification, decision-making, research, and practical systems.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Nabal Kishore Pande | Research Knowledge System",
+      "url": "https://nabalkishorepande.github.io/"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Scholarship Intelligence"
+      },
+      {
+        "@type": "Thing",
+        "name": "Scholarship Preparation Intelligence"
+      },
+      {
+        "@type": "Thing",
+        "name": "Scholarship Eligibility"
+      },
+      {
+        "@type": "Thing",
+        "name": "Scholarship Application"
+      },
+      {
+        "@type": "Thing",
+        "name": "Study Abroad Scholarships"
+      }
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Nabal Kishore Pande",
+      "url": "https://nabalkishorepande.github.io/"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
-  <header>
-    <nav>
-      <a href="/">Nabal Kishore Pande</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a class="brand" href="/">
+        Nabal Kishore Pande
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/scholarship-intelligence/" aria-current="page">
+          Scholarship Intelligence
+        </a>
+        <a href="/decision-mobility/">Decision &amp; Mobility</a>
+        <a href="/research/">Research</a>
+        <a href="/research-profiles/">Research Profiles</a>
+        <a href="/concepts/">Concepts</a>
+        <a href="/research-identity-authority/">
+          Research Identity &amp; Authority
+        </a>
+      </nav>
+
+    </div>
   </header>
 
+
   <main>
-    <section class="hero">
+    <div class="container">
 
-      <h1>Scholarship Intelligence</h1>
+      <!-- P02 — HERO -->
 
-      <p class="identity">
-        This page will contain the Scholarship Intelligence knowledge system,
-        including scholarship preparation, evaluation, evidence, eligibility,
-        decision processes, research, and practical application.
-      </p>
+      <section class="hero">
 
-      <div class="status">
-        <h2>Page Foundation</h2>
+        <p class="eyebrow">P02 · Applied Knowledge Domain</p>
+
+        <h1>Scholarship Intelligence</h1>
+
+        <p class="hero-intro">
+          Scholarship Intelligence is a structured approach to scholarship
+          discovery, evaluation, preparation, evidence, eligibility,
+          verification, decision-making, management, and research. It turns
+          scholarship preparation from a collection of disconnected tasks
+          into a traceable knowledge and decision process.
+        </p>
+
+        <div class="hero-links">
+          <a href="/">← Home</a>
+          <a href="#workflow">Scholarship Workflow</a>
+          <a href="#decision-framework">Decision Framework</a>
+          <a href="#resources">Resources &amp; Products</a>
+        </div>
+
+      </section>
+
+
+      <!-- 1. WHAT IS SCHOLARSHIP INTELLIGENCE? -->
+
+      <section class="section" id="what-is-scholarship-intelligence">
+
+        <h2>What Is Scholarship Intelligence?</h2>
 
         <p>
-          Scholarship Intelligence is the applied knowledge domain for
-          structured scholarship discovery, evaluation, preparation,
-          verification, decision-making, and research.
+          Scholarship Intelligence is the organised use of scholarship
+          information, evidence, eligibility rules, application requirements,
+          preparation methods, verification, and decision processes to improve
+          the quality of scholarship preparation and decisions.
         </p>
 
         <p>
-          This Stage 1 page establishes the permanent URL and page identity.
-          The full knowledge system will be added during Stage 3.
+          It is broader than finding scholarship opportunities. A useful
+          scholarship system must connect an opportunity to its evidence,
+          eligibility conditions, requirements, applicant fit, preparation
+          tasks, risks, verification steps, and final decision.
         </p>
-      </div>
 
-      <div class="links">
-        <a href="/">Home</a>
-      </div>
+        <p>
+          Scholarship Intelligence therefore treats scholarship preparation
+          as a knowledge system. Information is collected, evaluated,
+          prioritised, prepared, verified, managed, and ultimately converted
+          into research or reusable knowledge where appropriate.
+        </p>
 
-    </section>
+        <div class="relationship">
+          <strong>Core principle:</strong>
+          A scholarship opportunity becomes useful only when the applicant can
+          understand its evidence, eligibility, requirements, fit, risks, and
+          decision implications.
+        </div>
+
+      </section>
+
+
+      <!-- 2. SCHOLARSHIP DECISION PROBLEM -->
+
+      <section class="section" id="decision-problem">
+
+        <h2>The Scholarship Decision Problem</h2>
+
+        <p>
+          Scholarship applicants often face several connected problems:
+          discovering relevant opportunities, determining whether they are
+          eligible, interpreting requirements, preparing evidence, managing
+          deadlines, and deciding where limited preparation time should be
+          invested.
+        </p>
+
+        <p>
+          These are not separate problems. An incorrect eligibility
+          interpretation can invalidate preparation. Weak evidence can reduce
+          the usefulness of an otherwise suitable opportunity. Missing a
+          requirement can create compliance risk. Poor prioritisation can
+          consume time without improving the application.
+        </p>
+
+        <p>
+          Scholarship Intelligence connects these elements so that the
+          applicant can move from opportunity discovery toward a documented
+          and evidence-based decision.
+        </p>
+
+      </section>
+
+
+      <!-- 3. WORKFLOW -->
+
+      <section class="section" id="workflow">
+
+        <h2>Scholarship Intelligence Workflow</h2>
+
+        <p>
+          The workflow provides the operational sequence for scholarship
+          preparation:
+        </p>
+
+        <figure class="workflow-figure">
+
+          <img
+            src="/p02-scholarship-intelligence-workflow-infographic.png"
+            alt="Scholarship Intelligence workflow showing Find, Evaluate, Prioritise, Prepare, Verify, Manage, and Research"
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async"
+          >
+
+          <figcaption>
+            Scholarship Intelligence Workflow:
+            Find → Evaluate → Prioritise → Prepare → Verify → Manage → Research.
+          </figcaption>
+
+        </figure>
+
+        <div class="workflow-grid">
+
+          <article class="card workflow-card">
+            <span class="step-number">01 · FIND</span>
+            <h3>Find</h3>
+            <p>
+              Identify scholarship opportunities and capture the core
+              information needed for later evaluation.
+            </p>
+          </article>
+
+          <article class="card workflow-card">
+            <span class="step-number">02 · EVALUATE</span>
+            <h3>Evaluate</h3>
+            <p>
+              Examine eligibility, requirements, evidence, deadlines,
+              funding conditions, selection information, and source quality.
+            </p>
+          </article>
+
+          <article class="card workflow-card">
+            <span class="step-number">03 · PRIORITISE</span>
+            <h3>Prioritise</h3>
+            <p>
+              Compare opportunities according to applicant fit, preparation
+              requirements, evidence, timing, risk, and available resources.
+            </p>
+          </article>
+
+          <article class="card workflow-card">
+            <span class="step-number">04 · PREPARE</span>
+            <h3>Prepare</h3>
+            <p>
+              Build the application evidence, documents, personal statement,
+              recommendations, interview preparation, and other required
+              materials.
+            </p>
+          </article>
+
+          <article class="card workflow-card">
+            <span class="step-number">05 · VERIFY</span>
+            <h3>Verify</h3>
+            <p>
+              Check requirements, evidence, dates, documents, eligibility,
+              references, and application compliance before submission.
+            </p>
+          </article>
+
+          <article class="card workflow-card">
+            <span class="step-number">06 · MANAGE</span>
+            <h3>Manage</h3>
+            <p>
+              Track applications, deadlines, communication, outcomes,
+              follow-up actions, and reusable application evidence.
+            </p>
+          </article>
+
+          <article class="card workflow-card">
+            <span class="step-number">07 · RESEARCH</span>
+            <h3>Research</h3>
+            <p>
+              Convert structured scholarship evidence and observations into
+              research questions, datasets, reports, frameworks, or other
+              appropriate research outputs.
+            </p>
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- 4. KNOWLEDGE OBJECTS -->
+
+      <section class="section" id="knowledge-objects">
+
+        <h2>Scholarship Knowledge Objects</h2>
+
+        <p>
+          Scholarship Intelligence is organised through reusable knowledge
+          objects rather than isolated pages or lists. Each object should have
+          a defined purpose, evidence basis, relationship to other objects,
+          and appropriate canonical destination.
+        </p>
+
+        <div class="object-grid">
+
+          <article class="card">
+            <h3>Scholarship Opportunity</h3>
+            <p>
+              The opportunity record containing the relevant funding,
+              programme, provider, deadline, eligibility, and application
+              information.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Scholarship Eligibility</h3>
+            <p>
+              The conditions an applicant must satisfy to be considered
+              eligible for an opportunity.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Scholarship Evidence</h3>
+            <p>
+              Documents, statements, records, achievements, qualifications,
+              references, and other evidence relevant to an application.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Scholarship Requirements</h3>
+            <p>
+              Application components, procedural conditions, documentation,
+              deadlines, formats, and compliance requirements.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Scholarship Selection</h3>
+            <p>
+              The selection context through which applications are assessed
+              against the relevant opportunity requirements and criteria.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Scholarship Access</h3>
+            <p>
+              The practical relationship between opportunity, applicant
+              preparation, eligibility, evidence, and access to the
+              scholarship process.
+            </p>
+          </article>
+
+        </div>
+
+        <p style="margin-top: 24px;">
+          Controlled concept definitions are maintained on the
+          <a href="/concepts/">Concepts</a> page. Applied scholarship knowledge
+          remains canonical here on P02.
+        </p>
+
+      </section>
+
+
+      <!-- 5. DECISION FRAMEWORK -->
+
+      <section class="section" id="decision-framework">
+
+        <h2>Scholarship Decision Framework</h2>
+
+        <p>
+          Scholarship decisions require more than opportunity discovery.
+          The decision framework connects the opportunity to the evidence and
+          conditions required to determine whether preparation should proceed.
+        </p>
+
+        <div class="framework">
+
+          <strong>
+            Opportunity → Evidence → Eligibility → Fit → Requirements →
+            Risk → Decision
+          </strong>
+
+          <div class="framework-flow">
+            <span>Opportunity</span>
+            <span class="arrow">→</span>
+            <span>Evidence</span>
+            <span class="arrow">→</span>
+            <span>Eligibility</span>
+            <span class="arrow">→</span>
+            <span>Fit</span>
+            <span class="arrow">→</span>
+            <span>Requirements</span>
+            <span class="arrow">→</span>
+            <span>Risk</span>
+            <span class="arrow">→</span>
+            <span>Decision</span>
+          </div>
+
+        </div>
+
+        <div class="framework-grid">
+
+          <article class="card framework-card">
+            <h3>Opportunity</h3>
+            <p>
+              What scholarship or funding opportunity is being considered?
+            </p>
+          </article>
+
+          <article class="card framework-card">
+            <h3>Evidence</h3>
+            <p>
+              What reliable evidence supports the opportunity information and
+              the applicant's preparation?
+            </p>
+          </article>
+
+          <article class="card framework-card">
+            <h3>Eligibility</h3>
+            <p>
+              Does the applicant satisfy the published eligibility conditions?
+            </p>
+          </article>
+
+          <article class="card framework-card">
+            <h3>Fit</h3>
+            <p>
+              How closely does the opportunity fit the applicant's academic,
+              professional, geographic, or other relevant circumstances?
+            </p>
+          </article>
+
+          <article class="card framework-card">
+            <h3>Requirements</h3>
+            <p>
+              What documents, evidence, statements, references, tests,
+              interviews, and procedural actions are required?
+            </p>
+          </article>
+
+          <article class="card framework-card">
+            <h3>Risk</h3>
+            <p>
+              What uncertainty, compliance issue, timing constraint, evidence
+              gap, or other preparation risk needs attention?
+            </p>
+          </article>
+
+          <article class="card framework-card">
+            <h3>Decision</h3>
+            <p>
+              What action should follow from the documented opportunity,
+              evidence, eligibility, fit, requirements, and risk analysis?
+            </p>
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- 6. RESEARCH -->
+
+      <section class="section" id="research">
+
+        <h2>Scholarship Research</h2>
+
+        <p>
+          Scholarship Intelligence also functions as a research domain.
+          Structured scholarship information can support research into
+          educational access, funding systems, applicant barriers, evidence
+          gaps, and scholarship decision processes.
+        </p>
+
+        <p>
+          Research objects associated with this domain are maintained on the
+          dedicated <a href="/research/">Research</a> page. This separation
+          preserves the distinction between applied scholarship knowledge and
+          the evidence and provenance layer of the broader research system.
+        </p>
+
+        <div class="relationship">
+          <strong>Research relationship:</strong>
+          Scholarship problem → Research question → Method → Evidence →
+          Analysis → Output → Identifier → External record
+        </div>
+
+      </section>
+
+
+      <!-- 7. PRACTICAL SYSTEMS -->
+
+      <section class="section" id="practical-systems">
+
+        <h2>Practical Scholarship Systems</h2>
+
+        <p>
+          Practical systems translate Scholarship Intelligence into repeatable
+          preparation processes.
+        </p>
+
+        <div class="resource-grid">
+
+          <article class="card">
+            <h3>Scholarship Preparation</h3>
+            <p>
+              Organise opportunity research, eligibility checks, evidence,
+              documents, statements, recommendations, interviews, and
+              submission preparation.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Application Compliance</h3>
+            <p>
+              Check required documents, formats, deadlines, declarations,
+              evidence, and other application conditions before submission.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Application Tracking</h3>
+            <p>
+              Maintain a structured record of opportunities, deadlines,
+              preparation status, submissions, communication, and outcomes.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Scholarship Intelligence Desk</h3>
+            <p>
+              Maintain a reusable scholarship information and decision
+              workflow for ongoing opportunity research and preparation.
+            </p>
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- 8. RESOURCES AND PRODUCTS -->
+
+      <section class="section" id="resources">
+
+        <h2>Resources &amp; Products</h2>
+
+        <p>
+          These resources provide practical applications of the Scholarship
+          Intelligence system. They are organised according to their role in
+          scholarship preparation rather than presented as an unrelated
+          product catalogue.
+        </p>
+
+        <div class="resource-grid">
+
+          <article class="card product">
+            <span class="product-label">Primary System</span>
+
+            <h3>The Scholarship Decision System</h3>
+
+            <p class="product-price">$24</p>
+
+            <p>
+              A structured system for scholarship opportunity evaluation,
+              preparation, evidence, prioritisation, and decision-making.
+            </p>
+
+            <p class="product-link">
+              <a
+                href="https://fundedabroadindia.gumroad.com/l/scholarship-decision-system"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View the Scholarship Decision System
+              </a>
+            </p>
+          </article>
+
+
+          <article class="card product">
+            <span class="product-label">Secondary Resource</span>
+
+            <h3>Before You Apply</h3>
+
+            <p class="product-price">Free</p>
+
+            <p>
+              A preparation resource for reviewing an opportunity before
+              beginning the application process.
+            </p>
+
+            <p class="product-link">
+              <a
+                href="https://fundedabroadindia.gumroad.com/l/before-you-apply"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Access Before You Apply
+              </a>
+            </p>
+          </article>
+
+
+          <article class="card product">
+            <span class="product-label">Secondary Resource</span>
+
+            <h3>Scholarship Application Compliance Kit</h3>
+
+            <p class="product-price">$17</p>
+
+            <p>
+              A practical resource for checking scholarship application
+              requirements and compliance before submission.
+            </p>
+
+            <p class="product-link">
+              <a
+                href="https://fundedabroadindia.gumroad.com/l/scholarship-compliance-kit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View the Compliance Kit
+              </a>
+            </p>
+          </article>
+
+
+          <article class="card product">
+            <span class="product-label">Supporting Resource</span>
+
+            <h3>Scholarship Application Tracker</h3>
+
+            <p class="product-price">$9</p>
+
+            <p>
+              A structured tracking resource for scholarship opportunities,
+              application preparation, deadlines, and status.
+            </p>
+
+            <p class="product-link">
+              <a
+                href="https://fundedabroadindia.gumroad.com/l/scholarship-application-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View the Application Tracker
+              </a>
+            </p>
+          </article>
+
+
+          <article class="card product">
+            <span class="product-label">Supporting Resource</span>
+
+            <h3>Scholarship Intelligence Desk</h3>
+
+            <p class="product-price">$9/month</p>
+
+            <p>
+              An ongoing scholarship intelligence resource for structured
+              opportunity research and preparation.
+            </p>
+
+            <p class="product-link">
+              <a
+                href="https://fundedabroadindia.gumroad.com/l/scholarship-intelligence-desk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Scholarship Intelligence Desk
+              </a>
+            </p>
+          </article>
+
+        </div>
+
+        <div class="relationship">
+          <strong>Commercial relationship:</strong>
+          Understanding → Knowledge → Concept → Framework → Application →
+          Resource → Product → Transaction.
+        </div>
+
+      </section>
+
+
+      <!-- 9. PUBLISHING AND DISTRIBUTION -->
+
+      <section class="section" id="publishing">
+
+        <h2>Publishing &amp; Distribution</h2>
+
+        <p>
+          Scholarship Intelligence is also distributed through publishing and
+          communication environments connected to the domain.
+        </p>
+
+        <div class="publishing-grid">
+
+          <article class="card">
+            <h3>Abroad &amp; Ahead | Scholarships</h3>
+
+            <p>
+              Scholarship-focused publishing and knowledge communication
+              associated with the Scholarship Intelligence domain.
+            </p>
+
+            <ul class="publishing-list">
+              <li>
+                <a
+                  href="https://fundedabroadindia.medium.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Medium
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://fundedabroadindia.blogspot.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Blogspot
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/newsletters/abroad-ahead-scholarships-7390199016950603777/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn Newsletter
+                </a>
+              </li>
+            </ul>
+          </article>
+
+
+          <article class="card">
+            <h3>Publishing &amp; Distribution Infrastructure</h3>
+
+            <p>
+              External environments provide distribution and transaction
+              functions while the canonical Scholarship Intelligence domain
+              remains on this page.
+            </p>
+
+            <ul class="publishing-list">
+              <li>
+                <a
+                  href="https://fundedabroadindia.gumroad.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Gumroad
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://selar.com/m/nabalkishorepande"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Selar
+                </a>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- KNOWLEDGE SYSTEM CONNECTIONS -->
+
+      <section class="section" id="connections">
+
+        <h2>Knowledge System Connections</h2>
+
+        <p>
+          Scholarship Intelligence is one view within the connected
+          seven-page knowledge system.
+        </p>
+
+        <div class="navigation-panel">
+
+          <a href="/">
+            P01 · Identity
+          </a>
+
+          <a href="/decision-mobility/">
+            P03 · Decision &amp; Mobility
+          </a>
+
+          <a href="/research/">
+            P04 · Research
+          </a>
+
+          <a href="/research-profiles/">
+            P05 · Research Profiles
+          </a>
+
+          <a href="/concepts/">
+            P06 · Concepts
+          </a>
+
+          <a href="/research-identity-authority/">
+            P07 · Research Identity &amp; Authority
+          </a>
+
+        </div>
+
+        <div class="relationship">
+          <strong>Canonical ownership:</strong>
+          Scholarship Intelligence and its applied scholarship knowledge belong
+          to P02. Controlled definitions are maintained on P06; research
+          objects are maintained on P04; external profile infrastructure is
+          contextualised on P05; and identity and authority relationships are
+          maintained on P07.
+        </div>
+
+      </section>
+
+    </div>
   </main>
 
-  <footer>
-    Scholarship Intelligence · Nabal Kishore Pande
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <p class="footer-title">
+        Scholarship Intelligence · Nabal Kishore Pande
+      </p>
+
+      <p class="footer-text">
+        Structured scholarship preparation, evaluation, evidence,
+        eligibility, decision-making, research, and practical systems.
+      </p>
+
+      <div class="footer-links">
+
+        <a href="/">Home</a>
+
+        <a href="/decision-mobility/">
+          Decision &amp; Mobility
+        </a>
+
+        <a href="/research/">
+          Research
+        </a>
+
+        <a href="/research-profiles/">
+          Research Profiles
+        </a>
+
+        <a href="/concepts/">
+          Concepts
+        </a>
+
+        <a href="/research-identity-authority/">
+          Research Identity &amp; Authority
+        </a>
+
+      </div>
+
+    </div>
+
   </footer>
 
 </body>
