@@ -6,33 +6,66 @@
 
   <title>Research | Nabal Kishore Pande</title>
 
-  <meta name="description" content="Research by Nabal Kishore Pande, including research projects, papers, reports, datasets, frameworks, methods, evidence, and research provenance.">
+  <meta name="description"
+        content="Research by Nabal Kishore Pande, including research projects, papers, reports, datasets, frameworks, methods, evidence, identifiers, and research provenance.">
+
+  <meta name="keywords"
+        content="Nabal Kishore Pande research, independent researcher, research projects, research papers, research datasets, research frameworks, research methods, evidence, provenance, scholarship research, decision systems, execution intelligence">
+
   <meta name="author" content="Nabal Kishore Pande">
 
-  <meta property="og:title" content="Research | Nabal Kishore Pande">
-  <meta property="og:description" content="Research projects, papers, reports, datasets, frameworks, methods, evidence, and provenance.">
+  <meta property="og:title"
+        content="Research | Nabal Kishore Pande">
+
+  <meta property="og:description"
+        content="Research projects, papers, reports, datasets, frameworks, methods, evidence, identifiers, and provenance.">
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nabalkishorepande.github.io/research/">
+
+  <meta property="og:url"
+        content="https://nabalkishorepande.github.io/research/">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Research | Nabal Kishore Pande">
-  <meta name="twitter:description" content="Research projects, papers, reports, datasets, frameworks, methods, evidence, and provenance.">
 
-  <link rel="canonical" href="https://nabalkishorepande.github.io/research/">
+  <meta name="twitter:title"
+        content="Research | Nabal Kishore Pande">
+
+  <meta name="twitter:description"
+        content="Research projects, papers, reports, datasets, frameworks, methods, evidence, identifiers, and provenance.">
+
+  <link rel="canonical"
+        href="https://nabalkishorepande.github.io/research/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <style>
     :root {
       --text: #172033;
-      --muted: #5F6B7A;
-      --bg: #F8FAFC;
-      --surface: #FFFFFF;
-      --border: #E2E8F0;
-      --link: #2563EB;
-      --hover: #1D4ED8;
-      --dark: #0F172A;
-      --accent: #4338CA;
-      --accent-soft: #EEF2FF;
-      --accent-border: #C7D2FE;
+      --muted: #5f6b7a;
+      --bg: #f7f8fc;
+      --surface: #ffffff;
+      --border: #dfe4ec;
+
+      --link: #4338ca;
+      --hover: #3730a3;
+
+      --dark: #111827;
+
+      --accent: #4338ca;
+      --accent-dark: #312e81;
+
+      --accent-soft: #eef2ff;
+      --accent-border: #c7d2fe;
+
+      --research-soft: #f5f3ff;
+      --success-soft: #ecfdf5;
+      --success-border: #a7f3d0;
+      --success-text: #065f46;
     }
 
     * {
@@ -45,8 +78,7 @@
 
     body {
       margin: 0;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Helvetica, Arial, sans-serif;
+      font-family: "Inter", sans-serif;
       color: var(--text);
       background: var(--bg);
       line-height: 1.7;
@@ -66,13 +98,13 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255, 255, 255, 0.96);
+      background: rgba(255, 255, 255, 0.97);
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(8px);
     }
 
     .nav {
-      max-width: 1180px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 14px 24px;
       display: flex;
@@ -89,48 +121,59 @@
     }
 
     .nav a {
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       font-weight: 600;
     }
 
     main {
-      max-width: 1180px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 56px 24px 80px;
+      padding: 54px 24px 80px;
     }
 
     .hero {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-top: 5px solid var(--accent);
+      border-top: 6px solid var(--accent);
       border-radius: 14px;
       padding: 48px;
-      margin-bottom: 30px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+      margin-bottom: 28px;
+      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
     }
 
     .eyebrow {
       margin: 0 0 10px;
       color: var(--accent);
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       font-weight: 800;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
     h1 {
-      margin: 0 0 16px;
+      margin: 0 0 18px;
       color: var(--dark);
-      font-size: clamp(2.2rem, 5vw, 3.6rem);
-      line-height: 1.1;
-      letter-spacing: -0.035em;
+      font-size: clamp(2.2rem, 5vw, 3.7rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
     }
 
-    .hero p {
-      max-width: 860px;
+    .hero-lead {
+      max-width: 900px;
       margin: 0;
       color: var(--muted);
-      font-size: 1.1rem;
+      font-size: 1.12rem;
+    }
+
+    .source-line {
+      margin-top: 20px;
+      padding: 15px 18px;
+      background: var(--research-soft);
+      border: 1px solid var(--accent-border);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      font-size: 0.94rem;
     }
 
     .section {
@@ -151,9 +194,9 @@
     }
 
     h3 {
-      margin: 24px 0 8px;
+      margin: 24px 0 9px;
       color: var(--dark);
-      font-size: 1.15rem;
+      font-size: 1.13rem;
     }
 
     p {
@@ -181,27 +224,27 @@
     }
 
     .object {
-      padding: 20px;
+      padding: 22px;
       border: 1px solid var(--border);
       border-radius: 10px;
-      background: #FCFDFE;
+      background: #fcfdff;
     }
 
     .object strong {
       display: block;
-      margin-bottom: 7px;
+      margin-bottom: 8px;
       color: var(--dark);
     }
 
     .meta {
       display: inline-block;
-      margin: 0 0 10px;
+      margin-bottom: 10px;
       padding: 5px 9px;
       background: var(--accent-soft);
       border: 1px solid var(--accent-border);
       border-radius: 6px;
-      color: var(--accent);
-      font-size: 0.78rem;
+      color: var(--accent-dark);
+      font-size: 0.75rem;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -210,29 +253,45 @@
     .record {
       margin-top: 18px;
       padding: 18px 20px;
-      background: #F8FAFC;
+      background: #f8fafc;
       border-left: 4px solid var(--accent);
+      border-radius: 4px;
     }
 
     .record strong {
       color: var(--dark);
     }
 
+    .identifier {
+      margin-top: 14px;
+      padding: 12px 14px;
+      background: var(--success-soft);
+      border: 1px solid var(--success-border);
+      border-radius: 7px;
+      color: var(--success-text);
+      font-size: 0.9rem;
+      overflow-wrap: anywhere;
+    }
+
+    .identifier strong {
+      color: var(--success-text);
+    }
+
     .provenance {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
       align-items: center;
+      gap: 9px;
       margin: 22px 0;
     }
 
     .provenance span {
-      display: inline-block;
-      padding: 10px 13px;
+      padding: 9px 12px;
       background: var(--accent-soft);
       border: 1px solid var(--accent-border);
       border-radius: 8px;
       color: var(--dark);
+      font-size: 0.9rem;
       font-weight: 700;
     }
 
@@ -263,8 +322,58 @@
       font-size: 0.88rem;
     }
 
+    .hub {
+      margin-top: 22px;
+      padding: 20px;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      border-radius: 10px;
+    }
+
+    .hub h2 {
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+    }
+
+    .hub-link {
+      font-weight: 800;
+    }
+
+    .relationship {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 12px;
+      align-items: center;
+      margin: 14px 0;
+    }
+
+    .relationship-box {
+      padding: 15px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fcfdff;
+    }
+
+    .relationship-arrow {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .boundary {
+      margin-top: 18px;
+      padding: 18px 20px;
+      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .boundary strong {
+      color: var(--dark);
+    }
+
     .footer {
-      max-width: 1180px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 0 24px 50px;
       color: var(--muted);
@@ -297,6 +406,15 @@
         grid-template-columns: 1fr;
       }
 
+      .relationship {
+        grid-template-columns: 1fr;
+      }
+
+      .relationship-arrow {
+        text-align: center;
+        transform: rotate(90deg);
+      }
+
       .provenance {
         align-items: flex-start;
       }
@@ -313,10 +431,15 @@
     "@type": "WebPage",
     "name": "Research",
     "url": "https://nabalkishorepande.github.io/research/",
-    "description": "Research projects, papers, reports, datasets, frameworks, methods, evidence, and provenance.",
+    "description": "Research projects, papers, reports, datasets, frameworks, methods, evidence, identifiers, and provenance.",
     "author": {
       "@type": "Person",
       "name": "Nabal Kishore Pande",
+      "url": "https://nabalkishorepande.github.io/"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Nabal Kishore Pande Research Hub",
       "url": "https://nabalkishorepande.github.io/"
     },
     "about": [
@@ -338,389 +461,1056 @@
       },
       {
         "@type": "Thing",
+        "name": "Research Evidence"
+      },
+      {
+        "@type": "Thing",
         "name": "Research Provenance"
       }
     ]
   }
   </script>
+
 </head>
 
 <body>
 
 <header class="site-header">
   <nav class="nav" aria-label="Primary navigation">
-    <a class="nav-brand" href="/">Nabal Kishore Pande</a>
+
+    <a class="nav-brand" href="/">
+      Nabal Kishore Pande
+    </a>
 
     <a href="/">Home</a>
-    <a href="/scholarship-intelligence/">Scholarship Intelligence</a>
-    <a href="/decision-mobility/">Decision &amp; Mobility</a>
-    <a href="/research/">Research</a>
-    <a href="/research-profiles/">Research Profiles</a>
-    <a href="/concepts/">Concepts</a>
-    <a href="/research-identity-authority/">Research Identity &amp; Authority</a>
+
+    <a href="/scholarship-intelligence/">
+      Scholarship Intelligence
+    </a>
+
+    <a href="/decision-mobility/">
+      Decision &amp; Mobility
+    </a>
+
+    <a href="/research/">
+      Research
+    </a>
+
+    <a href="/research-profiles/">
+      Research Profiles
+    </a>
+
+    <a href="/concepts/">
+      Concepts
+    </a>
+
+    <a href="/research-identity-authority/">
+      Research Identity &amp; Authority
+    </a>
+
   </nav>
 </header>
 
+
 <main>
 
-  <section class="hero">
-    <p class="eyebrow">P04 · Evidence &amp; Provenance</p>
+  <!-- HERO -->
 
-    <h1>Research</h1>
-<div class="research-hub-link">
-  <h2>Research Hub</h2>
-  <p>
-    Explore the complete research record, including research domains,
-    projects, publications, datasets, research profiles, persistent
-    identifiers, evidence, methods, and provenance.
-  </p>
-  <p>
-    <a href="https://nabalkishorepande.github.io/nabal-kishore-pande-research-hub/" target="_blank" rel="noopener">
-      Visit the Research Hub →
-    </a>
-  </p>
-</div>
-    <p>
-      Research projects, papers, reports, datasets, frameworks, methods,
-      evidence, and provenance within the wider knowledge system of
-      Nabal Kishore Pande.
+  <section class="hero">
+
+    <p class="eyebrow">
+      P04 · Evidence &amp; Provenance
     </p>
+
+    <h1>
+      RESEARCH
+    </h1>
+
+    <p class="hero-lead">
+      Research by Nabal Kishore Pande, organised as a structured evidence
+      and provenance layer containing research projects, papers, reports,
+      datasets, frameworks, methods, research outputs, and persistent
+      identifiers.
+    </p>
+
+    <div class="source-line">
+      <strong>Research source record:</strong>
+      The research record connects individual projects and outputs to
+      evidence, methods, publication records, datasets, frameworks, and
+      persistent identifiers. Research objects are maintained here as
+      evidence-bearing records rather than as general profile entries.
+    </div>
+
+    <div class="hub">
+
+      <h2>Research Hub</h2>
+
+      <p>
+        The Research Hub provides the wider aggregation point for research,
+        publications, frameworks, datasets, books, and research
+        infrastructure.
+      </p>
+
+      <p>
+        <a
+          class="hub-link"
+          href="https://nabalkishorepande.github.io/nabal-kishore-pande-research-hub/"
+          target="_blank"
+          rel="noopener"
+        >
+          Visit the Research Hub →
+        </a>
+      </p>
+
+    </div>
+
   </section>
 
 
+  <!-- RESEARCH ROLE -->
+
   <section class="section">
-    <h2>Research Approach</h2>
+
+    <h2>
+      Research Role in the Knowledge System
+    </h2>
 
     <p class="lead">
-      The research layer organises questions, methods, evidence, outputs,
-      and provenance so that research objects can be understood in relation
-      to the work that produced them.
+      P04 is the evidence and provenance layer of the seven-page
+      knowledge architecture.
     </p>
 
     <p>
-      Research is organised through structured evidence collection,
-      comparative analysis, structured review, dataset development,
-      framework development, research execution, and evidence organisation.
+      Research begins with a question or research problem and proceeds
+      through an appropriate method, evidence collection or analysis,
+      interpretation, and a documented output.
     </p>
 
     <p>
-      The objective of this layer is to distinguish research claims and
-      outputs from the applied knowledge and identity layers of the
-      seven-page system.
+      The purpose of this page is to make the relationship between
+      research objects visible and traceable without duplicating the
+      applied knowledge maintained on P02 and P03.
     </p>
+
+    <div class="boundary">
+
+      <strong>Canonical boundary:</strong>
+
+      P04 owns the research record.
+
+      P02 owns applied Scholarship Intelligence.
+
+      P03 owns applied Decision Defence and Global Professional Mobility.
+
+      P06 owns controlled concepts.
+
+      P05 owns verified external research profiles.
+
+      P07 owns research identity and authority relationships.
+
+    </div>
+
   </section>
 
 
+  <!-- RESEARCH PROJECTS -->
+
   <section class="section">
-    <h2>Research Projects</h2>
+
+    <h2>
+      Research Projects
+    </h2>
 
     <div class="object-grid">
 
       <div class="object">
-        <span class="meta">Research Project</span>
-        <strong>AI-Accelerated Learning Systems and the NeuroGenesis Framework</strong>
+
+        <span class="meta">
+          Research Project
+        </span>
+
+        <strong>
+          AI-Accelerated Learning Systems and the NeuroGenesis Framework
+        </strong>
+
         <p>
-          Research project examining AI-accelerated learning systems and the
+          Research examining AI-accelerated learning systems and the
           development of the NeuroGenesis Framework.
         </p>
+
       </div>
 
+
       <div class="object">
-        <span class="meta">Research Project</span>
-        <strong>AI-Driven Workforce Reorganization</strong>
+
+        <span class="meta">
+          Research Project
+        </span>
+
+        <strong>
+          AI-Driven Workforce Reorganization
+        </strong>
+
         <p>
-          Research project examining workforce reorganization in relation
-          to artificial intelligence and changing work systems.
+          Research examining workforce reorganization in relation to
+          artificial intelligence and changing work systems.
         </p>
+
       </div>
 
+
       <div class="object">
-        <span class="meta">Research Project</span>
-        <strong>Longitudinal Cohort Study on Mid-Career Professional Trajectories and Template Adherence</strong>
+
+        <span class="meta">
+          Research Project
+        </span>
+
+        <strong>
+          Mid-Career Professional Trajectories and Template Adherence
+        </strong>
+
         <p>
-          Longitudinal research project examining mid-career professional
+          Longitudinal research examining mid-career professional
           trajectories and template adherence.
         </p>
+
+      </div>
+
+
+      <div class="object">
+
+        <span class="meta">
+          Research Project
+        </span>
+
+        <strong>
+          Execution Compression System
+        </strong>
+
+        <p>
+          Research examining decision load, constraints, ambiguity,
+          coordination, and execution within complex governance systems.
+        </p>
+
+        <div class="identifier">
+          <strong>DOI:</strong>
+          <a
+            href="https://doi.org/10.5281/zenodo.19555606"
+            target="_blank"
+            rel="noopener"
+          >
+            10.5281/zenodo.19555606
+          </a>
+        </div>
+
       </div>
 
     </div>
+
   </section>
 
 
+  <!-- RESEARCH PAPERS -->
+
   <section class="section">
-    <h2>Research Papers</h2>
+
+    <h2>
+      Research Papers
+    </h2>
 
     <div class="object-grid">
 
       <div class="object">
-        <span class="meta">PRISMA-ScR Scoping Review</span>
+
+        <span class="meta">
+          PRISMA-ScR Scoping Review
+        </span>
+
         <strong>
           Scholarship Funding Systems, Educational Access, and Applicant
           Barriers in Developing Economies
         </strong>
+
         <p>
           A scoping review examining scholarship funding systems,
           educational access, and barriers affecting applicants in
           developing economies.
         </p>
+
+        <div class="identifier">
+
+          <strong>OSF DOI:</strong>
+
+          <a
+            href="https://doi.org/10.17605/OSF.IO/T63E4"
+            target="_blank"
+            rel="noopener"
+          >
+            10.17605/OSF.IO/T63E4
+          </a>
+
+        </div>
+
       </div>
+
 
       <div class="object">
-        <span class="meta">Research Paper</span>
-        <strong>The Evidence Gap</strong>
+
+        <span class="meta">
+          Research Paper
+        </span>
+
+        <strong>
+          The Evidence Gap: Why Capability Often Fails to Become
+          Opportunity in Modern Labor Markets
+        </strong>
+
         <p>
-          Research work focused on the relationship between evidence,
-          knowledge, and research-supported claims.
+          Research examining the relationship between individual
+          capability, evidence, opportunity access, and labour-market
+          outcomes.
         </p>
+
+      </div>
+
+
+      <div class="object">
+
+        <span class="meta">
+          Research Framework Paper
+        </span>
+
+        <strong>
+          The Procedural Access Framework
+        </strong>
+
+        <p>
+          Research examining procedural barriers affecting access to
+          higher-education funding, including information barriers,
+          administrative complexity, timing, institutional practices,
+          and decision support.
+        </p>
+
       </div>
 
     </div>
+
   </section>
 
 
-  <section class="section">
-    <h2>Research Report</h2>
-
-    <div class="object">
-      <span class="meta">Research Report</span>
-      <strong>Scholarship Intelligence Report</strong>
-
-      <p>
-        Research report associated with Scholarship Intelligence and the
-        structured examination of scholarship opportunities, evidence,
-        preparation, and decision processes.
-      </p>
-
-      <p>
-        The applied Scholarship Intelligence domain is maintained on
-        <a href="/scholarship-intelligence/">P02 — Scholarship Intelligence</a>.
-      </p>
-    </div>
-  </section>
-
+  <!-- RESEARCH REPORTS -->
 
   <section class="section">
-    <h2>Datasets</h2>
+
+    <h2>
+      Research Reports
+    </h2>
 
     <div class="object-grid">
 
       <div class="object">
-        <span class="meta">Dataset</span>
+
+        <span class="meta">
+          Research Report
+        </span>
+
         <strong>
-          Global Scholarship Funding, Educational Access, and Applicant Barriers
+          Scholarship Intelligence Report
         </strong>
+
         <p>
-          Structured research data concerning scholarship funding,
-          educational access, and applicant barriers.
+          Comparative policy research examining selection logic,
+          funding architecture, and regional coverage across major
+          international scholarship programmes.
         </p>
+
+        <p>
+          The applied Scholarship Intelligence system remains on
+          <a href="/scholarship-intelligence/">
+            P02 · Scholarship Intelligence
+          </a>.
+        </p>
+
       </div>
+
 
       <div class="object">
-        <span class="meta">Dataset</span>
-        <strong>Global Scholarship Evidence Dataset</strong>
+
+        <span class="meta">
+          Evidence Review
+        </span>
+
+        <strong>
+          Scholarship Funding in Africa: Regional Evidence Review
+        </strong>
+
         <p>
-          Structured evidence associated with scholarship intelligence
-          research and evidence-based scholarship analysis.
+          Regional evidence review examining scholarship funding systems,
+          applicant barriers, research infrastructure, digital access,
+          and contextual constraints across African countries.
         </p>
+
       </div>
 
     </div>
+
   </section>
 
 
+  <!-- DATASETS -->
+
   <section class="section">
-    <h2>Research Frameworks</h2>
 
-    <div class="object">
-      <span class="meta">Research Framework</span>
-      <strong>Procedural Access Framework</strong>
+    <h2>
+      Research Datasets
+    </h2>
 
-      <p>
-        A research framework concerned with the procedural conditions through
-        which access to opportunities can be understood, organised, and
-        examined.
-      </p>
+    <div class="object-grid">
 
-      <p>
-        Framework relationships can connect research evidence with controlled
-        concepts and applied systems without treating a framework as a
-        duplicate of either layer.
-      </p>
+      <div class="object">
+
+        <span class="meta">
+          Dataset
+        </span>
+
+        <strong>
+          Global Scholarship Funding, Educational Access, and Applicant
+          Barriers
+        </strong>
+
+        <p>
+          Structured comparative research data concerning scholarship
+          funding, educational access, and applicant barriers.
+        </p>
+
+        <div class="identifier">
+
+          <strong>Mendeley Data DOI:</strong>
+
+          <a
+            href="https://doi.org/10.17632/zb6zmn32m2.1"
+            target="_blank"
+            rel="noopener"
+          >
+            10.17632/zb6zmn32m2.1
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="object">
+
+        <span class="meta">
+          Evidence Dataset
+        </span>
+
+        <strong>
+          Global Scholarship Evidence Dataset
+        </strong>
+
+        <p>
+          Structured evidence supporting scholarship intelligence
+          research, comparative analysis, and evidence-based
+          scholarship evaluation.
+        </p>
+
+      </div>
+
     </div>
+
   </section>
 
 
+  <!-- FRAMEWORKS -->
+
   <section class="section">
-    <h2>Research Methods</h2>
+
+    <h2>
+      Research Frameworks
+    </h2>
+
+    <div class="object-grid">
+
+      <div class="object">
+
+        <span class="meta">
+          Research Framework
+        </span>
+
+        <strong>
+          Procedural Access Framework
+        </strong>
+
+        <p>
+          A conceptual framework for examining procedural conditions
+          that influence access to higher-education funding and related
+          opportunities.
+        </p>
+
+      </div>
+
+
+      <div class="object">
+
+        <span class="meta">
+          Research Framework
+        </span>
+
+        <strong>
+          Execution Compression System
+        </strong>
+
+        <p>
+          A constraint-based framework examining how decision load,
+          ambiguity, competing priorities, limited resources, and time
+          pressure affect execution.
+        </p>
+
+        <div class="identifier">
+
+          <strong>DOI:</strong>
+
+          <a
+            href="https://doi.org/10.5281/zenodo.19555606"
+            target="_blank"
+            rel="noopener"
+          >
+            10.5281/zenodo.19555606
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- METHODS -->
+
+  <section class="section">
+
+    <h2>
+      Research Methods
+    </h2>
 
     <p>
-      The research system uses several complementary methods and production
-      activities depending on the research question and evidence requirements.
+      Research methods are selected according to the research question,
+      evidence requirements, object type, and intended output.
     </p>
 
     <ul>
-      <li><strong>Evidence collection</strong> — identifying and organising relevant evidence.</li>
-      <li><strong>Comparative analysis</strong> — examining similarities, differences, and relationships across evidence.</li>
-      <li><strong>Structured review</strong> — organising existing research through a defined review process.</li>
-      <li><strong>Dataset development</strong> — converting relevant evidence into structured research data.</li>
-      <li><strong>Framework development</strong> — developing structured models from research findings and relationships.</li>
-      <li><strong>Research execution</strong> — managing the sequence from research question through output.</li>
-      <li><strong>Evidence organisation</strong> — maintaining relationships between evidence, claims, outputs, and identifiers.</li>
+
+      <li>
+        <strong>Evidence collection</strong>:
+        identifying and organising relevant primary and secondary evidence.
+      </li>
+
+      <li>
+        <strong>Comparative analysis</strong>:
+        examining similarities, differences, patterns, and relationships.
+      </li>
+
+      <li>
+        <strong>Structured review</strong>:
+        organising existing research through a defined review process.
+      </li>
+
+      <li>
+        <strong>Scoping review</strong>:
+        mapping available evidence across a defined research area.
+      </li>
+
+      <li>
+        <strong>Dataset development</strong>:
+        converting research evidence into structured and reusable data.
+      </li>
+
+      <li>
+        <strong>Framework development</strong>:
+        developing structured conceptual or operational models from
+        research findings and relationships.
+      </li>
+
+      <li>
+        <strong>Research execution</strong>:
+        managing the sequence from research question through evidence
+        collection, analysis, and output.
+      </li>
+
+      <li>
+        <strong>Evidence organisation</strong>:
+        maintaining relationships between claims, evidence, outputs,
+        and identifiers.
+      </li>
+
     </ul>
+
   </section>
 
 
-  <section class="section">
-    <h2>Research Evidence &amp; Provenance</h2>
+  <!-- PROVENANCE -->
 
-    <p>
-      Research provenance establishes the relationship between the research
-      question, method, evidence, and resulting output.
+  <section class="section">
+
+    <h2>
+      Research Evidence &amp; Provenance
+    </h2>
+
+    <p class="lead">
+      Provenance establishes how a research output is connected to the
+      question, method, evidence, and research activity from which it
+      emerged.
     </p>
 
-    <div class="provenance" aria-label="Research provenance chain">
+    <div
+      class="provenance"
+      aria-label="Research provenance chain"
+    >
+
       <span>Research Project</span>
+
       <span class="arrow">→</span>
+
       <span>Research Question</span>
+
       <span class="arrow">→</span>
+
       <span>Method</span>
+
       <span class="arrow">→</span>
+
       <span>Evidence</span>
+
       <span class="arrow">→</span>
-      <span>Output</span>
+
+      <span>Analysis</span>
+
       <span class="arrow">→</span>
-      <span>Publication / Dataset / Report</span>
+
+      <span>Research Output</span>
+
       <span class="arrow">→</span>
-      <span>Identifier</span>
+
+      <span>Publication / Dataset / Report / Framework</span>
+
+      <span class="arrow">→</span>
+
+      <span>Persistent Identifier</span>
+
     </div>
 
     <div class="record">
-      <strong>Research object record</strong>
+
+      <strong>
+        Research Object Record
+      </strong>
+
       <p>
-        Each research object is intended to have a defined title, type,
-        status, research question or purpose, method, evidence, domain,
-        related concepts, related outputs, identifier, and primary
-        external record where applicable.
+        A research object should have a defined title, object type,
+        research purpose, status, method, evidence base, domain,
+        related concepts, related outputs, external record, and
+        persistent identifier where applicable.
       </p>
+
     </div>
 
-    <p>
-      This provenance structure helps distinguish the research record from
-      the external identity infrastructure described in
-      <a href="/research-profiles/">Research Profiles</a> and the authority
-      relationships described in
-      <a href="/research-identity-authority/">Research Identity &amp; Authority</a>.
-    </p>
   </section>
 
 
+  <!-- VISUAL -->
+
   <section class="section">
-    <h2>Research Evidence &amp; Provenance Visual</h2>
+
+    <h2>
+      Research Evidence &amp; Provenance Visual
+    </h2>
 
     <div class="image-box">
+
       <img
         src="/p04-research-evidence-provenance-infographic.png"
-        alt="Research evidence and provenance infographic showing the relationship from research project and question through method, evidence, output, publication or dataset, and identifier"
+        alt="Research evidence and provenance architecture showing the relationship between research project, research question, method, evidence, analysis, research output, publication or dataset, and persistent identifier"
         loading="lazy">
 
       <p class="caption">
         Research evidence and provenance architecture.
       </p>
+
     </div>
+
   </section>
 
 
+  <!-- RELATIONSHIPS -->
+
   <section class="section">
-    <h2>Research Object Relationships</h2>
+
+    <h2>
+      Research Object Relationships
+    </h2>
 
     <p>
       Research objects should be connected through explicit relationships
       rather than presented as an isolated catalogue.
     </p>
 
-    <div class="object-grid">
 
-      <div class="object">
-        <strong>Research Project → Research Question</strong>
+    <div class="relationship">
+
+      <div class="relationship-box">
+        <strong>Research Project</strong>
         <p>
-          A project establishes the context in which a research question is examined.
+          Establishes the research context.
         </p>
       </div>
 
-      <div class="object">
-        <strong>Research Question → Method</strong>
-        <p>
-          The research question informs the method used to investigate it.
-        </p>
+      <div class="relationship-arrow">
+        →
       </div>
 
-      <div class="object">
-        <strong>Method → Evidence</strong>
+      <div class="relationship-box">
+        <strong>Research Question</strong>
         <p>
-          The method establishes how relevant evidence is collected or analysed.
-        </p>
-      </div>
-
-      <div class="object">
-        <strong>Evidence → Output</strong>
-        <p>
-          Evidence contributes to a research output such as a paper, dataset,
-          report, or framework.
+          Defines the problem or inquiry.
         </p>
       </div>
 
     </div>
+
+
+    <div class="relationship">
+
+      <div class="relationship-box">
+        <strong>Research Question</strong>
+        <p>
+          Determines what needs to be investigated.
+        </p>
+      </div>
+
+      <div class="relationship-arrow">
+        →
+      </div>
+
+      <div class="relationship-box">
+        <strong>Method</strong>
+        <p>
+          Defines how the question is examined.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="relationship">
+
+      <div class="relationship-box">
+        <strong>Method</strong>
+        <p>
+          Structures evidence collection or analysis.
+        </p>
+      </div>
+
+      <div class="relationship-arrow">
+        →
+      </div>
+
+      <div class="relationship-box">
+        <strong>Evidence</strong>
+        <p>
+          Provides the basis for analysis and claims.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="relationship">
+
+      <div class="relationship-box">
+        <strong>Evidence</strong>
+        <p>
+          Supports interpretation and research findings.
+        </p>
+      </div>
+
+      <div class="relationship-arrow">
+        →
+      </div>
+
+      <div class="relationship-box">
+        <strong>Research Output</strong>
+        <p>
+          Produces a paper, dataset, report, or framework.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="relationship">
+
+      <div class="relationship-box">
+        <strong>Research Output</strong>
+        <p>
+          Becomes part of the documented research record.
+        </p>
+      </div>
+
+      <div class="relationship-arrow">
+        →
+      </div>
+
+      <div class="relationship-box">
+        <strong>Identifier / External Record</strong>
+        <p>
+          Provides persistent traceability where available.
+        </p>
+      </div>
+
+    </div>
+
   </section>
 
 
+  <!-- RESEARCH TO APPLICATION -->
+
   <section class="section">
-    <h2>Research and the Knowledge System</h2>
+
+    <h2>
+      Research to Application
+    </h2>
 
     <p>
-      Research is one layer of the wider seven-page knowledge system.
-      Its role is evidence and provenance rather than commercial presentation
-      or generic profile aggregation.
+      Research outputs may inform applied systems, but the research
+      record and applied domain remain separate objects.
+    </p>
+
+    <div class="object-grid">
+
+      <div class="object">
+
+        <span class="meta">
+          Research Layer
+        </span>
+
+        <strong>
+          Evidence
+        </strong>
+
+        <p>
+          Research produces evidence, findings, datasets, frameworks,
+          reports, and documented methods.
+        </p>
+
+      </div>
+
+
+      <div class="object">
+
+        <span class="meta">
+          Applied Layer
+        </span>
+
+        <strong>
+          Decision Defence
+        </strong>
+
+        <p>
+          Research may inform applied Decision Defence systems maintained
+          on P03.
+        </p>
+
+      </div>
+
+
+      <div class="object">
+
+        <span class="meta">
+          Applied Layer
+        </span>
+
+        <strong>
+          Scholarship Intelligence
+        </strong>
+
+        <p>
+          Research may inform scholarship analysis and preparation
+          systems maintained on P02.
+        </p>
+
+      </div>
+
+
+      <div class="object">
+
+        <span class="meta">
+          Semantic Layer
+        </span>
+
+        <strong>
+          Controlled Concepts
+        </strong>
+
+        <p>
+          Research objects may connect to formal concepts maintained
+          on P06.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- KNOWLEDGE SYSTEM -->
+
+  <section class="section">
+
+    <h2>
+      Research and the Seven-Page Knowledge System
+    </h2>
+
+    <p>
+      P04 operates as the evidence and provenance layer within the
+      frozen seven-page architecture.
     </p>
 
     <ul>
+
       <li>
-        <a href="/">P01 — Home / Identity</a> —
+        <a href="/">
+          P01 — Identity
+        </a>
+        :
         researcher identity and overall orientation.
       </li>
 
       <li>
-        <a href="/scholarship-intelligence/">P02 — Scholarship Intelligence</a> —
+        <a href="/scholarship-intelligence/">
+          P02 — Scholarship Intelligence
+        </a>
+        :
         applied scholarship knowledge and preparation systems.
       </li>
 
       <li>
-        <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a> —
-        applied Decision Defence and Global Professional Mobility knowledge.
+        <a href="/decision-mobility/">
+          P03 — Decision &amp; Mobility
+        </a>
+        :
+        applied Decision Defence and Global Professional Mobility.
       </li>
 
       <li>
-        <a href="/research-profiles/">P05 — Research Profiles</a> —
-        external research identity and publishing infrastructure.
+        <strong>
+          P04 — Research
+        </strong>
+        :
+        research objects, evidence, methods, outputs, identifiers,
+        and provenance.
       </li>
 
       <li>
-        <a href="/concepts/">P06 — Concepts</a> —
-        controlled concepts connected to research and application.
+        <a href="/research-profiles/">
+          P05 — Research Profiles
+        </a>
+        :
+        verified external research profiles.
       </li>
 
       <li>
-        <a href="/research-identity-authority/">P07 — Research Identity &amp; Authority</a> —
-        identity verification and external authority relationships.
+        <a href="/concepts/">
+          P06 — Concepts
+        </a>
+        :
+        controlled terminology and semantic relationships.
       </li>
+
+      <li>
+        <a href="/research-identity-authority/">
+          P07 — Research Identity &amp; Authority
+        </a>
+        :
+        research identity, persistent identifiers, and authority
+        relationships.
+      </li>
+
     </ul>
+
+  </section>
+
+
+  <!-- CANONICAL BOUNDARY -->
+
+  <section class="section">
+
+    <h2>
+      Canonical Ownership Boundary
+    </h2>
+
+    <div class="object-grid">
+
+      <div class="object">
+
+        <strong>
+          P04 Owns
+        </strong>
+
+        <p>
+          Research projects, research questions, papers, reports,
+          datasets, research frameworks, methods, evidence, outputs,
+          provenance, and research identifiers.
+        </p>
+
+      </div>
+
+
+      <div class="object">
+
+        <strong>
+          P04 Does Not Own
+        </strong>
+
+        <p>
+          General personal identity, external profile directories,
+          controlled concept definitions, commercial product catalogues,
+          or authority relationships.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="record">
+
+      <strong>
+        Anti-Duplication Rule
+      </strong>
+
+      <p>
+        A research object has one canonical research home. Other pages
+        may reference that object when required for context, but should
+        not reproduce the complete research record.
+      </p>
+
+    </div>
+
   </section>
 
 </main>
 
+
 <footer class="footer">
+
   <p>
     © Nabal Kishore Pande. Research.
   </p>
+
 </footer>
 
 </body>
