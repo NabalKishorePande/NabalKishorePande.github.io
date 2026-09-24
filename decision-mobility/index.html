@@ -1,1029 +1,2935 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Decision Defence & Global Professional Mobility | Nabal Kishore Pande</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <meta name="description" content="Decision Defence and Global Professional Mobility: structured approaches to decision evidence, rationale, traceability, accountability, professional portability, credential recognition, and professional access.">
-  <meta name="author" content="Nabal Kishore Pande">
+  <title>
+    Decision Defence &amp; Global Professional Mobility | Nabal Kishore Pande
+  </title>
 
-  <meta property="og:title" content="Decision Defence & Global Professional Mobility">
-  <meta property="og:description" content="Structured decision defence and global professional mobility knowledge systems.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nabalkishorepande.github.io/decision-mobility/">
+  <meta
+    name="description"
+    content="Decision Defence and Global Professional Mobility by Nabal Kishore Pande. Structured systems for decision evidence, rationale, traceability, accountability, professional portability, credential recognition, and professional access."
+  >
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Decision Defence & Global Professional Mobility">
-  <meta name="twitter:description" content="Structured decision defence and global professional mobility knowledge systems.">
-  <meta name="robots" content="index, follow">
+  <meta
+    name="author"
+    content="Nabal Kishore Pande"
+  >
 
-  <link rel="canonical" href="https://nabalkishorepande.github.io/decision-mobility/">
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <meta
+    name="keywords"
+    content="Decision Defence, Decision Defence Architecture, decision evidence, decision rationale, decision traceability, decision accountability, Global Professional Mobility, professional portability, credential recognition, professional access"
+  >
+
+  <link
+    rel="canonical"
+    href="https://nabalkishorepande.github.io/decision-mobility/"
+  >
+
+  <!-- Inter only -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Open Graph -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:title"
+    content="Decision Defence & Global Professional Mobility"
+  >
+
+  <meta
+    property="og:description"
+    content="Structured systems for decision evidence, rationale, traceability, accountability, professional portability, credential recognition, and professional access."
+  >
+
+  <meta
+    property="og:url"
+    content="https://nabalkishorepande.github.io/decision-mobility/"
+  >
+
+  <meta
+    property="og:site_name"
+    content="Nabal Kishore Pande Research Knowledge System"
+  >
+
+  <meta
+    property="og:image"
+    content="https://nabalkishorepande.github.io/research-decision-framework-evidence-decision-model-review-learning.png"
+  >
+
+  <!-- Twitter / X -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Decision Defence & Global Professional Mobility"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Structured systems for decision evidence, rationale, traceability, accountability, professional portability, credential recognition, and professional access."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://nabalkishorepande.github.io/research-decision-framework-evidence-decision-model-review-learning.png"
+  >
+
 
   <style>
+
     :root {
+
       --text: #172033;
       --muted: #5F6B7A;
-      --bg: #F8FAFC;
+      --background: #F8FAFC;
       --surface: #FFFFFF;
       --border: #E2E8F0;
+
       --link: #2563EB;
-      --hover: #1D4ED8;
+      --link-hover: #1D4ED8;
+
       --dark: #0F172A;
+
+      /* P03 page colour */
       --accent: #1D4ED8;
-      --button-text: #FFFFFF;
-      --button-hover: #1E40AF;
+      --accent-dark: #1E40AF;
+      --accent-light: #EFF6FF;
+      --accent-border: #BFDBFE;
+
+      --max-width: 1180px;
+      --radius: 12px;
+
+      --shadow:
+        0 5px 20px rgba(15, 23, 42, 0.05);
     }
+
 
     * {
       box-sizing: border-box;
     }
 
+
     html {
       scroll-behavior: smooth;
     }
 
+
     body {
+
       margin: 0;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Helvetica, Arial, sans-serif;
+
+      font-family:
+        "Inter",
+        sans-serif;
+
       color: var(--text);
-      background: var(--bg);
+
+      background:
+        var(--background);
+
       line-height: 1.7;
+
+      font-size: 16px;
     }
+
+
+    img {
+
+      display: block;
+
+      max-width: 100%;
+
+      height: auto;
+    }
+
 
     a {
+
       color: var(--link);
-      text-decoration: none;
+
+      text-decoration:
+        underline;
+
+      text-underline-offset:
+        3px;
     }
 
-    a:hover {
-      color: var(--hover);
-      text-decoration: underline;
+
+    a:hover,
+    a:focus {
+
+      color:
+        var(--link-hover);
     }
+
+
+    a:focus-visible {
+
+      outline:
+        3px solid
+        rgba(37, 99, 235, 0.25);
+
+      outline-offset:
+        3px;
+
+      border-radius:
+        4px;
+    }
+
 
     .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(8px);
+
+      position:
+        sticky;
+
+      top:
+        0;
+
+      z-index:
+        1000;
+
+      background:
+        rgba(255,255,255,0.97);
+
+      border-bottom:
+        1px solid var(--border);
+
+      backdrop-filter:
+        blur(8px);
     }
 
-    .nav {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 14px 24px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px 18px;
+
+    .header-inner {
+
+      max-width:
+        var(--max-width);
+
+      margin:
+        0 auto;
+
+      padding:
+        15px 24px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      gap:
+        22px;
     }
 
-    .nav-brand {
-      font-weight: 800;
-      color: var(--dark);
-      margin-right: auto;
-      white-space: nowrap;
+
+    .brand {
+
+      color:
+        var(--dark);
+
+      text-decoration:
+        none;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        -0.02em;
+
+      white-space:
+        nowrap;
     }
 
-    .nav a {
-      font-size: 0.92rem;
-      font-weight: 600;
+
+    .brand:hover {
+
+      color:
+        var(--dark);
     }
+
+
+    .main-nav {
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      justify-content:
+        flex-end;
+
+      gap:
+        8px 18px;
+    }
+
+
+    .main-nav a {
+
+      color:
+        var(--text);
+
+      text-decoration:
+        none;
+
+      font-size:
+        0.92rem;
+
+      font-weight:
+        600;
+    }
+
+
+    .main-nav a:hover {
+
+      color:
+        var(--link);
+    }
+
 
     main {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 56px 24px 80px;
+
+      max-width:
+        var(--max-width);
+
+      margin:
+        0 auto;
+
+      padding:
+        48px 24px 72px;
     }
+
 
     .hero {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-top: 5px solid var(--accent);
-      border-radius: 14px;
-      padding: 48px;
-      margin-bottom: 30px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+
+      background:
+        var(--surface);
+
+      border:
+        1px solid var(--border);
+
+      border-top:
+        5px solid var(--accent);
+
+      border-radius:
+        var(--radius);
+
+      box-shadow:
+        var(--shadow);
+
+      padding:
+        44px;
     }
+
 
     .eyebrow {
-      margin: 0 0 10px;
-      color: var(--accent);
-      font-size: 0.82rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+
+      margin:
+        0 0 10px;
+
+      color:
+        var(--accent);
+
+      font-size:
+        0.82rem;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        0.1em;
+
+      text-transform:
+        uppercase;
     }
+
 
     h1 {
-      margin: 0 0 16px;
-      color: var(--dark);
-      font-size: clamp(2.1rem, 5vw, 3.6rem);
-      line-height: 1.1;
-      letter-spacing: -0.035em;
+
+      margin:
+        0;
+
+      color:
+        var(--dark);
+
+      font-size:
+        clamp(2.2rem, 5.5vw, 4rem);
+
+      line-height:
+        1.06;
+
+      letter-spacing:
+        -0.045em;
     }
 
-    .hero p {
-      max-width: 850px;
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.1rem;
+
+    .hero-intro {
+
+      max-width:
+        900px;
+
+      margin:
+        22px 0 0;
+
+      color:
+        var(--muted);
+
+      font-size:
+        1.08rem;
     }
+
+
+    .hero-links {
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        10px 18px;
+
+      margin-top:
+        26px;
+    }
+
 
     .section {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-top: 4px solid var(--accent);
-      border-radius: 12px;
-      padding: 32px;
-      margin: 24px 0;
-      box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+
+      margin-top:
+        28px;
+
+      background:
+        var(--surface);
+
+      border:
+        1px solid var(--border);
+
+      border-top:
+        4px solid var(--accent);
+
+      border-radius:
+        var(--radius);
+
+      box-shadow:
+        var(--shadow);
+
+      padding:
+        34px;
     }
 
-    h2 {
-      margin: 0 0 16px;
-      color: var(--dark);
-      font-size: 1.65rem;
-      line-height: 1.25;
+
+    .section h2 {
+
+      margin:
+        0 0 16px;
+
+      color:
+        var(--dark);
+
+      font-size:
+        clamp(1.55rem, 3vw, 2.15rem);
+
+      line-height:
+        1.2;
+
+      letter-spacing:
+        -0.02em;
     }
 
-    h3 {
-      margin: 24px 0 8px;
-      color: var(--dark);
-      font-size: 1.15rem;
+
+    .section h3 {
+
+      margin:
+        24px 0 8px;
+
+      color:
+        var(--dark);
+
+      font-size:
+        1.15rem;
     }
 
-    p {
-      margin: 0 0 15px;
+
+    .section p {
+
+      margin:
+        0 0 16px;
     }
 
-    ul {
-      margin: 10px 0 18px;
-      padding-left: 24px;
+
+    .section p:last-child {
+
+      margin-bottom:
+        0;
     }
 
-    li {
-      margin: 7px 0;
-    }
 
     .lead {
-      font-size: 1.05rem;
+
+      font-size:
+        1.05rem;
     }
+
 
     .chain {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      margin: 20px 0;
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      align-items:
+        center;
+
+      gap:
+        8px;
+
+      margin-top:
+        22px;
     }
+
 
     .chain span {
-      display: inline-block;
-      padding: 10px 14px;
-      background: #EFF6FF;
-      border: 1px solid #BFDBFE;
-      border-radius: 8px;
-      font-weight: 700;
-      color: var(--dark);
+
+      display:
+        inline-block;
+
+      padding:
+        9px 12px;
+
+      background:
+        var(--accent-light);
+
+      border:
+        1px solid var(--accent-border);
+
+      border-radius:
+        7px;
+
+      color:
+        var(--dark);
+
+      font-weight:
+        700;
     }
+
 
     .chain .arrow {
-      background: transparent;
-      border: 0;
-      padding: 0 2px;
-      color: var(--accent);
-      font-weight: 800;
+
+      background:
+        transparent;
+
+      border:
+        0;
+
+      padding:
+        0 2px;
+
+      color:
+        var(--accent);
+
+      font-weight:
+        800;
     }
+
+
+    .architecture {
+
+      margin-top:
+        24px;
+
+      padding:
+        24px;
+
+      background:
+        var(--accent-light);
+
+      border:
+        1px solid var(--accent-border);
+
+      border-radius:
+        10px;
+    }
+
+
+    .architecture-flow {
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      align-items:
+        center;
+
+      gap:
+        8px;
+
+      margin-top:
+        18px;
+
+      font-weight:
+        700;
+    }
+
+
+    .architecture-flow span {
+
+      padding:
+        9px 12px;
+
+      background:
+        #FFFFFF;
+
+      border:
+        1px solid var(--accent-border);
+
+      border-radius:
+        7px;
+    }
+
+
+    .architecture-flow .arrow {
+
+      border:
+        0;
+
+      background:
+        transparent;
+
+      color:
+        var(--accent);
+    }
+
 
     .image-box {
-      margin: 24px 0 10px;
-      text-align: center;
+
+      margin:
+        28px auto 12px;
+
+      max-width:
+        900px;
+
+      text-align:
+        center;
     }
+
 
     .image-box img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      border: 1px solid var(--border);
+
+      width:
+        100%;
+
+      height:
+        auto;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        10px;
     }
 
-    .dda-infographic {
-      width: min(100%, 900px);
-      margin: 24px auto 10px;
-      text-align: center;
+
+    figcaption {
+
+      margin-top:
+        10px;
+
+      color:
+        var(--muted);
+
+      font-size:
+        0.88rem;
+
+      text-align:
+        center;
     }
 
-    .dda-infographic img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-    }
-
-    .caption {
-      margin-top: 9px;
-      color: var(--muted);
-      font-size: 0.88rem;
-    }
 
     .object-grid,
     .resource-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 20px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap:
+        18px;
+
+      margin-top:
+        24px;
     }
 
-    .object,
-    .resource {
-      padding: 20px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      background: #FCFDFE;
+
+    .card {
+
+      padding:
+        22px;
+
+      background:
+        #FCFDFE;
+
+      border:
+        1px solid var(--border);
+
+      border-top:
+        4px solid var(--accent);
+
+      border-radius:
+        10px;
     }
 
-    .object strong,
-    .resource strong {
-      display: block;
-      margin-bottom: 7px;
-      color: var(--dark);
+
+    .card h3 {
+
+      margin-top:
+        0;
     }
 
-    .price {
-      display: inline-block;
-      margin-top: 6px;
-      font-weight: 700;
-      color: var(--accent);
+
+    .card p:last-child {
+
+      margin-bottom:
+        0;
     }
 
-    /* Consistent external resource buttons */
-    .resource-button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 16px;
-      background: var(--accent);
-      color: var(--button-text);
-      border: 1px solid var(--accent);
-      border-radius: 7px;
-      font-size: 0.9rem;
-      font-weight: 700;
-      line-height: 1.3;
-      text-decoration: none;
-      transition: background-color 0.2s ease,
-                  border-color 0.2s ease,
-                  transform 0.2s ease;
-    }
-
-    .resource-button:hover {
-      background: var(--button-hover);
-      border-color: var(--button-hover);
-      color: var(--button-text);
-      text-decoration: none;
-      transform: translateY(-1px);
-    }
-
-    .resource-button:focus-visible {
-      outline: 3px solid #93C5FD;
-      outline-offset: 2px;
-    }
 
     .note {
-      padding: 18px 20px;
-      background: #F8FAFC;
-      border-left: 4px solid var(--accent);
-      margin: 20px 0;
+
+      margin-top:
+        22px;
+
+      padding:
+        20px;
+
+      background:
+        var(--background);
+
+      border-left:
+        4px solid var(--accent);
+
+      border-radius:
+        8px;
     }
+
+
+    .resource {
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      height:
+        100%;
+    }
+
+
+    .resource-label {
+
+      display:
+        inline-block;
+
+      align-self:
+        flex-start;
+
+      margin-bottom:
+        10px;
+
+      padding:
+        4px 9px;
+
+      background:
+        var(--accent-light);
+
+      color:
+        var(--accent-dark);
+
+      border-radius:
+        5px;
+
+      font-size:
+        0.72rem;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        0.06em;
+
+      text-transform:
+        uppercase;
+    }
+
+
+    .resource-price {
+
+      margin:
+        4px 0 12px;
+
+      color:
+        var(--accent-dark);
+
+      font-weight:
+        800;
+    }
+
+
+    .resource-link {
+
+      margin-top:
+        auto;
+
+      padding-top:
+        14px;
+
+      font-weight:
+        700;
+    }
+
+
+    .resource-button {
+
+      display:
+        inline-block;
+
+      margin-top:
+        10px;
+
+      padding:
+        10px 15px;
+
+      background:
+        var(--accent);
+
+      color:
+        #FFFFFF;
+
+      border:
+        1px solid var(--accent);
+
+      border-radius:
+        7px;
+
+      font-size:
+        0.9rem;
+
+      font-weight:
+        700;
+
+      text-decoration:
+        none;
+    }
+
+
+    .resource-button:hover {
+
+      background:
+        var(--accent-dark);
+
+      color:
+        #FFFFFF;
+
+      text-decoration:
+        none;
+    }
+
+
+    .resource-button:focus-visible {
+
+      outline:
+        3px solid #93C5FD;
+
+      outline-offset:
+        2px;
+    }
+
+
+    .faq {
+
+      margin-top:
+        16px;
+
+      padding:
+        18px 20px;
+
+      background:
+        #FFFFFF;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        9px;
+    }
+
+
+    .faq h3 {
+
+      margin:
+        0 0 8px;
+    }
+
+
+    .faq p {
+
+      margin:
+        0;
+    }
+
+
+    .navigation-panel {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap:
+        14px;
+
+      margin-top:
+        24px;
+    }
+
+
+    .navigation-panel a {
+
+      display:
+        block;
+
+      padding:
+        16px;
+
+      background:
+        #FFFFFF;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        9px;
+
+      color:
+        var(--text);
+
+      text-decoration:
+        none;
+
+      font-weight:
+        700;
+    }
+
+
+    .navigation-panel a:hover {
+
+      color:
+        var(--link);
+
+      box-shadow:
+        var(--shadow);
+    }
+
 
     .footer {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 0 24px 50px;
-      color: var(--muted);
-      font-size: 0.9rem;
+
+      background:
+        var(--dark);
+
+      color:
+        #CBD5E1;
+
+      padding:
+        36px 0;
     }
 
-    @media (max-width: 760px) {
-      .nav {
-        padding: 12px 16px;
+
+    .footer-inner {
+
+      max-width:
+        var(--max-width);
+
+      margin:
+        0 auto;
+
+      padding:
+        0 24px;
+    }
+
+
+    .footer-title {
+
+      margin:
+        0 0 8px;
+
+      color:
+        #FFFFFF;
+
+      font-weight:
+        800;
+    }
+
+
+    .footer-text {
+
+      margin:
+        0;
+
+      font-size:
+        0.9rem;
+    }
+
+
+    .footer-links {
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        8px 18px;
+
+      margin-top:
+        16px;
+    }
+
+
+    .footer-links a {
+
+      color:
+        #CBD5E1;
+    }
+
+
+    @media (max-width: 900px) {
+
+      .header-inner {
+
+        align-items:
+          flex-start;
+
+        flex-direction:
+          column;
       }
 
-      .nav-brand {
-        width: 100%;
-        margin-bottom: 4px;
+
+      .main-nav {
+
+        justify-content:
+          flex-start;
       }
 
-      main {
-        padding: 34px 16px 60px;
-      }
-
-      .hero {
-        padding: 32px 24px;
-      }
-
-      .section {
-        padding: 24px 20px;
-      }
 
       .object-grid,
       .resource-grid {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
       }
+
+
+      .navigation-panel {
+
+        grid-template-columns:
+          1fr;
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      main {
+
+        padding:
+          26px 16px 50px;
+      }
+
+
+      .header-inner {
+
+        padding:
+          14px 16px;
+      }
+
+
+      .hero,
+      .section {
+
+        padding:
+          24px;
+      }
+
+
+      h1 {
+
+        font-size:
+          2.45rem;
+      }
+
+
+      .architecture-flow {
+
+        align-items:
+          flex-start;
+
+        flex-direction:
+          column;
+      }
+
+
+      .architecture-flow .arrow {
+
+        display:
+          none;
+      }
+
 
       .chain {
-        align-items: flex-start;
+
+        align-items:
+          flex-start;
+
+        flex-direction:
+          column;
       }
+
 
       .chain .arrow {
-        display: none;
+
+        display:
+          none;
       }
+
 
       .resource-button {
-        width: 100%;
-        text-align: center;
+
+        width:
+          100%;
+
+        text-align:
+          center;
       }
+
     }
+
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+
+        scroll-behavior:
+          auto;
+      }
+
+    }
+
   </style>
 
+
+  <!-- Structured Data -->
+
   <script type="application/ld+json">
+
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Decision Defence & Global Professional Mobility",
-    "url": "https://nabalkishorepande.github.io/decision-mobility/",
-    "description": "Structured approaches to decision defence and global professional mobility.",
-    "author": {
-      "@type": "Person",
-      "name": "Nabal Kishore Pande",
-      "url": "https://nabalkishorepande.github.io/"
-    },
-    "about": [
+
+    "@graph": [
+
       {
-        "@type": "Thing",
-        "name": "Decision Defence"
+        "@type": "WebPage",
+
+        "@id":
+          "https://nabalkishorepande.github.io/decision-mobility/#webpage",
+
+        "name":
+          "Decision Defence & Global Professional Mobility",
+
+        "url":
+          "https://nabalkishorepande.github.io/decision-mobility/",
+
+        "description":
+          "Structured systems for decision evidence, rationale, traceability, accountability, professional portability, credential recognition, and professional access.",
+
+        "isPartOf": {
+          "@id":
+            "https://nabalkishorepande.github.io/#website"
+        },
+
+        "author": {
+          "@id":
+            "https://nabalkishorepande.github.io/#person"
+        },
+
+        "about": [
+
+          {
+            "@id":
+              "https://nabalkishorepande.github.io/decision-mobility/#decision-defence"
+          },
+
+          {
+            "@id":
+              "https://nabalkishorepande.github.io/decision-mobility/#decision-defence-architecture"
+          },
+
+          {
+            "@id":
+              "https://nabalkishorepande.github.io/decision-mobility/#global-professional-mobility"
+          }
+
+        ]
+
       },
+
+
       {
         "@type": "Thing",
-        "name": "Decision Defence Architecture"
+
+        "@id":
+          "https://nabalkishorepande.github.io/decision-mobility/#decision-defence",
+
+        "name":
+          "Decision Defence",
+
+        "description":
+          "An applied approach to making important decisions explainable, evidence-based, traceable, and accountable."
       },
+
+
       {
         "@type": "Thing",
-        "name": "Global Professional Mobility"
+
+        "@id":
+          "https://nabalkishorepande.github.io/decision-mobility/#decision-defence-architecture",
+
+        "name":
+          "Decision Defence Architecture",
+
+        "description":
+          "A structural approach for connecting decision evidence, rationale, assumptions, criteria, traceability, and accountability."
       },
+
+
       {
         "@type": "Thing",
-        "name": "Professional Portability"
+
+        "@id":
+          "https://nabalkishorepande.github.io/decision-mobility/#global-professional-mobility",
+
+        "name":
+          "Global Professional Mobility",
+
+        "description":
+          "An applied domain concerning professional portability, credential recognition, professional evidence, and access across professional or national contexts."
       },
+
+
       {
-        "@type": "Thing",
-        "name": "Credential Recognition"
+        "@type": "Person",
+
+        "@id":
+          "https://nabalkishorepande.github.io/#person",
+
+        "name":
+          "Nabal Kishore Pande",
+
+        "url":
+          "https://nabalkishorepande.github.io/"
       },
+
+
       {
-        "@type": "Thing",
-        "name": "Professional Access"
+        "@type": "WebSite",
+
+        "@id":
+          "https://nabalkishorepande.github.io/#website",
+
+        "name":
+          "Nabal Kishore Pande Research Knowledge System",
+
+        "url":
+          "https://nabalkishorepande.github.io/"
       }
+
     ]
   }
+
   </script>
+
 </head>
+
 
 <body>
 
-<header class="site-header">
-  <nav class="nav" aria-label="Primary navigation">
-    <a class="nav-brand" href="/">Nabal Kishore Pande</a>
 
-    <a href="/">Home</a>
-    <a href="/scholarship-intelligence/">Scholarship Intelligence</a>
-    <a href="/decision-mobility/">Decision &amp; Mobility</a>
-    <a href="/research/">Research</a>
-    <a href="/research-profiles/">Research Profiles</a>
-    <a href="/concepts/">Concepts</a>
-    <a href="/research-identity-authority/">Research Identity &amp; Authority</a>
-  </nav>
-</header>
+  <!-- HEADER -->
 
-<main>
+  <header class="site-header">
 
-  <section class="hero">
-    <p class="eyebrow">P03 · Applied Knowledge Domain</p>
+    <div class="header-inner">
 
-    <h1>Decision Defence &amp; Global Professional Mobility</h1>
-
-    <p>
-      Structured approaches to decision evidence, rationale, traceability,
-      accountability, professional portability, credential recognition,
-      and access to international professional opportunities.
-    </p>
-  </section>
+      <a
+        class="brand"
+        href="/"
+      >
+        Nabal Kishore Pande
+      </a>
 
 
-  <section class="section">
-    <h2>Decision Defence</h2>
+      <nav
+        class="main-nav"
+        aria-label="Primary navigation"
+      >
 
-    <p class="lead">
-      Decision Defence is an applied approach to making important decisions
-      explainable, evidence-based, traceable, and accountable.
-    </p>
+        <a href="/">
+          Home
+        </a>
 
-    <p>
-      The purpose is not simply to make a decision. It is to preserve the
-      evidence, reasoning, assumptions, and responsibility surrounding that
-      decision so that the decision can be understood and examined later.
-    </p>
+        <a href="/scholarship-intelligence/">
+          Scholarship Intelligence
+        </a>
 
-    <div class="chain" aria-label="Decision Defence relationship">
-      <span>Decision Evidence</span>
-      <span class="arrow">→</span>
-      <span>Decision Rationale</span>
-      <span class="arrow">→</span>
-      <span>Decision Traceability</span>
-      <span class="arrow">→</span>
-      <span>Decision Accountability</span>
+        <a
+          href="/decision-mobility/"
+          aria-current="page"
+        >
+          Decision &amp; Mobility
+        </a>
+
+        <a href="/research/">
+          Research
+        </a>
+
+        <a href="/research-profiles/">
+          Research Profiles
+        </a>
+
+        <a href="/concepts/">
+          Concepts
+        </a>
+
+        <a href="/research-identity-authority/">
+          Research Identity &amp; Authority
+        </a>
+
+      </nav>
+
     </div>
-  </section>
+
+  </header>
 
 
-  <section class="section">
-    <h2>Decision Defence Architecture</h2>
-
-    <p>
-      Decision Defence Architecture provides the structural layer for
-      documenting and examining decisions. It connects evidence to the
-      reasoning used, records the basis of the decision, and makes the
-      decision process traceable.
-    </p>
-
-    <h3>Evidence</h3>
-    <p>
-      Evidence identifies the information, records, observations, or other
-      support used in reaching a decision.
-    </p>
-
-    <h3>Rationale</h3>
-    <p>
-      Rationale explains how relevant evidence contributed to the decision
-      and why a particular course of action was selected.
-    </p>
-
-    <h3>Traceability</h3>
-    <p>
-      Traceability connects the final decision back to its evidence,
-      assumptions, criteria, and reasoning.
-    </p>
-
-    <h3>Accountability</h3>
-    <p>
-      Accountability identifies responsibility for the decision and its
-      documented basis.
-    </p>
-
-    <p>
-      The controlled definitions of these concepts are maintained in the
-      <a href="/concepts/">Concepts</a> layer.
-    </p>
-  </section>
+  <main>
 
 
-  <section class="section">
-    <h2>Decision Defence Research-to-Application Pathway</h2>
+    <!-- HERO -->
 
-    <p class="lead">
-      Decision Defence Architecture connects a research problem to evidence,
-      a decision model, a documented decision, practical application,
-      outcome review, and further research.
-    </p>
+    <section class="hero">
 
-    <div class="dda-infographic">
-      <img
-        src="/research-decision-framework-evidence-decision-model-review-learning.png"
-        alt="Decision Defence Architecture research-to-application pathway from research problem and research question through evidence, decision model, decision record, application, outcome, review and new research"
-        width="2000"
-        height="3000"
-        loading="lazy"
-        decoding="async">
-      <p class="caption">
-        Decision Defence Architecture: research-to-application pathway.
+      <p class="eyebrow">
+        P03 · Applied Knowledge Domain
       </p>
+
+      <h1>
+        DECISION DEFENCE &amp; GLOBAL PROFESSIONAL MOBILITY
+      </h1>
+
+      <p class="hero-intro">
+        Structured approaches to decision evidence, rationale, traceability,
+        accountability, professional portability, credential recognition,
+        and access to international professional opportunities.
+      </p>
+
+      <div class="hero-links">
+
+        <a href="/">
+          ← Home
+        </a>
+
+        <a href="#decision-defence">
+          Decision Defence
+        </a>
+
+        <a href="#mobility">
+          Global Professional Mobility
+        </a>
+
+        <a href="#resources">
+          Books &amp; Resources
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- DECISION DEFENCE -->
+
+    <section
+      class="section"
+      id="decision-defence"
+    >
+
+      <h2>
+        Decision Defence
+      </h2>
+
+      <p class="lead">
+        Decision Defence is an applied approach to making important decisions
+        explainable, evidence-based, traceable, and accountable.
+      </p>
+
+      <p>
+        The purpose is not simply to make a decision. It is to preserve the
+        evidence, reasoning, assumptions, criteria, and responsibility
+        surrounding that decision so that the decision can be understood,
+        reviewed, and examined later.
+      </p>
+
+      <div
+        class="chain"
+        aria-label="Decision Defence relationship"
+      >
+
+        <span>
+          Decision Evidence
+        </span>
+
+        <span class="arrow">
+          →
+        </span>
+
+        <span>
+          Decision Rationale
+        </span>
+
+        <span class="arrow">
+          →
+        </span>
+
+        <span>
+          Decision Traceability
+        </span>
+
+        <span class="arrow">
+          →
+        </span>
+
+        <span>
+          Decision Accountability
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- DECISION DEFENCE ARCHITECTURE -->
+
+    <section
+      class="section"
+      id="decision-defence-architecture"
+    >
+
+      <h2>
+        Decision Defence Architecture
+      </h2>
+
+      <p>
+        Decision Defence Architecture provides the structural layer for
+        documenting and examining decisions. It connects evidence to the
+        reasoning used, records the basis of the decision, and makes the
+        decision process traceable.
+      </p>
+
+
+      <div class="architecture">
+
+        <strong>
+          Evidence → Rationale → Criteria → Decision → Traceability →
+          Accountability
+        </strong>
+
+        <div class="architecture-flow">
+
+          <span>
+            Evidence
+          </span>
+
+          <span class="arrow">
+            →
+          </span>
+
+          <span>
+            Rationale
+          </span>
+
+          <span class="arrow">
+            →
+          </span>
+
+          <span>
+            Criteria
+          </span>
+
+          <span class="arrow">
+            →
+          </span>
+
+          <span>
+            Decision
+          </span>
+
+          <span class="arrow">
+            →
+          </span>
+
+          <span>
+            Traceability
+          </span>
+
+          <span class="arrow">
+            →
+          </span>
+
+          <span>
+            Accountability
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <h3>
+        Evidence
+      </h3>
+
+      <p>
+        Evidence identifies the information, records, observations, or other
+        support used in reaching a decision.
+      </p>
+
+
+      <h3>
+        Rationale
+      </h3>
+
+      <p>
+        Rationale explains how relevant evidence contributed to the decision
+        and why a particular course of action was selected.
+      </p>
+
+
+      <h3>
+        Criteria
+      </h3>
+
+      <p>
+        Criteria identify the standards, conditions, or decision factors
+        against which evidence is interpreted.
+      </p>
+
+
+      <h3>
+        Traceability
+      </h3>
+
+      <p>
+        Traceability connects the final decision back to its evidence,
+        assumptions, criteria, and reasoning.
+      </p>
+
+
+      <h3>
+        Accountability
+      </h3>
+
+      <p>
+        Accountability identifies responsibility for the decision and its
+        documented basis.
+      </p>
+
+
+      <div class="note">
+
+        <strong>
+          Controlled-definition relationship:
+        </strong>
+
+        Formal definitions for Decision Defence concepts belong to
+        <a href="/concepts/">
+          P06 Concepts
+        </a>.
+
+        P03 applies those concepts to the Decision Defence domain.
+
+      </div>
+
+    </section>
+
+
+    <!-- RESEARCH TO APPLICATION -->
+
+    <section
+      class="section"
+      id="research-application"
+    >
+
+      <h2>
+        Decision Defence Research-to-Application Pathway
+      </h2>
+
+      <p class="lead">
+        Decision Defence Architecture connects a research problem to evidence,
+        a decision model, a documented decision, practical application,
+        outcome review, and further research.
+      </p>
+
+
+      <figure class="image-box">
+
+        <!-- EXISTING IMAGE RETAINED UNCHANGED -->
+
+        <img
+          src="/research-decision-framework-evidence-decision-model-review-learning.png"
+          alt="Decision Defence Architecture research-to-application pathway from research problem and research question through evidence, decision model, decision record, application, outcome, review, learning, and new research"
+          width="2000"
+          height="3000"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <figcaption>
+          Decision Defence Architecture:
+          research-to-application pathway.
+        </figcaption>
+
+      </figure>
+
+
+      <div class="object-grid">
+
+        <article class="card">
+
+          <h3>
+            01 · Research Problem
+          </h3>
+
+          <p>
+            Define the problem that requires investigation, evidence, or a
+            structured decision.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            02 · Research Question
+          </h3>
+
+          <p>
+            Formulate the question that determines what evidence and analysis
+            are required.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            03 · Evidence
+          </h3>
+
+          <p>
+            Collect and organise relevant evidence so that the basis of the
+            subsequent decision can be examined.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            04 · Decision Model
+          </h3>
+
+          <p>
+            Establish the criteria, relationships, assumptions, and reasoning
+            structure used to interpret evidence and support a decision.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            05 · Decision Defence Architecture
+          </h3>
+
+          <p>
+            Connect evidence, reasoning, assumptions, criteria, and
+            responsibility into a traceable decision structure.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            06 · Decision Record
+          </h3>
+
+          <p>
+            Preserve the decision, its evidentiary basis, rationale,
+            assumptions, and responsibility for later review.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            07 · Application
+          </h3>
+
+          <p>
+            Apply the documented decision structure to the relevant
+            operational, professional, research, or mobility context.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            08 · Outcome
+          </h3>
+
+          <p>
+            Record what occurred after application, including relevant results,
+            observations, and evidence.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            09 · Review &amp; Learning
+          </h3>
+
+          <p>
+            Examine the outcome against the original evidence, assumptions,
+            criteria, and decision rationale.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            10 · New Research
+          </h3>
+
+          <p>
+            Convert unresolved questions, new evidence, or observed
+            limitations into the next research problem or question.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="note">
+
+        <strong>
+          Research-to-application logic:
+        </strong>
+
+        Research Problem →
+        Research Question →
+        Evidence →
+        Decision Model →
+        Decision Defence Architecture →
+        Decision Record →
+        Application →
+        Outcome →
+        Review / Learning →
+        New Research
+
+      </div>
+
+    </section>
+
+
+    <!-- DECISION APPLICATION -->
+
+    <section
+      class="section"
+      id="decision-application"
+    >
+
+      <h2>
+        Decision Defence Application
+      </h2>
+
+      <p>
+        Decision Defence can be applied where decisions require a clear
+        evidentiary basis and a traceable reasoning process.
+      </p>
+
+
+      <div class="object-grid">
+
+        <article class="card">
+
+          <h3>
+            Decision Evidence
+          </h3>
+
+          <p>
+            Evidence used to support a decision and establish its factual
+            basis.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Decision Rationale
+          </h3>
+
+          <p>
+            Documented reasoning connecting evidence, criteria, assumptions,
+            and the decision.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Decision Traceability
+          </h3>
+
+          <p>
+            The relationship between evidence, reasoning, actions, and the
+            resulting decision.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Decision Accountability
+          </h3>
+
+          <p>
+            Attribution of responsibility for a decision and its documented
+            basis.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXECUTION COMPRESSION -->
+
+    <section
+      class="section"
+      id="execution-compression"
+    >
+
+      <h2>
+        Execution Compression System
+      </h2>
+
+      <p>
+        The Execution Compression System focuses on reducing unnecessary
+        friction between research, evidence organisation, decision processes,
+        and practical execution.
+      </p>
+
+      <p>
+        Its relationship to Decision Defence is operational. Structured
+        evidence and reasoning can reduce repeated work, improve continuity,
+        and make important decisions easier to execute and review.
+      </p>
+
+      <p>
+        Related research and outputs are maintained through the
+        <a href="/research/">
+          Research
+        </a>
+        layer.
+      </p>
+
+    </section>
+
+
+    <!-- GLOBAL PROFESSIONAL MOBILITY -->
+
+    <section
+      class="section"
+      id="mobility"
+    >
+
+      <h2>
+        Global Professional Mobility
+      </h2>
+
+      <p class="lead">
+        Global Professional Mobility examines how professionals move across
+        jurisdictions and professional systems through qualifications,
+        evidence, capabilities, recognition, and access.
+      </p>
+
+      <p>
+        The focus is on the relationship between professional identity,
+        qualifications, credential recognition, professional portability,
+        and access to international professional opportunities.
+      </p>
+
+
+      <div
+        class="chain"
+        aria-label="Global Professional Mobility relationship"
+      >
+
+        <span>
+          Global Professional Mobility
+        </span>
+
+        <span class="arrow">
+          →
+        </span>
+
+        <span>
+          Professional Portability
+        </span>
+
+        <span class="arrow">
+          →
+        </span>
+
+        <span>
+          Credential Recognition
+        </span>
+
+        <span class="arrow">
+          →
+        </span>
+
+        <span>
+          Professional Access
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROFESSIONAL PORTABILITY -->
+
+    <section
+      class="section"
+      id="professional-portability"
+    >
+
+      <h2>
+        Professional Portability
+      </h2>
+
+      <p>
+        Professional portability concerns the extent to which professional
+        qualifications, experience, capabilities, and evidence can be carried
+        across institutional or national contexts.
+      </p>
+
+      <p>
+        Portability can depend on documentation, qualification structures,
+        professional standards, recognition mechanisms, and the requirements
+        of the destination professional environment.
+      </p>
+
+      <p>
+        Related controlled concepts are maintained in
+        <a href="/concepts/">
+          P06 Concepts
+        </a>.
+      </p>
+
+    </section>
+
+
+    <!-- CREDENTIAL RECOGNITION -->
+
+    <section
+      class="section"
+      id="credential-recognition"
+    >
+
+      <h2>
+        Credential Recognition
+      </h2>
+
+      <p>
+        Credential recognition concerns the process through which a
+        qualification or credential is assessed, interpreted, or accepted
+        within another educational, professional, institutional, or
+        jurisdictional context.
+      </p>
+
+      <p>
+        Recognition is one component of professional mobility. It connects
+        qualifications and supporting evidence with the requirements of the
+        destination context.
+      </p>
+
+    </section>
+
+
+    <!-- PROFESSIONAL ACCESS -->
+
+    <section
+      class="section"
+      id="professional-access"
+    >
+
+      <h2>
+        Professional Access
+      </h2>
+
+      <p>
+        Professional access concerns the practical ability to enter or
+        participate in a professional opportunity after relevant requirements,
+        evidence, credentials, and recognition conditions have been addressed.
+      </p>
+
+      <div class="note">
+
+        <strong>
+          Mobility relationship:
+        </strong>
+
+        Evidence →
+        Credential →
+        Recognition →
+        Decision →
+        Access
+
+      </div>
+
+    </section>
+
+
+    <!-- INTERSECTION -->
+
+    <section
+      class="section"
+      id="intersection"
+    >
+
+      <h2>
+        Decision Defence + Global Professional Mobility
+      </h2>
+
+      <p>
+        Decision Defence and Global Professional Mobility intersect where
+        professional opportunities require decisions based on qualifications,
+        evidence, recognition, risk, and access conditions.
+      </p>
+
+      <p>
+        A structured mobility decision can therefore require both a clear
+        evidence base and a traceable rationale. This connects the decision
+        system with the professional mobility system without treating the two
+        domains as the same concept.
+      </p>
+
+
+      <div class="chain">
+
+        <span>
+          Evidence
+        </span>
+
+        <span class="arrow">
+          →
+        </span>
+
+        <span>
+          Credential
+        </span>
+
+        <span class="arrow">
+          →
+        </span>
+
+        <span>
+          Recognition
+        </span>
+
+        <span class="arrow">
+          →
+        </span>
+
+        <span>
+          Decision
+        </span>
+
+        <span class="arrow">
+          →
+        </span>
+
+        <span>
+          Access
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRACTICAL SYSTEMS -->
+
+    <section
+      class="section"
+      id="practical-systems"
+    >
+
+      <h2>
+        Practical Systems
+      </h2>
+
+      <p>
+        The applied layer connects the concepts above with practical systems
+        for research execution, decision documentation, professional
+        development, and mobility planning.
+      </p>
+
+
+      <div class="resource-grid">
+
+        <article class="card">
+
+          <h3>
+            Structured Decision Evidence
+          </h3>
+
+          <p>
+            Organise the evidence used to support important decisions and
+            preserve its relationship to the decision.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Decision Rationale Documentation
+          </h3>
+
+          <p>
+            Record the reasoning, criteria, assumptions, and evidence behind
+            important decisions.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Decision Traceability
+          </h3>
+
+          <p>
+            Connect decisions with their evidence, reasoning, actions,
+            outcomes, and later review.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Professional Evidence Organisation
+          </h3>
+
+          <p>
+            Organise qualifications, experience, capabilities, credentials,
+            and supporting evidence for professional contexts.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Professional Mobility Preparation
+          </h3>
+
+          <p>
+            Structure qualifications, evidence, recognition requirements, and
+            professional access considerations.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Research Execution
+          </h3>
+
+          <p>
+            Connect research questions, evidence, analysis, outputs, and
+            practical application.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <p style="margin-top: 24px;">
+
+        Related research is maintained through
+        <a href="/research/">
+          P04 Research
+        </a>.
+
+        Controlled terminology is maintained through
+        <a href="/concepts/">
+          P06 Concepts
+        </a>.
+
+      </p>
+
+    </section>
+
+
+    <!-- BOOKS AND RESOURCES -->
+
+    <section
+      class="section"
+      id="resources"
+    >
+
+      <h2>
+        Books &amp; Professional Resources
+      </h2>
+
+      <p>
+        These resources represent applied outputs associated with Decision
+        Defence, execution, academic capability, and professional mobility.
+      </p>
+
+
+      <div class="resource-grid">
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            Decision Defence
+          </span>
+
+          <h3>
+            The Executive Decision Defense Playbook
+          </h3>
+
+          <p>
+            A practical resource associated with structured executive decision
+            defence.
+          </p>
+
+          <p class="resource-price">
+            $19
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://leanpub.com/executive-decision-defense-playbook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on Leanpub
+            </a>
+
+          </p>
+
+        </article>
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            Execution
+          </span>
+
+          <h3>
+            The ASA System
+          </h3>
+
+          <p>
+            A structured professional system associated with execution and
+            applied decision processes.
+          </p>
+
+          <p class="resource-price">
+            $19
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://leanpub.com/the-asa-system"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on Leanpub
+            </a>
+
+          </p>
+
+        </article>
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            Research Execution
+          </span>
+
+          <h3>
+            Research Execution
+          </h3>
+
+          <p>
+            A practical research execution resource supporting structured
+            research production.
+          </p>
+
+          <p class="resource-price">
+            $29
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://leanpub.com/researchproductionsystem"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on Leanpub
+            </a>
+
+          </p>
+
+        </article>
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            Academic Capability
+          </span>
+
+          <h3>
+            Academic Word Engine Complete C1/C2 Vocabulary System
+          </h3>
+
+          <p>
+            A published resource associated with academic and professional
+            language capability.
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://books.apple.com/nz/book/academic-word-engine-complete-c1-c2-vocabulary-system/id6756442886"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on Apple Books
+            </a>
+
+          </p>
+
+        </article>
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            Assessment Preparation
+          </span>
+
+          <h3>
+            Cognitive Test Readiness Framework
+          </h3>
+
+          <p>
+            A structured resource associated with preparation for cognitive
+            assessment contexts.
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://books.apple.com/nz/book/cognitive-test-readiness-framework/id6756442405"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on Apple Books
+            </a>
+
+          </p>
+
+        </article>
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            Professional Capability
+          </span>
+
+          <h3>
+            Structured C1 AI Systems
+          </h3>
+
+          <p>
+            A structured resource connecting advanced English capability with
+            AI-supported systems.
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://amzn.in/d/0innPQwO"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on Amazon India
+            </a>
+
+          </p>
+
+        </article>
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            Professional Communication
+          </span>
+
+          <h3>
+            Interview Failure Due to English
+          </h3>
+
+          <p>
+            A resource examining the relationship between English capability
+            and interview performance.
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://amzn.in/d/0jgnLiY0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on Amazon India
+            </a>
+
+          </p>
+
+        </article>
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            Academic Vocabulary
+          </span>
+
+          <h3>
+            The Academic Word Engine
+          </h3>
+
+          <p>
+            A resource associated with academic vocabulary development.
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://www.ebay.com/itm/317790719899"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on eBay
+            </a>
+
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PUBLISHING -->
+
+    <section
+      class="section"
+      id="publishing"
+    >
+
+      <h2>
+        Decision &amp; Mobility Publishing
+      </h2>
+
+      <p>
+        Professional publishing and distribution records provide external
+        discovery points for the Decision &amp; Mobility knowledge domain.
+        They do not replace the canonical P03 knowledge page.
+      </p>
+
+
+      <div class="resource-grid">
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            LinkedIn
+          </span>
+
+          <h3>
+            Decision &amp; Mobility Newsletter
+          </h3>
+
+          <p>
+            Professional publishing channel for Decision &amp; Mobility
+            knowledge and related updates.
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://www.linkedin.com/newsletters/decision-mobility-7507274697194160128/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Newsletter
+            </a>
+
+          </p>
+
+        </article>
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            Blog
+          </span>
+
+          <h3>
+            Decision &amp; Mobility Weekly
+          </h3>
+
+          <p>
+            Supporting publishing channel for Decision &amp; Mobility
+            knowledge.
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://decision-mobility-weekly.blogspot.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Blog
+            </a>
+
+          </p>
+
+        </article>
+
+
+        <article class="resource">
+
+          <span class="resource-label">
+            Author Profile
+          </span>
+
+          <h3>
+            Leanpub Author Profile
+          </h3>
+
+          <p>
+            External publishing profile supporting books and professional
+            resources associated with this domain.
+          </p>
+
+          <p class="resource-link">
+
+            <a
+              class="resource-button"
+              href="https://leanpub.com/u/nabalkishorepande"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Leanpub Profile
+            </a>
+
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- AEO -->
+
+    <section
+      class="section"
+      id="faq"
+    >
+
+      <h2>
+        Decision Defence &amp; Mobility: Direct Answers
+      </h2>
+
+
+      <div class="faq">
+
+        <h3>
+          What is Decision Defence?
+        </h3>
+
+        <p>
+          Decision Defence is an applied approach to making important
+          decisions explainable, evidence-based, traceable, and accountable.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+        <h3>
+          What is Decision Defence Architecture?
+        </h3>
+
+        <p>
+          Decision Defence Architecture is the structural approach for
+          connecting decision evidence, rationale, criteria, assumptions,
+          traceability, and accountability.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+        <h3>
+          What is Global Professional Mobility?
+        </h3>
+
+        <p>
+          Global Professional Mobility concerns how professionals move across
+          jurisdictions and professional systems through qualifications,
+          evidence, recognition, capabilities, and professional access.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+        <h3>
+          What is professional portability?
+        </h3>
+
+        <p>
+          Professional portability concerns the extent to which professional
+          qualifications, experience, capabilities, and evidence can be
+          carried across institutional or national contexts.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+        <h3>
+          What is credential recognition?
+        </h3>
+
+        <p>
+          Credential recognition concerns the assessment, interpretation, or
+          acceptance of a qualification or credential within another
+          educational, professional, institutional, or jurisdictional
+          context.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+        <h3>
+          Where are Decision Defence concepts formally defined?
+        </h3>
+
+        <p>
+          Controlled definitions are maintained on
+          <a href="/concepts/">
+            P06 Concepts
+          </a>.
+          P03 applies those concepts within the Decision Defence and
+          Global Professional Mobility domains.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+        <h3>
+          Where is the related research maintained?
+        </h3>
+
+        <p>
+          Research projects, papers, reports, datasets, frameworks, evidence,
+          and provenance are maintained through
+          <a href="/research/">
+            P04 Research
+          </a>.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONNECTIONS -->
+
+    <section
+      class="section"
+      id="connections"
+    >
+
+      <h2>
+        Knowledge System Connections
+      </h2>
+
+      <p>
+        Decision &amp; Mobility is one applied view within the frozen
+        seven-page knowledge system.
+      </p>
+
+
+      <div class="navigation-panel">
+
+        <a href="/">
+          P01 · Identity
+        </a>
+
+        <a href="/scholarship-intelligence/">
+          P02 · Scholarship Intelligence
+        </a>
+
+        <a href="/research/">
+          P04 · Research
+        </a>
+
+        <a href="/research-profiles/">
+          P05 · Research Profiles
+        </a>
+
+        <a href="/concepts/">
+          P06 · Concepts
+        </a>
+
+        <a href="/research-identity-authority/">
+          P07 · Research Identity &amp; Authority
+        </a>
+
+      </div>
+
+
+      <div class="note">
+
+        <strong>
+          Canonical ownership:
+        </strong>
+
+        P03 owns applied Decision Defence and Global Professional Mobility
+        knowledge.
+
+        P04 owns research objects and provenance.
+
+        P05 owns verified external research profiles.
+
+        P06 owns controlled definitions.
+
+        P07 owns research identity and authority relationships.
+
+        P01 remains the identity and orientation layer.
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <p class="footer-title">
+        Decision Defence &amp; Global Professional Mobility ·
+        Nabal Kishore Pande
+      </p>
+
+      <p class="footer-text">
+        Applied knowledge for decision evidence, rationale, traceability,
+        accountability, professional portability, credential recognition,
+        and professional access.
+      </p>
+
+
+      <div class="footer-links">
+
+        <a href="/">
+          Home
+        </a>
+
+        <a href="/scholarship-intelligence/">
+          Scholarship Intelligence
+        </a>
+
+        <a href="/research/">
+          Research
+        </a>
+
+        <a href="/research-profiles/">
+          Research Profiles
+        </a>
+
+        <a href="/concepts/">
+          Concepts
+        </a>
+
+        <a href="/research-identity-authority/">
+          Research Identity &amp; Authority
+        </a>
+
+      </div>
+
     </div>
 
-    <h3>1. Research Problem</h3>
-    <p>
-      Define the problem that requires investigation, evidence, or a
-      structured decision.
-    </p>
+  </footer>
 
-    <h3>2. Research Question</h3>
-    <p>
-      Formulate the question that determines what evidence and analysis are
-      required.
-    </p>
-
-    <h3>3. Evidence</h3>
-    <p>
-      Collect and organise relevant evidence so that the basis of the
-      subsequent decision can be examined.
-    </p>
-
-    <h3>4. Decision Model</h3>
-    <p>
-      Establish the criteria, relationships, assumptions, and reasoning
-      structure used to interpret evidence and support a decision.
-    </p>
-
-    <h3>5. Decision Defence Architecture</h3>
-    <p>
-      Connect evidence, reasoning, assumptions, criteria, and responsibility
-      into a traceable decision structure.
-    </p>
-
-    <h3>6. Decision Record</h3>
-    <p>
-      Preserve the decision, its evidentiary basis, rationale, assumptions,
-      and responsibility in a form that can be reviewed later.
-    </p>
-
-    <h3>7. Application</h3>
-    <p>
-      Apply the documented decision structure to the relevant operational,
-      professional, research, or mobility context.
-    </p>
-
-    <h3>8. Outcome</h3>
-    <p>
-      Record what occurred after application, including relevant results,
-      observations, and evidence.
-    </p>
-
-    <h3>9. Review and Learning</h3>
-    <p>
-      Examine the outcome against the original evidence, assumptions,
-      criteria, and decision rationale to identify learning.
-    </p>
-
-    <h3>10. New Research</h3>
-    <p>
-      Convert unresolved questions, new evidence, or observed limitations
-      into the next research problem or research question.
-    </p>
-
-    <div class="note">
-      <strong>Research-to-application logic:</strong>
-      Research Problem → Research Question → Evidence → Decision Model →
-      Decision Defence Architecture → Decision Record → Application →
-      Outcome → Review / Learning → New Research
-    </div>
-  </section>
-
-
-  <section class="section">
-    <h2>Decision Defence Application</h2>
-
-    <p>
-      Decision Defence can be applied where decisions require a clear
-      evidentiary basis and an auditable reasoning process.
-    </p>
-
-    <div class="object-grid">
-
-      <div class="object">
-        <strong>Decision Evidence</strong>
-        Evidence used to support a decision and establish its factual basis.
-      </div>
-
-      <div class="object">
-        <strong>Decision Rationale</strong>
-        The documented reasoning connecting evidence, criteria, and the decision.
-      </div>
-
-      <div class="object">
-        <strong>Decision Traceability</strong>
-        The relationship between evidence, reasoning, actions, and the resulting decision.
-      </div>
-
-      <div class="object">
-        <strong>Decision Accountability</strong>
-        The attribution of responsibility for a decision and its documented basis.
-      </div>
-
-    </div>
-  </section>
-
-
-  <section class="section">
-    <h2>Execution Compression System</h2>
-
-    <p>
-      The Execution Compression System focuses on reducing unnecessary
-      friction between research, evidence organisation, decision processes,
-      and practical execution.
-    </p>
-
-    <p>
-      Its relationship to Decision Defence is operational: structured
-      evidence and reasoning can reduce repeated work, improve continuity,
-      and make important decisions easier to execute and review.
-    </p>
-
-    <p>
-      Related research and outputs are maintained through the
-      <a href="/research/">Research</a> layer.
-    </p>
-  </section>
-
-
-  <section class="section">
-    <h2>Global Professional Mobility</h2>
-
-    <p class="lead">
-      Global Professional Mobility examines how professionals move across
-      jurisdictions and professional systems through qualifications,
-      evidence, capabilities, recognition, and access.
-    </p>
-
-    <p>
-      The focus is on the relationship between professional identity,
-      qualifications, credential recognition, professional portability,
-      and access to international professional opportunities.
-    </p>
-
-    <div class="chain" aria-label="Global Professional Mobility relationship">
-      <span>Global Professional Mobility</span>
-      <span class="arrow">→</span>
-      <span>Professional Portability</span>
-      <span class="arrow">→</span>
-      <span>Credential Recognition</span>
-      <span class="arrow">→</span>
-      <span>Professional Access</span>
-    </div>
-  </section>
-
-
-  <section class="section">
-    <h2>Professional Portability</h2>
-
-    <p>
-      Professional portability concerns the extent to which professional
-      qualifications, experience, capabilities, and evidence can be carried
-      across institutional or national contexts.
-    </p>
-
-    <p>
-      Portability can depend on documentation, qualification structures,
-      professional standards, recognition mechanisms, and the requirements
-      of the destination professional environment.
-    </p>
-
-    <p>
-      Related controlled concepts are maintained in
-      <a href="/concepts/">Concepts</a>.
-    </p>
-  </section>
-
-
-  <section class="section">
-    <h2>Credential Recognition</h2>
-
-    <p>
-      Credential recognition concerns the process through which a
-      qualification or credential is assessed, interpreted, or accepted
-      within another educational, professional, institutional, or
-      jurisdictional context.
-    </p>
-
-    <p>
-      Recognition is one component of professional mobility. It connects
-      qualifications and supporting evidence with the requirements of the
-      destination context.
-    </p>
-  </section>
-
-
-  <section class="section">
-    <h2>Professional Access</h2>
-
-    <p>
-      Professional access concerns the practical ability to enter or
-      participate in a professional opportunity after relevant requirements,
-      evidence, credentials, and recognition conditions have been addressed.
-    </p>
-
-    <div class="note">
-      <strong>Mobility relationship:</strong>
-      Evidence → Credential → Recognition → Decision → Access
-    </div>
-  </section>
-
-
-  <section class="section">
-    <h2>Decision Defence + Global Professional Mobility</h2>
-
-    <p>
-      Decision Defence and Global Professional Mobility intersect where
-      professional opportunities require decisions based on qualifications,
-      evidence, recognition, risk, and access conditions.
-    </p>
-
-    <p>
-      A structured mobility decision can therefore require both a clear
-      evidence base and a traceable rationale. This connects the decision
-      system with the professional mobility system without treating the two
-      domains as the same concept.
-    </p>
-
-    <div class="chain">
-      <span>Evidence</span>
-      <span class="arrow">→</span>
-      <span>Credential</span>
-      <span class="arrow">→</span>
-      <span>Recognition</span>
-      <span class="arrow">→</span>
-      <span>Decision</span>
-      <span class="arrow">→</span>
-      <span>Access</span>
-    </div>
-  </section>
-
-
-  <section class="section">
-    <h2>Practical Systems</h2>
-
-    <p>
-      The applied layer connects the concepts above with practical systems
-      for research execution, decision documentation, professional
-      development, and mobility planning.
-    </p>
-
-    <ul>
-      <li>Structured decision evidence collection</li>
-      <li>Decision rationale documentation</li>
-      <li>Decision traceability systems</li>
-      <li>Professional evidence organisation</li>
-      <li>Credential and qualification documentation</li>
-      <li>Professional mobility preparation</li>
-      <li>Research execution and evidence management</li>
-    </ul>
-
-    <p>
-      The wider research record is available through
-      <a href="/research/">Research</a>, while controlled terminology is
-      maintained through <a href="/concepts/">Concepts</a>.
-    </p>
-  </section>
-
-
-  <section class="section">
-    <h2>Books &amp; Professional Resources</h2>
-
-    <p>
-      These resources represent applied outputs associated with Decision
-      Defence, execution, and professional mobility.
-    </p>
-
-    <div class="resource-grid">
-
-      <div class="resource">
-        <strong>The Executive Decision Defense Playbook</strong>
-        <p>
-          A practical resource associated with structured executive decision
-          defence.
-        </p>
-        <a
-          class="resource-button"
-          href="https://leanpub.com/executive-decision-defense-playbook"
-          target="_blank"
-          rel="noopener">
-          View on Leanpub
-        </a>
-        <span class="price">$19</span>
-      </div>
-
-
-      <div class="resource">
-        <strong>The ASA System</strong>
-        <p>
-          A structured professional system associated with execution and
-          applied decision processes.
-        </p>
-        <a
-          class="resource-button"
-          href="https://leanpub.com/the-asa-system"
-          target="_blank"
-          rel="noopener">
-          View on Leanpub
-        </a>
-        <span class="price">$19</span>
-      </div>
-
-
-      <div class="resource">
-        <strong>Research Execution</strong>
-        <p>
-          A practical research execution resource supporting structured
-          research production.
-        </p>
-        <a
-          class="resource-button"
-          href="https://leanpub.com/researchproductionsystem"
-          target="_blank"
-          rel="noopener">
-          View on Leanpub
-        </a>
-        <span class="price">$29</span>
-      </div>
-
-
-      <div class="resource">
-        <strong>Academic Word Engine Complete C1/C2 Vocabulary System</strong>
-        <p>
-          A published resource associated with academic and professional
-          language capability.
-        </p>
-        <a
-          class="resource-button"
-          href="https://books.apple.com/nz/book/academic-word-engine-complete-c1-c2-vocabulary-system/id6756442886"
-          target="_blank"
-          rel="noopener">
-          View on Apple Books
-        </a>
-      </div>
-
-
-      <div class="resource">
-        <strong>Cognitive Test Readiness Framework</strong>
-        <p>
-          A structured resource associated with preparation for cognitive
-          assessment contexts.
-        </p>
-        <a
-          class="resource-button"
-          href="https://books.apple.com/nz/book/cognitive-test-readiness-framework/id6756442405"
-          target="_blank"
-          rel="noopener">
-          View on Apple Books
-        </a>
-      </div>
-
-
-      <div class="resource">
-        <strong>Structured C1 AI Systems</strong>
-        <p>
-          A structured resource connecting advanced English capability with
-          AI-supported systems.
-        </p>
-        <a
-          class="resource-button"
-          href="https://amzn.in/d/0innPQwO"
-          target="_blank"
-          rel="noopener">
-          View on Amazon India
-        </a>
-      </div>
-
-
-      <div class="resource">
-        <strong>Interview Failure Due to English</strong>
-        <p>
-          A resource examining the relationship between English capability
-          and interview performance.
-        </p>
-        <a
-          class="resource-button"
-          href="https://amzn.in/d/0jgnLiY0"
-          target="_blank"
-          rel="noopener">
-          View on Amazon India
-        </a>
-      </div>
-
-
-      <div class="resource">
-        <strong>The Academic Word Engine</strong>
-        <p>
-          A resource associated with academic vocabulary development.
-        </p>
-        <a
-          class="resource-button"
-          href="https://www.ebay.com/itm/317790719899"
-          target="_blank"
-          rel="noopener">
-          View on eBay
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <section class="section">
-    <h2>Publishing &amp; Professional Discovery</h2>
-
-    <p>
-      Professional publishing and distribution records provide external
-      discovery points for the Decision &amp; Mobility knowledge domain.
-    </p>
-
-    <ul>
-      <li>
-        <a
-          href="https://www.linkedin.com/newsletters/decision-mobility-7507274697194160128/"
-          target="_blank"
-          rel="noopener">
-          Decision &amp; Mobility LinkedIn Newsletter
-        </a>
-      </li>
-
-      <li>
-        <a
-          href="https://decision-mobility-weekly.blogspot.com/"
-          target="_blank"
-          rel="noopener">
-          Decision &amp; Mobility Weekly
-        </a>
-      </li>
-
-      <li>
-        <a
-          href="https://leanpub.com/u/nabalkishorepande"
-          target="_blank"
-          rel="noopener">
-          Leanpub Author Profile
-        </a>
-      </li>
-
-      <li>
-        <a
-          href="https://www.amazon.com/author/nabalkishorepande"
-          target="_blank"
-          rel="noopener">
-          Amazon Author Page
-        </a>
-      </li>
-    </ul>
-
-    <p>
-      The Leanpub Author Profile and Amazon Author Page are owned by this
-      page as professional publishing identities. They are not duplicated
-      as full records on the Research Profiles page.
-    </p>
-  </section>
-
-
-  <section class="section">
-    <h2>Knowledge System Connections</h2>
-
-    <p>
-      Decision &amp; Mobility is one view within the wider seven-page
-      knowledge system.
-    </p>
-
-    <ul>
-      <li>
-        <a href="/">P01 — Home / Identity</a> —
-        researcher identity and orientation.
-      </li>
-
-      <li>
-        <a href="/scholarship-intelligence/">P02 — Scholarship Intelligence</a> —
-        applied scholarship knowledge and preparation systems.
-      </li>
-
-      <li>
-        <a href="/research/">P04 — Research</a> —
-        research projects, papers, reports, datasets, and provenance.
-      </li>
-
-      <li>
-        <a href="/research-profiles/">P05 — Research Profiles</a> —
-        external research and publishing identity infrastructure.
-      </li>
-
-      <li>
-        <a href="/concepts/">P06 — Concepts</a> —
-        controlled definitions for Decision Defence and mobility concepts.
-      </li>
-
-      <li>
-        <a href="/research-identity-authority/">P07 — Research Identity &amp; Authority</a> —
-        identity verification and authority relationships.
-      </li>
-    </ul>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <p>
-    © Nabal Kishore Pande. Decision Defence &amp; Global Professional Mobility.
-  </p>
-</footer>
 
 </body>
 </html>
