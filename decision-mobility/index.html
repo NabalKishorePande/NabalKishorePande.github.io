@@ -32,6 +32,8 @@
       --hover: #1D4ED8;
       --dark: #0F172A;
       --accent: #1D4ED8;
+      --button-text: #FFFFFF;
+      --button-hover: #1E40AF;
     }
 
     * {
@@ -262,6 +264,37 @@
       color: var(--accent);
     }
 
+    /* Consistent external resource buttons */
+    .resource-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: var(--accent);
+      color: var(--button-text);
+      border: 1px solid var(--accent);
+      border-radius: 7px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.3;
+      text-decoration: none;
+      transition: background-color 0.2s ease,
+                  border-color 0.2s ease,
+                  transform 0.2s ease;
+    }
+
+    .resource-button:hover {
+      background: var(--button-hover);
+      border-color: var(--button-hover);
+      color: var(--button-text);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .resource-button:focus-visible {
+      outline: 3px solid #93C5FD;
+      outline-offset: 2px;
+    }
+
     .note {
       padding: 18px 20px;
       background: #F8FAFC;
@@ -310,6 +343,11 @@
 
       .chain .arrow {
         display: none;
+      }
+
+      .resource-button {
+        width: 100%;
+        text-align: center;
       }
     }
   </style>
@@ -757,12 +795,16 @@
           A practical resource associated with structured executive decision
           defence.
         </p>
-        <a href="https://leanpub.com/executive-decision-defense-playbook"
-           target="_blank" rel="noopener">
+        <a
+          class="resource-button"
+          href="https://leanpub.com/executive-decision-defense-playbook"
+          target="_blank"
+          rel="noopener">
           View on Leanpub
         </a>
         <span class="price">$19</span>
       </div>
+
 
       <div class="resource">
         <strong>The ASA System</strong>
@@ -770,12 +812,16 @@
           A structured professional system associated with execution and
           applied decision processes.
         </p>
-        <a href="https://leanpub.com/the-asa-system"
-           target="_blank" rel="noopener">
+        <a
+          class="resource-button"
+          href="https://leanpub.com/the-asa-system"
+          target="_blank"
+          rel="noopener">
           View on Leanpub
         </a>
         <span class="price">$19</span>
       </div>
+
 
       <div class="resource">
         <strong>Research Execution</strong>
@@ -783,12 +829,16 @@
           A practical research execution resource supporting structured
           research production.
         </p>
-        <a href="https://leanpub.com/researchproductionsystem"
-           target="_blank" rel="noopener">
+        <a
+          class="resource-button"
+          href="https://leanpub.com/researchproductionsystem"
+          target="_blank"
+          rel="noopener">
           View on Leanpub
         </a>
         <span class="price">$29</span>
       </div>
+
 
       <div class="resource">
         <strong>Academic Word Engine Complete C1/C2 Vocabulary System</strong>
@@ -796,7 +846,15 @@
           A published resource associated with academic and professional
           language capability.
         </p>
+        <a
+          class="resource-button"
+          href="https://books.apple.com/nz/book/academic-word-engine-complete-c1-c2-vocabulary-system/id6756442886"
+          target="_blank"
+          rel="noopener">
+          View on Apple Books
+        </a>
       </div>
+
 
       <div class="resource">
         <strong>Cognitive Test Readiness Framework</strong>
@@ -804,7 +862,15 @@
           A structured resource associated with preparation for cognitive
           assessment contexts.
         </p>
+        <a
+          class="resource-button"
+          href="https://books.apple.com/nz/book/cognitive-test-readiness-framework/id6756442405"
+          target="_blank"
+          rel="noopener">
+          View on Apple Books
+        </a>
       </div>
+
 
       <div class="resource">
         <strong>Structured C1 AI Systems</strong>
@@ -812,7 +878,15 @@
           A structured resource connecting advanced English capability with
           AI-supported systems.
         </p>
+        <a
+          class="resource-button"
+          href="https://amzn.in/d/0innPQwO"
+          target="_blank"
+          rel="noopener">
+          View on Amazon India
+        </a>
       </div>
+
 
       <div class="resource">
         <strong>Interview Failure Due to English</strong>
@@ -820,13 +894,28 @@
           A resource examining the relationship between English capability
           and interview performance.
         </p>
+        <a
+          class="resource-button"
+          href="https://amzn.in/d/0jgnLiY0"
+          target="_blank"
+          rel="noopener">
+          View on Amazon India
+        </a>
       </div>
+
 
       <div class="resource">
         <strong>The Academic Word Engine</strong>
         <p>
           A resource associated with academic vocabulary development.
         </p>
+        <a
+          class="resource-button"
+          href="https://www.ebay.com/itm/317790719899"
+          target="_blank"
+          rel="noopener">
+          View on eBay
+        </a>
       </div>
 
     </div>
@@ -843,29 +932,37 @@
 
     <ul>
       <li>
-        <a href="https://www.linkedin.com/newsletters/decision-mobility-7507274697194160128/"
-           target="_blank" rel="noopener">
+        <a
+          href="https://www.linkedin.com/newsletters/decision-mobility-7507274697194160128/"
+          target="_blank"
+          rel="noopener">
           Decision &amp; Mobility LinkedIn Newsletter
         </a>
       </li>
 
       <li>
-        <a href="https://decision-mobility-weekly.blogspot.com/"
-           target="_blank" rel="noopener">
+        <a
+          href="https://decision-mobility-weekly.blogspot.com/"
+          target="_blank"
+          rel="noopener">
           Decision &amp; Mobility Weekly
         </a>
       </li>
 
       <li>
-        <a href="https://leanpub.com/u/nabalkishorepande"
-           target="_blank" rel="noopener">
+        <a
+          href="https://leanpub.com/u/nabalkishorepande"
+          target="_blank"
+          rel="noopener">
           Leanpub Author Profile
         </a>
       </li>
 
       <li>
-        <a href="https://www.amazon.com/author/nabalkishorepande"
-           target="_blank" rel="noopener">
+        <a
+          href="https://www.amazon.com/author/nabalkishorepande"
+          target="_blank"
+          rel="noopener">
           Amazon Author Page
         </a>
       </li>
