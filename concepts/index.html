@@ -6,33 +6,50 @@
 
   <title>Concepts | Nabal Kishore Pande</title>
 
-  <meta name="description" content="Controlled concepts connecting Scholarship Intelligence, Decision Defence, Global Professional Mobility, research, and practical application within the knowledge system of Nabal Kishore Pande.">
+  <meta name="description" content="P06 controlled concepts defining Scholarship Intelligence, Decision Defence, Global Professional Mobility, and related semantic relationships across the Nabal Kishore Pande knowledge system.">
+  <meta name="keywords" content="Scholarship Intelligence, Scholarship Preparation Intelligence, Decision Defence, Decision Defence Architecture, Global Professional Mobility, Professional Portability, Credential Recognition, Professional Access, controlled concepts">
   <meta name="author" content="Nabal Kishore Pande">
-<meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://nabalkishorepande.github.io/concepts/">
+
   <meta property="og:title" content="Concepts | Nabal Kishore Pande">
-  <meta property="og:description" content="A controlled semantic knowledge layer connecting Scholarship Intelligence, Decision Defence, Global Professional Mobility, research, and application.">
+  <meta property="og:description" content="Controlled semantic concepts connecting Scholarship Intelligence, Decision Defence, Global Professional Mobility, research, and application.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nabalkishorepande.github.io/concepts/">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Concepts | Nabal Kishore Pande">
-  <meta name="twitter:description" content="Controlled concepts within the research and knowledge system.">
+  <meta name="twitter:description" content="P06 controlled semantic knowledge layer.">
 
-  <link rel="canonical" href="https://nabalkishorepande.github.io/concepts/">
+  <!-- Inter typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
     :root {
       --text: #172033;
-      --muted: #5F6B7A;
-      --bg: #F8FAFC;
-      --surface: #FFFFFF;
-      --border: #E2E8F0;
-      --link: #2563EB;
-      --hover: #1D4ED8;
-      --dark: #0F172A;
-      --accent: #7C3AED;
-      --accent-soft: #F5F3FF;
-      --accent-border: #DDD6FE;
+      --muted: #5f6b7a;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --border: #e2e8f0;
+      --link: #2563eb;
+      --hover: #1d4ed8;
+      --dark: #0f172a;
+
+      /* P06 Concept colour */
+      --accent: #7c3aed;
+      --accent-soft: #f5f3ff;
+      --accent-border: #ddd6fe;
+
+      --success-soft: #f0fdf4;
+      --success-border: #bbf7d0;
+      --warning-soft: #fffbeb;
+      --warning-border: #fde68a;
     }
 
     * {
@@ -45,8 +62,15 @@
 
     body {
       margin: 0;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Helvetica, Arial, sans-serif;
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
       color: var(--text);
       background: var(--bg);
       line-height: 1.7;
@@ -62,11 +86,15 @@
       text-decoration: underline;
     }
 
+    /* =========================
+       HEADER / NAVIGATION
+       ========================= */
+
     .site-header {
       position: sticky;
       top: 0;
-      z-index: 100;
-      background: rgba(255, 255, 255, 0.96);
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.97);
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(8px);
     }
@@ -75,6 +103,7 @@
       max-width: 1180px;
       margin: 0 auto;
       padding: 14px 24px;
+
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -82,9 +111,9 @@
     }
 
     .nav-brand {
-      font-weight: 800;
-      color: var(--dark);
       margin-right: auto;
+      color: var(--dark);
+      font-weight: 800;
       white-space: nowrap;
     }
 
@@ -93,24 +122,35 @@
       font-weight: 600;
     }
 
+    /* =========================
+       MAIN
+       ========================= */
+
     main {
       max-width: 1180px;
       margin: 0 auto;
       padding: 56px 24px 80px;
     }
 
+    /* =========================
+       HERO
+       ========================= */
+
     .hero {
       background: var(--surface);
       border: 1px solid var(--border);
       border-top: 5px solid var(--accent);
       border-radius: 14px;
+
       padding: 48px;
       margin-bottom: 30px;
+
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
     }
 
     .eyebrow {
       margin: 0 0 10px;
+
       color: var(--accent);
       font-size: 0.82rem;
       font-weight: 800;
@@ -120,6 +160,7 @@
 
     h1 {
       margin: 0 0 16px;
+
       color: var(--dark);
       font-size: clamp(2.2rem, 5vw, 3.6rem);
       line-height: 1.1;
@@ -127,33 +168,43 @@
     }
 
     .hero p {
-      max-width: 880px;
+      max-width: 900px;
       margin: 0;
+
       color: var(--muted);
-      font-size: 1.1rem;
+      font-size: 1.08rem;
     }
+
+    /* =========================
+       SECTIONS
+       ========================= */
 
     .section {
       background: var(--surface);
       border: 1px solid var(--border);
       border-top: 4px solid var(--accent);
       border-radius: 12px;
+
       padding: 32px;
       margin: 24px 0;
+
       box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
     }
 
     h2 {
       margin: 0 0 16px;
+
       color: var(--dark);
       font-size: 1.65rem;
       line-height: 1.25;
     }
 
     h3 {
-      margin: 24px 0 8px;
+      margin: 22px 0 8px;
+
       color: var(--dark);
-      font-size: 1.2rem;
+      font-size: 1.15rem;
+      line-height: 1.35;
     }
 
     p {
@@ -173,6 +224,35 @@
       font-size: 1.05rem;
     }
 
+    /* =========================
+       NOTES
+       ========================= */
+
+    .note {
+      padding: 18px 20px;
+
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+
+      margin: 20px 0;
+    }
+
+    .governance {
+      background: var(--success-soft);
+      border: 1px solid var(--success-border);
+      border-left: 4px solid #16a34a;
+    }
+
+    .boundary {
+      background: var(--warning-soft);
+      border: 1px solid var(--warning-border);
+      border-left: 4px solid #d97706;
+    }
+
+    /* =========================
+       CONCEPT CARDS
+       ========================= */
+
     .concept-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -182,38 +262,49 @@
 
     .concept {
       padding: 22px;
+
       border: 1px solid var(--border);
       border-radius: 10px;
-      background: #FCFDFE;
+
+      background: #fcfdfe;
+    }
+
+    .concept:hover {
+      border-color: var(--accent-border);
+    }
+
+    .label {
+      display: inline-block;
+
+      margin-bottom: 10px;
+      padding: 5px 9px;
+
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      border-radius: 6px;
+
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
 
     .concept-term {
       margin: 0 0 8px;
+
       color: var(--dark);
       font-size: 1.12rem;
       font-weight: 800;
     }
 
-    .label {
-      display: inline-block;
-      margin-bottom: 10px;
-      padding: 5px 9px;
-      background: var(--accent-soft);
-      border: 1px solid var(--accent-border);
-      border-radius: 6px;
-      color: var(--accent);
-      font-size: 0.76rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .concept dl {
+    dl {
       margin: 0;
     }
 
     .concept dt {
       margin-top: 12px;
+
       color: var(--dark);
       font-size: 0.86rem;
       font-weight: 800;
@@ -223,9 +314,44 @@
       margin: 3px 0 0;
     }
 
+    /* =========================
+       REGISTRY TABLE
+       ========================= */
+
+    .registry {
+      overflow-x: auto;
+    }
+
+    .registry table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+    }
+
+    .registry th,
+    .registry td {
+      padding: 12px 14px;
+
+      border: 1px solid var(--border);
+
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .registry th {
+      background: var(--accent-soft);
+      color: var(--dark);
+      font-weight: 800;
+    }
+
+    /* =========================
+       RELATIONSHIPS
+       ========================= */
+
     .relationship {
       margin: 20px 0;
       padding: 20px;
+
       background: var(--accent-soft);
       border: 1px solid var(--accent-border);
       border-radius: 10px;
@@ -238,28 +364,38 @@
     .chain {
       display: flex;
       flex-wrap: wrap;
-      gap: 9px;
       align-items: center;
+      gap: 9px;
+
       margin-top: 15px;
     }
 
     .chain span {
       display: inline-block;
+
       padding: 9px 12px;
-      background: #FFFFFF;
+
+      background: #ffffff;
       border: 1px solid var(--accent-border);
       border-radius: 7px;
+
       color: var(--dark);
       font-weight: 700;
     }
 
     .chain .arrow {
       padding: 0 2px;
-      border: 0;
+
       background: transparent;
+      border: 0;
+
       color: var(--accent);
       font-weight: 800;
     }
+
+    /* =========================
+       IMAGE
+       ========================= */
 
     .image-box {
       margin: 24px 0 10px;
@@ -268,34 +404,41 @@
 
     .image-box img {
       display: block;
+
       width: 100%;
       height: auto;
-      border-radius: 10px;
+
       border: 1px solid var(--border);
+      border-radius: 10px;
     }
 
     .caption {
       margin-top: 9px;
+
       color: var(--muted);
       font-size: 0.88rem;
     }
 
-    .note {
-      padding: 18px 20px;
-      background: #F8FAFC;
-      border-left: 4px solid var(--accent);
-      margin: 20px 0;
-    }
+    /* =========================
+       FOOTER
+       ========================= */
 
     .footer {
       max-width: 1180px;
       margin: 0 auto;
+
       padding: 0 24px 50px;
+
       color: var(--muted);
       font-size: 0.9rem;
     }
 
+    /* =========================
+       MOBILE
+       ========================= */
+
     @media (max-width: 760px) {
+
       .nav {
         padding: 12px 16px;
       }
@@ -331,6 +474,7 @@
     }
   </style>
 
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -343,26 +487,43 @@
       "name": "Nabal Kishore Pande",
       "url": "https://nabalkishorepande.github.io/"
     },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Nabal Kishore Pande Knowledge System",
+      "url": "https://nabalkishorepande.github.io/"
+    },
     "about": [
       {
-        "@type": "Thing",
+        "@type": "DefinedTerm",
         "name": "Scholarship Intelligence"
       },
       {
-        "@type": "Thing",
+        "@type": "DefinedTerm",
+        "name": "Scholarship Preparation Intelligence"
+      },
+      {
+        "@type": "DefinedTerm",
         "name": "Decision Defence"
       },
       {
-        "@type": "Thing",
+        "@type": "DefinedTerm",
+        "name": "Decision Defence Architecture"
+      },
+      {
+        "@type": "DefinedTerm",
         "name": "Global Professional Mobility"
       },
       {
-        "@type": "Thing",
+        "@type": "DefinedTerm",
         "name": "Professional Portability"
       },
       {
-        "@type": "Thing",
+        "@type": "DefinedTerm",
         "name": "Credential Recognition"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Professional Access"
       }
     ]
   }
@@ -373,70 +534,231 @@
 
 <header class="site-header">
   <nav class="nav" aria-label="Primary navigation">
-    <a class="nav-brand" href="/">Nabal Kishore Pande</a>
+
+    <a class="nav-brand" href="/">
+      Nabal Kishore Pande
+    </a>
 
     <a href="/">Home</a>
-    <a href="/scholarship-intelligence/">Scholarship Intelligence</a>
-    <a href="/decision-mobility/">Decision &amp; Mobility</a>
-    <a href="/research/">Research</a>
-    <a href="/research-profiles/">Research Profiles</a>
-    <a href="/concepts/">Concepts</a>
-    <a href="/research-identity-authority/">Research Identity &amp; Authority</a>
+
+    <a href="/scholarship-intelligence/">
+      Scholarship Intelligence
+    </a>
+
+    <a href="/decision-mobility/">
+      Decision &amp; Mobility
+    </a>
+
+    <a href="/research/">
+      Research
+    </a>
+
+    <a href="/research-profiles/">
+      Research Profiles
+    </a>
+
+    <a href="/concepts/">
+      Concepts
+    </a>
+
+    <a href="/research-identity-authority/">
+      Research Identity &amp; Authority
+    </a>
+
   </nav>
 </header>
 
+
 <main>
 
-  <section class="hero">
-    <p class="eyebrow">P06 · Controlled Semantic Layer</p>
+  <!-- =========================
+       HERO
+       ========================= -->
 
-    <h1>Concepts</h1>
+  <section class="hero">
+
+    <p class="eyebrow">
+      P06 · Controlled Semantic Layer
+    </p>
+
+    <h1>
+      CONCEPTS
+    </h1>
 
     <p>
       A controlled semantic knowledge layer defining the core concepts used
       across Scholarship Intelligence, Decision Defence, Global Professional
       Mobility, research, and practical application.
     </p>
+
   </section>
 
 
+  <!-- =========================
+       ROLE OF P06
+       ========================= -->
+
   <section class="section">
-    <h2>Introduction to the Concept System</h2>
+
+    <h2>
+      Role of P06
+    </h2>
 
     <p class="lead">
-      Concepts provide stable meanings for important terms used throughout
-      the seven-page knowledge system.
+      P06 is the canonical definition and relationship layer of the
+      seven-page knowledge system.
     </p>
 
     <p>
-      This page is not a generic glossary or an SEO content collection.
-      Each controlled concept has a defined relationship with its domain,
-      related concepts, research, application, and canonical destination.
+      It defines reusable concepts once and connects them to their applied
+      domains, research records, and canonical destinations.
     </p>
 
     <p>
-      The concept layer helps prevent the same term from being given
-      different meanings across different pages.
+      P06 is not a second research page, a second profile directory,
+      or a generic glossary.
     </p>
 
-    <div class="note">
-      <strong>Standard concept record:</strong>
-      Term → Definition → Scope → Related Concepts → Domain →
-      Research Connection → Application → Canonical Destination
+    <div class="note governance">
+      <strong>Governance rule:</strong>
+      Define once. Relate explicitly. Apply in context.
+      Do not duplicate canonical definitions on domain, research,
+      profile, or authority pages.
     </div>
+
   </section>
 
 
+  <!-- =========================
+       KOR BOUNDARY
+       ========================= -->
+
   <section class="section">
-    <h2>Scholarship Intelligence Concepts</h2>
+
+    <h2>
+      Knowledge Object Registry Boundary
+    </h2>
+
+    <div class="registry">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Page</th>
+            <th>Canonical ownership</th>
+            <th>P06 relationship</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>P01 Identity</td>
+            <td>
+              Person, positioning, orientation
+            </td>
+            <td>
+              Uses controlled concepts for consistent identity
+              and domain language.
+            </td>
+          </tr>
+
+          <tr>
+            <td>P02 Scholarship Intelligence</td>
+            <td>
+              Applied Scholarship Intelligence
+            </td>
+            <td>
+              Applies the Scholarship Intelligence concept family.
+            </td>
+          </tr>
+
+          <tr>
+            <td>P03 Decision &amp; Mobility</td>
+            <td>
+              Applied Decision Defence and Global Professional Mobility
+            </td>
+            <td>
+              Applies the Decision Defence and mobility concept families.
+            </td>
+          </tr>
+
+          <tr>
+            <td>P04 Research</td>
+            <td>
+              Research objects, evidence, outputs, provenance
+            </td>
+            <td>
+              Provides research connections for concepts without
+              owning their definitions.
+            </td>
+          </tr>
+
+          <tr>
+            <td>P05 Research Profiles</td>
+            <td>
+              Verified external research profiles
+            </td>
+            <td>
+              Separate from concept definitions.
+            </td>
+          </tr>
+
+          <tr>
+            <td>P06 Concepts</td>
+            <td>
+              Controlled definitions and semantic relationships
+            </td>
+            <td>
+              Canonical concept layer.
+            </td>
+          </tr>
+
+          <tr>
+            <td>P07 Research Identity &amp; Authority</td>
+            <td>
+              Research identity and authority relationships
+            </td>
+            <td>
+              Separate from semantic definitions.
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SCHOLARSHIP CONCEPTS
+       ========================= -->
+
+  <section class="section">
+
+    <h2>
+      Scholarship Intelligence Concepts
+    </h2>
 
     <div class="concept-grid">
 
+
       <article class="concept">
-        <span class="label">Core Concept</span>
-        <h3 class="concept-term">Scholarship Intelligence</h3>
+
+        <span class="label">
+          Core Concept
+        </span>
+
+        <h3 class="concept-term">
+          Scholarship Intelligence
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             A structured approach to finding, evaluating, prioritising,
@@ -452,36 +774,43 @@
           <dt>Related concepts</dt>
           <dd>
             Scholarship Preparation Intelligence, Scholarship Funding,
-            Scholarship Eligibility, Scholarship Selection, Scholarship Access.
+            Scholarship Eligibility, Scholarship Selection,
+            Scholarship Access.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Scholarship Intelligence.</dd>
+          <dt>Applied domain</dt>
+          <dd>
+            <a href="/scholarship-intelligence/">
+              P02 · Scholarship Intelligence
+            </a>
+          </dd>
 
           <dt>Research connection</dt>
           <dd>
-            Connected to scholarship funding, educational access, applicant
-            barriers, and scholarship evidence research.
+            <a href="/research/">
+              P04 · Research
+            </a>
+            , including scholarship funding, educational access,
+            and applicant-barrier research.
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Scholarship research, preparation, evaluation, and decision systems.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/scholarship-intelligence/">P02 — Scholarship Intelligence</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Applied Concept</span>
-        <h3 class="concept-term">Scholarship Preparation Intelligence</h3>
+
+        <span class="label">
+          Subordinate Concept
+        </span>
+
+        <h3 class="concept-term">
+          Scholarship Preparation Intelligence
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             Structured knowledge used to prepare evidence, documents,
@@ -490,8 +819,8 @@
 
           <dt>Scope</dt>
           <dd>
-            Preparation requirements, application evidence, documentation,
-            verification, and readiness.
+            Preparation requirements, application evidence,
+            documentation, verification, and readiness.
           </dd>
 
           <dt>Related concepts</dt>
@@ -500,33 +829,36 @@
             Scholarship Selection, Scholarship Access.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Scholarship Intelligence.</dd>
+          <dt>Applied domain</dt>
+          <dd>
+            <a href="/scholarship-intelligence/">
+              P02 · Scholarship Intelligence
+            </a>
+          </dd>
 
           <dt>Research connection</dt>
           <dd>
-            Connected to research concerning applicant barriers and
-            scholarship application processes.
+            Applicant barriers and scholarship application research
+            in P04.
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Scholarship application preparation and evidence organisation.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/scholarship-intelligence/">P02 — Scholarship Intelligence</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Domain Concept</span>
-        <h3 class="concept-term">Scholarship Funding</h3>
+
+        <span class="label">
+          Funding Concept
+        </span>
+
+        <h3 class="concept-term">
+          Scholarship Funding
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             Financial support structures associated with scholarship
@@ -545,33 +877,34 @@
             Scholarship Access.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Scholarship Intelligence.</dd>
+          <dt>Applied domain</dt>
+          <dd>
+            P02 · Scholarship Intelligence
+          </dd>
 
           <dt>Research connection</dt>
           <dd>
-            Directly connected to research on global scholarship funding
-            and educational access.
+            Global scholarship funding and educational-access research
+            in P04.
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Scholarship opportunity research and funding analysis.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/research/">P04 — Research</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Decision Concept</span>
-        <h3 class="concept-term">Scholarship Eligibility</h3>
+
+        <span class="label">
+          Eligibility Concept
+        </span>
+
+        <h3 class="concept-term">
+          Scholarship Eligibility
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             The conditions an applicant must satisfy to qualify for
@@ -581,7 +914,7 @@
           <dt>Scope</dt>
           <dd>
             Eligibility criteria, applicant conditions, qualification
-            requirements, and evidence used to establish eligibility.
+            requirements, and supporting evidence.
           </dd>
 
           <dt>Related concepts</dt>
@@ -590,32 +923,30 @@
             Scholarship Preparation Intelligence.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Scholarship Intelligence.</dd>
-
-          <dt>Research connection</dt>
+          <dt>Applied domain</dt>
           <dd>
-            Connected to scholarship application and applicant-barrier research.
+            <a href="/scholarship-intelligence/">
+              P02 · Scholarship Intelligence
+            </a>
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Opportunity evaluation and application preparation.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/scholarship-intelligence/">P02 — Scholarship Intelligence</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Decision Concept</span>
-        <h3 class="concept-term">Scholarship Selection</h3>
+
+        <span class="label">
+          Selection Concept
+        </span>
+
+        <h3 class="concept-term">
+          Scholarship Selection
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             The process of evaluating scholarship opportunities against
@@ -634,37 +965,34 @@
             Scholarship Access.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Scholarship Intelligence.</dd>
-
-          <dt>Research connection</dt>
+          <dt>Applied domain</dt>
           <dd>
-            Connected to scholarship decision processes and structured
-            scholarship evaluation.
+            <a href="/scholarship-intelligence/">
+              P02 · Scholarship Intelligence
+            </a>
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Scholarship opportunity prioritisation.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/scholarship-intelligence/">P02 — Scholarship Intelligence</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Access Concept</span>
-        <h3 class="concept-term">Scholarship Access</h3>
+
+        <span class="label">
+          Access Concept
+        </span>
+
+        <h3 class="concept-term">
+          Scholarship Access
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
-            The practical ability of an eligible applicant to access and
-            participate in scholarship opportunities.
+            The practical ability of an eligible applicant to access
+            and participate in scholarship opportunities.
           </dd>
 
           <dt>Scope</dt>
@@ -679,40 +1007,52 @@
             Scholarship Selection.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Scholarship Intelligence.</dd>
+          <dt>Applied domain</dt>
+          <dd>
+            <a href="/scholarship-intelligence/">
+              P02 · Scholarship Intelligence
+            </a>
+          </dd>
 
           <dt>Research connection</dt>
           <dd>
-            Connected to educational access and applicant-barrier research.
+            Educational access and applicant-barrier research in P04.
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Scholarship access analysis and preparation.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/research/">P04 — Research</a>
-          </dd>
         </dl>
+
       </article>
 
     </div>
+
   </section>
 
 
+  <!-- =========================
+       DECISION DEFENCE
+       ========================= -->
+
   <section class="section">
-    <h2>Decision Defence Concepts</h2>
+
+    <h2>
+      Decision Defence Concepts
+    </h2>
 
     <div class="concept-grid">
 
+
       <article class="concept">
-        <span class="label">Core Concept</span>
-        <h3 class="concept-term">Decision Defence</h3>
+
+        <span class="label">
+          Core Concept
+        </span>
+
+        <h3 class="concept-term">
+          Decision Defence
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             An approach to making important decisions explainable,
@@ -721,52 +1061,58 @@
 
           <dt>Scope</dt>
           <dd>
-            Evidence, rationale, traceability, accountability, and
-            decision documentation.
+            Evidence, rationale, criteria, traceability,
+            accountability, and decision documentation.
           </dd>
 
           <dt>Related concepts</dt>
           <dd>
             Decision Defence Architecture, Decision Evidence,
-            Decision Rationale, Decision Traceability, Decision Accountability.
+            Decision Rationale, Decision Traceability,
+            Decision Accountability.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Decision Defence.</dd>
+          <dt>Applied domain</dt>
+          <dd>
+            <a href="/decision-mobility/">
+              P03 · Decision &amp; Mobility
+            </a>
+          </dd>
 
           <dt>Research connection</dt>
           <dd>
-            Connected to research and applied work concerning structured
-            decision systems and evidence organisation.
+            Evidence organisation and structured decision research
+            in P04.
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            High-stakes decision documentation and structured decision support.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Architecture Concept</span>
-        <h3 class="concept-term">Decision Defence Architecture</h3>
+
+        <span class="label">
+          Architecture Concept
+        </span>
+
+        <h3 class="concept-term">
+          Decision Defence Architecture
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
-            A structural model connecting decision evidence, rationale,
-            traceability, and accountability.
+            A formal architecture for organising evidence, criteria,
+            rationale, decision records, traceability, and accountability
+            around important decisions.
           </dd>
 
           <dt>Scope</dt>
           <dd>
-            The organisation of evidence and reasoning surrounding a decision.
+            Decision evidence, criteria, rationale, decision records,
+            review, traceability, and accountability.
           </dd>
 
           <dt>Related concepts</dt>
@@ -775,36 +1121,34 @@
             Decision Traceability, Decision Accountability.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Decision Defence.</dd>
-
-          <dt>Research connection</dt>
+          <dt>Applied domain</dt>
           <dd>
-            Connected to structured research execution and decision systems.
+            <a href="/decision-mobility/">
+              P03 · Decision &amp; Mobility
+            </a>
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Decision documentation, review, and accountability.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Evidence Concept</span>
-        <h3 class="concept-term">Decision Evidence</h3>
+
+        <span class="label">
+          Evidence Concept
+        </span>
+
+        <h3 class="concept-term">
+          Decision Evidence
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
-            Information, records, observations, or other support used to
-            establish the factual basis of a decision.
+            Information, records, observations, or other support used
+            to establish the factual basis of a decision.
           </dd>
 
           <dt>Scope</dt>
@@ -815,35 +1159,37 @@
 
           <dt>Related concepts</dt>
           <dd>
-            Decision Rationale, Decision Traceability, Decision Accountability.
+            Decision Rationale, Decision Traceability,
+            Decision Accountability.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Decision Defence.</dd>
+          <dt>Applied domain</dt>
+          <dd>
+            P03 · Decision &amp; Mobility
+          </dd>
 
           <dt>Research connection</dt>
           <dd>
-            Connected to evidence organisation and research provenance.
+            P04 research evidence and provenance.
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Evidence-supported decision making.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/research/">P04 — Research</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Reasoning Concept</span>
-        <h3 class="concept-term">Decision Rationale</h3>
+
+        <span class="label">
+          Reasoning Concept
+        </span>
+
+        <h3 class="concept-term">
+          Decision Rationale
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             The documented reasoning connecting evidence, criteria,
@@ -862,32 +1208,30 @@
             Decision Accountability.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Decision Defence.</dd>
-
-          <dt>Research connection</dt>
+          <dt>Applied domain</dt>
           <dd>
-            Connected to structured decision research and evidence systems.
+            <a href="/decision-mobility/">
+              P03 · Decision &amp; Mobility
+            </a>
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Decision documentation and review.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Traceability Concept</span>
-        <h3 class="concept-term">Decision Traceability</h3>
+
+        <span class="label">
+          Traceability Concept
+        </span>
+
+        <h3 class="concept-term">
+          Decision Traceability
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             The ability to connect a decision back to its evidence,
@@ -896,7 +1240,8 @@
 
           <dt>Scope</dt>
           <dd>
-            Evidence-to-decision relationships and the documented decision path.
+            Evidence-to-decision relationships and the documented
+            decision path.
           </dd>
 
           <dt>Related concepts</dt>
@@ -905,36 +1250,39 @@
             Decision Accountability.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Decision Defence.</dd>
+          <dt>Applied domain</dt>
+          <dd>
+            <a href="/decision-mobility/">
+              P03 · Decision &amp; Mobility
+            </a>
+          </dd>
 
           <dt>Research connection</dt>
           <dd>
-            Connected to research provenance and evidence organisation.
+            Research provenance and evidence organisation in P04.
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Decision review, auditability, and structured accountability.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Accountability Concept</span>
-        <h3 class="concept-term">Decision Accountability</h3>
+
+        <span class="label">
+          Accountability Concept
+        </span>
+
+        <h3 class="concept-term">
+          Decision Accountability
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
-            The attribution of responsibility for a decision and its
-            documented basis.
+            The attribution of responsibility for a decision and
+            its documented basis.
           </dd>
 
           <dt>Scope</dt>
@@ -949,40 +1297,47 @@
             Decision Traceability.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Decision Defence.</dd>
-
-          <dt>Research connection</dt>
+          <dt>Applied domain</dt>
           <dd>
-            Connected to structured decision processes and traceability.
+            <a href="/decision-mobility/">
+              P03 · Decision &amp; Mobility
+            </a>
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Responsible decision documentation and review.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a>
-          </dd>
         </dl>
+
       </article>
 
     </div>
+
   </section>
 
 
+  <!-- =========================
+       MOBILITY CONCEPTS
+       ========================= -->
+
   <section class="section">
-    <h2>Global Professional Mobility Concepts</h2>
+
+    <h2>
+      Global Professional Mobility Concepts
+    </h2>
 
     <div class="concept-grid">
 
+
       <article class="concept">
-        <span class="label">Core Concept</span>
-        <h3 class="concept-term">Global Professional Mobility</h3>
+
+        <span class="label">
+          Core Concept
+        </span>
+
+        <h3 class="concept-term">
+          Global Professional Mobility
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             The movement of professionals across jurisdictions and
@@ -1002,33 +1357,36 @@
             Professional Access, Career Mobility.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Global Professional Mobility.</dd>
+          <dt>Applied domain</dt>
+          <dd>
+            <a href="/decision-mobility/">
+              P03 · Decision &amp; Mobility
+            </a>
+          </dd>
 
           <dt>Research connection</dt>
           <dd>
-            Connected to research concerning professional trajectories,
-            credentials, evidence, and access.
+            Professional trajectory, credentials, evidence,
+            and access research in P04.
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            International professional mobility planning and preparation.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Mobility Concept</span>
-        <h3 class="concept-term">Professional Portability</h3>
+
+        <span class="label">
+          Portability Concept
+        </span>
+
+        <h3 class="concept-term">
+          Professional Portability
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             The extent to which professional qualifications, experience,
@@ -1048,42 +1406,40 @@
             Professional Access.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Global Professional Mobility.</dd>
-
-          <dt>Research connection</dt>
+          <dt>Applied domain</dt>
           <dd>
-            Connected to professional trajectory and access research.
+            <a href="/decision-mobility/">
+              P03 · Decision &amp; Mobility
+            </a>
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Professional mobility preparation and evidence organisation.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Recognition Concept</span>
-        <h3 class="concept-term">Credential Recognition</h3>
+
+        <span class="label">
+          Recognition Concept
+        </span>
+
+        <h3 class="concept-term">
+          Credential Recognition
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
-            The process through which a qualification or credential is
-            assessed, interpreted, or accepted within another context.
+            The process through which a qualification or credential
+            is assessed, interpreted, or accepted within another context.
           </dd>
 
           <dt>Scope</dt>
           <dd>
-            Qualification assessment, recognition processes, supporting
-            evidence, and destination requirements.
+            Qualification assessment, recognition processes,
+            supporting evidence, and destination requirements.
           </dd>
 
           <dt>Related concepts</dt>
@@ -1092,33 +1448,30 @@
             Global Professional Mobility.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Global Professional Mobility.</dd>
-
-          <dt>Research connection</dt>
+          <dt>Applied domain</dt>
           <dd>
-            Connected to research concerning qualifications, evidence,
-            professional access, and mobility.
+            <a href="/decision-mobility/">
+              P03 · Decision &amp; Mobility
+            </a>
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            International qualification and professional mobility planning.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Access Concept</span>
-        <h3 class="concept-term">Professional Access</h3>
+
+        <span class="label">
+          Access Concept
+        </span>
+
+        <h3 class="concept-term">
+          Professional Access
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             The practical ability to enter or participate in a professional
@@ -1128,8 +1481,8 @@
 
           <dt>Scope</dt>
           <dd>
-            Entry requirements, evidence, recognition, and participation
-            conditions.
+            Entry requirements, evidence, recognition,
+            and participation conditions.
           </dd>
 
           <dt>Related concepts</dt>
@@ -1138,32 +1491,30 @@
             Career Mobility.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Global Professional Mobility.</dd>
-
-          <dt>Research connection</dt>
+          <dt>Applied domain</dt>
           <dd>
-            Connected to professional access and career trajectory research.
+            <a href="/decision-mobility/">
+              P03 · Decision &amp; Mobility
+            </a>
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Professional mobility and opportunity-access planning.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a>
-          </dd>
         </dl>
+
       </article>
 
 
       <article class="concept">
-        <span class="label">Career Concept</span>
-        <h3 class="concept-term">Career Mobility</h3>
+
+        <span class="label">
+          Career Concept
+        </span>
+
+        <h3 class="concept-term">
+          Career Mobility
+        </h3>
 
         <dl>
+
           <dt>Definition</dt>
           <dd>
             Movement or progression through professional roles,
@@ -1182,293 +1533,467 @@
             Professional Access.
           </dd>
 
-          <dt>Domain</dt>
-          <dd>Global Professional Mobility.</dd>
+          <dt>Applied domain</dt>
+          <dd>
+            <a href="/decision-mobility/">
+              P03 · Decision &amp; Mobility
+            </a>
+          </dd>
 
           <dt>Research connection</dt>
           <dd>
-            Connected to longitudinal research on mid-career professional
-            trajectories.
+            Longitudinal research on mid-career professional
+            trajectories in P04.
           </dd>
 
-          <dt>Application</dt>
-          <dd>
-            Career mobility analysis and professional transition planning.
-          </dd>
-
-          <dt>Canonical destination</dt>
-          <dd>
-            <a href="/research/">P04 — Research</a>
-          </dd>
         </dl>
+
       </article>
 
     </div>
+
   </section>
 
 
+  <!-- =========================
+       RELATIONSHIPS
+       ========================= -->
+
   <section class="section">
-    <h2>Concept Relationships</h2>
+
+    <h2>
+      Concept Relationships
+    </h2>
 
     <p>
-      Concepts are connected through explicit relationships rather than
-      treated as isolated definitions.
+      Controlled concepts are connected through explicit semantic
+      relationships rather than treated as isolated definitions.
     </p>
 
+
     <div class="relationship">
-      <strong>Scholarship Intelligence relationship</strong>
+
+      <strong>
+        Scholarship Intelligence
+      </strong>
 
       <div class="chain">
+
         <span>Scholarship Intelligence</span>
+
         <span class="arrow">→</span>
+
         <span>Eligibility</span>
+
         <span class="arrow">→</span>
+
         <span>Selection</span>
+
         <span class="arrow">→</span>
+
         <span>Preparation</span>
+
         <span class="arrow">→</span>
+
         <span>Access</span>
+
       </div>
+
     </div>
 
+
     <div class="relationship">
-      <strong>Decision Defence relationship</strong>
+
+      <strong>
+        Decision Defence
+      </strong>
 
       <div class="chain">
+
         <span>Decision Evidence</span>
+
         <span class="arrow">→</span>
+
+        <span>Criteria</span>
+
+        <span class="arrow">→</span>
+
         <span>Decision Rationale</span>
-        <span class="arrow">→</span>
-        <span>Decision Traceability</span>
-        <span class="arrow">→</span>
-        <span>Decision Accountability</span>
-      </div>
-    </div>
 
-    <div class="relationship">
-      <strong>Mobility relationship</strong>
+        <span class="arrow">→</span>
 
-      <div class="chain">
-        <span>Global Professional Mobility</span>
-        <span class="arrow">→</span>
-        <span>Professional Portability</span>
-        <span class="arrow">→</span>
-        <span>Credential Recognition</span>
-        <span class="arrow">→</span>
-        <span>Professional Access</span>
-      </div>
-    </div>
-
-    <div class="relationship">
-      <strong>Decision and mobility intersection</strong>
-
-      <div class="chain">
-        <span>Evidence</span>
-        <span class="arrow">→</span>
-        <span>Credential</span>
-        <span class="arrow">→</span>
-        <span>Recognition</span>
-        <span class="arrow">→</span>
         <span>Decision</span>
+
         <span class="arrow">→</span>
-        <span>Access</span>
+
+        <span>Traceability</span>
+
+        <span class="arrow">→</span>
+
+        <span>Accountability</span>
+
       </div>
+
     </div>
+
+
+    <div class="relationship">
+
+      <strong>
+        Global Professional Mobility
+      </strong>
+
+      <div class="chain">
+
+        <span>Professional Portability</span>
+
+        <span class="arrow">→</span>
+
+        <span>Credential Recognition</span>
+
+        <span class="arrow">→</span>
+
+        <span>Professional Access</span>
+
+        <span class="arrow">→</span>
+
+        <span>Career Mobility</span>
+
+      </div>
+
+    </div>
+
+
+    <div class="relationship">
+
+      <strong>
+        Cross-domain relationship
+      </strong>
+
+      <div class="chain">
+
+        <span>Evidence</span>
+
+        <span class="arrow">→</span>
+
+        <span>Credential</span>
+
+        <span class="arrow">→</span>
+
+        <span>Recognition</span>
+
+        <span class="arrow">→</span>
+
+        <span>Decision</span>
+
+        <span class="arrow">→</span>
+
+        <span>Access</span>
+
+      </div>
+
+    </div>
+
   </section>
 
 
-  <section class="section">
-    <h2>Concept → Research</h2>
+  <!-- =========================
+       CONCEPT TO RESEARCH
+       ========================= -->
 
-    <p>
-      Controlled concepts connect the applied knowledge domains with the
-      underlying research record.
-    </p>
+  <section class="section">
+
+    <h2>
+      Concept → Research
+    </h2>
 
     <ul>
+
       <li>
-        <strong>Scholarship Funding</strong> connects with research on global
-        scholarship funding, educational access, and applicant barriers.
+        <strong>Scholarship Funding</strong>
+        connects with research on global scholarship funding,
+        educational access, and applicant barriers.
       </li>
 
       <li>
-        <strong>Scholarship Access</strong> connects with research concerning
-        educational access and applicant barriers.
+        <strong>Scholarship Access</strong>
+        connects with educational-access and applicant-barrier research.
       </li>
 
       <li>
-        <strong>Decision Evidence</strong> and
-        <strong>Decision Traceability</strong> connect with evidence
-        organisation and research provenance.
+        <strong>Decision Evidence</strong>
+        and
+        <strong>Decision Traceability</strong>
+        connect with research evidence organisation and provenance.
       </li>
 
       <li>
-        <strong>Career Mobility</strong> connects with the longitudinal
-        research project on mid-career professional trajectories.
+        <strong>Career Mobility</strong>
+        connects with the longitudinal research project on
+        mid-career professional trajectories.
       </li>
 
       <li>
-        <strong>Credential Recognition</strong> and
-        <strong>Professional Access</strong> connect with research concerning
-        qualifications, evidence, professional mobility, and access.
+        <strong>Credential Recognition</strong>
+        and
+        <strong>Professional Access</strong>
+        connect with research concerning qualifications,
+        evidence, professional mobility, and access.
       </li>
+
     </ul>
 
     <p>
-      See <a href="/research/">P04 — Research</a> for the canonical research
-      objects and provenance structure.
+      See
+      <a href="/research/">
+        P04 · Research
+      </a>
+      for canonical research objects, outputs, identifiers,
+      and provenance.
     </p>
+
   </section>
 
 
-  <section class="section">
-    <h2>Concept → Application</h2>
+  <!-- =========================
+       CONCEPT TO APPLICATION
+       ========================= -->
 
-    <p>
-      Concepts become useful when their definitions can be connected to
-      practical systems without losing their controlled meaning.
-    </p>
+  <section class="section">
+
+    <h2>
+      Concept → Application
+    </h2>
 
     <div class="concept-grid">
 
       <div class="concept">
-        <span class="label">Scholarship Application</span>
-        <h3 class="concept-term">Scholarship Intelligence</h3>
+
+        <span class="label">
+          P02 Application
+        </span>
+
+        <h3 class="concept-term">
+          Scholarship Intelligence
+        </h3>
+
         <p>
-          Applied through structured scholarship research, evaluation,
-          preparation, verification, and decision processes.
+          Applied through structured scholarship research,
+          evaluation, preparation, verification, and decision processes.
         </p>
+
         <a href="/scholarship-intelligence/">
           Open Scholarship Intelligence
         </a>
+
       </div>
 
+
       <div class="concept">
-        <span class="label">Decision Application</span>
-        <h3 class="concept-term">Decision Defence</h3>
+
+        <span class="label">
+          P03 Application
+        </span>
+
+        <h3 class="concept-term">
+          Decision Defence
+        </h3>
+
         <p>
-          Applied through evidence, rationale, traceability, and
-          accountability systems.
+          Applied through evidence, criteria, rationale,
+          traceability, and accountability systems.
         </p>
+
         <a href="/decision-mobility/">
           Open Decision &amp; Mobility
         </a>
+
       </div>
 
+
       <div class="concept">
-        <span class="label">Mobility Application</span>
-        <h3 class="concept-term">Global Professional Mobility</h3>
+
+        <span class="label">
+          P03 Application
+        </span>
+
+        <h3 class="concept-term">
+          Global Professional Mobility
+        </h3>
+
         <p>
-          Applied through professional portability, credential recognition,
-          and professional access.
+          Applied through professional portability,
+          credential recognition, and professional access.
         </p>
+
         <a href="/decision-mobility/">
           Open Decision &amp; Mobility
         </a>
+
       </div>
 
+
       <div class="concept">
-        <span class="label">Research Application</span>
-        <h3 class="concept-term">Research Provenance</h3>
+
+        <span class="label">
+          P04 Connection
+        </span>
+
+        <h3 class="concept-term">
+          Research Provenance
+        </h3>
+
         <p>
-          Applied by connecting research questions, methods, evidence,
-          outputs, and identifiers.
+          Connects concepts to research questions, methods,
+          evidence, outputs, and persistent identifiers.
         </p>
+
         <a href="/research/">
           Open Research
         </a>
+
       </div>
 
     </div>
+
   </section>
 
 
+  <!-- =========================
+       INFOGRAPHIC
+       ========================= -->
+
   <section class="section">
-    <h2>Controlled Concepts Knowledge Network</h2>
+
+    <h2>
+      Controlled Concepts Knowledge Network
+    </h2>
 
     <div class="image-box">
+
       <img
         src="/p06-controlled-concepts-knowledge-network-infographic.png"
-        alt="Controlled concepts knowledge network infographic connecting Scholarship Intelligence, Decision Defence, Global Professional Mobility, research, and practical application"
-        loading="lazy">
+        alt="Controlled concepts knowledge network connecting Scholarship Intelligence, Decision Defence, Global Professional Mobility, research, and practical application"
+        loading="lazy"
+      >
 
       <p class="caption">
-        Controlled concepts and their relationships across the knowledge system.
+        Controlled concepts and their relationships across the
+        knowledge system.
       </p>
+
     </div>
+
   </section>
 
 
+  <!-- =========================
+       GOVERNANCE
+       ========================= -->
+
   <section class="section">
-    <h2>Concept Governance</h2>
+
+    <h2>
+      Concept Governance
+    </h2>
 
     <p>
-      A concept should be added when it represents a meaningful and reusable
-      semantic object in the knowledge system. Concepts should not be added
-      merely to increase page length or search-term coverage.
+      A concept should be added when it represents a meaningful
+      and reusable semantic object in the knowledge system.
+      Concepts should not be added only to increase page length
+      or search-term coverage.
     </p>
 
     <p>
-      Where a concept is used across several pages, its controlled definition
-      belongs here while the applied context remains on the appropriate
-      domain page.
+      Where a concept is used across several pages, its controlled
+      definition belongs here while its applied context remains
+      on the appropriate domain page.
     </p>
 
-    <div class="note">
-      <strong>Governance rule:</strong>
-      Define once. Relate explicitly. Apply in context. Avoid unnecessary
-      duplication.
+    <div class="note governance">
+
+      <strong>
+        Canonical ownership rule:
+      </strong>
+
+      P06 owns the definition and semantic relationship.
+      P02/P03 own application.
+      P04 owns research evidence and provenance.
+      P05 owns verified external research profiles.
+      P07 owns research identity and authority relationships.
+
     </div>
+
   </section>
 
 
-  <section class="section">
-    <h2>Knowledge System Connections</h2>
+  <!-- =========================
+       KNOWLEDGE CONNECTIONS
+       ========================= -->
 
-    <p>
-      Concepts form the semantic layer between identity, domain knowledge,
-      research, application, and authority.
-    </p>
+  <section class="section">
+
+    <h2>
+      Knowledge System Connections
+    </h2>
 
     <ul>
+
       <li>
-        <a href="/">P01 — Home / Identity</a> —
-        overall identity and research orientation.
+        <a href="/">
+          P01 · Home / Identity
+        </a>
+        · overall identity and research orientation.
       </li>
 
       <li>
-        <a href="/scholarship-intelligence/">P02 — Scholarship Intelligence</a> —
-        applied Scholarship Intelligence domain.
+        <a href="/scholarship-intelligence/">
+          P02 · Scholarship Intelligence
+        </a>
+        · applied Scholarship Intelligence domain.
       </li>
 
       <li>
-        <a href="/decision-mobility/">P03 — Decision &amp; Mobility</a> —
-        applied Decision Defence and Global Professional Mobility domains.
+        <a href="/decision-mobility/">
+          P03 · Decision &amp; Mobility
+        </a>
+        · applied Decision Defence and Global Professional Mobility domains.
       </li>
 
       <li>
-        <a href="/research/">P04 — Research</a> —
-        research evidence, outputs, and provenance.
+        <a href="/research/">
+          P04 · Research
+        </a>
+        · research evidence, outputs, identifiers, and provenance.
       </li>
 
       <li>
-        <a href="/research-profiles/">P05 — Research Profiles</a> —
-        external identity and research infrastructure.
+        <a href="/research-profiles/">
+          P05 · Research Profiles
+        </a>
+        · verified external research profiles.
       </li>
 
       <li>
-        <a href="/research-identity-authority/">P07 — Research Identity &amp; Authority</a> —
-        identity verification and authority relationships.
+        <a href="/research-identity-authority/">
+          P07 · Research Identity &amp; Authority
+        </a>
+        · research identity and authority relationships.
       </li>
+
     </ul>
+
   </section>
 
 </main>
 
+
 <footer class="footer">
+
   <p>
     © Nabal Kishore Pande. Concepts.
   </p>
+
 </footer>
 
 </body>
