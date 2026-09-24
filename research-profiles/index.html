@@ -18,7 +18,6 @@
   <meta name="twitter:title" content="Research Profiles | Nabal Kishore Pande">
   <meta name="twitter:description" content="External research identity and publishing infrastructure.">
 <meta name="robots" content="index, follow">
-  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nabalkishorepande.github.io/research-profiles/">
 
   <style>
@@ -61,6 +60,12 @@
     a:hover {
       color: var(--hover);
       text-decoration: underline;
+    }
+
+    a:focus-visible {
+      outline: 3px solid rgba(37, 99, 235, 0.25);
+      outline-offset: 3px;
+      border-radius: 4px;
     }
 
     .site-header {
@@ -248,7 +253,11 @@
       font-size: 0.9rem;
     }
 
-    @media (max-width: 760px) {
+
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }    @media (max-width: 760px) {
       .nav {
         padding: 12px 16px;
       }
@@ -279,42 +288,47 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Research Profiles",
+    "@type": "ProfilePage",
+    "name": "Research Profiles | Nabal Kishore Pande",
     "url": "https://nabalkishorepande.github.io/research-profiles/",
-    "description": "External research identity, scholarly infrastructure, publishing environments, and professional identity records.",
-    "author": {
+    "description": "External research identity, scholarly infrastructure, publishing environments, and professional identity records connected to Nabal Kishore Pande.",
+    "mainEntity": {
       "@type": "Person",
       "name": "Nabal Kishore Pande",
-      "url": "https://nabalkishorepande.github.io/"
+      "url": "https://nabalkishorepande.github.io/",
+      "jobTitle": "Independent Researcher & Author",
+      "sameAs": [
+        "https://orcid.org/0009-0007-3325-9966",
+        "https://www.scienceopen.com/user/nabal-kishore-pande",
+        "https://huggingface.co/NabalKishorePande",
+        "https://openalex.org/authors/a5133520791",
+        "https://www.lens.org/lens/profile/713588055/scholar",
+        "https://commons.datacite.org/orcid.org/0009-0007-3325-9966",
+        "https://explore.openaire.eu/search/advanced/research-outcomes?f0=resultauthor&fv0=Nabal%20Kishore%20Pande",
+        "https://www.zotero.org/nabalkishorepande",
+        "https://synapsesocial.com/authors/6a596d032275dee03afc7aaa",
+        "https://independentresearcher.academia.edu/NabalKishorePande",
+        "https://archive.org/details/@nawal_pandey/uploads",
+        "https://www.slideshare.net/nabalpandey/slideshows"
+      ],
+      "knowsAbout": ["Research","Research Profiles","Research Identity","Research Infrastructure","Scholarship Intelligence","Decision Systems","Decision Intelligence","Execution Intelligence","Scholarship Preparation Intelligence","Evidence-Based Decision Making"]
     },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "Research Profiles"
-      },
-      {
-        "@type": "Thing",
-        "name": "Scholarly Identity"
-      },
-      {
-        "@type": "Thing",
-        "name": "Research Infrastructure"
-      },
-      {
-        "@type": "Thing",
-        "name": "Publishing Environments"
-      },
-      {
-        "@type": "Thing",
-        "name": "Professional Identity"
-      }
+    "isPartOf": {"@type": "WebSite", "name": "Nabal Kishore Pande | Research Knowledge System", "url": "https://nabalkishorepande.github.io/"}
+  }
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://nabalkishorepande.github.io/"},
+      {"@type":"ListItem","position":2,"name":"Research Profiles","item":"https://nabalkishorepande.github.io/research-profiles/"}
     ]
   }
-  </script>
+</script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header class="site-header">
   <nav class="nav" aria-label="Primary navigation">
@@ -330,7 +344,7 @@
   </nav>
 </header>
 
-<main>
+<main id="main-content">
 
   <section class="hero">
     <p class="eyebrow">P05 · External Identity Infrastructure</p>
@@ -461,12 +475,40 @@
           research and published materials.
         </p>
         <a class="profile-link"
-           href="https://archive.org/details/@nawal_pandey"
+           href="https://archive.org/details/@nawal_pandey/uploads"
            target="_blank" rel="noopener">
           Internet Archive
         </a>
       </div>
 
+
+      <div class="profile">
+        <span class="role">Research Infrastructure</span>
+        <strong>Hugging Face</strong>
+        <p>Research and machine-learning infrastructure for datasets, models, and structured public research resources.</p>
+        <a class="profile-link" href="https://huggingface.co/NabalKishorePande" target="_blank" rel="noopener">Hugging Face</a>
+      </div>
+
+      <div class="profile">
+        <span class="role">Research Library</span>
+        <strong>Zotero</strong>
+        <p>Research library and reference-management environment associated with scholarly collections and research organization.</p>
+        <a class="profile-link" href="https://www.zotero.org/nabalkishorepande" target="_blank" rel="noopener">Zotero</a>
+      </div>
+
+      <div class="profile">
+        <span class="role">Research Discovery</span>
+        <strong>Synapse Social</strong>
+        <p>External author and research-discovery profile connected with the public research identity.</p>
+        <a class="profile-link" href="https://synapsesocial.com/authors/6a596d032275dee03afc7aaa" target="_blank" rel="noopener">Synapse Social</a>
+      </div>
+
+      <div class="profile">
+        <span class="role">Research Distribution</span>
+        <strong>SlideShare</strong>
+        <p>Public presentation and research-content distribution environment associated with the wider research identity.</p>
+        <a class="profile-link" href="https://www.slideshare.net/nabalpandey/slideshows" target="_blank" rel="noopener">SlideShare</a>
+      </div>
     </div>
 
     <div class="note">
@@ -742,7 +784,13 @@
   </section>
 
 
+
+
   <section class="section">
+    <h2>Research Profile Registry Rule</h2>
+    <p>The twelve records above are the canonical P05 research-profile set. External publishing, social, product, and bibliographic records may appear elsewhere in the seven-page architecture when another page owns the relationship.</p>
+    <div class="note"><strong>Ownership rule:</strong> P05 identifies the external research-profile layer. P04 owns canonical research outputs and provenance; P03 and P07 retain records assigned to their respective ownership domains.</div>
+  </section>  <section class="section">
     <h2>Knowledge System Connections</h2>
 
     <p>
