@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Research Identity &amp; Authority | Nabal Kishore Pande</title>
 
-  <meta name="description"
-        content="Research identity and authority architecture for Nabal Kishore Pande, connecting research areas, outputs, persistent identifiers, digital identity, bibliographic authority, Wikidata entities, Wikimedia presence, and external scholarly records.">
+  <meta
+    name="description"
+    content="Research identity and authority architecture for Nabal Kishore Pande, connecting research identity, persistent identifiers, bibliographic authority, knowledge-graph relationships, external scholarly records, and verification."
+  >
+
+  <meta
+    name="keywords"
+    content="Nabal Kishore Pande, Research Identity, Research Authority, ORCID, ScienceOpen, Wikidata, bibliographic authority, persistent identifiers, research identity verification, knowledge graph"
+  >
 
   <meta name="author" content="Nabal Kishore Pande">
   <meta name="robots" content="index, follow">
 
-  <link rel="canonical"
-        href="https://nabalkishorepande.github.io/research-identity-authority/">
+  <link
+    rel="canonical"
+    href="https://nabalkishorepande.github.io/research-identity-authority/"
+  >
 
-  <meta property="og:title"
-        content="Research Identity &amp; Authority | Nabal Kishore Pande">
+  <meta
+    property="og:title"
+    content="Research Identity &amp; Authority | Nabal Kishore Pande"
+  >
 
-  <meta property="og:description"
-        content="Research identity, authority records, persistent identifiers, bibliographic records, Wikidata entities, Wikimedia presence, and research relationships.">
+  <meta
+    property="og:description"
+    content="Research identity, persistent identifiers, bibliographic authority, knowledge-graph relationships, and research verification."
+  >
 
   <meta property="og:type" content="website">
 
-  <meta property="og:url"
-        content="https://nabalkishorepande.github.io/research-identity-authority/">
+  <meta
+    property="og:url"
+    content="https://nabalkishorepande.github.io/research-identity-authority/"
+  >
 
   <meta name="twitter:card" content="summary_large_image">
 
-  <meta name="twitter:title"
-        content="Research Identity &amp; Authority | Nabal Kishore Pande">
+  <meta
+    name="twitter:title"
+    content="Research Identity &amp; Authority | Nabal Kishore Pande"
+  >
 
-  <meta name="twitter:description"
-        content="Research identity, authority records, identifiers, infrastructure, bibliographic authority, and research relationships.">
+  <meta
+    name="twitter:description"
+    content="Research identity and authority architecture connecting person, research, outputs, identifiers, and external authority records."
+  >
+
+  <!-- INTER -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
+
     :root {
       --text: #172033;
-      --muted: #5F6B7A;
-      --bg: #F8FAFC;
-      --surface: #FFFFFF;
-      --border: #E2E8F0;
-      --link: #2563EB;
-      --hover: #1D4ED8;
-      --dark: #0F172A;
-      --accent: #9F1239;
-      --accent-soft: #FFF1F2;
-      --shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      --muted: #5f6b7a;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --border: #e2e8f0;
+      --link: #2563eb;
+      --hover: #1d4ed8;
+      --dark: #0f172a;
+
+      /* P07 authority colour */
+      --accent: #9f1239;
+      --accent-soft: #fff1f2;
+      --accent-border: #fecdd3;
+
+      --shadow:
+        0 8px 24px rgba(15, 23, 42, 0.06);
     }
 
     * {
@@ -59,8 +94,16 @@
 
     body {
       margin: 0;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
       color: var(--text);
       background: var(--bg);
       line-height: 1.7;
@@ -82,15 +125,24 @@
       border-radius: 4px;
     }
 
+    /* =========================
+       SKIP LINK
+       ========================= */
+
     .skip-link {
       position: absolute;
       left: 12px;
       top: -60px;
+
       z-index: 200;
+
       padding: 10px 14px;
+
       background: var(--dark);
-      color: #fff;
+      color: #ffffff;
+
       border-radius: 6px;
+
       font-weight: 700;
     }
 
@@ -98,30 +150,42 @@
       top: 12px;
     }
 
+    /* =========================
+       HEADER
+       ========================= */
+
     .site-header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(248, 250, 252, 0.96);
+
+      background: rgba(248, 250, 252, 0.97);
+
       border-bottom: 1px solid var(--border);
+
       backdrop-filter: blur(10px);
     }
 
     .nav {
       max-width: 1180px;
       margin: 0 auto;
+
       padding: 14px 20px;
+
       display: flex;
       flex-wrap: wrap;
+
       gap: 10px 18px;
+
       align-items: center;
       justify-content: center;
     }
 
     .nav a {
+      color: var(--text);
+
       font-size: 0.92rem;
       font-weight: 600;
-      color: var(--text);
     }
 
     .nav a:hover {
@@ -129,10 +193,18 @@
       text-decoration: none;
     }
 
+    /* =========================
+       CONTAINER
+       ========================= */
+
     .container {
       width: min(1180px, calc(100% - 40px));
       margin: 0 auto;
     }
+
+    /* =========================
+       HERO
+       ========================= */
 
     .hero {
       padding: 72px 0 42px;
@@ -140,55 +212,78 @@
 
     .eyebrow {
       display: inline-block;
+
       margin-bottom: 12px;
       padding: 6px 11px;
+
       border-radius: 999px;
+
       background: var(--accent-soft);
       color: var(--accent);
+
       font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.03em;
+      font-weight: 800;
+
+      letter-spacing: 0.04em;
       text-transform: uppercase;
     }
 
     h1 {
       margin: 0 0 18px;
+
+      color: var(--dark);
+
       font-size: clamp(2.25rem, 5vw, 4rem);
       line-height: 1.08;
+
       letter-spacing: -0.03em;
-      color: var(--dark);
       font-weight: 800;
     }
 
     .hero-intro {
-      max-width: 820px;
+      max-width: 850px;
+
       margin: 0;
+
       color: var(--muted);
+
       font-size: 1.1rem;
     }
+
+    /* =========================
+       SECTIONS
+       ========================= */
 
     .section {
       margin: 34px 0;
       padding: 30px;
+
       background: var(--surface);
+
       border: 1px solid var(--border);
       border-top: 4px solid var(--accent);
+
       border-radius: 12px;
+
       box-shadow: var(--shadow);
     }
 
     h2 {
       margin-top: 0;
       margin-bottom: 14px;
+
+      color: var(--dark);
+
       font-size: clamp(1.5rem, 3vw, 2.05rem);
       line-height: 1.2;
-      color: var(--dark);
     }
 
     h3 {
       margin-top: 0;
       margin-bottom: 8px;
+
       color: var(--dark);
+
       font-size: 1.15rem;
     }
 
@@ -201,31 +296,49 @@
       font-size: 1.02rem;
     }
 
+    /* =========================
+       GRID
+       ========================= */
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
       gap: 18px;
     }
 
+    /* =========================
+       CARDS
+       ========================= */
+
     .card {
       padding: 20px;
+
+      background: #ffffff;
+
       border: 1px solid var(--border);
       border-radius: 10px;
-      background: #fff;
     }
 
     .card p:last-child {
       margin-bottom: 0;
     }
 
+    /* =========================
+       RECORD
+       ========================= */
+
     .record {
-      padding: 18px 20px;
+      padding: 20px;
+
+      background: #fcfcfd;
+
+      border: 1px solid var(--border);
       border-left: 4px solid var(--accent);
+
       border-radius: 8px;
-      background: #FCFCFD;
-      border-top: 1px solid var(--border);
-      border-right: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
     }
 
     .record + .record {
@@ -234,87 +347,131 @@
 
     .label {
       display: block;
-      margin-bottom: 3px;
+
+      margin-bottom: 4px;
+
       color: var(--muted);
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
+
+      font-size: 0.78rem;
+      font-weight: 800;
+
+      letter-spacing: 0.05em;
       text-transform: uppercase;
     }
+
+    /* =========================
+       RELATIONSHIP CHAIN
+       ========================= */
 
     .chain {
       display: flex;
       flex-wrap: wrap;
+
       gap: 10px;
+
       align-items: center;
+
       margin-top: 18px;
     }
 
     .chain span {
       padding: 9px 13px;
+
+      background: #ffffff;
+
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: #fff;
+
       font-size: 0.92rem;
       font-weight: 600;
     }
 
-    .arrow {
+    .chain .arrow {
+      padding: 0;
+
+      border: 0;
+      background: transparent;
+
       color: var(--accent);
+
       font-weight: 800;
     }
 
+    /* =========================
+       AUTHORITY MODEL
+       ========================= */
+
+    .authority-model {
+      margin-top: 20px;
+      padding: 20px;
+
+      background: var(--accent-soft);
+
+      border: 1px solid var(--accent-border);
+      border-radius: 10px;
+    }
+
+    .authority-model strong {
+      color: var(--dark);
+    }
+
+    /* =========================
+       INFOGRAPHIC
+       ========================= */
+
     .visual {
       margin-top: 24px;
+
       overflow: hidden;
+
+      background: #ffffff;
+
       border: 1px solid var(--border);
       border-radius: 12px;
-      background: #fff;
     }
 
     .visual img {
       display: block;
+
       width: 100%;
       height: auto;
     }
 
     .caption {
       padding: 12px 16px;
+
       color: var(--muted);
+
       font-size: 0.88rem;
+
       border-top: 1px solid var(--border);
     }
 
-    .relationship {
-      font-weight: 600;
-      color: var(--dark);
-    }
-
-    .ownership {
-      margin-top: 18px;
-      padding: 18px 20px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      background: var(--accent-soft);
-    }
-
-    .ownership strong {
-      color: var(--dark);
-    }
+    /* =========================
+       FOOTER
+       ========================= */
 
     .footer {
       margin-top: 56px;
       padding: 36px 0 50px;
-      border-top: 1px solid var(--border);
+
       color: var(--muted);
+
       font-size: 0.92rem;
+
+      border-top: 1px solid var(--border);
     }
 
     .footer p {
       margin-bottom: 8px;
     }
 
+    /* =========================
+       MOBILE
+       ========================= */
+
     @media (max-width: 760px) {
+
       .container {
         width: min(100% - 24px, 1180px);
       }
@@ -344,165 +501,139 @@
         align-items: flex-start;
       }
 
-      .arrow {
+      .chain .arrow {
         display: none;
       }
     }
 
     @media (prefers-reduced-motion: reduce) {
+
       html {
         scroll-behavior: auto;
       }
+
     }
+
   </style>
 
-  <!--
-    P07 STRUCTURED DATA
 
-    ProfilePage is the page-level entity.
-    Person is the primary entity described by this page.
-    sameAs contains identity/authority references that identify the same person.
-    identifier contains stable identity identifiers.
-    BreadcrumbList describes the seven-page site hierarchy.
-  -->
+  <!-- =========================
+       STRUCTURED DATA
+       ========================= -->
+
   <script type="application/ld+json">
+
   {
     "@context": "https://schema.org",
+
     "@type": "ProfilePage",
-    "@id": "https://nabalkishorepande.github.io/research-identity-authority/#profilepage",
-    "name": "Research Identity & Authority | Nabal Kishore Pande",
-    "url": "https://nabalkishorepande.github.io/research-identity-authority/",
-    "description": "Research identity and authority architecture for Nabal Kishore Pande, connecting research areas, research outputs, persistent identifiers, digital identity, bibliographic authority, Wikidata entities, Wikimedia presence, and external scholarly authority records.",
+
+    "@id":
+      "https://nabalkishorepande.github.io/research-identity-authority/#profilepage",
+
+    "name":
+      "Research Identity & Authority | Nabal Kishore Pande",
+
+    "url":
+      "https://nabalkishorepande.github.io/research-identity-authority/",
+
+    "description":
+      "Research identity and authority architecture connecting Nabal Kishore Pande to research areas, outputs, persistent identifiers, bibliographic authority, knowledge-graph relationships, and external scholarly records.",
+
     "isPartOf": {
       "@type": "WebSite",
-      "@id": "https://nabalkishorepande.github.io/#website",
-      "name": "Nabal Kishore Pande",
-      "url": "https://nabalkishorepande.github.io/"
+
+      "@id":
+        "https://nabalkishorepande.github.io/#website",
+
+      "name":
+        "Nabal Kishore Pande Knowledge System",
+
+      "url":
+        "https://nabalkishorepande.github.io/"
     },
+
     "mainEntity": {
+
       "@type": "Person",
-      "@id": "https://nabalkishorepande.github.io/#person",
-      "name": "Nabal Kishore Pande",
-      "url": "https://nabalkishorepande.github.io/",
-      "description": "Independent researcher and author working across Scholarship Intelligence, Decision Defence, Global Professional Mobility, research evidence, and structured knowledge systems.",
-      "identifier": [
-        {
-          "@type": "PropertyValue",
-          "propertyID": "ORCID",
-          "value": "0009-0007-3325-9966",
-          "url": "https://orcid.org/0009-0007-3325-9966"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Wikidata",
-          "value": "Q137731110",
-          "url": "https://www.wikidata.org/wiki/Q137731110"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "IngramSpark Author Account Number",
-          "value": "9432432"
-        }
-      ],
+
+      "@id":
+        "https://nabalkishorepande.github.io/#person",
+
+      "name":
+        "Nabal Kishore Pande",
+
+      "url":
+        "https://nabalkishorepande.github.io/",
+
+      "identifier": {
+
+        "@type": "PropertyValue",
+
+        "propertyID": "ORCID",
+
+        "value":
+          "0009-0007-3325-9966",
+
+        "url":
+          "https://orcid.org/0009-0007-3325-9966"
+      },
+
       "sameAs": [
         "https://orcid.org/0009-0007-3325-9966",
-        "https://www.wikidata.org/wiki/Q137731110",
         "https://www.scienceopen.com/user/nabal-kishore-pande",
-        "https://openalex.org/authors/a5133520791",
-        "https://www.lens.org/lens/profile/713588055/scholar",
-        "https://commons.datacite.org/orcid.org/0009-0007-3325-9966",
-        "https://explore.openaire.eu/search/advanced/research-outcomes?f0=resultauthor&fv0=Nabal%20Kishore%20Pande",
-        "https://search.worldcat.org/search?q=au=%22PANDE%2C%20NABAL%20KISHORE%22",
-        "https://www.amazon.in/stores/author/B0CZS7H3LK/about",
-        "https://leanpub.com/u/nabalkishorepande",
-        "https://fundedabroadindia.gumroad.com/",
-        "https://github.com/NabalKishorePande",
-        "https://en.wikisource.org/wiki/User%3ANabal_Kishore_Pande"
+        "https://www.wikidata.org/wiki/Q137731110"
       ],
+
       "knowsAbout": [
         "Scholarship Intelligence",
         "Decision Defence",
+        "Decision Defence Architecture",
         "Global Professional Mobility",
+        "Research Evidence",
+        "Research Provenance",
         "Research Identity",
         "Research Authority",
-        "Research Evidence",
-        "Structured Knowledge Systems",
-        "Research Provenance"
+        "Structured Knowledge Systems"
       ]
+
     },
+
     "about": [
+
       {
         "@type": "Thing",
         "name": "Research Identity"
       },
+
       {
         "@type": "Thing",
         "name": "Research Authority"
       },
+
       {
         "@type": "Thing",
         "name": "Persistent Identifiers"
       },
+
       {
         "@type": "Thing",
         "name": "Bibliographic Authority"
       },
+
       {
         "@type": "Thing",
-        "name": "Knowledge Graph Entities"
+        "name": "Knowledge Graph Relationships"
       }
-    ],
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "@id": "https://nabalkishorepande.github.io/research-identity-authority/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "P01 Home",
-          "item": "https://nabalkishorepande.github.io/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "P02 Scholarship Intelligence",
-          "item": "https://nabalkishorepande.github.io/scholarship-intelligence/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "P03 Decision & Mobility",
-          "item": "https://nabalkishorepande.github.io/decision-mobility/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "P04 Research",
-          "item": "https://nabalkishorepande.github.io/research/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "P05 Research Profiles",
-          "item": "https://nabalkishorepande.github.io/research-profiles/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "name": "P06 Concepts",
-          "item": "https://nabalkishorepande.github.io/concepts/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 7,
-          "name": "P07 Identity & Authority",
-          "item": "https://nabalkishorepande.github.io/research-identity-authority/"
-        }
-      ]
-    }
+
+    ]
+
   }
+
   </script>
+
 </head>
+
 
 <body>
 
@@ -510,1542 +641,1330 @@
   Skip to main content
 </a>
 
+
+<!-- =========================
+     NAVIGATION
+     ========================= -->
+
 <header class="site-header">
+
   <nav class="nav" aria-label="Primary navigation">
-    <a href="https://nabalkishorepande.github.io/">P01 Home</a>
-    <a href="/scholarship-intelligence/">P02 Scholarship Intelligence</a>
-    <a href="/decision-mobility/">P03 Decision &amp; Mobility</a>
-    <a href="/research/">P04 Research</a>
-    <a href="/research-profiles/">P05 Research Profiles</a>
-    <a href="/concepts/">P06 Concepts</a>
-    <a href="/research-identity-authority/">P07 Identity &amp; Authority</a>
+
+    <a href="/">
+      P01 Home
+    </a>
+
+    <a href="/scholarship-intelligence/">
+      P02 Scholarship Intelligence
+    </a>
+
+    <a href="/decision-mobility/">
+      P03 Decision &amp; Mobility
+    </a>
+
+    <a href="/research/">
+      P04 Research
+    </a>
+
+    <a href="/research-profiles/">
+      P05 Research Profiles
+    </a>
+
+    <a href="/concepts/">
+      P06 Concepts
+    </a>
+
+    <a href="/research-identity-authority/">
+      P07 Identity &amp; Authority
+    </a>
+
   </nav>
+
 </header>
+
 
 <main id="main-content" class="container">
 
-  <!-- =========================================================
+
+  <!-- =========================
        HERO
-       ========================================================= -->
+       ========================= -->
 
   <section class="hero">
-    <span class="eyebrow">P07 · Research Authority</span>
 
-    <h1>Research Identity &amp; Authority</h1>
+    <span class="eyebrow">
+      P07 · Research Identity &amp; Authority
+    </span>
+
+    <h1>
+      RESEARCH IDENTITY &amp; AUTHORITY
+    </h1>
 
     <p class="hero-intro">
-      This page defines the research identity and authority architecture
-      connecting Nabal Kishore Pande to research areas, research outputs,
-      persistent identifiers, digital infrastructure, bibliographic records,
-      knowledge-graph entities, Wikimedia presence, and external scholarly
-      authority systems.
+
+      The identity and authority layer connecting Nabal Kishore Pande
+      to research areas, research outputs, persistent identifiers,
+      bibliographic authority, knowledge-graph relationships, and
+      verifiable external scholarly records.
+
     </p>
+
   </section>
 
 
-  <!-- =========================================================
-       PERSON
-       ========================================================= -->
+  <!-- =========================
+       P07 ROLE
+       ========================= -->
 
   <section class="section">
-    <h2>Person</h2>
+
+    <h2>
+      Role of P07
+    </h2>
+
+    <p class="lead">
+
+      P07 is the canonical identity and authority relationship layer
+      of the seven-page knowledge system.
+
+    </p>
+
+    <p>
+
+      It explains how the researcher is connected to research,
+      research outputs, identifiers, authority records, and
+      external knowledge systems.
+
+    </p>
+
+    <p>
+
+      P07 does not duplicate the applied domains, research catalogue,
+      controlled concepts, or external research-profile registry.
+
+    </p>
+
+    <div class="authority-model">
+
+      <strong>
+        Core relationship:
+      </strong>
+
+      Person → Research → Output → Identifier → Authority Record
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CANONICAL PERSON
+       ========================= -->
+
+  <section class="section">
+
+    <h2>
+      Canonical Research Identity
+    </h2>
 
     <div class="record">
-      <span class="label">Canonical Entity</span>
 
-      <h3>Nabal Kishore Pande</h3>
+      <span class="label">
+        Person
+      </span>
+
+      <h3>
+        Nabal Kishore Pande
+      </h3>
 
       <p>
+
         Independent researcher and author working across Scholarship
         Intelligence, Decision Defence, Global Professional Mobility,
         research evidence, and structured knowledge systems.
+
       </p>
 
       <p>
-        <a href="https://nabalkishorepande.github.io/">
+
+        <a href="/">
           Canonical Website
         </a>
+
         ·
-        <a href="https://www.wikidata.org/wiki/Q137731110">
-          Wikidata Q137731110
+
+        <a
+          href="https://orcid.org/0009-0007-3325-9966"
+          rel="me"
+        >
+          ORCID
         </a>
+
+        ·
+
+        <a
+          href="https://www.wikidata.org/wiki/Q137731110"
+        >
+          Wikidata
+        </a>
+
       </p>
+
     </div>
+
   </section>
 
 
-  <!-- =========================================================
+  <!-- =========================
        RESEARCH IDENTITY
-       ========================================================= -->
+       ========================= -->
 
   <section class="section">
-    <h2>Research Identity</h2>
+
+    <h2>
+      Research Identity
+    </h2>
 
     <p class="lead">
-      Research identity connects the person to knowledge domains, research
-      outputs, frameworks, publications, datasets, identifiers, and external
-      authority records through explicit relationships.
+
+      Research identity connects the person to defined research
+      domains, research outputs, frameworks, publications,
+      datasets, persistent identifiers, and authority relationships.
+
     </p>
 
-    <div class="grid">
-
-      <div class="card">
-        <h3>Primary Research Areas</h3>
-
-        <p>
-          Scholarship Intelligence, Decision Defence, and Global Professional
-          Mobility.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Research Orientation</h3>
-
-        <p>
-          Structured knowledge, evidence organisation, decision processes,
-          educational opportunity, research provenance, and international
-          professional access.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- =========================================================
-       RESEARCH AREAS
-       ========================================================= -->
-
-  <section class="section">
-    <h2>Research Areas</h2>
 
     <div class="grid">
 
       <div class="card">
-        <h3>Scholarship Intelligence</h3>
+
+        <h3>
+          Primary Research Areas
+        </h3>
 
         <p>
-          Structured approaches to scholarship opportunities, preparation,
-          eligibility, evidence, verification, and decision processes.
+
+          Scholarship Intelligence, Decision Defence,
+          and Global Professional Mobility.
+
         </p>
 
-        <p>
-          <a href="/scholarship-intelligence/">
-            Explore Scholarship Intelligence
-          </a>
-        </p>
       </div>
 
 
       <div class="card">
-        <h3>Decision Defence</h3>
+
+        <h3>
+          Research Orientation
+        </h3>
 
         <p>
-          Structured decision evidence, rationale, traceability, and
-          accountability for high-stakes professional decisions.
+
+          Structured knowledge, evidence organisation,
+          decision processes, educational opportunity,
+          research provenance, and professional access.
+
         </p>
 
-        <p>
-          <a href="/decision-mobility/">
-            Explore Decision &amp; Mobility
-          </a>
-        </p>
       </div>
 
 
       <div class="card">
-        <h3>Global Professional Mobility</h3>
+
+        <h3>
+          Research Evidence
+        </h3>
 
         <p>
-          Research concerning professional portability, credential
-          recognition, professional access, and career mobility.
-        </p>
 
-        <p>
-          <a href="/decision-mobility/">
-            Explore Global Professional Mobility
-          </a>
-        </p>
-      </div>
+          Research projects, papers, reports, datasets,
+          frameworks, methods, and provenance.
 
-
-      <div class="card">
-        <h3>Research &amp; Evidence</h3>
-
-        <p>
-          Research projects, papers, reports, datasets, frameworks, methods,
-          and provenance are maintained in the Research layer.
         </p>
 
         <p>
           <a href="/research/">
-            Explore Research
+            Open P04 Research
           </a>
         </p>
-      </div>
 
-    </div>
-  </section>
-
-
-  <!-- =========================================================
-       RESEARCH RELATIONSHIPS
-       ========================================================= -->
-
-  <section class="section">
-    <h2>Research Relationships</h2>
-
-    <p class="lead">
-      The research identity is represented through explicit entity
-      relationships rather than through a flat collection of profile links.
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <p class="relationship">
-          Person → researches → Research Area
-        </p>
-
-        <p>
-          The researcher is connected to defined research domains.
-        </p>
       </div>
 
 
       <div class="card">
-        <p class="relationship">
-          Person → develops → Framework
-        </p>
-
-        <p>
-          Research work may produce structured frameworks and systems.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <p class="relationship">
-          Person → produces → Research Output
-        </p>
-
-        <p>
-          Outputs include papers, reports, datasets, projects, and other
-          documented research objects.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <p class="relationship">
-          Person → authors → Publication
-        </p>
-
-        <p>
-          Publications establish an authorship relationship between the person
-          and documented scholarly or professional works.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <p class="relationship">
-          Person → identified by → Persistent Identifier
-        </p>
-
-        <p>
-          Persistent identifiers support stable identification across research
-          infrastructures.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <p class="relationship">
-          Person → represented by → Authority Record
-        </p>
-
-        <p>
-          External authority and bibliographic systems provide additional
-          identity and discovery representations.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- =========================================================
-       PERSISTENT IDENTIFIERS
-       ========================================================= -->
-
-  <section class="section">
-    <h2>Persistent Identifiers</h2>
-
-    <div class="grid">
-
-      <div class="record">
-        <span class="label">Scholarly Identifier</span>
 
         <h3>
-          <a href="https://orcid.org/0009-0007-3325-9966">
-            ORCID
-          </a>
+          Controlled Terminology
         </h3>
 
         <p>
-          Persistent researcher identity used to distinguish the author
-          across scholarly outputs and research systems.
-        </p>
-      </div>
 
+          Research terminology and semantic relationships are
+          controlled through the P06 Concepts layer.
 
-      <div class="record">
-        <span class="label">Scholarly Discovery</span>
-
-        <h3>
-          <a href="https://openalex.org/authors/a5133520791">
-            OpenAlex
-          </a>
-        </h3>
-
-        <p>
-          Scholarly discovery record connecting the researcher with works,
-          authors, institutions, and research entities.
-        </p>
-      </div>
-
-
-      <div class="record">
-        <span class="label">Research Metadata</span>
-
-        <h3>
-          <a href="https://commons.datacite.org/orcid.org/0009-0007-3325-9966">
-            DataCite Commons
-          </a>
-        </h3>
-
-        <p>
-          Research metadata and persistent-identifier discovery environment
-          connected to the research identity.
-        </p>
-      </div>
-
-
-      <div class="record">
-        <span class="label">Research Infrastructure</span>
-
-        <h3>
-          <a href="https://explore.openaire.eu/search/advanced/research-outcomes?f0=resultauthor&fv0=Nabal%20Kishore%20Pande">
-            OpenAIRE
-          </a>
-        </h3>
-
-        <p>
-          Open research infrastructure connecting research outputs,
-          contributors, and related scholarly information.
-        </p>
-      </div>
-
-    </div>
-
-    <p style="margin-top:18px;">
-      These records belong to the external identity and authority layer.
-      They should remain aligned with the canonical researcher identity and
-      should be checked against the relevant external platform.
-    </p>
-  </section>
-
-
-  <!-- =========================================================
-       CANONICAL DIGITAL IDENTITY
-       ========================================================= -->
-
-  <section class="section">
-    <h2>Canonical Digital Identity</h2>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>GitHub Pages</h3>
-
-        <p>
-          The GitHub Pages website is the canonical public knowledge and
-          research website for the seven-page knowledge system.
-        </p>
-
-        <p>
-          <a href="https://nabalkishorepande.github.io/">
-            Open Canonical Website
-          </a>
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>GitHub Profile</h3>
-
-        <p>
-          GitHub functions as research and development infrastructure,
-          supporting technical publication and maintenance of the knowledge
-          system.
-        </p>
-
-        <p>
-          <a href="https://github.com/NabalKishorePande">
-            Open GitHub Profile
-          </a>
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- =========================================================
-       RESEARCH INFRASTRUCTURE IDENTITY
-       ========================================================= -->
-
-  <section class="section">
-    <h2>Research Infrastructure Identity</h2>
-
-    <p class="lead">
-      Research infrastructure provides the operational layer through which
-      knowledge objects, code, datasets, documents, and public research
-      materials can be maintained and discovered.
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Research Website</h3>
-
-        <p>
-          Canonical public presentation of the research and knowledge system.
-        </p>
-
-        <p>
-          <a href="https://nabalkishorepande.github.io/">
-            GitHub Pages
-          </a>
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>Research Layer</h3>
-
-        <p>
-          Research projects, papers, reports, datasets, frameworks, methods,
-          and provenance are maintained on P04.
-        </p>
-
-        <p>
-          <a href="/research/">
-            P04 Research
-          </a>
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>Research Profiles</h3>
-
-        <p>
-          External scholarly and research-profile identity infrastructure is
-          organised on P05.
-        </p>
-
-        <p>
-          <a href="/research-profiles/">
-            P05 Research Profiles
-          </a>
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>Controlled Concepts</h3>
-
-        <p>
-          The semantic layer of the knowledge system is maintained on P06.
         </p>
 
         <p>
           <a href="/concepts/">
-            P06 Concepts
+            Open P06 Concepts
           </a>
         </p>
+
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- =========================================================
-       AUTHOR & BIBLIOGRAPHIC AUTHORITY RECORDS
-       ========================================================= -->
+  <!-- =========================
+       RESEARCH AREAS
+       ========================= -->
 
   <section class="section">
-    <h2>Author &amp; Bibliographic Authority Records</h2>
 
-    <p class="lead">
-      These records provide author, publishing, library, and bibliographic
-      authority pathways. They are not substitutes for the P05 research
-      profile registry.
-    </p>
+    <h2>
+      Research Areas
+    </h2>
 
+    <div class="grid">
 
-    <div class="record">
-      <span class="label">Author Authority · P03 Ownership</span>
+      <div class="card">
 
-      <h3>
-        <a href="https://www.amazon.in/stores/author/B0CZS7H3LK/about">
-          Amazon Author Profile
+        <h3>
+          Scholarship Intelligence
+        </h3>
+
+        <p>
+
+          Structured approaches to scholarship opportunities,
+          preparation, eligibility, evidence, verification,
+          and decision processes.
+
+        </p>
+
+        <a href="/scholarship-intelligence/">
+          Explore P02
         </a>
-      </h3>
 
-      <p>
-        Author identity record connecting the researcher with published books
-        on the Amazon publishing ecosystem.
-      </p>
-
-      <p>
-        <strong>Ownership:</strong>
-        P03 — Decision &amp; Mobility.
-      </p>
-    </div>
+      </div>
 
 
-    <div class="record">
-      <span class="label">Publishing Infrastructure · P03 Ownership</span>
+      <div class="card">
 
-      <h3>IngramSpark Author Account</h3>
+        <h3>
+          Decision Defence
+        </h3>
 
-      <p>
-        Publishing infrastructure account associated with the author's
-        publishing identity.
-      </p>
+        <p>
 
-      <p>
-        <strong>Author Account Number:</strong> 9432432
-      </p>
+          Structured decision evidence, criteria, rationale,
+          traceability, and accountability.
 
-      <p>
-        <strong>Ownership:</strong>
-        P03 — Decision &amp; Mobility.
-      </p>
-    </div>
+        </p>
 
-
-    <div class="record">
-      <span class="label">Author Publishing Profile · P03 Ownership</span>
-
-      <h3>
-        <a href="https://leanpub.com/u/nabalkishorepande">
-          Leanpub Author Profile
+        <a href="/decision-mobility/">
+          Explore P03
         </a>
-      </h3>
 
-      <p>
-        Author publishing profile providing a public identity pathway for
-        books and professional publications.
-      </p>
-
-      <p>
-        <strong>Ownership:</strong>
-        P03 — Decision &amp; Mobility.
-      </p>
-    </div>
+      </div>
 
 
-    <div class="record">
-      <span class="label">Commercial Publishing Environment · P02 Ownership</span>
+      <div class="card">
 
-      <h3>
-        <a href="https://fundedabroadindia.gumroad.com/">
-          Gumroad
+        <h3>
+          Global Professional Mobility
+        </h3>
+
+        <p>
+
+          Professional portability, credential recognition,
+          professional access, and career mobility.
+
+        </p>
+
+        <a href="/decision-mobility/">
+          Explore P03
         </a>
-      </h3>
 
-      <p>
-        Commercial publishing and digital-product destination associated with
-        the Scholarship Intelligence publishing layer.
-      </p>
-
-      <p>
-        <strong>Ownership:</strong>
-        P02 — Scholarship Intelligence.
-      </p>
-    </div>
+      </div>
 
 
-    <div class="record">
-      <span class="label">Bibliographic Authority · P07 Ownership</span>
+      <div class="card">
 
-      <h3>
-        <a href="https://search.worldcat.org/search?q=au=%22PANDE%2C%20NABAL%20KISHORE%22">
-          WorldCat Author Record
+        <h3>
+          Research Evidence &amp; Provenance
+        </h3>
+
+        <p>
+
+          Research objects, evidence, outputs, methods,
+          identifiers, and provenance.
+
+        </p>
+
+        <a href="/research/">
+          Explore P04
         </a>
-      </h3>
 
-      <p>
-        Library and bibliographic discovery pathway for published works
-        associated with the author record.
-      </p>
+      </div>
 
-      <p>
-        <strong>Authority:</strong>
-        P07 — Research Identity &amp; Authority.
-      </p>
     </div>
 
   </section>
 
 
-  <!-- =========================================================
-       WIKIDATA KNOWLEDGE ENTITIES
-       ========================================================= -->
+  <!-- =========================
+       P05 RELATIONSHIP
+       ========================= -->
 
   <section class="section">
-    <h2>Wikidata Knowledge Entities</h2>
+
+    <h2>
+      Research Profiles and Authority
+    </h2>
 
     <p class="lead">
-      Wikidata provides structured knowledge-graph entities connecting the
-      researcher with selected research works, concepts, and editions. These
-      entity records are treated as knowledge relationships, not as a second
-      publication catalogue.
-    </p>
 
+      P05 and P07 have different functions and should not be merged.
 
-    <div class="record">
-      <span class="label">Person Entity</span>
-
-      <h3>
-        <a href="https://www.wikidata.org/wiki/Q137731110">
-          Q137731110 — Nabal Kishore Pande
-        </a>
-      </h3>
-
-      <p>
-        Primary Wikidata entity representing the researcher and author.
-      </p>
-    </div>
-
-
-    <div class="record">
-      <span class="label">Knowledge Entity</span>
-
-      <h3>
-        <a href="https://www.wikidata.org/wiki/Q140964268">
-          Q140964268 — The Academic Word Engine
-        </a>
-      </h3>
-
-      <p>
-        Structured knowledge entity representing the associated work.
-      </p>
-    </div>
-
-
-    <div class="record">
-      <span class="label">Edition Entity</span>
-
-      <h3>
-        <a href="https://www.wikidata.org/wiki/Q140965320">
-          Q140965320 — The Academic Word Engine (2025 edition)
-        </a>
-      </h3>
-
-      <p>
-        Knowledge-graph entity representing the specified 2025 edition.
-      </p>
-    </div>
-
-
-    <div class="record">
-      <span class="label">Knowledge Entity</span>
-
-      <h3>
-        <a href="https://www.wikidata.org/wiki/Q138479502">
-          Q138479502 — DIY Home Improvement: Transform Your Space on a Budget
-        </a>
-      </h3>
-
-      <p>
-        Structured knowledge entity representing the associated work.
-      </p>
-    </div>
-
-
-    <div class="record">
-      <span class="label">Edition Entity</span>
-
-      <h3>
-        <a href="https://www.wikidata.org/wiki/Q140973854">
-          Q140973854 — DIY Home Improvement: Transform Your Space on a Budget (2024 edition)
-        </a>
-      </h3>
-
-      <p>
-        Knowledge-graph entity representing the specified 2024 edition.
-      </p>
-    </div>
-
-
-    <div class="record">
-      <span class="label">Research Publication Entity</span>
-
-      <h3>
-        <a href="https://www.wikidata.org/wiki/Q138497900">
-          Q138497900 — Scholarship Funding Systems, Educational Access, and Applicant Barriers in Developing Economies: A PRISMA-ScR Scoping Review
-        </a>
-      </h3>
-
-      <p>
-        Knowledge-graph entity representing the specified research publication
-        and its relationship to the research identity.
-      </p>
-    </div>
-
-
-    <div class="record">
-      <span class="label">Research Concept Entity</span>
-
-      <h3>
-        <a href="https://www.wikidata.org/wiki/Q141146390">
-          Q141146390 — The Evidence Gap
-        </a>
-      </h3>
-
-      <p>
-        Structured knowledge entity representing the research concept or work
-        associated with the evidence-gap layer.
-      </p>
-    </div>
-
-
-    <div class="record">
-      <span class="label">Research Governance Entity</span>
-
-      <h3>
-        <a href="https://www.wikidata.org/wiki/Q141181938">
-          Q141181938 — Autonomous Research Governance
-        </a>
-      </h3>
-
-      <p>
-        Structured knowledge entity representing the associated research
-        governance concept.
-      </p>
-    </div>
-
-  </section>
-
-
-  <!-- =========================================================
-       WIKIMEDIA PRESENCE
-       ========================================================= -->
-
-  <section class="section">
-    <h2>Wikimedia Presence</h2>
-
-    <p class="lead">
-      Wikimedia user pages provide platform-specific identity and contribution
-      pathways. They are separate from Wikidata knowledge entities and from
-      the external research-profile registry maintained on P05.
     </p>
 
 
     <div class="grid">
 
-      <div class="record">
-        <span class="label">Wikimedia Commons</span>
+      <div class="card">
 
         <h3>
-          <a href="https://commons.wikimedia.org/wiki/User:Nabal_Kishore_Pande">
-            User: Nabal Kishore Pande
-          </a>
+          P05 · Research Profiles
         </h3>
 
         <p>
-          Wikimedia Commons contributor identity and media-repository
-          presence.
+
+          P05 contains the verified external research-profile
+          registry.
+
         </p>
+
+        <p>
+
+          The current canonical profile records are:
+
+        </p>
+
+        <ul>
+
+          <li>
+            ORCID
+          </li>
+
+          <li>
+            ScienceOpen · Expert Member
+          </li>
+
+        </ul>
+
+        <a href="/research-profiles/">
+          Open P05 Research Profiles
+        </a>
+
       </div>
 
 
-      <div class="record">
-        <span class="label">Wikibooks</span>
+      <div class="card">
 
         <h3>
-          <a href="https://en.wikibooks.org/wiki/User:Nabal_Kishore_Pande">
-            User: Nabal Kishore Pande
-          </a>
+          P07 · Research Identity &amp; Authority
         </h3>
 
         <p>
-          Wikibooks user identity associated with collaborative book
-          knowledge infrastructure.
+
+          P07 explains the identity, authority, identifier,
+          bibliographic, and knowledge-graph relationships
+          connecting the researcher to external systems.
+
         </p>
-      </div>
 
-
-      <div class="record">
-        <span class="label">Wikipedia</span>
-
-        <h3>
-          <a href="https://en.wikipedia.org/wiki/User:Nabal_Kishore_Pande">
-            User: Nabal Kishore Pande
-          </a>
-        </h3>
-
-        <p>
-          Wikipedia user identity providing a contributor-level identity
-          pathway.
-        </p>
-      </div>
-
-
-      <div class="record">
-        <span class="label">Wiktionary</span>
-
-        <h3>
-          <a href="https://en.wiktionary.org/wiki/User:Nabal_Kishore_Pande">
-            User: Nabal Kishore Pande
-          </a>
-        </h3>
-
-        <p>
-          Wiktionary contributor identity associated with the collaborative
-          dictionary environment.
-        </p>
-      </div>
-
-
-      <div class="record">
-        <span class="label">Wikidata</span>
-
-        <h3>
-          <a href="https://www.wikidata.org/wiki/User:Nabal_Kishore_Pande">
-            User: Nabal Kishore Pande
-          </a>
-        </h3>
-
-        <p>
-          Wikidata contributor identity connected to structured knowledge
-          editing and entity relationships.
-        </p>
-      </div>
-
-
-      <div class="record">
-        <span class="label">Wikiversity</span>
-
-        <h3>
-          <a href="https://en.wikiversity.org/wiki/User:Nabal_Kishore_Pande">
-            User: Nabal Kishore Pande
-          </a>
-        </h3>
-
-        <p>
-          Wikiversity contributor identity associated with open educational
-          and knowledge resources.
-        </p>
-      </div>
-
-
-      <div class="record">
-        <span class="label">Wikisource</span>
-
-        <h3>
-          <a href="https://en.wikisource.org/wiki/User:Nabal_Kishore_Pande">
-            User: Nabal Kishore Pande
-          </a>
-        </h3>
-
-        <p>
-          Wikisource contributor identity associated with the open
-          transcription and source-text environment.
-        </p>
       </div>
 
     </div>
+
+
+    <div class="authority-model">
+
+      <strong>
+        Boundary rule:
+      </strong>
+
+      P05 owns the verified research-profile registry.
+      P07 owns the identity and authority relationship layer.
+      P07 does not recreate the P05 profile catalogue.
+
+    </div>
+
   </section>
 
 
-  <!-- =========================================================
-       EXTERNAL SCHOLARLY AUTHORITY RECORDS
-       ========================================================= -->
+  <!-- =========================
+       VERIFIED IDENTITY RECORDS
+       ========================= -->
 
   <section class="section">
-    <h2>External Scholarly Authority Records</h2>
 
-    <p class="lead">
-      These records provide external scholarly discovery and authority
-      pathways. The detailed 12-record research-profile registry remains
-      owned by P05 and is not duplicated here.
-    </p>
+    <h2>
+      Verified Identity Relationships
+    </h2>
 
 
     <div class="record">
-      <span class="label">Scholarly Identity</span>
+
+      <span class="label">
+        Persistent Research Identifier
+      </span>
 
       <h3>
-        <a href="https://www.scienceopen.com/user/nabal-kishore-pande">
-          ScienceOpen
+        <a
+          href="https://orcid.org/0009-0007-3325-9966"
+        >
+          ORCID
         </a>
       </h3>
 
       <p>
-        External scholarly discovery and publication environment associated
-        with the research identity.
+
+        ORCID provides the persistent researcher identifier
+        connecting the person to scholarly identity and research
+        output metadata.
+
       </p>
 
       <p>
-        <strong>Ownership:</strong>
-        P05 — Research Profiles.
+
+        <strong>
+          P05 status:
+        </strong>
+
+        Verified Research Profile.
+
       </p>
+
     </div>
 
 
     <div class="record">
-      <span class="label">Scholarly Discovery</span>
+
+      <span class="label">
+        External Scholarly Identity
+      </span>
 
       <h3>
-        <a href="https://openalex.org/authors/a5133520791">
-          OpenAlex
+        <a
+          href="https://www.scienceopen.com/user/nabal-kishore-pande"
+        >
+          ScienceOpen · Expert Member
         </a>
       </h3>
 
       <p>
-        External research graph and scholarly discovery representation
-        connecting authors and research works.
+
+        ScienceOpen provides an external scholarly identity and
+        research-discovery relationship.
+
       </p>
 
       <p>
-        <strong>Ownership:</strong>
-        P05 — Research Profiles.
+
+        <strong>
+          P05 status:
+        </strong>
+
+        Verified Research Profile.
+
       </p>
+
     </div>
 
 
     <div class="record">
-      <span class="label">Research &amp; Intellectual-Property Discovery</span>
+
+      <span class="label">
+        Knowledge Graph Entity
+      </span>
 
       <h3>
-        <a href="https://www.lens.org/lens/profile/713588055/scholar">
-          Lens
+        <a
+          href="https://www.wikidata.org/wiki/Q137731110"
+        >
+          Wikidata
         </a>
       </h3>
 
       <p>
-        External research and intellectual-property discovery environment
-        associated with the scholarly identity.
+
+        The Wikidata entity provides a structured knowledge-graph
+        representation that can connect the person with identifiers,
+        statements, and related entities.
+
       </p>
 
       <p>
-        <strong>Ownership:</strong>
-        P05 — Research Profiles.
+
+        <strong>
+          P07 role:
+        </strong>
+
+        Identity and knowledge-graph authority relationship.
+
       </p>
+
     </div>
 
-
-    <div class="record">
-      <span class="label">Research Metadata</span>
-
-      <h3>
-        <a href="https://commons.datacite.org/orcid.org/0009-0007-3325-9966">
-          DataCite Commons
-        </a>
-      </h3>
-
-      <p>
-        External metadata and persistent-identifier discovery environment
-        connected to the researcher.
-      </p>
-
-      <p>
-        <strong>Ownership:</strong>
-        P05 — Research Profiles.
-      </p>
-    </div>
-
-
-    <div class="record">
-      <span class="label">Open Research Infrastructure</span>
-
-      <h3>
-        <a href="https://explore.openaire.eu/search/advanced/research-outcomes?f0=resultauthor&fv0=Nabal%20Kishore%20Pande">
-          OpenAIRE
-        </a>
-      </h3>
-
-      <p>
-        External scholarly infrastructure connecting research outputs and
-        related research information.
-      </p>
-
-      <p>
-        <strong>Ownership:</strong>
-        P05 — Research Profiles.
-      </p>
-    </div>
-
-
-    <p style="margin-top:18px;">
-      External authority records should only be treated as active identity
-      relationships when the underlying record is genuine, attributable,
-      and verifiable.
-    </p>
   </section>
 
 
-  <!-- =========================================================
+  <!-- =========================
+       BIBLIOGRAPHIC AUTHORITY
+       ========================= -->
+
+  <section class="section">
+
+    <h2>
+      Bibliographic Authority
+    </h2>
+
+    <p class="lead">
+
+      Bibliographic authority concerns the consistent representation
+      of the researcher across catalogues, bibliographic systems,
+      publication metadata, and research outputs.
+
+    </p>
+
+
+    <div class="grid">
+
+      <div class="card">
+
+        <h3>
+          Author Identity
+        </h3>
+
+        <p>
+
+          The researcher should be represented consistently as:
+
+        </p>
+
+        <p>
+          <strong>
+            Nabal Kishore Pande
+          </strong>
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Persistent Identity
+        </h3>
+
+        <p>
+
+          ORCID provides the primary persistent scholarly identifier
+          used for identity continuity.
+
+        </p>
+
+        <a href="https://orcid.org/0009-0007-3325-9966">
+          Verify ORCID
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Research Outputs
+        </h3>
+
+        <p>
+
+          Research outputs remain canonically owned by P04,
+          including research papers, reports, datasets,
+          frameworks, and research projects.
+
+        </p>
+
+        <a href="/research/">
+          Open P04 Research
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Semantic Authority
+        </h3>
+
+        <p>
+
+          Controlled terminology and semantic relationships remain
+          canonically owned by P06.
+
+        </p>
+
+        <a href="/concepts/">
+          Open P06 Concepts
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
        ENTITY RELATIONSHIPS
-       ========================================================= -->
+       ========================= -->
 
   <section class="section">
-    <h2>Entity Relationships</h2>
 
-    <div class="chain" aria-label="Research identity relationship chain">
-      <span>Person</span>
-      <span class="arrow">→</span>
-      <span>Research</span>
-      <span class="arrow">→</span>
-      <span>Output</span>
-      <span class="arrow">→</span>
-      <span>Identifier</span>
-      <span class="arrow">→</span>
-      <span>Authority Record</span>
-    </div>
+    <h2>
+      Entity Relationships
+    </h2>
 
-    <p style="margin-top:20px;">
-      This relationship chain provides the authority model for the site:
-      identity is connected to actual research activity, documented outputs,
-      persistent identifiers, and external records rather than being defined
-      only through profile pages.
-    </p>
+    <div
+      class="chain"
+      aria-label="Research identity authority relationship"
+    >
 
+      <span>
+        Person
+      </span>
 
-    <div class="grid" style="margin-top:20px;">
+      <span class="arrow">
+        →
+      </span>
 
-      <div class="card">
-        <h3>Identity → Research</h3>
+      <span>
+        Research Area
+      </span>
 
-        <p>
-          The person is connected to clearly defined research domains and
-          research questions.
-        </p>
-      </div>
+      <span class="arrow">
+        →
+      </span>
 
+      <span>
+        Research Output
+      </span>
 
-      <div class="card">
-        <h3>Research → Output</h3>
+      <span class="arrow">
+        →
+      </span>
 
-        <p>
-          Research produces identifiable projects, papers, datasets, reports,
-          and frameworks.
-        </p>
-      </div>
+      <span>
+        Identifier
+      </span>
 
+      <span class="arrow">
+        →
+      </span>
 
-      <div class="card">
-        <h3>Output → Identifier</h3>
-
-        <p>
-          Where applicable, outputs can be connected to stable identifiers
-          and metadata records.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>Identifier → Authority</h3>
-
-        <p>
-          External scholarly and bibliographic systems provide additional
-          discovery and verification pathways.
-        </p>
-      </div>
+      <span>
+        Authority Record
+      </span>
 
     </div>
+
+
+    <div class="grid" style="margin-top: 22px;">
+
+      <div class="card">
+
+        <h3>
+          Person → Research
+        </h3>
+
+        <p>
+
+          The person is connected to defined research areas
+          and research questions.
+
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Research → Output
+        </h3>
+
+        <p>
+
+          Research produces identifiable projects, papers,
+          reports, datasets, and frameworks.
+
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Output → Identifier
+        </h3>
+
+        <p>
+
+          Research outputs may be connected to persistent
+          identifiers and metadata records.
+
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Identifier → Authority
+        </h3>
+
+        <p>
+
+          Identifiers and external authority records support
+          identity continuity and research discovery.
+
+        </p>
+
+      </div>
+
+    </div>
+
   </section>
 
 
-  <!-- =========================================================
+  <!-- =========================
        VERIFICATION PATHWAY
-       ========================================================= -->
+       ========================= -->
 
   <section class="section">
-    <h2>Verification Pathway</h2>
+
+    <h2>
+      Research Identity Verification Pathway
+    </h2>
 
     <p class="lead">
-      The research identity should be verified through a connected evidence
-      pathway rather than through isolated profile claims.
+
+      Identity verification should be based on connected evidence,
+      not isolated profile claims.
+
     </p>
+
 
     <div class="chain">
-      <span>Person</span>
-      <span class="arrow">→</span>
-      <span>Research Area</span>
-      <span class="arrow">→</span>
-      <span>Research Output</span>
-      <span class="arrow">→</span>
-      <span>Persistent Identifier</span>
-      <span class="arrow">→</span>
-      <span>External Record</span>
+
+      <span>
+        Person
+      </span>
+
+      <span class="arrow">
+        →
+      </span>
+
+      <span>
+        Research Area
+      </span>
+
+      <span class="arrow">
+        →
+      </span>
+
+      <span>
+        Research Output
+      </span>
+
+      <span class="arrow">
+        →
+      </span>
+
+      <span>
+        Persistent Identifier
+      </span>
+
+      <span class="arrow">
+        →
+      </span>
+
+      <span>
+        External Authority Record
+      </span>
+
     </div>
 
-    <p style="margin-top:20px;">
-      The canonical website explains the relationships. External platforms
-      provide independent records, identifiers, publication metadata,
-      bibliographic information, knowledge-graph entities, or research
-      infrastructure evidence.
+
+    <p style="margin-top: 20px;">
+
+      The canonical website explains the relationship structure.
+      External systems provide independent identity, identifier,
+      bibliographic, knowledge-graph, or scholarly evidence.
+
     </p>
+
   </section>
 
 
-  <!-- =========================================================
-       OWNERSHIP BOUNDARIES
-       ========================================================= -->
+  <!-- =========================
+       SEVEN-PAGE OWNERSHIP
+       ========================= -->
 
   <section class="section">
-    <h2>Seven-Page Ownership Boundaries</h2>
+
+    <h2>
+      Seven-Page Ownership Boundaries
+    </h2>
 
     <p class="lead">
-      Each page has a defined ownership role. P07 connects the system through
-      identity and authority relationships but does not become a duplicate
-      catalogue of the other pages.
+
+      P07 connects the seven-page knowledge system through identity
+      and authority relationships without duplicating the canonical
+      objects owned by the other pages.
+
     </p>
 
 
     <div class="record">
-      <span class="label">P01 · Identity &amp; Orientation</span>
 
-      <h3>P01 — Home / Identity</h3>
+      <span class="label">
+        P01
+      </span>
+
+      <h3>
+        Identity &amp; Orientation
+      </h3>
 
       <p>
-        Owns the primary identity introduction, site orientation, and
-        seven-page navigation.
+
+        Owns the person, professional positioning,
+        site orientation, and primary identity pathway.
+
       </p>
 
-      <p>
-        <a href="https://nabalkishorepande.github.io/">
-          Open P01
-        </a>
-      </p>
+      <a href="/">
+        Open P01
+      </a>
+
     </div>
 
 
     <div class="record">
-      <span class="label">P02 · Applied Domain &amp; Commercial Publishing</span>
 
-      <h3>P02 — Scholarship Intelligence</h3>
+      <span class="label">
+        P02
+      </span>
 
-      <p>
-        Owns Scholarship Intelligence content, applied scholarship knowledge,
-        and its commercial publishing destinations.
-      </p>
-
-      <p>
-        <strong>Commercial ownership:</strong>
-        <a href="https://fundedabroadindia.gumroad.com/">
-          Gumroad
-        </a>
-      </p>
+      <h3>
+        Scholarship Intelligence
+      </h3>
 
       <p>
-        <a href="/scholarship-intelligence/">
-          Open P02
-        </a>
+
+        Owns applied Scholarship Intelligence,
+        preparation systems, resources, and scholarship publishing.
+
       </p>
+
+      <a href="/scholarship-intelligence/">
+        Open P02
+      </a>
+
     </div>
 
 
     <div class="record">
-      <span class="label">P03 · Decision, Mobility &amp; Books</span>
 
-      <h3>P03 — Decision &amp; Mobility</h3>
+      <span class="label">
+        P03
+      </span>
 
-      <p>
-        Owns Decision Defence, Global Professional Mobility, and the related
-        book and author-publishing layer.
-      </p>
-
-      <p>
-        <strong>Publishing identity:</strong>
-        <a href="https://www.amazon.in/stores/author/B0CZS7H3LK/about">
-          Amazon Author Profile
-        </a>
-        ·
-        <a href="https://leanpub.com/u/nabalkishorepande">
-          Leanpub
-        </a>
-      </p>
+      <h3>
+        Decision &amp; Mobility
+      </h3>
 
       <p>
-        <a href="/decision-mobility/">
-          Open P03
-        </a>
+
+        Owns applied Decision Defence,
+        Global Professional Mobility, and related resources.
+
       </p>
+
+      <a href="/decision-mobility/">
+        Open P03
+      </a>
+
     </div>
 
 
     <div class="record">
-      <span class="label">P04 · Research Evidence &amp; Provenance</span>
 
-      <h3>P04 — Research</h3>
+      <span class="label">
+        P04
+      </span>
+
+      <h3>
+        Research
+      </h3>
 
       <p>
-        Owns research projects, publications, datasets, frameworks, methods,
-        research evidence, and provenance.
+
+        Owns research projects, papers, reports, datasets,
+        frameworks, methods, evidence, and provenance.
+
       </p>
 
-      <p>
-        <a href="/research/">
-          Open P04
-        </a>
-      </p>
+      <a href="/research/">
+        Open P04
+      </a>
+
     </div>
 
 
     <div class="record">
-      <span class="label">P05 · External Research Profiles</span>
 
-      <h3>P05 — Research Profiles</h3>
+      <span class="label">
+        P05
+      </span>
 
-      <p>
-        Owns the detailed external research-profile registry and scholarly
-        discovery infrastructure.
-      </p>
-
-      <p>
-        The canonical P05 registry contains the full research-profile
-        destination set and is not duplicated as a catalogue on P07.
-      </p>
+      <h3>
+        Research Profiles
+      </h3>
 
       <p>
-        <a href="/research-profiles/">
-          Open P05
-        </a>
+
+        Owns the verified external research-profile registry.
+
+        The canonical profile set is limited to ORCID and
+        ScienceOpen · Expert Member.
+
       </p>
+
+      <a href="/research-profiles/">
+        Open P05
+      </a>
+
     </div>
 
 
     <div class="record">
-      <span class="label">P06 · Semantic Layer</span>
 
-      <h3>P06 — Concepts</h3>
+      <span class="label">
+        P06
+      </span>
+
+      <h3>
+        Concepts
+      </h3>
 
       <p>
-        Owns controlled concepts, definitions, terminology, and semantic
-        relationships used throughout the knowledge system.
+
+        Owns controlled definitions, terminology,
+        and semantic relationships.
+
       </p>
 
-      <p>
-        <a href="/concepts/">
-          Open P06
-        </a>
-      </p>
+      <a href="/concepts/">
+        Open P06
+      </a>
+
     </div>
 
 
     <div class="record">
-      <span class="label">P07 · Authority &amp; Knowledge Graph Layer</span>
 
-      <h3>P07 — Research Identity &amp; Authority</h3>
+      <span class="label">
+        P07
+      </span>
 
-      <p>
-        Owns identity relationships, bibliographic authority, knowledge-graph
-        entities, Wikimedia presence, persistent-identity relationships,
-        verification pathways, and cross-page authority connections.
-      </p>
-
-      <p>
-        <strong>P07 does not replace P02, P03, P04, P05, or P06.</strong>
-        It connects them through explicit identity and authority
-        relationships.
-      </p>
+      <h3>
+        Research Identity &amp; Authority
+      </h3>
 
       <p>
-        <a href="/research-identity-authority/">
-          Current P07
-        </a>
+
+        Owns research identity relationships,
+        authority relationships, persistent identity,
+        bibliographic authority, knowledge-graph relationships,
+        and verification pathways.
+
       </p>
+
+      <strong>
+        P07 does not duplicate the canonical content of P01–P06.
+      </strong>
+
     </div>
 
   </section>
 
 
-  <!-- =========================================================
-       KNOWLEDGE SYSTEM CONNECTIONS
-       ========================================================= -->
+  <!-- =========================
+       ANTI-DUPLICATION RULE
+       ========================= -->
 
   <section class="section">
-    <h2>Knowledge System Connections</h2>
 
-    <div class="grid">
-
-      <div class="card">
-        <h3>P01 — Home / Identity</h3>
-
-        <p>
-          Primary identity and orientation layer.
-        </p>
-
-        <p>
-          <a href="https://nabalkishorepande.github.io/">
-            Open P01
-          </a>
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>P02 — Scholarship Intelligence</h3>
-
-        <p>
-          Applied domain knowledge and scholarship decision systems.
-        </p>
-
-        <p>
-          <a href="/scholarship-intelligence/">
-            Open P02
-          </a>
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>P03 — Decision &amp; Mobility</h3>
-
-        <p>
-          Decision Defence, Global Professional Mobility, and associated
-          publishing identity.
-        </p>
-
-        <p>
-          <a href="/decision-mobility/">
-            Open P03
-          </a>
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>P04 — Research</h3>
-
-        <p>
-          Research evidence, outputs, projects, datasets, methods, and
-          provenance.
-        </p>
-
-        <p>
-          <a href="/research/">
-            Open P04
-          </a>
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>P05 — Research Profiles</h3>
-
-        <p>
-          External scholarly, research-infrastructure, and research-profile
-          identities.
-        </p>
-
-        <p>
-          <a href="/research-profiles/">
-            Open P05
-          </a>
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>P06 — Concepts</h3>
-
-        <p>
-          Controlled semantic concepts and their relationships.
-        </p>
-
-        <p>
-          <a href="/concepts/">
-            Open P06
-          </a>
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>P07 — Identity &amp; Authority</h3>
-
-        <p>
-          Identity relationships, authority records, bibliographic pathways,
-          Wikidata entities, Wikimedia presence, and verification.
-        </p>
-
-        <p>
-          <a href="/research-identity-authority/">
-            Open P07
-          </a>
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- =========================================================
-       AUTHORITY RECORD RULE
-       ========================================================= -->
-
-  <section class="section">
-    <h2>Authority Record Rule</h2>
-
-    <p class="lead">
-      P07 describes the relationship between the researcher and an external
-      authority record before presenting the destination as an identity
-      connection.
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Identity Before Link</h3>
-
-        <p>
-          Every important external record is introduced with its role in the
-          identity or authority system.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>Relationship Before Destination</h3>
-
-        <p>
-          The page explains why the record is relevant before directing the
-          reader to the external platform.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>Ownership Before Duplication</h3>
-
-        <p>
-          Each external record is assigned to the appropriate P02, P03, P04,
-          P05, or P07 layer.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <h3>Verification Before Authority</h3>
-
-        <p>
-          External records should only be treated as identity relationships
-          when the record is genuine, attributable, and verifiable.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- =========================================================
-       RESEARCH IDENTITY GOVERNANCE
-       ========================================================= -->
-
-  <section class="section">
-    <h2>Research Identity Governance</h2>
+    <h2>
+      Authority and Anti-Duplication Rule
+    </h2>
 
     <p>
-      P07 is the authority and verification layer of the seven-page knowledge
-      system. It defines the relationship between the person, research,
-      outputs, identifiers, infrastructure, bibliographic records,
-      knowledge-graph entities, and external authority systems.
+
+      P07 may reference an object owned by another page when the
+      reference establishes an identity, authority, bibliographic,
+      or knowledge-graph relationship.
+
     </p>
 
     <p>
-      Profile pages belong primarily to P05. Applied knowledge and commercial
-      publishing destinations belong to P02 or P03. Research objects and
-      provenance belong to P04. Controlled concepts belong to P06. P07
-      maintains the identity, authority, and relationship layer connecting
-      these components.
+
+      The referenced object remains owned by its canonical page.
+
     </p>
 
-    <p>
-      This separation prevents the research identity page from becoming a
-      duplicate catalogue, social wall, product page, or generic CV.
-    </p>
 
-    <div class="ownership">
+    <div class="authority-model">
 
-      <p>
-        <strong>Canonical ownership rule:</strong>
-        P07 may reference an object owned by another page when the reference
-        establishes an identity, authority, bibliographic, or knowledge-graph
-        relationship. The referenced object remains owned by its designated
-        page.
-      </p>
+      <strong>
+        Canonical rule:
+      </strong>
+
+      P01 owns identity and orientation.
+
+      P02 owns Scholarship Intelligence application.
+
+      P03 owns Decision Defence and Global Professional Mobility application.
+
+      P04 owns research objects and provenance.
+
+      P05 owns verified external research profiles.
+
+      P06 owns controlled concepts and semantic relationships.
+
+      P07 owns research identity and authority relationships.
 
     </div>
+
   </section>
 
 
-  <!-- =========================================================
-       RESEARCH IDENTITY INFOGRAPHIC
-       ========================================================= -->
+  <!-- =========================
+       INFOGRAPHIC
+       ========================= -->
 
   <section class="section">
-    <h2>Research Identity &amp; Authority</h2>
+
+    <h2>
+      Research Identity &amp; Authority Architecture
+    </h2>
 
     <div class="visual">
 
       <img
         src="/research-identity-authority/p07-authority-infographic.png"
-        alt="Research identity and authority verification pathway connecting person, research areas, research outputs, persistent identifiers, digital infrastructure, bibliographic records, Wikidata entities, Wikimedia presence, and external scholarly authority">
+        alt="Research identity and authority architecture connecting person, research areas, research outputs, persistent identifiers, authority records, and verification"
+        loading="lazy"
+      >
 
       <div class="caption">
-        Research identity and authority verification architecture:
+
+        Research identity and authority relationship:
+
         Person → Research → Output → Identifier → Authority Record.
+
       </div>
 
     </div>
+
+  </section>
+
+
+  <!-- =========================
+       KNOWLEDGE SYSTEM
+       ========================= -->
+
+  <section class="section">
+
+    <h2>
+      Knowledge System Connections
+    </h2>
+
+    <div class="grid">
+
+      <div class="card">
+
+        <h3>
+          P01 · Identity
+        </h3>
+
+        <p>
+          Primary person and site orientation.
+        </p>
+
+        <a href="/">
+          Open P01
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          P02 · Scholarship Intelligence
+        </h3>
+
+        <p>
+          Applied Scholarship Intelligence.
+        </p>
+
+        <a href="/scholarship-intelligence/">
+          Open P02
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          P03 · Decision &amp; Mobility
+        </h3>
+
+        <p>
+          Applied Decision Defence and Global Professional Mobility.
+        </p>
+
+        <a href="/decision-mobility/">
+          Open P03
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          P04 · Research
+        </h3>
+
+        <p>
+          Research evidence, outputs, identifiers, and provenance.
+        </p>
+
+        <a href="/research/">
+          Open P04
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          P05 · Research Profiles
+        </h3>
+
+        <p>
+          Verified external research profiles.
+        </p>
+
+        <a href="/research-profiles/">
+          Open P05
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          P06 · Concepts
+        </h3>
+
+        <p>
+          Controlled concepts and semantic relationships.
+        </p>
+
+        <a href="/concepts/">
+          Open P06
+        </a>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          P07 · Identity &amp; Authority
+        </h3>
+
+        <p>
+          Research identity and authority relationships.
+        </p>
+
+        <a href="/research-identity-authority/">
+          Current P07
+        </a>
+
+      </div>
+
+    </div>
+
   </section>
 
 </main>
 
 
-<!-- =========================================================
+<!-- =========================
      FOOTER
-     ========================================================= -->
+     ========================= -->
 
 <footer class="footer">
 
   <div class="container">
 
     <p>
-      <strong>Nabal Kishore Pande</strong>
-      — Research Identity &amp; Authority
+      <strong>
+        Nabal Kishore Pande
+      </strong>
+      · Research Identity &amp; Authority
     </p>
 
     <p>
+
       Canonical knowledge website:
+
       <a href="https://nabalkishorepande.github.io/">
         nabalkishorepande.github.io
       </a>
+
     </p>
 
     <p>
+
       P07 authority layer:
-      identity · identifiers · bibliographic authority · knowledge entities ·
-      verification
+      identity · identifiers · bibliographic authority ·
+      knowledge-graph relationships · verification
+
     </p>
 
   </div>
