@@ -1,3 +1,7 @@
+
+# Public website crawling policy
+# Official website: https://nabalkishorepande.github.io/
+
 User-agent: *
 Allow: /
 
