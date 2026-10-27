@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Decision Defence | Practical Decision-Making Tools by Nabal Kishore Pande</title>
-  <meta name="description" content="Explore practical decision-making frameworks, evidence checks, risk assessment, opportunity evaluation, and execution planning by author Nabal Kishore Pande.">
+  <title>Decision Defence | Practical Decision-Making Books by Nabal Kishore Pande</title>
+  <meta name="description" content="Explore decision-making books and practical frameworks by Nabal Kishore Pande. Discover DECIDE WELL, DIAGNOSE FIRST, Choosing Strategic Priorities, and more through Leanpub, Amazon, and Payhip.">
   <meta name="author" content="Nabal Kishore Pande">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nabalkishorepande.github.io/decision-defence/">
@@ -17,170 +17,245 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Decision Defence | Nabal Kishore Pande">
+  <meta property="og:description" content="Practical books and tools for better decisions, problem diagnosis, and strategic priorities.">
+  <meta property="og:url" content="https://nabalkishorepande.github.io/decision-defence/">
+
   <style>
     .decision-hero {
-      padding: 42px 0;
-      background: linear-gradient(135deg, #142B4A, #203F63);
-      color: #fff;
+      padding: 42px 0 30px;
+      background: linear-gradient(135deg, #E7EFF7 0%, #F4F7FA 70%);
+      border-bottom: 1px solid var(--border);
     }
 
     .decision-hero h1 {
       max-width: 850px;
-      margin: 0 0 16px;
-      color: #fff;
-      font-size: clamp(34px, 5vw, 48px);
+      margin: 0 0 14px;
+      color: var(--navy);
+      font-size: clamp(32px, 5vw, 48px);
       line-height: 1.15;
       letter-spacing: -1px;
     }
 
-    .decision-hero p {
+    .decision-hero .intro {
       max-width: 780px;
-      color: #E5EDF6;
+      color: var(--muted);
       font-size: 17px;
+      margin: 0 0 22px;
     }
 
-    .decision-hero .eyebrow {
-      color: #A9E4E8;
-    }
-
-    .framework-grid {
+    .platform-row {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 24px;
     }
 
-    .framework-step {
+    .platform-card {
+      display: block;
+      height: 100%;
       padding: 20px;
-      background: #fff;
-      border: 1px solid #D9E2EC;
-      border-radius: 14px;
-      box-shadow: 0 8px 26px rgba(20, 43, 74, 0.06);
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      text-decoration: none;
+      box-shadow: var(--shadow-card);
     }
 
-    .step-number {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 36px;
-      margin-bottom: 12px;
-      border-radius: 10px;
-      background: #E4F3F4;
-      color: #06636D;
-      font-weight: 800;
-    }
-
-    .framework-step h3 {
-      margin: 0 0 8px;
-      color: #142B4A;
+    .platform-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--navy);
       font-size: 18px;
     }
 
-    .framework-step p {
-      margin: 0;
-      color: #526274;
+    .platform-card span {
+      display: block;
+      color: var(--muted);
       font-size: 14px;
+      line-height: 1.6;
     }
 
-    .book-feature {
+    .platform-card em {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--teal-dark);
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .platform-card:hover {
+      border-color: var(--teal);
+      transform: translateY(-2px);
+    }
+
+    .book-grid {
       display: grid;
-      grid-template-columns: minmax(180px, 270px) minmax(0, 1fr);
-      gap: 30px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .book-card {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      overflow: hidden;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .book-cover-link {
+      display: flex;
       align-items: center;
-      padding: 28px;
-      background: #fff;
-      border: 1px solid #D9E2EC;
-      border-radius: 20px;
-      box-shadow: 0 8px 26px rgba(20, 43, 74, 0.07);
+      justify-content: center;
+      min-height: 255px;
+      padding: 15px;
+      background: #EAF0F6;
+      border-bottom: 1px solid var(--border);
     }
 
     .book-cover {
       width: 100%;
-      max-width: 270px;
-      max-height: 370px;
-      margin-inline: auto;
+      max-width: 190px;
+      height: 235px;
       object-fit: contain;
       object-position: center;
-      border-radius: 8px;
-      background: #F4F7FA;
+      background: #FFFFFF;
     }
 
-    .book-feature h2 {
-      margin-top: 0;
-      color: #142B4A;
-      font-size: clamp(25px, 3vw, 32px);
-      line-height: 1.25;
+    .book-info {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 18px;
     }
 
-    .book-meta {
-      color: #526274;
-      font-size: 13px;
-    }
-
-    .decision-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .decision-item {
-      padding: 20px;
-      border: 1px solid #D9E2EC;
-      border-radius: 14px;
-      background: #fff;
-    }
-
-    .decision-item h3 {
-      margin-top: 0;
-      color: #142B4A;
+    .book-info h3 {
+      margin: 0 0 9px;
+      color: var(--navy);
       font-size: 18px;
+      line-height: 1.35;
     }
 
-    .decision-item p {
-      margin-bottom: 0;
-      color: #526274;
+    .book-info p {
+      flex: 1;
+      margin: 0 0 16px;
+      color: var(--muted);
       font-size: 14px;
     }
 
-    .decision-cta {
-      padding: 30px;
-      border-radius: 20px;
-      background: #E4F3F4;
-      border: 1px solid #C6E4E7;
+    .book-info .button {
+      width: 100%;
+      margin-top: auto;
     }
 
-    .decision-cta h2 {
-      margin-top: 0;
-      color: #142B4A;
+    .decision-methods {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
     }
 
-    @media (max-width: 800px) {
-      .framework-grid {
+    .method-card {
+      padding: 22px;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    .method-card .method-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      background: var(--soft-teal);
+      color: var(--teal-dark);
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .method-card h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    .method-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .amazon-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .amazon-item {
+      padding: 19px;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+    }
+
+    .amazon-item h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .amazon-item p {
+      margin: 0 0 13px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .page-note {
+      padding: 16px 18px;
+      background: var(--soft-teal);
+      border-left: 4px solid var(--teal);
+      border-radius: 0 10px 10px 0;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    @media (max-width: 1000px) {
+      .book-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .decision-methods {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
-    @media (max-width: 600px) {
-      .decision-hero {
-        padding: 28px 0;
+    @media (max-width: 700px) {
+      .platform-row,
+      .amazon-links,
+      .decision-methods {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .book-grid {
+        grid-template-columns: 1fr;
       }
 
-      .book-feature {
-        grid-template-columns: 1fr;
-        padding: 20px;
+      .book-cover-link {
+        min-height: 280px;
       }
 
       .book-cover {
-        max-height: 330px;
-      }
-
-      .decision-list,
-      .framework-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .decision-cta {
-        padding: 22px;
+        height: 250px;
       }
     }
   </style>
@@ -209,16 +284,18 @@
   <main>
     <section class="decision-hero">
       <div class="container">
-        <p class="eyebrow">Decision-Making · Evidence · Execution</p>
-        <h1>Decision Defence: Make Decisions You Can Explain and Execute</h1>
-        <p>
-          Important decisions need more than confidence or information.
-          They need clear requirements, relevant evidence, careful comparison,
-          explicit risk assessment, and a workable plan for action.
+        <p class="eyebrow">Decision Frameworks · Books · Practical Tools</p>
+        <h1>Decision Defence: Think Clearly Before You Commit</h1>
+        <p class="intro">
+          Better decisions begin with a clearly defined problem, evidence that
+          can be checked, realistic options, and an honest assessment of risk.
+          Explore practical books by Nabal Kishore Pande on decision quality,
+          problem diagnosis, and strategic priorities.
         </p>
-        <div class="button-group">
-          <a class="button" href="#rde-manual">Explore the RDE Field Manual</a>
-          <a class="button button-secondary" href="#decision-method">Explore the method</a>
+
+        <div class="profile-links">
+          <a class="button" href="#featured-books">Explore Decision Books</a>
+          <a class="button button-secondary" href="https://leanpub.com/u/nabalkishorepande" target="_blank" rel="noopener noreferrer">Visit Leanpub Author Profile</a>
         </div>
       </div>
     </section>
@@ -226,149 +303,178 @@
     <section class="section">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">A Practical Decision Process</p>
-          <h2>Four Stages for More Defensible Decisions</h2>
+          <p class="eyebrow">Find My Books and Products</p>
+          <h2>Official Store and Author Links</h2>
           <p>
-            Use a structured process to identify gaps, compare options,
-            make a reasoned choice, and verify the work that follows.
+            Browse the available books and digital resources through these
+            publishing and product platforms.
           </p>
         </div>
 
-        <div class="framework-grid">
-          <article class="framework-step">
-            <span class="step-number">01</span>
-            <h3>Readiness</h3>
-            <p>
-              Define the requirements. Check your current position and identify
-              capability gaps, missing evidence, and unresolved facts.
-            </p>
-          </article>
+        <div class="platform-row">
+          <a class="platform-card" href="https://payhip.com/frameworksandsystemsco" target="_blank" rel="noopener noreferrer">
+            <strong>Payhip Store</strong>
+            <span>Digital frameworks, workbooks, and practical systems for planning and execution.</span>
+            <em>Explore Payhip products →</em>
+          </a>
 
-          <article class="framework-step">
-            <span class="step-number">02</span>
-            <h3>Opportunity and Fit</h3>
-            <p>
-              Screen opportunities against essential conditions, then compare
-              eligible options using relevant criteria.
-            </p>
-          </article>
+          <a class="platform-card" href="https://www.amazon.in/s?k=Nabal+Kishore+Pande&i=stripbooks" target="_blank" rel="noopener noreferrer">
+            <strong>Amazon India</strong>
+            <span>Search for books by Nabal Kishore Pande and open individual book listings.</span>
+            <em>Find books on Amazon →</em>
+          </a>
 
-          <article class="framework-step">
-            <span class="step-number">03</span>
-            <h3>Risk and Decision</h3>
-            <p>
-              Examine assumptions, consequences, constraints, and risks.
-              Record why an option is accepted, deferred, or rejected.
-            </p>
-          </article>
-
-          <article class="framework-step">
-            <span class="step-number">04</span>
-            <h3>Execution and Learning</h3>
-            <p>
-              Convert the decision into tasks, owners, dates, and checks.
-              Verify results and record lessons for the next decision.
-            </p>
-          </article>
+          <a class="platform-card" href="https://leanpub.com/u/nabalkishorepande" target="_blank" rel="noopener noreferrer">
+            <strong>Leanpub Author Profile</strong>
+            <span>Browse decision-making books focused on evidence, diagnosis, and strategic choices.</span>
+            <em>View Leanpub books →</em>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="rde-manual">
+    <section class="section" id="featured-books">
       <div class="container">
-        <div class="book-feature">
-          <div>
-            <img
-              class="book-cover"
-              src="https://s3.eu-west-1.amazonaws.com/storage.publish.streetlib.com/cache/covers/standard/75ab7b4e5e7fd5086a9a7738b545f0f0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAITEUOQHLJYEC3PVA%2F20261027%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T060232Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4ba0eb224904e40d3b67b31f8d3cad9ad77b016379887924a9b2203959cca19a"
-              alt="Cover of the RDE Field Manual by Nabal Kishore Pande"
-              loading="lazy"
-            >
-          </div>
+        <div class="section-heading">
+          <p class="eyebrow">Featured Books</p>
+          <h2>Books for Better Decisions and Problem Solving</h2>
+          <p>
+            Select a cover or a book button to open its publishing page.
+            The cover images below are linked to the corresponding book listings.
+          </p>
+        </div>
 
-          <div>
-            <p class="eyebrow">Featured Decision Resource</p>
-            <h2>RDE Field Manual: Practical Decision-Making Tools for Education, Career, Research, and Professional Opportunities</h2>
-
-            <p>
-              This manual presents practical tools from the
-              Readiness–Decision–Execution Model. It explains how to assess
-              readiness, identify gaps, screen opportunities, compare eligible
-              options, assess risks, record decisions, plan execution, and learn
-              from verified results.
-            </p>
-
-            <p>
-              The methods are designed for learners, professionals, researchers,
-              mentors, advisers, and managers who need a structured approach
-              to opportunity evaluation and execution planning.
-            </p>
-
-            <p class="book-meta">
-              Ebook · ISBN 9783695267989 · Listed price in the supplied product information: $12.99
-            </p>
-
-            <div class="button-group">
-              <a
-                class="button"
-                href="https://amzn.in/d/0b6Cyugm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >View the RDE Field Manual</a>
-              <a class="button button-secondary" href="#decision-method">See how the method works</a>
+        <div class="book-grid">
+          <article class="book-card">
+            <a class="book-cover-link" href="https://leanpub.com/decide-well" target="_blank" rel="noopener noreferrer" aria-label="Open DECIDE WELL on Leanpub">
+              <img
+                class="book-cover"
+                src="https://d2sofvawe08yqg.cloudfront.net/decide-well/s_hero2x?1792774583&amp;1792774583"
+                alt="Cover of DECIDE WELL: Making Better Decisions When Information Is Incomplete"
+                loading="lazy"
+                onerror="this.onerror=null;this.alt='DECIDE WELL book cover image unavailable';"
+              >
+            </a>
+            <div class="book-info">
+              <h3>DECIDE WELL</h3>
+              <p>
+                <strong>Making Better Decisions When Information Is Incomplete.</strong>
+                A structured approach to separating facts from assumptions,
+                comparing options, testing important beliefs, and reviewing outcomes.
+              </p>
+              <a class="button" href="https://leanpub.com/decide-well" target="_blank" rel="noopener noreferrer">View Book on Leanpub</a>
             </div>
-          </div>
+          </article>
+
+          <article class="book-card">
+            <a class="book-cover-link" href="https://leanpub.com/choosing-strategic-priorities" target="_blank" rel="noopener noreferrer" aria-label="Open Choosing Strategic Priorities on Leanpub">
+              <img
+                class="book-cover"
+                src="https://d2sofvawe08yqg.cloudfront.net/choosing-strategic-priorities/s_hero2x?1792589375&amp;1792589375"
+                alt="Cover of Choosing Strategic Priorities: How to Focus Strategy When Resources Are Limited"
+                loading="lazy"
+                onerror="this.onerror=null;this.alt='Choosing Strategic Priorities book cover image unavailable';"
+              >
+            </a>
+            <div class="book-info">
+              <h3>Choosing Strategic Priorities</h3>
+              <p>
+                <strong>How to Focus Strategy When Resources Are Limited.</strong>
+                Learn to compare competing demands, define criteria, assess evidence,
+                and connect priorities to real resource commitments.
+              </p>
+              <a class="button" href="https://leanpub.com/choosing-strategic-priorities" target="_blank" rel="noopener noreferrer">View Book on Leanpub</a>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <a class="book-cover-link" href="https://leanpub.com/diagnose-first" target="_blank" rel="noopener noreferrer" aria-label="Open DIAGNOSE FIRST on Leanpub">
+              <img
+                class="book-cover"
+                src="https://d2sofvawe08yqg.cloudfront.net/diagnose-first/s_hero2x?1792046530&amp;1792046530"
+                alt="Cover of DIAGNOSE FIRST: Finding the Real Problem Before Choosing the Solution"
+                loading="lazy"
+                onerror="this.onerror=null;this.alt='DIAGNOSE FIRST book cover image unavailable';"
+              >
+            </a>
+            <div class="book-info">
+              <h3>DIAGNOSE FIRST</h3>
+              <p>
+                <strong>Finding the Real Problem Before Choosing the Solution.</strong>
+                A practical approach to describing problems, comparing explanations,
+                testing assumptions, and avoiding premature fixes.
+              </p>
+              <a class="button" href="https://leanpub.com/diagnose-first" target="_blank" rel="noopener noreferrer">View Book on Leanpub</a>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <a class="book-cover-link" href="https://leanpub.com/the-decision-that-changed-nothing" target="_blank" rel="noopener noreferrer" aria-label="Open The Decision That Changed Nothing on Leanpub">
+              <img
+                class="book-cover"
+                src="https://d2sofvawe08yqg.cloudfront.net/the-decision-that-changed-nothing/s_hero2x?1791970097&amp;1791970097"
+                alt="Cover of The Decision That Changed Nothing: How to Separate Assumptions from Evidence and Make Better Decisions"
+                loading="lazy"
+                onerror="this.onerror=null;this.alt='The Decision That Changed Nothing book cover image unavailable';"
+              >
+            </a>
+            <div class="book-info">
+              <h3>The Decision That Changed Nothing</h3>
+              <p>
+                <strong>How to Separate Assumptions from Evidence and Make Better Decisions.</strong>
+                A practical introduction to identifying important unknowns
+                and choosing small tests that produce useful evidence.
+              </p>
+              <a class="button" href="https://leanpub.com/the-decision-that-changed-nothing" target="_blank" rel="noopener noreferrer">View Book on Leanpub</a>
+            </div>
+          </article>
         </div>
 
-        <p class="note">
-          The RDE framework is a practical aid to judgement, not a guarantee
-          of success or a validated standard for every situation. Check
-          requirements against the authoritative sources relevant to your decision.
+        <p class="page-note">
+          Book cover images are loaded from the supplied Leanpub image links.
+          If a cover does not appear, open the corresponding book listing and
+          check the current cover-image URL. The book links remain available
+          independently of the cover images.
         </p>
       </div>
     </section>
 
-    <section class="section" id="decision-method">
+    <section class="section">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Where to Apply the Method</p>
-          <h2>Use Structured Decision-Making in Real Situations</h2>
+          <p class="eyebrow">A Practical Decision Sequence</p>
+          <h2>Three Questions to Ask Before Acting</h2>
           <p>
-            The process can help organise choices across education, career
-            planning, research, projects, and professional opportunities.
+            Use these questions as a starting point before making a professional,
+            organisational, research, or personal decision.
           </p>
         </div>
 
-        <div class="decision-list">
-          <article class="decision-item">
-            <h3>Education and Scholarships</h3>
+        <div class="decision-methods">
+          <article class="method-card">
+            <span class="method-number">01</span>
+            <h3>Have I Diagnosed the Real Problem?</h3>
             <p>
-              Check eligibility, document requirements, deadlines, evidence,
-              and fit before committing time to an application.
+              Separate visible symptoms from possible causes. Define what is
+              happening and identify which evidence could distinguish between explanations.
             </p>
           </article>
 
-          <article class="decision-item">
-            <h3>Career and Professional Mobility</h3>
+          <article class="method-card">
+            <span class="method-number">02</span>
+            <h3>What Evidence Supports Each Option?</h3>
             <p>
-              Compare role requirements, current capabilities, proof of skills,
-              costs, risks, and practical next steps.
+              Separate verified facts from assumptions. Compare realistic options
+              using explicit criteria, constraints, and relevant risks.
             </p>
           </article>
 
-          <article class="decision-item">
-            <h3>Research and Project Planning</h3>
+          <article class="method-card">
+            <span class="method-number">03</span>
+            <h3>How Will I Review the Outcome?</h3>
             <p>
-              Examine whether objectives, methods, evidence, resources,
-              and timelines support the intended result.
-            </p>
-          </article>
-
-          <article class="decision-item">
-            <h3>Execution and Review</h3>
-            <p>
-              Define actions, responsibilities, completion criteria, and
-              verification checks so decisions translate into reviewable work.
+              Record the reasons for the decision, define the next action,
+              and establish what result or new evidence would justify a review.
             </p>
           </article>
         </div>
@@ -377,18 +483,18 @@
 
     <section class="section">
       <div class="container">
-        <div class="decision-cta">
-          <p class="eyebrow">Continue Exploring</p>
-          <h2>Connect Decision-Making with Research and Career Resources</h2>
-          <p>
-            Decision quality depends on the information, evidence, and
-            practical tools available. Explore related resources on this website.
-          </p>
-          <div class="button-group">
-            <a class="button" href="/researcher-products/">Researcher-Focused Products</a>
-            <a class="button button-secondary" href="/professional-mobility/">Professional Mobility and Scholarships</a>
-            <a class="button button-secondary" href="/research-profiles-publications/">Research Profiles and Publications</a>
+        <div class="feature-band">
+          <div>
+            <p class="eyebrow" style="color:#A9E4E8">Digital Frameworks and Workbooks</p>
+            <h2>Turn Decision Principles into Practical Work</h2>
+            <p>
+              Explore digital products and structured planning resources
+              through the Payhip store.
+            </p>
           </div>
+          <a class="button" href="https://payhip.com/frameworksandsystemsco" target="_blank" rel="noopener noreferrer">
+            Browse Payhip Store
+          </a>
         </div>
       </div>
     </section>
@@ -400,7 +506,9 @@
       <p>
         <a href="/">Home</a>
         &nbsp; · &nbsp;
-        <a href="mailto:ernawal67@gmail.com">Contact by email</a>
+        <a href="https://leanpub.com/u/nabalkishorepande" target="_blank" rel="noopener noreferrer">Leanpub author profile</a>
+        &nbsp; · &nbsp;
+        <a href="mailto:ernawal67@gmail.com">Contact</a>
       </p>
     </div>
   </footer>
