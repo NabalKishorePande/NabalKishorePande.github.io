@@ -1,32 +1,40 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Main commercial and author authority homepage -->
   <url>
     <loc>https://nabalkishorepande.github.io/</loc>
   </url>
 
+  <!-- Decision frameworks and products -->
   <url>
-    <loc>https://nabalkishorepande.github.io/scholarship-intelligence/</loc>
+    <loc>https://nabalkishorepande.github.io/decision-defence/</loc>
   </url>
 
+  <!-- Researcher-focused products and tools -->
   <url>
-    <loc>https://nabalkishorepande.github.io/decision-mobility/</loc>
+    <loc>https://nabalkishorepande.github.io/researcher-products/</loc>
   </url>
 
+  <!-- Professional mobility, English proficiency and scholarships -->
   <url>
-    <loc>https://nabalkishorepande.github.io/research/</loc>
+    <loc>https://nabalkishorepande.github.io/professional-mobility/</loc>
   </url>
 
+  <!-- Professional profiles, social channels and newsletters -->
   <url>
-    <loc>https://nabalkishorepande.github.io/research-profiles/</loc>
+    <loc>https://nabalkishorepande.github.io/social-media/</loc>
   </url>
 
+  <!-- Research profiles, datasets and selected publications -->
   <url>
-    <loc>https://nabalkishorepande.github.io/concepts/</loc>
+    <loc>https://nabalkishorepande.github.io/research-profiles-publications/</loc>
   </url>
 
+  <!-- Artist profiles, exhibition and creative publications -->
   <url>
-    <loc>https://nabalkishorepande.github.io/research-identity-authority/</loc>
+    <loc>https://nabalkishorepande.github.io/art-profiles/</loc>
   </url>
 
 </urlset>
