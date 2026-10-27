@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Tools, Templates & Workbooks for Researchers | Nabal Kishore Pande</title>
+  <meta name="description" content="Explore practical research tools, thesis and research proposal templates, peer-review response kits, systematic review workbooks, and project design resources by Nabal Kishore Pande.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nabalkishorepande.github.io/researcher-products/">
+  <meta property="og:title" content="Research Tools & Digital Products for Researchers">
+  <meta property="og:description" content="Practical research templates, checklists, Excel workbooks and academic writing resources for students, researchers, journal authors and project teams.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nabalkishorepande.github.io/researcher-products/">
+  <meta name="theme-color" content="#142B4A">
+  <link rel="stylesheet" href="/styles.css">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --navy-dark: #0C1C31;
+      --teal: #087E8B;
+      --teal-dark: #06636D;
+      --background: #F4F7FA;
+      --white: #FFFFFF;
+      --text: #263445;
+      --muted: #526274;
+      --border: #D9E2EC;
+      --soft-blue: #E7EFF7;
+      --soft-teal: #E4F3F4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    a { color: var(--teal-dark); }
+    a:focus-visible { outline: 3px solid #E0A526; outline-offset: 3px; }
+
+    .site-header {
+      background: var(--navy-dark);
+      color: var(--white);
+      border-bottom: 4px solid var(--teal);
+    }
+
+    .header-inner {
+      width: min(1160px, 92%);
+      margin: auto;
+      padding: 18px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--white);
+      font-weight: 800;
+      font-size: 1.08rem;
+      text-decoration: none;
+      letter-spacing: .1px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 17px;
+    }
+
+    .nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: .91rem;
+      font-weight: 600;
+    }
+
+    .nav a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--navy), #1C4568);
+      color: var(--white);
+      padding: 64px 0 58px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #BFE8EB;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: .78rem;
+    }
+
+    h1, h2, h3 { line-height: 1.2; }
+    h1 { max-width: 850px; font-size: clamp(2.15rem, 5vw, 3.6rem); margin: 0 0 20px; }
+    h2 { color: var(--navy); font-size: clamp(1.65rem, 3vw, 2.25rem); margin: 0 0 14px; }
+    h3 { color: var(--navy); font-size: 1.16rem; margin: 0 0 10px; }
+
+    .hero p {
+      max-width: 800px;
+      font-size: 1.08rem;
+      color: #F0F5FA;
+      margin: 0 0 18px;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: 750;
+      text-decoration: none;
+      text-align: center;
+      border: 2px solid transparent;
+    }
+
+    .button-primary {
+      background: var(--teal);
+      color: var(--white);
+    }
+
+    .button-primary:hover { background: var(--teal-dark); }
+
+    .button-light {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    .button-outline {
+      color: var(--white);
+      border-color: #D6E7F0;
+    }
+
+    .section { padding: 52px 0; }
+    .section-intro { max-width: 800px; margin: 0 0 26px; color: var(--muted); }
+    .section-soft { background: #EAF0F6; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px rgba(20, 43, 74, .055);
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .cover-link {
+      display: block;
+      background: #E7EDF3;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cover {
+      display: block;
+      width: 100%;
+      height: 235px;
+      object-fit: contain;
+      border-radius: 6px;
+      transition: transform .2s ease;
+    }
+
+    .cover-link:hover .cover { transform: scale(1.02); }
+
+    .card-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .category {
+      color: var(--teal-dark);
+      font-size: .76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0 0 8px;
+    }
+
+    .card p { color: var(--muted); margin: 0 0 15px; }
+    .card .button { margin-top: auto; }
+    .text-link { font-weight: 750; text-decoration: underline; }
+
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .platform {
+      padding: 24px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .platform p { color: var(--muted); }
+
+    .feature-band {
+      background: var(--soft-teal);
+      border-left: 5px solid var(--teal);
+      padding: 24px;
+      border-radius: 10px;
+      margin-top: 28px;
+    }
+
+    .feature-band h3 { margin-top: 0; }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .step {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .step-number {
+      display: inline-flex;
+      width: 36px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 50%;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .footer {
+      background: var(--navy-dark);
+      color: #EAF0F6;
+      padding: 30px 0;
+    }
+
+    .footer a { color: #BFE8EB; }
+    .footer p { margin: 5px 0; }
+
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .steps { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner { align-items: flex-start; }
+      .nav { gap: 9px 13px; }
+      .hero { padding: 44px 0; }
+      .section { padding: 38px 0; }
+      .grid, .platform-grid { grid-template-columns: 1fr; }
+      .cover { height: 250px; }
+      .button { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">Nabal Kishore Pande</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/decision-defence/">Decision Defence</a>
+        <a href="/researcher-products/" aria-current="page">Researcher Products</a>
+        <a href="/professional-mobility/">Professional Mobility</a>
+        <a href="/social-media/">Social Media</a>
+        <a href="/research-profiles-publications/">Research Profiles</a>
+        <a href="/art-profiles/">Art Profiles</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Research Execution Systems · Practical Research Resources</p>
+        <h1>Research Tools, Templates and Workbooks for Better Research</h1>
+        <p>
+          Practical digital resources for thesis and dissertation planning, research proposal
+          development, peer-review revisions, evidence reviews, and project design. Explore
+          checklists, editable templates and structured workbooks designed to help researchers
+          organise their work and identify issues before submission.
+        </p>
+        <div class="hero-links">
+          <a class="button button-primary" href="https://researchsystems.gumroad.com/" target="_blank" rel="noopener noreferrer">Explore the Gumroad Store</a>
+          <a class="button button-outline" href="#featured-products">Browse Research Products</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="featured-products">
+      <div class="container">
+        <h2>Research Products and Digital Tools</h2>
+        <p class="section-intro">
+          Choose a resource based on the task you need to complete. Each product card links
+          directly to its Gumroad product page. Select a cover or product link to view the
+          full product details, contents and current price.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <a class="cover-link" href="https://researchsystems.gumroad.com/l/research-alignment-checklist?layout=profile" target="_blank" rel="noopener noreferrer" aria-label="View Research Alignment Checklist on Gumroad">
+              <img class="cover" src="https://public-files.gumroad.com/jkwk3jtim1yay8ptradwq1zm9qws" alt="Research Alignment Checklist cover for thesis, dissertation and research proposal planning" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p class="category">Free research checklist</p>
+              <h3>Research Alignment Checklist: Free PDF for Thesis &amp; Proposals</h3>
+              <p>
+                Use 25 yes/no checks to review whether your research question, objectives,
+                method, data and analysis fit together before submission.
+              </p>
+              <a class="button button-primary" href="https://researchsystems.gumroad.com/l/research-alignment-checklist?layout=profile" target="_blank" rel="noopener noreferrer">Get the Free Checklist</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="cover-link" href="https://researchsystems.gumroad.com/l/research-proposal-template?layout=profile" target="_blank" rel="noopener noreferrer" aria-label="View Research Proposal Template on Gumroad">
+              <img class="cover" src="https://public-files.gumroad.com/yvnar6yd4jcgni8b47slu76dj2z2" alt="Research Proposal Template with scoring rubric and worked example cover" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p class="category">Proposal writing toolkit</p>
+              <h3>Research Proposal Template (Word) with Rubric &amp; Worked Example</h3>
+              <p>
+                An editable Word template with prompts and sentence starters, a 30-point
+                scoring rubric, and a worked example with reviewer feedback.
+              </p>
+              <a class="button button-primary" href="https://researchsystems.gumroad.com/l/research-proposal-template?layout=profile" target="_blank" rel="noopener noreferrer">View Proposal Template</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="cover-link" href="https://researchsystems.gumroad.com/l/response-to-reviewers-template?layout=profile" target="_blank" rel="noopener noreferrer" aria-label="View Response to Reviewers Template and Tracker on Gumroad">
+              <img class="cover" src="https://public-files.gumroad.com/7yf8fjqvap6yc6lu5j6h49jfejx6" alt="Response to Reviewers Template and Tracker product cover" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p class="category">Peer-review revision kit</p>
+              <h3>Response to Reviewers Template &amp; Tracker</h3>
+              <p>
+                Word response-letter templates, an Excel revision tracker and a PDF guide
+                to organise reviewer comments, document revisions and prepare resubmissions.
+              </p>
+              <a class="button button-primary" href="https://researchsystems.gumroad.com/l/response-to-reviewers-template?layout=profile" target="_blank" rel="noopener noreferrer">View Reviewer Response Kit</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="cover-link" href="https://researchsystems.gumroad.com/l/logframe-theory-of-change-toolkit?layout=profile" target="_blank" rel="noopener noreferrer" aria-label="View Logframe and Theory of Change Toolkit on Gumroad">
+              <img class="cover" src="https://public-files.gumroad.com/nofwc4fto6skt08d7wvef2etw8pg" alt="Logframe and Theory of Change Toolkit for NGOs product cover" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p class="category">Project design toolkit</p>
+              <h3>Logframe &amp; Theory of Change Toolkit (Excel + Word) for NGOs</h3>
+              <p>
+                A connected toolkit for problem analysis, root-cause analysis, theory of change,
+                indicators, assumptions, risks and logical framework development.
+              </p>
+              <a class="button button-primary" href="https://researchsystems.gumroad.com/l/logframe-theory-of-change-toolkit?layout=profile" target="_blank" rel="noopener noreferrer">View Project Design Toolkit</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="cover-link" href="https://researchsystems.gumroad.com/l/systematic-review-excel-workbook" target="_blank" rel="noopener noreferrer" aria-label="View Systematic Review Excel Workbook on Gumroad">
+              <img class="cover" src="https://public-files.gumroad.com/jkwk3jtim1yay8ptradwq1zm9qws" alt="Research Execution Systems research resource cover" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p class="category">Evidence review workflow</p>
+              <h3>Systematic Review Excel Workbook: PRISMA Flow &amp; Data Extraction</h3>
+              <p>
+                A structured workbook resource for recording search results, screening decisions,
+                PRISMA counts, data extraction, appraisal and evidence synthesis.
+              </p>
+              <a class="button button-primary" href="https://researchsystems.gumroad.com/l/systematic-review-excel-workbook" target="_blank" rel="noopener noreferrer">View Systematic Review Workbook</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="cover-link" href="https://researchsystems.gumroad.com/" target="_blank" rel="noopener noreferrer" aria-label="Browse Research Execution Systems on Gumroad">
+              <img class="cover" src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k58rav4762kpnh1dg51ro9hgr1k.png" alt="Research planning and alignment workbook product cover" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p class="category">Research planning</p>
+              <h3>Explore More Research Execution Systems</h3>
+              <p>
+                Browse the store for additional research planning, alignment, diagnostic,
+                proposal and execution resources.
+              </p>
+              <a class="button button-primary" href="https://researchsystems.gumroad.com/" target="_blank" rel="noopener noreferrer">Browse All Research Tools</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="feature-band">
+          <h3>Choose a tool for the task in front of you</h3>
+          <p>
+            Checking whether a research plan fits together? Start with the free checklist.
+            Preparing a proposal? Use the proposal template and rubric. Revising a manuscript?
+            Explore the reviewer-response kit. Designing an evidence review or development
+            project? View the relevant workbook or project-design toolkit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <h2>Why Use Structured Research Resources?</h2>
+        <p class="section-intro">
+          These resources are designed to make research tasks more organised and reviewable.
+          They support your workflow; they do not replace disciplinary expertise, supervisor
+          guidance, ethical review or independent judgement.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">1</span>
+            <h3>Plan the research</h3>
+            <p>Clarify the question, objectives, methods, data and analysis before committing to the full study.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">2</span>
+            <h3>Record the work</h3>
+            <p>Use templates and trackers to document decisions, comments, revisions, evidence and outstanding tasks.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <h3>Review before submission</h3>
+            <p>Run structured checks, identify weaknesses and decide what needs attention before the next stage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Visit the Research Store</h2>
+        <p class="section-intro">
+          Product pages contain the full descriptions, file formats, contents and current
+          purchase information. Review those details before choosing a resource.
+        </p>
+
+        <div class="platform-grid">
+          <div class="platform">
+            <h3>Research Execution Systems on Gumroad</h3>
+            <p>
+              Research checklists, proposal templates, reviewer-response resources,
+              Excel workbooks and structured tools for research planning and execution.
+            </p>
+            <a class="button button-primary" href="https://researchsystems.gumroad.com/" target="_blank" rel="noopener noreferrer">Open the Gumroad Store</a>
+          </div>
+
+          <div class="platform">
+            <h3>Frameworks &amp; Systems on Payhip</h3>
+            <p>
+              Explore additional practical resources for decision systems, research,
+              professional development and global career mobility.
+            </p>
+            <a class="button button-primary" href="https://payhip.com/frameworksandsystemsco" target="_blank" rel="noopener noreferrer">Visit the Payhip Store</a>
+          </div>
+        </div>
+
+        <div class="feature-band">
+          <h3>About the author</h3>
+          <p>
+            These resources are created by Nabal Kishore Pande, independent researcher
+            and author. For professional information and related work, visit the
+            <a href="/" class="text-link">author homepage</a> or explore the
+            <a href="/research-profiles-publications/" class="text-link">research profiles and selected publications</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Nabal Kishore Pande</strong> · Research, Decision Systems and Practical Resources</p>
+      <p><a href="/">Home</a> · <a href="/decision-defence/">Decision Defence</a> · <a href="/researcher-products/">Researcher Products</a> · <a href="/professional-mobility/">Professional Mobility</a></p>
+      <p><a href="mailto:ernawal67@gmail.com">Contact by email</a></p>
+      <p>Product availability, prices and contents are controlled by the respective product platforms.</p>
+    </div>
+  </footer>
+</body>
+</html>
