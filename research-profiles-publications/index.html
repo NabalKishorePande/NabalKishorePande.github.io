@@ -1,22 +1,57 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Research Profiles & Selected Publications | Nabal Kishore Pande</title>
+  <title>Research Profiles &amp; Selected Publications | Nabal Kishore Pande</title>
   <meta name="description" content="Explore Nabal Kishore Pande's research profiles, open research records, datasets, decision systems, research methodology, execution intelligence, and selected publications.">
+  <meta name="author" content="Nabal Kishore Pande">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://nabalkishorepande.github.io/research-profiles-publications/">
   <meta name="theme-color" content="#142B4A">
 
+  <link rel="canonical" href="https://nabalkishorepande.github.io/research-profiles-publications/">
+  <link rel="stylesheet" href="/styles.css">
+
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Research Profiles & Selected Publications | Nabal Kishore Pande">
-  <meta property="og:description" content="Research profiles, datasets, open research records, and selected publications by Nabal Kishore Pande.">
+  <meta property="og:site_name" content="Nabal Kishore Pande | Ideas Into Action">
+  <meta property="og:title" content="Research Profiles &amp; Selected Publications | Nabal Kishore Pande">
+  <meta property="og:description" content="Explore research profiles, datasets, open research records, decision systems, research methodology, and selected publications by Nabal Kishore Pande.">
   <meta property="og:url" content="https://nabalkishorepande.github.io/research-profiles-publications/">
 
-  <link rel="stylesheet" href="/styles.css">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Research Profiles &amp; Selected Publications | Nabal Kishore Pande">
+  <meta name="twitter:description" content="Research profiles, open research records, datasets, decision systems, research methodology, and selected publications by Nabal Kishore Pande.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Research Profiles and Selected Publications",
+    "url": "https://nabalkishorepande.github.io/research-profiles-publications/",
+    "description": "Research profiles, open research records, datasets, decision systems, research methodology, and selected publications by Nabal Kishore Pande.",
+    "inLanguage": "en",
+    "author": {
+      "@type": "Person",
+      "name": "Nabal Kishore Pande",
+      "url": "https://nabalkishorepande.github.io/",
+      "sameAs": [
+        "https://www.scienceopen.com/user/nabal-kishore-pande",
+        "https://openalex.org/authors/A5133520791",
+        "https://orcid.org/0009-0007-3325-9966",
+        "https://huggingface.co/NabalKishorePande",
+        "https://independentresearcher.academia.edu/NabalKishorePande",
+        "https://www.linkedin.com/in/nabal-kishore-pande/"
+      ]
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Nabal Kishore Pande — Ideas Into Action",
+      "url": "https://nabalkishorepande.github.io/"
+    }
+  }
+  </script>
 
   <style>
     :root {
@@ -27,7 +62,7 @@
       --page-bg: #F4F7FA;
       --white: #FFFFFF;
       --text: #263445;
-      --muted: #526274;
+      --muted: #405166;
       --border: #D9E2EC;
       --soft-blue: #E7EFF7;
       --soft-teal: #E4F3F4;
@@ -39,6 +74,7 @@
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 24px;
     }
 
     body {
@@ -47,7 +83,8 @@
       color: var(--text);
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Arial, sans-serif;
-      line-height: 1.65;
+      font-size: 16px;
+      line-height: 1.7;
     }
 
     a {
@@ -56,7 +93,7 @@
     }
 
     a:focus-visible {
-      outline: 3px solid var(--teal);
+      outline: 3px solid #D58B20;
       outline-offset: 4px;
       border-radius: 4px;
     }
@@ -67,8 +104,9 @@
     }
 
     .site-header {
-      background: var(--navy);
+      background: var(--navy-deep);
       color: var(--white);
+      border-bottom: 3px solid var(--teal);
     }
 
     .header-inner {
@@ -111,8 +149,8 @@
     }
 
     .hero {
-      padding: 68px 0 62px;
-      background: linear-gradient(135deg, #142B4A 0%, #087E8B 100%);
+      padding: 64px 0 58px;
+      background: linear-gradient(135deg, #0C1C31 0%, #142B4A 58%, #087E8B 100%);
       color: var(--white);
     }
 
@@ -131,6 +169,7 @@
       font-size: clamp(2.1rem, 5vw, 3.6rem);
       line-height: 1.12;
       letter-spacing: -0.04em;
+      overflow-wrap: anywhere;
     }
 
     .hero p {
@@ -138,6 +177,7 @@
       margin: 0;
       color: #F0F7FB;
       font-size: clamp(1rem, 2vw, 1.15rem);
+      line-height: 1.8;
     }
 
     .hero-actions {
@@ -159,15 +199,17 @@
       color: var(--navy);
       text-decoration: none;
       font-weight: 800;
-      line-height: 1.3;
+      line-height: 1.4;
+      text-align: center;
     }
 
     .button:hover {
       background: #EAF7F7;
+      color: var(--navy);
     }
 
     .button-outline {
-      border-color: rgba(255, 255, 255, 0.8);
+      border-color: rgba(255, 255, 255, 0.85);
       background: transparent;
       color: var(--white);
     }
@@ -182,23 +224,26 @@
     }
 
     .intro {
-      max-width: 880px;
+      max-width: 900px;
       margin-bottom: 34px;
     }
 
     .intro h2,
     .section-heading h2 {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       color: var(--navy);
       font-size: clamp(1.55rem, 3vw, 2.1rem);
-      line-height: 1.25;
+      line-height: 1.3;
       letter-spacing: -0.025em;
+      overflow-wrap: anywhere;
     }
 
     .intro p,
     .section-heading p {
       margin: 0;
-      color: var(--muted);
+      color: #405166;
+      font-size: 1rem;
+      line-height: 1.8;
     }
 
     .section {
@@ -207,14 +252,15 @@
     }
 
     .section-heading {
-      max-width: 850px;
-      margin-bottom: 20px;
+      max-width: 880px;
+      margin-bottom: 22px;
     }
 
     .card-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 20px;
+      align-items: stretch;
     }
 
     .card {
@@ -232,7 +278,7 @@
     .tag {
       display: inline-block;
       margin-bottom: 13px;
-      padding: 4px 9px;
+      padding: 5px 9px;
       border-radius: 5px;
       background: var(--soft-blue);
       color: var(--navy);
@@ -244,68 +290,93 @@
 
     .card:nth-child(3n + 2) .tag {
       background: var(--soft-teal);
-      color: var(--teal-dark);
+      color: #064F57;
     }
 
     .card h3 {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       color: var(--navy);
       font-size: 1.18rem;
-      line-height: 1.38;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
     }
 
     .card p {
-      margin: 0 0 20px;
-      color: var(--muted);
-      font-size: 0.96rem;
+      margin: 0 0 18px;
+      color: #405166;
+      font-size: 1rem;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+
+    .card strong {
+      color: var(--navy);
     }
 
     .card-link {
+      display: inline-block;
       margin-top: auto;
+      color: #06636D;
       font-weight: 800;
-      text-decoration: none;
+      line-height: 1.6;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
     }
 
     .card-link:hover {
-      text-decoration: underline;
+      color: #0C1C31;
+    }
+
+    .card p a {
+      color: #06636D;
+      font-weight: 700;
+      overflow-wrap: anywhere;
     }
 
     .keywords {
       display: flex;
       flex-wrap: wrap;
       gap: 9px;
-      margin-top: 19px;
+      margin-top: 20px;
     }
 
     .keyword {
-      padding: 6px 10px;
+      padding: 7px 10px;
       border: 1px solid #D5E3ED;
       border-radius: 6px;
       background: var(--white);
       color: var(--navy);
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       font-weight: 650;
+      line-height: 1.5;
     }
 
     .feature-band {
       margin-top: 48px;
       padding: 30px;
-      border: 1px solid #C9E5E7;
+      border: 1px solid #B7DCDD;
+      border-left: 5px solid var(--teal);
       border-radius: 12px;
       background: var(--soft-teal);
+      color: var(--text);
     }
 
     .feature-band h2 {
-      margin: 0 0 9px;
+      margin: 0 0 12px;
       color: var(--navy);
       font-size: 1.55rem;
-      line-height: 1.3;
+      line-height: 1.4;
+      overflow-wrap: anywhere;
     }
 
     .feature-band p {
       max-width: 850px;
-      margin: 0 0 18px;
-      color: var(--text);
+      margin: 0 0 20px;
+      color: #263445;
+      font-size: 1rem;
+      line-height: 1.8;
+      opacity: 1;
     }
 
     .feature-band .button {
@@ -315,6 +386,7 @@
 
     .feature-band .button:hover {
       background: var(--teal-dark);
+      color: var(--white);
     }
 
     .site-footer {
@@ -336,6 +408,7 @@
     .footer-inner p {
       margin: 0;
       font-size: 0.9rem;
+      line-height: 1.7;
     }
 
     .footer-inner a {
@@ -352,7 +425,7 @@
       .page-shell,
       .header-inner,
       .footer-inner {
-        width: min(100% - 32px, 1120px);
+        width: calc(100% - 32px);
       }
 
       .header-inner {
@@ -369,7 +442,7 @@
       }
 
       .hero {
-        padding: 49px 0 44px;
+        padding: 46px 0 42px;
       }
 
       main {
@@ -377,7 +450,7 @@
       }
 
       .card-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 14px;
       }
 
@@ -387,6 +460,15 @@
 
       .feature-band {
         padding: 23px;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .hero-actions .button {
+        width: 100%;
       }
     }
 
@@ -411,7 +493,7 @@
         <a href="/researcher-products/">Researcher Products</a>
         <a href="/professional-mobility/">Professional Mobility</a>
         <a href="/social-media/">Social Media</a>
-        <a href="/research-profiles-publications/" aria-current="page">Research & Publications</a>
+        <a href="/research-profiles-publications/" aria-current="page">Research &amp; Publications</a>
         <a href="/art-profiles/">Art Profiles</a>
       </nav>
     </div>
@@ -420,7 +502,7 @@
   <section class="hero">
     <div class="page-shell">
       <p class="eyebrow">Research · Evidence · Systems · Publications</p>
-      <h1>Research Profiles & Selected Publications</h1>
+      <h1>Research Profiles &amp; Selected Publications</h1>
       <p>
         Explore research profiles, open research records, datasets, and selected
         publications associated with Nabal Kishore Pande. This page brings
@@ -439,12 +521,12 @@
   <main>
     <div class="page-shell">
       <section class="intro" aria-labelledby="research-overview-heading">
-        <h2 id="research-overview-heading">Research identity and selected outputs</h2>
+        <h2 id="research-overview-heading">Research Identity and Selected Outputs</h2>
         <p>
           Use the profile links to explore author records and research activity.
           Use the individual publication and dataset links to open specific
-          research outputs. The descriptions below are intended to help readers
-          identify relevant work before visiting the source platform.
+          research outputs. Descriptions help readers identify relevant work
+          before visiting the source platform.
         </p>
 
         <div class="keywords" aria-label="Research topics">
@@ -462,7 +544,7 @@
 
       <section class="section" id="research-profiles" aria-labelledby="profiles-heading">
         <div class="section-heading">
-          <h2 id="profiles-heading">Researcher Profiles & Scholarly Platforms</h2>
+          <h2 id="profiles-heading">Researcher Profiles &amp; Scholarly Platforms</h2>
           <p>
             Access author identity records, research discovery profiles,
             scholarly networking, and platforms for sharing research-related
@@ -475,13 +557,11 @@
             <span class="tag">Research Discovery</span>
             <h3>ScienceOpen Research Profile</h3>
             <p>
-              Explore the ScienceOpen profile, which lists research interests
-              spanning education, social and behavioural sciences, computer
-              science, decision systems, and research methodology.
+              Explore the ScienceOpen profile for research interests spanning
+              education, social and behavioural sciences, computer science,
+              decision systems, and research methodology.
             </p>
-            <a class="card-link"
-               href="https://www.scienceopen.com/user/nabal-kishore-pande"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://www.scienceopen.com/user/nabal-kishore-pande" target="_blank" rel="noopener noreferrer">
               View ScienceOpen Profile ↗
             </a>
           </article>
@@ -490,12 +570,10 @@
             <span class="tag">Author Index</span>
             <h3>OpenAlex Author Profile</h3>
             <p>
-              Open the OpenAlex author record associated with Nabal Kishore
-              Pande to explore indexed scholarly metadata and related works.
+              Explore the OpenAlex author record associated with Nabal Kishore
+              Pande, including indexed scholarly metadata and related works.
             </p>
-            <a class="card-link"
-               href="https://openalex.org/authors/A5133520791"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://openalex.org/authors/A5133520791" target="_blank" rel="noopener noreferrer">
               Explore OpenAlex Record ↗
             </a>
           </article>
@@ -507,23 +585,19 @@
               Visit the ORCID researcher record associated with the identifier
               0009-0007-3325-9966.
             </p>
-            <a class="card-link"
-               href="https://orcid.org/0009-0007-3325-9966"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://orcid.org/0009-0007-3325-9966" target="_blank" rel="noopener noreferrer">
               View ORCID Record ↗
             </a>
           </article>
 
           <article class="card">
-            <span class="tag">AI & Machine Learning</span>
+            <span class="tag">AI &amp; Machine Learning</span>
             <h3>Hugging Face Profile</h3>
             <p>
-              Visit the author's Hugging Face profile for any available
-              machine-learning, AI, or related technical resources.
+              Visit the author's Hugging Face profile for available machine
+              learning, artificial intelligence, or related technical resources.
             </p>
-            <a class="card-link"
-               href="https://huggingface.co/NabalKishorePande"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://huggingface.co/NabalKishorePande" target="_blank" rel="noopener noreferrer">
               Explore Hugging Face ↗
             </a>
           </article>
@@ -532,12 +606,10 @@
             <span class="tag">Academic Network</span>
             <h3>Independent Researcher Profile</h3>
             <p>
-              Access the author's profile on the Academia.edu platform for
-              available academic material and research-related information.
+              Access the author's Academia.edu profile for available academic
+              material and research-related information.
             </p>
-            <a class="card-link"
-               href="https://independentresearcher.academia.edu/NabalKishorePande"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://independentresearcher.academia.edu/NabalKishorePande" target="_blank" rel="noopener noreferrer">
               Visit Academic Profile ↗
             </a>
           </article>
@@ -546,12 +618,10 @@
             <span class="tag">Digital Archive</span>
             <h3>Internet Archive Collection</h3>
             <p>
-              Explore the linked Internet Archive account for available
-              archived material and digital publications.
+              Explore the linked Internet Archive account for available archived
+              material and digital publications.
             </p>
-            <a class="card-link"
-               href="https://archive.org/details/@nawal_pandey"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://archive.org/details/@nawal_pandey" target="_blank" rel="noopener noreferrer">
               Browse Archive ↗
             </a>
           </article>
@@ -560,11 +630,11 @@
 
       <section class="section" id="selected-research" aria-labelledby="selected-heading">
         <div class="section-heading">
-          <h2 id="selected-heading">Selected Research & Open Records</h2>
+          <h2 id="selected-heading">Selected Research &amp; Open Records</h2>
           <p>
             Open the individual records to review their source descriptions,
-            metadata, and available files. Record links are provided directly
-            rather than substituting unverified publication details.
+            metadata, and available files. Each link leads to its supplied
+            research record or dataset.
           </p>
         </div>
 
@@ -577,9 +647,7 @@
               the ASA (Attach, Surface, Adapt) framework, including structured
               maintenance protocols and external professional opportunities.
             </p>
-            <a class="card-link"
-               href="https://zenodo.org/records/20689156"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://zenodo.org/records/20689156" target="_blank" rel="noopener noreferrer">
               Read Research Record ↗
             </a>
           </article>
@@ -593,9 +661,7 @@
               coordination demands, and structural inefficiencies can hinder
               completion.
             </p>
-            <a class="card-link"
-               href="https://zenodo.org/records/19555606"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://zenodo.org/records/19555606" target="_blank" rel="noopener noreferrer">
               Explore ECS Research Record ↗
             </a>
           </article>
@@ -607,9 +673,7 @@
               Access the supplied Mendeley Data dataset record for research
               material and associated dataset information.
             </p>
-            <a class="card-link"
-               href="https://data.mendeley.com/datasets/zb6zmn32m2/1"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://data.mendeley.com/datasets/zb6zmn32m2/1" target="_blank" rel="noopener noreferrer">
               View Mendeley Dataset ↗
             </a>
           </article>
@@ -618,12 +682,10 @@
             <span class="tag">Zenodo Record</span>
             <h3>Research Record 21965575</h3>
             <p>
-              Open the specific Zenodo record to inspect its published title,
+              Open the supplied Zenodo record to inspect its publication title,
               abstract, authorship, metadata, and available files.
             </p>
-            <a class="card-link"
-               href="https://zenodo.org/records/21965575"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://zenodo.org/records/21965575" target="_blank" rel="noopener noreferrer">
               View Zenodo Record ↗
             </a>
           </article>
@@ -632,27 +694,23 @@
             <span class="tag">Zenodo Record</span>
             <h3>Research Record 18937722</h3>
             <p>
-              Visit the linked research record for its authoritative title,
-              abstract, citation details, and downloadable materials where available.
+              Visit the supplied research record for its title, abstract,
+              citation details, and downloadable materials where available.
             </p>
-            <a class="card-link"
-               href="https://zenodo.org/records/18937722"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://zenodo.org/records/18937722" target="_blank" rel="noopener noreferrer">
               View Zenodo Record ↗
             </a>
           </article>
 
           <article class="card">
             <span class="tag">Research Repository</span>
-            <h3>Zenodo Publications & Deposits</h3>
+            <h3>Zenodo Publications &amp; Deposits</h3>
             <p>
-              Explore the author's supplied Zenodo record links and repository
-              activity. Check individual records for current publication
-              metadata and access options.
+              Explore the supplied Zenodo repository activity and record links.
+              Check individual records for current publication metadata and
+              access options.
             </p>
-            <a class="card-link"
-               href="https://zenodo.org/me/uploads?q=&f=shared_with_me%3Afalse&l=list&p=1&s=10&sort=newest"
-               target="_blank" rel="noopener noreferrer">
+            <a class="card-link" href="https://zenodo.org/me/uploads?q=&amp;f=shared_with_me%3Afalse&amp;l=list&amp;p=1&amp;s=10&amp;sort=newest" target="_blank" rel="noopener noreferrer">
               Open Zenodo Uploads ↗
             </a>
           </article>
@@ -661,11 +719,11 @@
 
       <section class="section" id="selected-publications" aria-labelledby="publications-heading">
         <div class="section-heading">
-          <h2 id="publications-heading">Selected Books & Publication Records</h2>
+          <h2 id="publications-heading">Selected Books &amp; Publication Records</h2>
           <p>
-            Selected titles relevant to research, professional decision-making,
-            and academic language. Use the catalogue links to inspect the
-            bibliographic record or book listing.
+            Selected titles relevant to institutional governance, professional
+            decision-making, and academic English. Use the catalogue links to
+            inspect the bibliographic record or book listing.
           </p>
         </div>
 
@@ -674,17 +732,13 @@
             <span class="tag">Book · Institutional Governance</span>
             <h3>Institutional English: Language Governance for Global Operations, Compliance, and Executive Decision-Making</h3>
             <p>
-              A book about language as governance infrastructure, including
-              linguistic standardisation, documentation architecture,
+              This book examines language as governance infrastructure,
+              including linguistic standardisation, documentation architecture,
               ambiguity management, and decision records in high-consequence
               institutional settings.
             </p>
-            <p>
-              <strong>ISBN:</strong> 9789356262461
-            </p>
-            <a class="card-link"
-               href="https://www.booktopia.com.au/institutional-english-nabal-kishore-pande/book/9789356262461.html"
-               target="_blank" rel="noopener noreferrer">
+            <p><strong>ISBN:</strong> 9789356262461</p>
+            <a class="card-link" href="https://www.booktopia.com.au/institutional-english-nabal-kishore-pande/book/9789356262461.html" target="_blank" rel="noopener noreferrer">
               View Book Listing ↗
             </a>
           </article>
@@ -694,21 +748,15 @@
             <h3>The Academic Word Engine: EF SET – CEFR – IELTS – PTE – DET – OET – TOEFL Mastery for Global Career Mobility</h3>
             <p>
               A structured academic vocabulary and English development system
-              designed around the transition from B2 recognition to C1
-              operational English, with review cycles and profession-oriented
-              language practice.
+              focused on the transition from B2 recognition to C1 operational
+              English, with review cycles and profession-oriented language practice.
             </p>
-            <p>
-              <strong>ISBN:</strong> 9789334380378
-            </p>
-            <a class="card-link"
-               href="https://search.worldcat.org/title/1563979749"
-               target="_blank" rel="noopener noreferrer">
+            <p><strong>ISBN:</strong> 9789334380378</p>
+            <a class="card-link" href="https://search.worldcat.org/title/1563979749" target="_blank" rel="noopener noreferrer">
               Find on WorldCat ↗
             </a>
             <p>
-              <a href="https://www.booktopia.com.au/the-academic-word-engine-nabal-kishore-pande/book/9789334380378.html"
-                 target="_blank" rel="noopener noreferrer">
+              <a href="https://www.booktopia.com.au/the-academic-word-engine-nabal-kishore-pande/book/9789334380378.html" target="_blank" rel="noopener noreferrer">
                 View the book listing at Booktopia
               </a>
             </p>
@@ -717,7 +765,7 @@
       </section>
 
       <section class="feature-band" aria-labelledby="collaboration-heading">
-        <h2 id="collaboration-heading">Explore the work or make a professional connection</h2>
+        <h2 id="collaboration-heading">Explore the Work or Make a Professional Connection</h2>
         <p>
           Researchers, practitioners, and organisations can use the linked
           profiles and records to explore relevant work. For research-related
@@ -728,8 +776,7 @@
           <a class="button" href="mailto:ernawal67@gmail.com?subject=Research%20and%20Publication%20Enquiry">
             Contact for Research Enquiries
           </a>
-          <a class="button" href="https://www.linkedin.com/in/nabal-kishore-pande/"
-             target="_blank" rel="noopener noreferrer">
+          <a class="button" href="https://www.linkedin.com/in/nabal-kishore-pande/" target="_blank" rel="noopener noreferrer">
             Connect on LinkedIn
           </a>
           <a class="button" href="/researcher-products/">
@@ -752,3 +799,4 @@
   </script>
 </body>
 </html>
+```
