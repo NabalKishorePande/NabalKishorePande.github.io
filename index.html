@@ -5,483 +5,774 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Nabal Kishore Pande | Books, Decision Systems, Research & Career Mobility</title>
-  <meta name="description" content="Explore practical decision-making frameworks, research templates, academic English resources, scholarship guidance, professional profiles and original artwork by Nabal Kishore Pande.">
-
+  <title>Nabal Kishore Pande | Author, Research Tools & Professional Mobility</title>
+  <meta name="description" content="Explore Nabal Kishore Pande's practical books, research templates, decision-making systems, scholarship and professional mobility resources, research profiles, and original artwork.">
   <meta name="author" content="Nabal Kishore Pande">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nabalkishorepande.github.io/">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Nabal Kishore Pande | Practical Systems for Decisions, Research and Career Mobility">
-  <meta property="og:description" content="Explore practical books, decision tools, research resources, career mobility guidance and original artwork.">
+  <meta property="og:title" content="Nabal Kishore Pande | Books, Research Tools & Professional Resources">
+  <meta property="og:description" content="Practical resources for better decisions, research execution, global career mobility, and creative exploration.">
   <meta property="og:url" content="https://nabalkishorepande.github.io/">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c2/Portrait_of_Nabal_Kishore_Pande.jpg">
   <meta name="theme-color" content="#142B4A">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --navy-dark: #0C1C31;
+      --teal: #087E8B;
+      --teal-dark: #06636D;
+      --background: #F4F7FA;
+      --white: #FFFFFF;
+      --text: #263445;
+      --muted: #526274;
+      --border: #D9E2EC;
+      --soft-blue: #E7EFF7;
+      --soft-teal: #E4F3F4;
+      --radius: 18px;
+      --shadow: 0 8px 26px rgba(20, 43, 74, 0.07);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Inter, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a { color: var(--teal-dark); }
+    a:hover { color: var(--navy); }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #D58B20;
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 36px));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      background: var(--navy-dark);
+      color: white;
+      border-bottom: 3px solid var(--teal);
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-block: 14px;
+    }
+
+    .brand {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 1.3;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 4px;
+      color: #D3E3F2;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px 16px;
+    }
+
+    .nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 0;
+    }
+
+    .nav a:hover { color: #A9E4E8; }
+
+    .hero {
+      padding: 42px 0 24px;
+    }
+
+    .profile-box {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      gap: 34px;
+      align-items: center;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .portrait-wrap {
+      overflow: hidden;
+      border-radius: 16px;
+      background: var(--soft-blue);
+      border: 1px solid var(--border);
+    }
+
+    .portrait {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .eyebrow {
+      color: var(--teal-dark);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+    }
+
+    h1, h2, h3 { color: var(--navy); line-height: 1.25; }
+
+    h1 {
+      font-size: clamp(30px, 4.5vw, 44px);
+      letter-spacing: -1.3px;
+      margin: 0 0 10px;
+    }
+
+    .role {
+      margin: 0 0 16px;
+      color: var(--teal-dark);
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .bio {
+      margin: 0 0 18px;
+      max-width: 680px;
+    }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 17px;
+      border: 1px solid var(--teal);
+      border-radius: 9px;
+      background: var(--teal);
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--teal-dark);
+      color: white;
+      transform: translateY(-1px);
+    }
+
+    .button-secondary {
+      background: white;
+      color: var(--navy);
+      border-color: var(--border);
+    }
+
+    .button-secondary:hover {
+      background: var(--soft-blue);
+      color: var(--navy);
+    }
+
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .trust-item {
+      background: var(--soft-blue);
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--navy);
+      font-size: 15px;
+    }
+
+    .trust-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+      margin-top: 3px;
+    }
+
+    main { padding-bottom: 42px; }
+
+    .section {
+      padding: 32px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 22px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(25px, 3vw, 32px);
+      letter-spacing: -0.6px;
+      margin: 0 0 8px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      min-width: 0;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .card-image {
+      width: 100%;
+      height: 205px;
+      object-fit: cover;
+      background: var(--soft-blue);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .card-body { padding: 21px; }
+
+    .card h3 {
+      margin: 0 0 9px;
+      font-size: 19px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 16px;
+    }
+
+    .text-link {
+      font-size: 14px;
+      font-weight: 800;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    .feature-band {
+      background: var(--navy);
+      color: white;
+      border-radius: 22px;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .feature-band h2 {
+      color: white;
+      font-size: 28px;
+      margin: 0 0 10px;
+    }
+
+    .feature-band p {
+      color: #E0EAF4;
+      margin: 0;
+    }
+
+    .feature-band .button {
+      justify-self: start;
+      background: white;
+      color: var(--navy);
+      border-color: white;
+    }
+
+    .feature-band .button:hover {
+      background: #E8F4F5;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .profile-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 19px;
+    }
+
+    .profile-card h3 {
+      margin: 0 0 7px;
+      font-size: 17px;
+    }
+
+    .profile-card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .profile-card a {
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .art-card .card-image {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .note {
+      margin-top: 20px;
+      padding: 17px 20px;
+      border-left: 4px solid var(--teal);
+      background: var(--soft-teal);
+      border-radius: 0 12px 12px 0;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .site-footer {
+      padding: 28px 0;
+      background: var(--navy-dark);
+      color: #E4EDF7;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px 24px;
+    }
+
+    .site-footer p {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .site-footer a {
+      color: #A9E4E8;
+      font-weight: 600;
+    }
+
+    @media (max-width: 850px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .nav { gap: 8px 15px; }
+      .profile-box { grid-template-columns: 220px minmax(0, 1fr); gap: 24px; }
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .profile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 600px) {
+      .container { width: min(100% - 24px, 1120px); }
+      .header-inner { padding-block: 16px; }
+      .nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
+      .nav a { padding: 7px 0; font-size: 13px; }
+      .hero { padding-top: 20px; }
+      .profile-box { grid-template-columns: 1fr; padding: 18px; gap: 20px; }
+      .portrait-wrap { max-width: 260px; }
+      .portrait { aspect-ratio: 4 / 4.5; }
+      h1 { font-size: 32px; }
+      .trust-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid, .profile-grid { grid-template-columns: 1fr; }
+      .card-image { height: 220px; }
+      .feature-band { grid-template-columns: 1fr; padding: 23px; }
+      .section { padding: 24px 0; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
+  </style>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
+    "@type": "Person",
     "name": "Nabal Kishore Pande",
     "url": "https://nabalkishorepande.github.io/",
-    "description": "Practical books, decision systems, research resources, professional mobility guidance and original artwork.",
-    "author": {
-      "@type": "Person",
-      "name": "Nabal Kishore Pande",
-      "url": "https://nabalkishorepande.github.io/"
-    }
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Portrait_of_Nabal_Kishore_Pande.jpg",
+    "jobTitle": "Independent Researcher and Author",
+    "sameAs": [
+      "https://www.linkedin.com/in/nabal-kishore-pande/",
+      "https://www.scienceopen.com/user/nabal-kishore-pande",
+      "https://orcid.org/0009-0007-3325-9966",
+      "https://openalex.org/authors/A5133520791"
+    ]
   }
   </script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="Nabal Kishore Pande homepage">
-        <span class="brand-mark">NKP</span>
-        <span class="brand-text">
-          <strong>Nabal Kishore Pande</strong>
-          <small>Author · Independent Researcher</small>
-        </span>
+        NABAL KISHORE PANDE
+        <span>Author · Independent Researcher</span>
       </a>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="/" aria-current="page">Home</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/">Home</a>
         <a href="/decision-defence/">Decision Defence</a>
         <a href="/researcher-products/">Research Products</a>
         <a href="/professional-mobility/">Career & Scholarships</a>
         <a href="/social-media/">Social Media</a>
-        <a href="/research-profiles/">Research Profiles</a>
-        <a href="/art-profiles/">Art</a>
+        <a href="/research-profiles-publications/">Research & Publications</a>
+        <a href="/art-profiles/">Art Profiles</a>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-
-    <!-- HERO -->
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">PRACTICAL KNOWLEDGE · DECISION SYSTEMS · PROFESSIONAL GROWTH</p>
-
-          <h1>Make Better Decisions. Build Stronger Research. Expand Your Opportunities.</h1>
-
-          <p class="hero-description">
-            Explore practical books, decision-making frameworks, research
-            templates, academic English resources and professional mobility
-            guidance designed to help turn information into informed action.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="/decision-defence/">Explore Decision Systems</a>
-            <a class="button button-secondary" href="/researcher-products/">Browse Research Products</a>
-          </div>
-
-          <div class="hero-proof">
-            <span>Practical frameworks</span>
-            <span>Research resources</span>
-            <span>Career-focused learning</span>
-          </div>
-        </div>
-
-        <div class="hero-visual">
+  <section class="hero">
+    <div class="container">
+      <div class="profile-box">
+        <div class="portrait-wrap">
           <img
-            src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1100&q=85"
-            alt="Notebook and writing tools arranged on a desk for focused study and planning"
-            width="1100"
-            height="825"
-            fetchpriority="high">
-          <div class="image-caption">
-            <strong>From knowledge to action</strong>
-            <span>Tools for clearer thinking and practical progress</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- QUICK VALUE PROPOSITION -->
-    <section class="value-strip">
-      <div class="container value-grid">
-        <div>
-          <span class="value-number">01</span>
-          <h2>Decide</h2>
-          <p>Evaluate options, evidence, risks and priorities.</p>
-        </div>
-        <div>
-          <span class="value-number">02</span>
-          <h2>Research</h2>
-          <p>Use structured tools to strengthen research work.</p>
-        </div>
-        <div>
-          <span class="value-number">03</span>
-          <h2>Prepare</h2>
-          <p>Build academic English and professional readiness.</p>
-        </div>
-        <div>
-          <span class="value-number">04</span>
-          <h2>Execute</h2>
-          <p>Turn plans into practical, measurable next steps.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED PATHWAYS -->
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">EXPLORE THE WEBSITE</p>
-          <h2>Find the Resources You Need</h2>
-          <p>Choose a pathway based on your current goal.</p>
-        </div>
-
-        <div class="card-grid four-cards">
-          <article class="content-card">
-            <img
-              src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80"
-              alt="Notebook and pen representing decision planning"
-              width="700"
-              height="480"
-              loading="lazy">
-            <div class="card-body">
-              <p class="card-kicker">DECISION-MAKING</p>
-              <h3>Decision Defence</h3>
-              <p>Explore practical frameworks for evaluating choices, identifying constraints and improving execution.</p>
-              <a class="text-link" href="/decision-defence/">Explore decision tools</a>
-            </div>
-          </article>
-
-          <article class="content-card">
-            <img
-              src="https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=700&q=80"
-              alt="Books and study materials representing academic research"
-              width="700"
-              height="480"
-              loading="lazy">
-            <div class="card-body">
-              <p class="card-kicker">RESEARCH WORKFLOWS</p>
-              <h3>Researchers Focused Products</h3>
-              <p>Find research templates, diagnostic tools, review-response resources and structured workbooks.</p>
-              <a class="text-link" href="/researcher-products/">Explore research products</a>
-            </div>
-          </article>
-
-          <article class="content-card">
-            <img
-              src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=700&q=80"
-              alt="Study notes and books representing academic preparation"
-              width="700"
-              height="480"
-              loading="lazy">
-            <div class="card-body">
-              <p class="card-kicker">GLOBAL OPPORTUNITIES</p>
-              <h3>Professional Mobility and Scholarships</h3>
-              <p>Explore resources related to scholarship applications, academic English, testing and career mobility.</p>
-              <a class="text-link" href="/professional-mobility/">Explore mobility resources</a>
-            </div>
-          </article>
-
-          <article class="content-card">
-            <img
-              src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=700&q=80"
-              alt="Research papers and notes arranged for review"
-              width="700"
-              height="480"
-              loading="lazy">
-            <div class="card-body">
-              <p class="card-kicker">CREDIBILITY & DISCOVERY</p>
-              <h3>Research Profiles and Publications</h3>
-              <p>Access professional profiles, research platforms and selected scholarly outputs.</p>
-              <a class="text-link" href="/research-profiles/">View research profiles</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED BOOKS -->
-    <section class="section section-muted">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">BOOKS & PRACTICAL FRAMEWORKS</p>
-          <h2>Knowledge Designed for Application</h2>
-          <p>Explore books and frameworks for professional communication, decision-making and academic preparation.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-image">
-              <img
-                src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=85"
-                alt="Open book on a table representing professional and academic learning"
-                width="800"
-                height="650"
-                loading="lazy">
-            </div>
-            <div class="feature-content">
-              <p class="card-kicker">PROFESSIONAL COMMUNICATION</p>
-              <h3>Institutional English</h3>
-              <p class="feature-subtitle">Language Governance for Global Operations, Compliance, and Executive Decision-Making</p>
-              <p>A resource focused on the role of English in institutional communication, professional operations and decision-making.</p>
-              <p class="metadata">ISBN: 9789356262461</p>
-              <a class="text-link" href="https://www.booktopia.com.au/" target="_blank" rel="noopener noreferrer">Search the publisher's book listing</a>
-            </div>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-image">
-              <img
-                src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=800&q=85"
-                alt="Study books and learning materials representing academic English preparation"
-                width="800"
-                height="650"
-                loading="lazy">
-            </div>
-            <div class="feature-content">
-              <p class="card-kicker">ACADEMIC ENGLISH & TEST PREPARATION</p>
-              <h3>The Academic Word Engine</h3>
-              <p class="feature-subtitle">EF SET · CEFR · IELTS · PTE · DET · OET · TOEFL Mastery for Global Career Mobility</p>
-              <p>A structured learning concept connecting academic vocabulary, English proficiency and international career goals.</p>
-              <p class="metadata">ISBN: 9789334380378</p>
-              <a class="text-link" href="https://search.worldcat.org/title/1563979749" target="_blank" rel="noopener noreferrer">View the WorldCat book record</a>
-            </div>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-image">
-              <img
-                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=85"
-                alt="Planning documents on a desk representing structured decision-making"
-                width="800"
-                height="650"
-                loading="lazy">
-            </div>
-            <div class="feature-content">
-              <p class="card-kicker">DECISION-MAKING</p>
-              <h3>RDE Field Manual</h3>
-              <p class="feature-subtitle">Practical Decision-Making Tools for Education, Career, Research, and Professional Opportunities</p>
-              <p>Explore a practical framework for evaluating readiness, making decisions and planning execution.</p>
-              <a class="text-link" href="/decision-defence/">Explore decision frameworks</a>
-            </div>
-          </article>
-        </div>
-
-        <p class="section-note">
-          Product availability and purchase links should be checked before publication.
-        </p>
-      </div>
-    </section>
-
-    <!-- RESEARCH PRODUCTS -->
-    <section class="section">
-      <div class="container split-section">
-        <div class="split-image">
-          <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85"
-            alt="Laptop and work materials representing digital research tools"
-            width="1000"
-            height="850"
-            loading="lazy">
-        </div>
-
-        <div class="split-content">
-          <p class="eyebrow">TOOLS FOR RESEARCHERS</p>
-          <h2>Move from Research Questions to Structured Work</h2>
-          <p>Research work often requires clear alignment, documented decisions and repeatable processes. Practical templates can help organise these tasks.</p>
-
-          <ul class="check-list">
-            <li>Research alignment checklists and diagnostic systems</li>
-            <li>Response-to-reviewers templates and trackers</li>
-            <li>Research proposal and systematic review workbooks</li>
-            <li>Logframe and theory-of-change tools</li>
-          </ul>
-
-          <a class="button button-primary" href="/researcher-products/">Explore Researcher Products</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROFESSIONAL IDENTITY -->
-    <section class="section section-navy">
-      <div class="container profile-grid">
-        <div class="profile-image">
-          <img
+            class="portrait"
             src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Portrait_of_Nabal_Kishore_Pande.jpg"
             alt="Portrait of Nabal Kishore Pande"
-            width="700"
-            height="850"
-            loading="lazy">
+            fetchpriority="high"
+            onerror="this.onerror=null;this.src='https://www.wikidata.org/wiki/Special:FilePath/Portrait_of_Nabal_Kishore_Pande.jpg';"
+          >
         </div>
 
-        <div class="profile-content">
-          <p class="eyebrow">AUTHOR & INDEPENDENT RESEARCHER</p>
-          <h2>Explore My Work and Professional Profiles</h2>
-          <p>This website brings together practical publications, decision frameworks, research resources, professional development material and creative work.</p>
-          <p>Use the links below to explore professional identity and research activity across established platforms.</p>
+        <div>
+          <p class="eyebrow">Official Author Website</p>
+          <h1>Nabal Kishore Pande</h1>
+          <p class="role">Author and Independent Researcher</p>
+
+          <p class="bio">
+            I develop practical books, research tools, and decision frameworks
+            to help people organise complex work, strengthen research planning,
+            evaluate opportunities, and prepare for professional and global
+            career mobility. This website brings my products, publications,
+            professional profiles, and original artwork together in one place.
+          </p>
 
           <div class="profile-links">
-            <a href="https://www.linkedin.com/in/nabal-kishore-pande/" target="_blank" rel="noopener noreferrer">LinkedIn professional profile</a>
-            <a href="https://www.scienceopen.com/user/nabal-kishore-pande" target="_blank" rel="noopener noreferrer">ScienceOpen research profile</a>
-            <a href="https://orcid.org/0009-0007-3325-9966" target="_blank" rel="noopener noreferrer">ORCID researcher identifier</a>
-            <a href="https://openalex.org/authors/A5133520791" target="_blank" rel="noopener noreferrer">OpenAlex author record</a>
+            <a class="button" href="/researcher-products/">Explore Research Products</a>
+            <a class="button button-secondary" href="/professional-mobility/">Career & Scholarship Resources</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/nabal-kishore-pande/" target="_blank" rel="noopener noreferrer">Professional Profile</a>
           </div>
-
-          <a class="button button-light" href="/research-profiles/">View All Research Profiles</a>
         </div>
       </div>
-    </section>
 
-    <!-- PROFESSIONAL MOBILITY -->
+      <div class="trust-strip" aria-label="Website focus areas">
+        <div class="trust-item">
+          <strong>Decision Systems</strong>
+          <span>Practical frameworks and tools</span>
+        </div>
+        <div class="trust-item">
+          <strong>Research Resources</strong>
+          <span>Templates, workbooks and guides</span>
+        </div>
+        <div class="trust-item">
+          <strong>Career Mobility</strong>
+          <span>English, scholarships and opportunities</span>
+        </div>
+        <div class="trust-item">
+          <strong>Creative Work</strong>
+          <span>Photography and original digital art</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
     <section class="section">
-      <div class="container mobility-grid">
-        <div class="mobility-content">
-          <p class="eyebrow">EDUCATION · SCHOLARSHIPS · CAREER</p>
-          <h2>Prepare for Your Next Professional Opportunity</h2>
-          <p>Explore resources for scholarship planning, international career mobility, English proficiency and structured opportunity evaluation.</p>
-          <p>Use these materials as planning aids, and verify eligibility, deadlines and requirements with the relevant official institutions.</p>
-          <a class="button button-primary" href="/professional-mobility/">Explore Career and Scholarship Resources</a>
-        </div>
-
-        <div class="mobility-image">
-          <img
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=85"
-            alt="University campus with students walking between academic buildings"
-            width="1000"
-            height="750"
-            loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <!-- ART -->
-    <section class="section section-muted">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">CREATIVE WORK</p>
-          <h2>Photography, Landscapes and Character Art</h2>
-          <p>Discover original visual work ranging from Indian landscapes and nature photography to unusual animal characters and illustrative concepts.</p>
+          <p class="eyebrow">Start Here</p>
+          <h2>Practical Resources for Work, Research and Opportunity</h2>
+          <p>
+            Find resources by your goal. Explore decision-making methods,
+            research products, professional mobility guidance, publications,
+            and creative work.
+          </p>
         </div>
 
-        <div class="art-preview-grid">
-          <article class="art-preview-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
-              alt="Mountain landscape beneath an open sky"
-              width="900"
-              height="650"
-              loading="lazy">
+        <div class="grid">
+          <article class="card">
             <div class="card-body">
-              <h3>Landscape Photography</h3>
-              <p>Nature, travel, atmosphere and place-based visual storytelling.</p>
+              <h3>Decision Defence</h3>
+              <p>
+                Explore practical decision frameworks for evaluating choices,
+                clarifying priorities, and moving from analysis to action.
+              </p>
+              <a class="text-link" href="/decision-defence/">Explore decision frameworks →</a>
             </div>
           </article>
 
-          <article class="art-preview-card">
-            <img
-              src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=85"
-              alt="Sunlight filtering through a woodland of trees"
-              width="900"
-              height="650"
-              loading="lazy">
+          <article class="card">
             <div class="card-body">
-              <h3>Nature and Visual Studies</h3>
-              <p>Natural forms, light, colour and quiet visual compositions.</p>
+              <h3>Researchers Focused Products</h3>
+              <p>
+                Browse research alignment tools, proposal resources,
+                peer-review templates, workbooks, and practical guides.
+              </p>
+              <a class="text-link" href="/researcher-products/">Explore research products →</a>
             </div>
           </article>
 
-          <article class="art-preview-card">
-            <img
-              src="https://images.unsplash.com/photo-1501706362039-c6e13d9d1a6e?auto=format&fit=crop&w=900&q=85"
-              alt="Donkey standing outdoors"
-              width="900"
-              height="650"
-              loading="lazy">
+          <article class="card">
             <div class="card-body">
-              <h3>Animal and Character Art</h3>
-              <p>Explore character concepts, unusual animal portraits and illustrated humour.</p>
+              <h3>Professional Mobility and Scholarships</h3>
+              <p>
+                Find resources related to English proficiency, international
+                career mobility, scholarship preparation, and opportunity evaluation.
+              </p>
+              <a class="text-link" href="/professional-mobility/">Explore mobility resources →</a>
             </div>
           </article>
-        </div>
 
-        <div class="center-action">
-          <a class="button button-primary" href="/art-profiles/">Explore Art Profiles</a>
+          <article class="card">
+            <div class="card-body">
+              <h3>Social Media</h3>
+              <p>
+                Find my professional and publishing channels through
+                clearly labelled links to external platforms.
+              </p>
+              <a class="text-link" href="/social-media/">View social profiles →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Research Profiles and Selected Publications</h3>
+              <p>
+                Access research identity profiles, publication records,
+                datasets, and selected scholarly outputs.
+              </p>
+              <a class="text-link" href="/research-profiles-publications/">View research profiles →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Art Profiles</h3>
+              <p>
+                Explore original landscape photography, nature images,
+                and unusual animal and character illustrations.
+              </p>
+              <a class="text-link" href="/art-profiles/">Explore artwork →</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- SOCIAL LINKS -->
     <section class="section">
-      <div class="container social-callout">
-        <div>
-          <p class="eyebrow">FOLLOW · READ · CONNECT</p>
-          <h2>Continue Exploring Beyond This Website</h2>
-          <p>Find professional updates, articles, project resources and published work across external platforms.</p>
-        </div>
-        <div class="social-actions">
-          <a class="button button-primary" href="/social-media/">Explore Social Media Profiles</a>
-          <a class="text-link" href="https://github.com/NabalKishorePande" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
-          <a class="text-link" href="https://ideasintoactionproducts.blogspot.com/" target="_blank" rel="noopener noreferrer">Read Ideas into Action</a>
-          <a class="text-link" href="https://booksideaspublications.blogspot.com/" target="_blank" rel="noopener noreferrer">Explore Books and Ideas</a>
+      <div class="container">
+        <div class="feature-band">
+          <div>
+            <p class="eyebrow" style="color:#A9E4E8">For Researchers and Project Teams</p>
+            <h2>Make Research Planning More Defensible</h2>
+            <p>
+              Use structured tools to check the fit between research questions,
+              objectives, methods, data, and analysis before investing more time.
+            </p>
+          </div>
+          <a class="button" href="https://researchsystems.gumroad.com/l/research-alignment-diagnostic" target="_blank" rel="noopener noreferrer">
+            View Research Alignment Diagnostic System
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section section-contact">
-      <div class="container contact-panel">
-        <p class="eyebrow">CONTACT</p>
-        <h2>Questions About Books, Resources or Professional Work?</h2>
-        <p>For enquiries related to publications, research resources or professional collaboration, use the email link below.</p>
-        <a class="button button-light" href="mailto:ernawal67@gmail.com">Contact by Email</a>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Professional Identity</p>
+          <h2>Connect Through Verified Profile Platforms</h2>
+          <p>
+            These profiles support professional discovery and access to research
+            identity and publication information.
+          </p>
+        </div>
+
+        <div class="profile-grid">
+          <div class="profile-card">
+            <h3>LinkedIn</h3>
+            <p>Professional identity, career information, and updates.</p>
+            <a href="https://www.linkedin.com/in/nabal-kishore-pande/" target="_blank" rel="noopener noreferrer">View LinkedIn profile →</a>
+          </div>
+
+          <div class="profile-card">
+            <h3>ScienceOpen</h3>
+            <p>Research profile and scholarly discovery.</p>
+            <a href="https://www.scienceopen.com/user/nabal-kishore-pande" target="_blank" rel="noopener noreferrer">View ScienceOpen profile →</a>
+          </div>
+
+          <div class="profile-card">
+            <h3>ORCID</h3>
+            <p>Persistent researcher identifier.</p>
+            <a href="https://orcid.org/0009-0007-3325-9966" target="_blank" rel="noopener noreferrer">View ORCID record →</a>
+          </div>
+
+          <div class="profile-card">
+            <h3>OpenAlex</h3>
+            <p>Researcher discovery and scholarly metadata.</p>
+            <a href="https://openalex.org/authors/A5133520791" target="_blank" rel="noopener noreferrer">View OpenAlex profile →</a>
+          </div>
+        </div>
       </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Original Creative Work</p>
+          <h2>Photography and Character Art</h2>
+          <p>
+            A selection of my original artwork, including landscape photography
+            and illustrated animal characters.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card art-card">
+            <img
+              class="card-image"
+              src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/nainital-lake-through-trees-at-dusk-nabal-kishore-pande.jpg"
+              alt="Nainital Lake framed by trees at dusk in Uttarakhand, India"
+              loading="lazy"
+            >
+            <div class="card-body">
+              <h3>Nainital Lake Through Trees at Dusk</h3>
+              <p>
+                A quiet evening view of Nainital Lake, framed by tall trees,
+                with deep blue tones and a reflective atmosphere.
+              </p>
+              <a class="text-link" href="https://fineartamerica.com/featured/nainital-lake-through-trees-at-dusk-nabal-kishore-pande.html" target="_blank" rel="noopener noreferrer">View landscape artwork →</a>
+            </div>
+          </article>
+
+          <article class="card art-card">
+            <img
+              class="card-image"
+              src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-donkey-professor-vintage-anthropomorphic-animal-art-nabal-kishore-pande.jpg"
+              alt="The Donkey Professor, a vintage-style anthropomorphic donkey character illustration"
+              loading="lazy"
+            >
+            <div class="card-body">
+              <h3>The Donkey Professor</h3>
+              <p>
+                A vintage-inspired animal character combining academic
+                clothing, antique illustration aesthetics, and dry humour.
+              </p>
+              <a class="text-link" href="https://fineartamerica.com/featured/the-donkey-professor-vintage-anthropomorphic-animal-art-nabal-kishore-pande.html" target="_blank" rel="noopener noreferrer">View character artwork →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Explore the Art Collection</h3>
+              <p>
+                Discover more landscape photography, nature-inspired images,
+                and original animal and character illustrations.
+              </p>
+              <a class="text-link" href="/art-profiles/">Browse art profiles →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          Product covers and artwork are intended to use supplied image links.
+          If an external image does not load, check that the source URL is still
+          publicly accessible before replacing it. No stock photography is used
+          in this homepage code.
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="/">
-          <span class="brand-mark">NKP</span>
-          <span class="brand-text">
-            <strong>Nabal Kishore Pande</strong>
-            <small>Author · Independent Researcher</small>
-          </span>
-        </a>
-        <p class="footer-description">Practical resources for decision-making, research, professional mobility and creative exploration.</p>
-      </div>
-
-      <div class="footer-navigation">
-        <h2>Explore</h2>
-        <a href="/decision-defence/">Decision Defence</a>
-        <a href="/researcher-products/">Research Products</a>
-        <a href="/professional-mobility/">Career and Scholarships</a>
-        <a href="/social-media/">Social Media</a>
-        <a href="/research-profiles/">Research Profiles</a>
-        <a href="/art-profiles/">Art Profiles</a>
-      </div>
-
-      <div class="footer-navigation">
-        <h2>Connect</h2>
-        <a href="https://www.linkedin.com/in/nabal-kishore-pande/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://www.scienceopen.com/user/nabal-kishore-pande" target="_blank" rel="noopener noreferrer">ScienceOpen</a>
-        <a href="https://orcid.org/0009-0007-3325-9966" target="_blank" rel="noopener noreferrer">ORCID</a>
-        <a href="https://openalex.org/authors/A5133520791" target="_blank" rel="noopener noreferrer">OpenAlex</a>
-        <a href="mailto:ernawal67@gmail.com">Email</a>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>© <span id="current-year">2026</span> Nabal Kishore Pande. All rights reserved.</p>
-      <p>Books · Decision Systems · Research · Professional Mobility · Art</p>
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Nabal Kishore Pande. All rights reserved.</p>
+      <p>
+        <a href="mailto:ernawal67@gmail.com">Contact by email</a>
+        &nbsp; · &nbsp;
+        <a href="https://nabalkishorepande.github.io/">Official website</a>
+      </p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
