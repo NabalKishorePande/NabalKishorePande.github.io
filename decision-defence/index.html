@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Decision Defence | Practical Decision-Making Tools by Nabal Kishore Pande</title>
+  <meta name="description" content="Explore practical decision-making frameworks, evidence checks, risk assessment, opportunity evaluation, and execution planning by author Nabal Kishore Pande.">
+  <meta name="author" content="Nabal Kishore Pande">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nabalkishorepande.github.io/decision-defence/">
+  <meta name="theme-color" content="#142B4A">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+
+  <style>
+    .decision-hero {
+      padding: 42px 0;
+      background: linear-gradient(135deg, #142B4A, #203F63);
+      color: #fff;
+    }
+
+    .decision-hero h1 {
+      max-width: 850px;
+      margin: 0 0 16px;
+      color: #fff;
+      font-size: clamp(34px, 5vw, 48px);
+      line-height: 1.15;
+      letter-spacing: -1px;
+    }
+
+    .decision-hero p {
+      max-width: 780px;
+      color: #E5EDF6;
+      font-size: 17px;
+    }
+
+    .decision-hero .eyebrow {
+      color: #A9E4E8;
+    }
+
+    .framework-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .framework-step {
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #D9E2EC;
+      border-radius: 14px;
+      box-shadow: 0 8px 26px rgba(20, 43, 74, 0.06);
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      background: #E4F3F4;
+      color: #06636D;
+      font-weight: 800;
+    }
+
+    .framework-step h3 {
+      margin: 0 0 8px;
+      color: #142B4A;
+      font-size: 18px;
+    }
+
+    .framework-step p {
+      margin: 0;
+      color: #526274;
+      font-size: 14px;
+    }
+
+    .book-feature {
+      display: grid;
+      grid-template-columns: minmax(180px, 270px) minmax(0, 1fr);
+      gap: 30px;
+      align-items: center;
+      padding: 28px;
+      background: #fff;
+      border: 1px solid #D9E2EC;
+      border-radius: 20px;
+      box-shadow: 0 8px 26px rgba(20, 43, 74, 0.07);
+    }
+
+    .book-cover {
+      width: 100%;
+      max-width: 270px;
+      max-height: 370px;
+      margin-inline: auto;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 8px;
+      background: #F4F7FA;
+    }
+
+    .book-feature h2 {
+      margin-top: 0;
+      color: #142B4A;
+      font-size: clamp(25px, 3vw, 32px);
+      line-height: 1.25;
+    }
+
+    .book-meta {
+      color: #526274;
+      font-size: 13px;
+    }
+
+    .decision-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .decision-item {
+      padding: 20px;
+      border: 1px solid #D9E2EC;
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .decision-item h3 {
+      margin-top: 0;
+      color: #142B4A;
+      font-size: 18px;
+    }
+
+    .decision-item p {
+      margin-bottom: 0;
+      color: #526274;
+      font-size: 14px;
+    }
+
+    .decision-cta {
+      padding: 30px;
+      border-radius: 20px;
+      background: #E4F3F4;
+      border: 1px solid #C6E4E7;
+    }
+
+    .decision-cta h2 {
+      margin-top: 0;
+      color: #142B4A;
+    }
+
+    @media (max-width: 800px) {
+      .framework-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .decision-hero {
+        padding: 28px 0;
+      }
+
+      .book-feature {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+
+      .book-cover {
+        max-height: 330px;
+      }
+
+      .decision-list,
+      .framework-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .decision-cta {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Nabal Kishore Pande homepage">
+        NABAL KISHORE PANDE
+        <span>Author · Independent Researcher</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/decision-defence/" aria-current="page">Decision Defence</a>
+        <a href="/researcher-products/">Research Products</a>
+        <a href="/professional-mobility/">Career & Scholarships</a>
+        <a href="/social-media/">Social Media</a>
+        <a href="/research-profiles-publications/">Research & Publications</a>
+        <a href="/art-profiles/">Art Profiles</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="decision-hero">
+      <div class="container">
+        <p class="eyebrow">Decision-Making · Evidence · Execution</p>
+        <h1>Decision Defence: Make Decisions You Can Explain and Execute</h1>
+        <p>
+          Important decisions need more than confidence or information.
+          They need clear requirements, relevant evidence, careful comparison,
+          explicit risk assessment, and a workable plan for action.
+        </p>
+        <div class="button-group">
+          <a class="button" href="#rde-manual">Explore the RDE Field Manual</a>
+          <a class="button button-secondary" href="#decision-method">Explore the method</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">A Practical Decision Process</p>
+          <h2>Four Stages for More Defensible Decisions</h2>
+          <p>
+            Use a structured process to identify gaps, compare options,
+            make a reasoned choice, and verify the work that follows.
+          </p>
+        </div>
+
+        <div class="framework-grid">
+          <article class="framework-step">
+            <span class="step-number">01</span>
+            <h3>Readiness</h3>
+            <p>
+              Define the requirements. Check your current position and identify
+              capability gaps, missing evidence, and unresolved facts.
+            </p>
+          </article>
+
+          <article class="framework-step">
+            <span class="step-number">02</span>
+            <h3>Opportunity and Fit</h3>
+            <p>
+              Screen opportunities against essential conditions, then compare
+              eligible options using relevant criteria.
+            </p>
+          </article>
+
+          <article class="framework-step">
+            <span class="step-number">03</span>
+            <h3>Risk and Decision</h3>
+            <p>
+              Examine assumptions, consequences, constraints, and risks.
+              Record why an option is accepted, deferred, or rejected.
+            </p>
+          </article>
+
+          <article class="framework-step">
+            <span class="step-number">04</span>
+            <h3>Execution and Learning</h3>
+            <p>
+              Convert the decision into tasks, owners, dates, and checks.
+              Verify results and record lessons for the next decision.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rde-manual">
+      <div class="container">
+        <div class="book-feature">
+          <div>
+            <img
+              class="book-cover"
+              src="https://s3.eu-west-1.amazonaws.com/storage.publish.streetlib.com/cache/covers/standard/75ab7b4e5e7fd5086a9a7738b545f0f0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAITEUOQHLJYEC3PVA%2F20261027%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T060232Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4ba0eb224904e40d3b67b31f8d3cad9ad77b016379887924a9b2203959cca19a"
+              alt="Cover of the RDE Field Manual by Nabal Kishore Pande"
+              loading="lazy"
+            >
+          </div>
+
+          <div>
+            <p class="eyebrow">Featured Decision Resource</p>
+            <h2>RDE Field Manual: Practical Decision-Making Tools for Education, Career, Research, and Professional Opportunities</h2>
+
+            <p>
+              This manual presents practical tools from the
+              Readiness–Decision–Execution Model. It explains how to assess
+              readiness, identify gaps, screen opportunities, compare eligible
+              options, assess risks, record decisions, plan execution, and learn
+              from verified results.
+            </p>
+
+            <p>
+              The methods are designed for learners, professionals, researchers,
+              mentors, advisers, and managers who need a structured approach
+              to opportunity evaluation and execution planning.
+            </p>
+
+            <p class="book-meta">
+              Ebook · ISBN 9783695267989 · Listed price in the supplied product information: $12.99
+            </p>
+
+            <div class="button-group">
+              <a
+                class="button"
+                href="https://amzn.in/d/0b6Cyugm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >View the RDE Field Manual</a>
+              <a class="button button-secondary" href="#decision-method">See how the method works</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="note">
+          The RDE framework is a practical aid to judgement, not a guarantee
+          of success or a validated standard for every situation. Check
+          requirements against the authoritative sources relevant to your decision.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="decision-method">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Where to Apply the Method</p>
+          <h2>Use Structured Decision-Making in Real Situations</h2>
+          <p>
+            The process can help organise choices across education, career
+            planning, research, projects, and professional opportunities.
+          </p>
+        </div>
+
+        <div class="decision-list">
+          <article class="decision-item">
+            <h3>Education and Scholarships</h3>
+            <p>
+              Check eligibility, document requirements, deadlines, evidence,
+              and fit before committing time to an application.
+            </p>
+          </article>
+
+          <article class="decision-item">
+            <h3>Career and Professional Mobility</h3>
+            <p>
+              Compare role requirements, current capabilities, proof of skills,
+              costs, risks, and practical next steps.
+            </p>
+          </article>
+
+          <article class="decision-item">
+            <h3>Research and Project Planning</h3>
+            <p>
+              Examine whether objectives, methods, evidence, resources,
+              and timelines support the intended result.
+            </p>
+          </article>
+
+          <article class="decision-item">
+            <h3>Execution and Review</h3>
+            <p>
+              Define actions, responsibilities, completion criteria, and
+              verification checks so decisions translate into reviewable work.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="decision-cta">
+          <p class="eyebrow">Continue Exploring</p>
+          <h2>Connect Decision-Making with Research and Career Resources</h2>
+          <p>
+            Decision quality depends on the information, evidence, and
+            practical tools available. Explore related resources on this website.
+          </p>
+          <div class="button-group">
+            <a class="button" href="/researcher-products/">Researcher-Focused Products</a>
+            <a class="button button-secondary" href="/professional-mobility/">Professional Mobility and Scholarships</a>
+            <a class="button button-secondary" href="/research-profiles-publications/">Research Profiles and Publications</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nabal Kishore Pande. All rights reserved.</p>
+      <p>
+        <a href="/">Home</a>
+        &nbsp; · &nbsp;
+        <a href="mailto:ernawal67@gmail.com">Contact by email</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
