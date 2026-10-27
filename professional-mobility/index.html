@@ -5,17 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Fully Funded Scholarships, Study Abroad & Career Mobility | Nabal Kishore Pande</title>
-  <meta name="description" content="Explore practical study-abroad scholarship application tools, eligibility checks, funding comparisons, application planning resources and global career mobility guidance by Nabal Kishore Pande.">
+  <title>English Test Preparation, Global Careers & Scholarships | Nabal Kishore Pande</title>
+  <meta name="description" content="Explore practical digital guides for CEFR B2–C1 English test readiness, IELTS, TOEFL, PTE Academic, Duolingo English Test, global job interviews, and fully funded study abroad scholarship applications.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nabalkishorepande.github.io/professional-mobility/">
-  <meta name="theme-color" content="#142B4A">
-
-  <meta property="og:title" content="Professional Mobility, Scholarships & Study Abroad">
-  <meta property="og:description" content="Plan scholarship applications, check eligibility, compare funding and organise documents and deadlines with practical digital resources.">
+  <meta property="og:title" content="Professional Mobility, English Tests & Scholarships">
+  <meta property="og:description" content="Practical digital guides for international English examinations, interview communication, and study abroad scholarship applications.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nabalkishorepande.github.io/professional-mobility/">
-
+  <meta name="theme-color" content="#142B4A">
   <link rel="stylesheet" href="/styles.css">
 
   <style>
@@ -34,8 +32,6 @@
     }
 
     * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -72,11 +68,7 @@
       text-decoration: none;
     }
 
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 17px;
-    }
+    .nav { display: flex; flex-wrap: wrap; gap: 8px 17px; }
 
     .nav a {
       color: var(--white);
@@ -87,10 +79,7 @@
 
     .nav a:hover { text-decoration: underline; }
 
-    .container {
-      width: min(1160px, 92%);
-      margin: auto;
-    }
+    .container { width: min(1160px, 92%); margin: auto; }
 
     .hero {
       background: linear-gradient(135deg, var(--navy), #1C4568);
@@ -107,25 +96,10 @@
       font-size: .78rem;
     }
 
-    h1, h2, h3 { line-height: 1.2; }
-
-    h1 {
-      max-width: 880px;
-      font-size: clamp(2.15rem, 5vw, 3.55rem);
-      margin: 0 0 20px;
-    }
-
-    h2 {
-      color: var(--navy);
-      font-size: clamp(1.65rem, 3vw, 2.25rem);
-      margin: 0 0 14px;
-    }
-
-    h3 {
-      color: var(--navy);
-      font-size: 1.16rem;
-      margin: 0 0 10px;
-    }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { max-width: 900px; font-size: clamp(2.1rem, 5vw, 3.5rem); margin: 0 0 20px; }
+    h2 { color: var(--navy); font-size: clamp(1.65rem, 3vw, 2.2rem); margin: 0 0 14px; }
+    h3 { color: var(--navy); font-size: 1.15rem; margin: 0 0 10px; }
 
     .hero p {
       max-width: 820px;
@@ -134,12 +108,7 @@
       margin: 0 0 18px;
     }
 
-    .hero-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 25px;
-    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
 
     .button {
       display: inline-block;
@@ -151,31 +120,14 @@
       border: 2px solid transparent;
     }
 
-    .button-primary {
-      background: var(--teal);
-      color: var(--white);
-    }
-
+    .button-primary { background: var(--teal); color: var(--white); }
     .button-primary:hover { background: var(--teal-dark); }
-
-    .button-light {
-      background: var(--white);
-      color: var(--navy);
-    }
-
-    .button-outline {
-      color: var(--white);
-      border-color: #D6E7F0;
-    }
+    .button-light { background: var(--white); color: var(--navy); }
+    .button-outline { color: var(--white); border-color: #D6E7F0; }
 
     .section { padding: 52px 0; }
     .section-soft { background: #EAF0F6; }
-
-    .section-intro {
-      max-width: 820px;
-      color: var(--muted);
-      margin: 0 0 27px;
-    }
+    .section-intro { max-width: 820px; color: var(--muted); margin: 0 0 28px; }
 
     .grid {
       display: grid;
@@ -205,7 +157,7 @@
     .cover {
       display: block;
       width: 100%;
-      height: 250px;
+      height: 290px;
       object-fit: contain;
       border-radius: 6px;
     }
@@ -229,6 +181,21 @@
     .card p { color: var(--muted); margin: 0 0 15px; }
     .card .button { margin-top: auto; }
 
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .audience {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .audience p { color: var(--muted); margin-bottom: 0; }
+
     .feature-band {
       background: var(--soft-teal);
       border-left: 5px solid var(--teal);
@@ -239,49 +206,15 @@
 
     .feature-band h3 { margin-top: 0; }
 
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 25px;
-    }
-
-    .step {
+    .notice {
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 22px;
+      border-radius: 10px;
+      padding: 18px 20px;
+      color: var(--muted);
+      margin-top: 24px;
+      font-size: .92rem;
     }
-
-    .step-number {
-      display: inline-flex;
-      width: 36px;
-      height: 36px;
-      align-items: center;
-      justify-content: center;
-      background: var(--navy);
-      color: var(--white);
-      border-radius: 50%;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-
-    .platform-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .platform {
-      padding: 24px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-    }
-
-    .platform p { color: var(--muted); }
-
-    .text-link { font-weight: 750; text-decoration: underline; }
 
     .footer {
       background: var(--navy-dark);
@@ -293,8 +226,7 @@
     .footer p { margin: 5px 0; }
 
     @media (max-width: 900px) {
-      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .steps { grid-template-columns: 1fr; }
+      .grid, .audience-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     @media (max-width: 640px) {
@@ -302,8 +234,8 @@
       .nav { gap: 9px 13px; }
       .hero { padding: 44px 0; }
       .section { padding: 38px 0; }
-      .grid, .platform-grid { grid-template-columns: 1fr; }
-      .cover { height: 260px; }
+      .grid, .audience-grid { grid-template-columns: 1fr; }
+      .cover { height: 270px; }
       .button { width: 100%; }
     }
   </style>
@@ -313,7 +245,6 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="/">Nabal Kishore Pande</a>
-
       <nav class="nav" aria-label="Main navigation">
         <a href="/">Home</a>
         <a href="/decision-defence/">Decision Defence</a>
@@ -329,206 +260,173 @@
   <main>
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">Study Abroad · Scholarship Planning · Global Career Mobility</p>
-
-        <h1>Plan Your Scholarship Applications. Prepare for Global Opportunities.</h1>
-
+        <p class="eyebrow">English Performance · International Careers · Study Abroad</p>
+        <h1>Prepare for Global Opportunities with Practical English and Scholarship Systems</h1>
         <p>
-          A practical resource hub for students and graduates navigating fully funded
-          scholarships, international study opportunities and career mobility. Learn to
-          assess eligibility, compare funding, organise documents and manage application
-          deadlines with a structured process.
+          Explore digital guides for English test readiness, interview communication and
+          scholarship application planning. These resources help learners and professionals
+          identify gaps, practise deliberately, organise applications and make more informed
+          decisions about international opportunities.
         </p>
-
-        <div class="hero-links">
-          <a class="button button-primary"
-             href="https://payhip.com/b/kjadf"
-             target="_blank" rel="noopener noreferrer">
-            Explore the Scholarship Application Guide
-          </a>
-
-          <a class="button button-outline" href="#mobility-resources">
-            Browse Mobility Resources
-          </a>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#featured-guides">Explore the Digital Guides</a>
+          <a class="button button-outline" href="https://payhip.com/frameworksandsystemsco" target="_blank" rel="noopener noreferrer">Visit Frameworks &amp; Systems</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="mobility-resources">
+    <section class="section" id="featured-guides">
       <div class="container">
-        <h2>Scholarship and Global Mobility Resources</h2>
-
+        <h2>Featured Digital Guides</h2>
         <p class="section-intro">
-          Start with the practical resource that best matches your current application
-          challenge. The featured digital guide provides a repeatable way to organise
-          opportunities, check requirements, compare funding and prepare submissions.
+          Three practical resources for different stages of professional and educational mobility:
+          examination preparation, interview performance, and scholarship application management.
+          Select a cover or button to view the product listing.
         </p>
 
         <div class="grid">
           <article class="card">
-            <a class="cover-link"
-               href="https://payhip.com/b/kjadf"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="View the Fully Funded Study Abroad Application Command Centre">
+            <a class="cover-link" href="https://amzn.in/d/0dqxbXkX" target="_blank" rel="noopener noreferrer" aria-label="View Cognitive Test Readiness Framework ebook listing">
               <img
                 class="cover"
-                src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k5c1ojjdtqjq311veuu291jke1f.png"
-                alt="Fully Funded Study Abroad Application Command Centre digital guide cover"
+                src="https://s3.eu-west-1.amazonaws.com/storage.publish.streetlib.com/cache/covers/standard/7d6db3df8fd9e357a57166db36a180b0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAITEUOQHLJYEC3PVA%2F20261027%2Feu-west-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20261027T060157Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=99a2059ff5a6fdc17f2a5c8c4ad12517dd4c42a82f0ae97c0a51d83ad20ebea4"
+                alt="Cognitive Test Readiness Framework ebook cover"
                 loading="lazy">
             </a>
-
             <div class="card-body">
-              <p class="category">Featured digital guide · PDF</p>
-
-              <h3>Study Abroad Scholarship Application Guide: Fully Funded Command Centre</h3>
-
+              <p class="category">English tests · CEFR B2 to C1</p>
+              <h3>Cognitive Test Readiness Framework: A Practical CEFR B2 to C1 Study System for ACT, IELTS, TOEFL, PTE Academic, Duolingo English Test, and EF SET</h3>
               <p>
-                A practical 30-page guide for students and graduates managing multiple
-                scholarship applications. Organise opportunities, check eligibility,
-                calculate funding gaps, compare options and plan submissions.
+                A structured study system for independent learners working on English skills,
+                academic reasoning, memory, attention and test readiness. Includes practical
+                exercises, progress logs and a 30-day training programme.
               </p>
-
-              <p>
-                Includes six checklists covering opportunity selection, eligibility,
-                funding, readiness, submission and weekly review.
-              </p>
-
-              <a class="button button-primary"
-                 href="https://payhip.com/b/kjadf"
-                 target="_blank" rel="noopener noreferrer">
-                View Guide and Purchase Details
-              </a>
+              <a class="button button-primary" href="https://amzn.in/d/0dqxbXkX" target="_blank" rel="noopener noreferrer">View the Ebook on Amazon</a>
             </div>
           </article>
 
           <article class="card">
-            <a class="cover-link"
-               href="https://www.linkedin.com/newsletters/abroad-ahead-7390199016950603777/"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="Visit the Abroad and Ahead newsletter">
+            <a class="cover-link" href="https://amzn.in/d/0doOIuvm" target="_blank" rel="noopener noreferrer" aria-label="View Interview Failure Due to English ebook listing">
               <img
                 class="cover"
-                src="https://www.wikidata.org/wiki/Special:FilePath/Portrait_of_Nabal_Kishore_Pande.jpg"
-                alt="Author profile image representing the Abroad and Ahead professional mobility newsletter"
+                src="https://s3.eu-west-1.amazonaws.com/storage.publish.streetlib.com/cache/covers/standard/7d6db3df8fd9e357a57166db36a180b0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAITEUOQHLJYEC3PVA%2F20261027%2Feu-west-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20261027T060157Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=99a2059ff5a6fdc17f2a5c8c4ad12517dd4c42a82f0ae97c0a51d83ad20ebea4"
+                alt="Interview Failure Due to English performance-English workbook cover"
                 loading="lazy">
             </a>
-
             <div class="card-body">
-              <p class="category">Newsletter · Ongoing guidance</p>
-
-              <h3>Abroad &amp; Ahead</h3>
-
+              <p class="category">Interview English · Global job seekers</p>
+              <h3>Interview Failure Due to English: A Performance-English Workbook for Global Job Seekers from India, Africa &amp; Southeast Asia</h3>
               <p>
-                Follow content focused on scholarship discovery, eligibility, funding
-                conditions, opportunity comparison, document preparation, deadlines
-                and application readiness.
+                A diagnostic and practice system for identifying unclear, overly long or
+                poorly organised interview answers. Practise structuring responses, presenting
+                evidence, handling follow-up questions and communicating under pressure.
               </p>
+              <a class="button button-primary" href="https://amzn.in/d/0doOIuvm" target="_blank" rel="noopener noreferrer">View the Ebook on Amazon</a>
+            </div>
+          </article>
 
-              <a class="button button-primary"
-                 href="https://www.linkedin.com/newsletters/abroad-ahead-7390199016950603777/"
-                 target="_blank" rel="noopener noreferrer">
-                Subscribe to Abroad &amp; Ahead
-              </a>
+          <article class="card">
+            <a class="cover-link" href="https://payhip.com/b/kjadf" target="_blank" rel="noopener noreferrer" aria-label="View Study Abroad Scholarship Application Guide on Payhip">
+              <img
+                class="cover"
+                src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k5c1ojjdtqjq311veuu291jke1f.png"
+                alt="Study Abroad Scholarship Application Guide: Fully Funded Command Centre cover"
+                loading="lazy">
+            </a>
+            <div class="card-body">
+              <p class="category">Study abroad · Scholarship applications</p>
+              <h3>Study Abroad Scholarship Application Guide: Fully Funded Command Centre</h3>
+              <p>
+                A practical 30-page PDF guide for managing multiple scholarship applications.
+                Organise deadlines, check eligibility, estimate funding gaps, compare opportunities,
+                prepare documents and review application progress each week.
+              </p>
+              <a class="button button-primary" href="https://payhip.com/b/kjadf" target="_blank" rel="noopener noreferrer">View the Scholarship Guide</a>
             </div>
           </article>
         </div>
 
-        <div class="feature-band">
-          <h3>Important: verify the details of every opportunity</h3>
-          <p>
-            This guide is an application-planning resource, not a live scholarship database
-            or a guarantee of admission, funding or a visa. Scholarship eligibility,
-            deadlines and funding conditions change. Confirm all requirements directly
-            with the official university, funder or programme before applying.
-          </p>
+        <div class="notice">
+          <strong>Cover-image check:</strong> The two ebook cover URLs supplied for the English
+          publications are time-limited signed image links and may expire. They are included as
+          temporary image sources, not treated as permanent assets. The scholarship guide uses
+          the supplied Payhip cover URL. Before final launch, replace any unstable cover source
+          with a permanent image URL or an image uploaded to this website. No print-book cards
+          have been added.
         </div>
       </div>
     </section>
 
     <section class="section section-soft">
       <div class="container">
-        <h2>A Practical Scholarship Application Workflow</h2>
-
+        <h2>Choose the Resource That Matches Your Goal</h2>
         <p class="section-intro">
-          A structured process can help you compare opportunities consistently and identify
-          missing information before investing substantial time in an application.
+          Start with the challenge you need to address. These guides support preparation and
+          planning; they do not guarantee examination scores, employment, admission or funding.
         </p>
 
-        <div class="steps">
-          <div class="step">
-            <span class="step-number">1</span>
-            <h3>Find and record opportunities</h3>
+        <div class="audience-grid">
+          <div class="audience">
+            <h3>English Test Readiness</h3>
             <p>
-              Record the official source, programme, deadline, time zone, eligibility
-              requirements and funding conditions for each opportunity.
+              Build a more structured study routine for reading, listening, writing, speaking,
+              vocabulary, reasoning and progress review across relevant English examinations.
             </p>
           </div>
 
-          <div class="step">
-            <span class="step-number">2</span>
-            <h3>Check eligibility and real funding</h3>
+          <div class="audience">
+            <h3>International Job Interviews</h3>
             <p>
-              Review each requirement individually. Identify uncovered costs and compare
-              opportunities against your circumstances rather than relying on a “fully funded” label alone.
+              Practise clearer answers, relevant examples, concise explanations and evidence-based
+              communication for interviews and professional conversations.
             </p>
           </div>
 
-          <div class="step">
-            <span class="step-number">3</span>
-            <h3>Prepare, submit and review</h3>
+          <div class="audience">
+            <h3>Scholarship Application Management</h3>
             <p>
-              Organise documents, work backwards from deadlines, check for submission blockers
-              and review application progress every week.
+              Compare opportunities systematically, verify eligibility and funding details,
+              organise documents and monitor deadlines instead of relying on memory alone.
             </p>
           </div>
+        </div>
+
+        <div class="feature-band">
+          <h3>Plan carefully. Verify requirements. Practise deliberately.</h3>
+          <p>
+            Examination formats, accepted scores, scholarship conditions, university rules and
+            employment requirements can change. Always confirm current requirements with the
+            relevant official examination provider, university, funder or employer.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2>Related Digital Resources</h2>
-
+        <h2>Explore More Practical Resources</h2>
         <p class="section-intro">
-          Professional mobility may also depend on research preparation, clear academic
-          communication and structured decision-making. Explore these related resources
-          where they match your needs.
+          Related resources are available through the author's digital stores and research tools.
         </p>
 
-        <div class="platform-grid">
-          <div class="platform">
-            <h3>Research Templates and Workbooks</h3>
-            <p>
-              Explore research proposal templates, alignment checklists, peer-review
-              response tools and structured workbooks for planning academic work.
-            </p>
-            <a class="button button-primary" href="/researcher-products/">
-              Explore Researcher Products
-            </a>
+        <div class="audience-grid">
+          <div class="audience">
+            <h3>Frameworks &amp; Systems</h3>
+            <p>Explore digital resources for scholarship planning, decision systems and professional development.</p>
+            <p><a class="button button-primary" href="https://payhip.com/frameworksandsystemsco" target="_blank" rel="noopener noreferrer">Visit Payhip Store</a></p>
           </div>
 
-          <div class="platform">
-            <h3>Decision Frameworks and Practical Systems</h3>
-            <p>
-              Explore structured resources for comparing options, clarifying priorities
-              and making better-informed decisions.
-            </p>
-            <a class="button button-primary"
-               href="https://payhip.com/frameworksandsystemsco"
-               target="_blank" rel="noopener noreferrer">
-              Visit Frameworks &amp; Systems
-            </a>
+          <div class="audience">
+            <h3>Researcher-Focused Products</h3>
+            <p>Find checklists, research proposal templates, workbooks and tools for academic research tasks.</p>
+            <p><a class="button button-primary" href="/researcher-products/">Explore Research Products</a></p>
           </div>
-        </div>
 
-        <div class="feature-band">
-          <h3>Print books will be added after cover verification</h3>
-          <p>
-            Print books are intentionally not listed on this page yet. Their cover images
-            will be added only after the image links have been checked and the correct
-            covers are available. This keeps the page focused on working digital resources
-            rather than displaying broken or mismatched book images.
-          </p>
+          <div class="audience">
+            <h3>Author Homepage</h3>
+            <p>Explore the wider work of Nabal Kishore Pande across research, decision systems, books and art.</p>
+            <p><a class="button button-primary" href="/">Visit Author Homepage</a></p>
+          </div>
         </div>
       </div>
     </section>
@@ -536,7 +434,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p><strong>Nabal Kishore Pande</strong> · Professional Mobility and Scholarship Resources</p>
+      <p><strong>Nabal Kishore Pande</strong> · English Performance, Research and Global Mobility Resources</p>
       <p>
         <a href="/">Home</a> ·
         <a href="/decision-defence/">Decision Defence</a> ·
@@ -544,7 +442,7 @@
         <a href="/professional-mobility/">Professional Mobility</a>
       </p>
       <p><a href="mailto:ernawal67@gmail.com">Contact by email</a></p>
-      <p>Always verify scholarship requirements and deadlines with official sources.</p>
+      <p>Product availability, formats, prices and terms are controlled by the respective publishers and stores.</p>
     </div>
   </footer>
 </body>
