@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Non-Fiction Books, ISBN Publications & Research Tools | Nabal Kishore Pande</title>
-  <meta name="description" content="Explore non-fiction ISBN publications, decision-making books, academic English and CEFR C1 preparation, research workbooks, systematic review tools, scholarship planning systems, and professional mobility resources by Nabal Kishore Pande.">
+  <title>Research Tools, Workbooks and Non-Fiction Books | Nabal Kishore Pande</title>
+  <meta name="description" content="Explore research tools, thesis and proposal workbooks, systematic review resources, decision-making systems, academic English books, ISBN publications and professional planning resources by Nabal Kishore Pande.">
   <meta name="author" content="Nabal Kishore Pande">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://nabalkishorepande.github.io/researcher-products/">
-  <meta name="theme-color" content="#142B4A">
+  <meta name="theme-color" content="#0C1C31">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Non-Fiction Books, ISBN Publications & Research Tools">
-  <meta property="og:description" content="Non-fiction books, ISBN-identified publications, practical decision systems, academic English resources, research workbooks, and professional planning tools.">
+  <meta property="og:title" content="Research Tools, Workbooks and Non-Fiction Books">
+  <meta property="og:description" content="Research checklists, methodology tools, proposal templates, decision-making systems, ISBN books and practical digital resources.">
   <meta property="og:url" content="https://nabalkishorepande.github.io/researcher-products/">
-  <meta property="og:site_name" content="Nabal Kishore Pande | Ideas Into Action">
+  <meta property="og:site_name" content="Ideas Into Action | Nabal Kishore Pande">
 
   <link rel="stylesheet" href="/styles.css">
 
@@ -25,14 +25,16 @@
       --navy: #142B4A;
       --navy-dark: #0C1C31;
       --teal: #087E8B;
-      --teal-dark: #06636D;
+      --teal-dark: #055D66;
       --background: #F4F7FA;
       --white: #FFFFFF;
-      --text: #263445;
-      --muted: #526274;
-      --border: #D9E2EC;
+      --text: #1B2938;
+      --muted: #405164;
+      --border: #CBD6E2;
       --soft-blue: #E7EFF7;
       --soft-teal: #E4F3F4;
+      --pale: #F8FAFC;
+      --focus: #F2B544;
     }
 
     * { box-sizing: border-box; }
@@ -44,29 +46,39 @@
       background: var(--background);
       color: var(--text);
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      line-height: 1.65;
+      font-size: 16px;
+      line-height: 1.7;
     }
 
-    a { color: var(--teal-dark); }
-    a:focus-visible { outline: 3px solid #E0A526; outline-offset: 3px; }
-
     img { max-width: 100%; }
+    a { color: var(--teal-dark); text-underline-offset: 3px; }
+    a:hover { color: var(--navy-dark); }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+    }
+
+    h1, h2, h3, h4 { line-height: 1.3; }
+    h1 { font-size: clamp(2rem, 5vw, 3.35rem); margin: 0 0 18px; }
+    h2 { font-size: clamp(1.55rem, 3vw, 2.15rem); color: var(--navy); margin: 0 0 12px; }
+    h3 { font-size: 1.12rem; color: var(--navy); margin: 0 0 10px; }
+    p { margin-top: 0; }
+
+    .container { width: min(1160px, 92%); margin: 0 auto; }
 
     .site-header {
       background: var(--navy-dark);
       color: var(--white);
-      border-bottom: 4px solid var(--teal);
+      border-bottom: 5px solid var(--teal);
     }
 
     .header-inner {
-      width: min(1160px, 92%);
-      margin: auto;
-      padding: 18px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
       flex-wrap: wrap;
+      gap: 16px 25px;
+      padding: 17px 0;
     }
 
     .brand {
@@ -76,74 +88,56 @@
       text-decoration: none;
     }
 
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 16px;
-    }
+    .nav { display: flex; flex-wrap: wrap; gap: 8px 15px; }
 
     .nav a {
-      color: var(--white);
-      text-decoration: none;
+      color: #FFFFFF;
       font-size: .9rem;
-      font-weight: 600;
+      font-weight: 650;
+      text-decoration: none;
     }
 
-    .nav a:hover { text-decoration: underline; }
-
-    .container {
-      width: min(1160px, 92%);
-      margin: auto;
-    }
+    .nav a:hover { text-decoration: underline; color: #C7F0F2; }
 
     .hero {
-      background: linear-gradient(135deg, var(--navy), #1C4568);
-      color: var(--white);
-      padding: 62px 0 56px;
+      background: var(--navy);
+      color: #FFFFFF;
+      padding: 48px 0 42px;
+      border-bottom: 6px solid var(--teal);
     }
 
-    .eyebrow {
-      margin: 0 0 10px;
-      color: #BFE8EB;
+    .hero .eyebrow {
+      color: #BDECEF;
+      font-size: .78rem;
+      letter-spacing: 1.2px;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 1.4px;
-      font-size: .78rem;
+      margin-bottom: 10px;
     }
 
-    h1, h2, h3 { line-height: 1.25; }
+    .hero h1 { color: #FFFFFF; max-width: 900px; }
+    .hero p { color: #F2F6FA; max-width: 900px; }
+    .hero a:not(.button) { color: #D4F5F6; }
+    .hero a:not(.button):hover { color: #FFFFFF; }
 
-    h1 {
-      max-width: 900px;
-      font-size: clamp(2.1rem, 5vw, 3.5rem);
-      margin: 0 0 20px;
-    }
-
-    h2 {
-      color: var(--navy);
-      font-size: clamp(1.55rem, 3vw, 2.15rem);
-      margin: 0 0 14px;
-    }
-
-    h3 {
-      color: var(--navy);
-      font-size: 1.12rem;
-      margin: 0 0 10px;
-    }
-
-    .hero p {
-      max-width: 850px;
-      color: #F0F5FA;
-      font-size: 1.06rem;
-      margin: 0 0 18px;
-    }
-
-    .hero-links, .action-links {
+    .hero-actions, .jump-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
+      gap: 10px;
+      margin-top: 22px;
     }
+
+    .jump-links a {
+      color: #FFFFFF;
+      background: #203F60;
+      border: 1px solid #7895B1;
+      border-radius: 7px;
+      padding: 7px 12px;
+      font-size: .9rem;
+      text-decoration: none;
+    }
+
+    .jump-links a:hover { background: #315776; color: #FFFFFF; }
 
     .button {
       display: inline-block;
@@ -155,47 +149,36 @@
       border: 2px solid transparent;
     }
 
-    .button-primary {
-      background: var(--teal);
-      color: var(--white);
-    }
+    .button-primary { background: var(--teal); color: #FFFFFF; }
+    .button-primary:hover { background: var(--teal-dark); color: #FFFFFF; }
 
-    .button-primary:hover { background: var(--teal-dark); }
+    .button-light { background: #FFFFFF; color: var(--navy-dark); }
+    .button-light:hover { background: #E7EFF7; color: var(--navy-dark); }
 
-    .button-light {
-      background: var(--white);
-      color: var(--navy);
-    }
+    .button-outline { border-color: #D9E7F2; color: #FFFFFF; }
+    .button-outline:hover { background: #203F60; color: #FFFFFF; }
 
-    .button-outline {
-      color: var(--white);
-      border-color: #D6E7F0;
-    }
-
-    .section { padding: 48px 0; }
+    .section { padding: 44px 0; }
+    .section-white { background: #FFFFFF; }
     .section-soft { background: #EAF0F6; }
+    .section-dark { background: var(--navy-dark); color: #FFFFFF; }
+    .section-dark h2, .section-dark h3 { color: #FFFFFF; }
 
     .section-intro {
-      max-width: 850px;
-      margin: 0 0 25px;
+      max-width: 900px;
       color: var(--muted);
+      margin-bottom: 25px;
     }
 
-    .jump-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 24px;
-    }
+    .section-dark .section-intro { color: #E3ECF5; }
 
-    .jump-links a {
-      background: rgba(255,255,255,.1);
-      border: 1px solid rgba(255,255,255,.35);
-      color: var(--white);
-      padding: 7px 12px;
-      border-radius: 7px;
-      font-size: .9rem;
-      text-decoration: none;
+    .section-label {
+      color: var(--teal-dark);
+      font-size: .77rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 7px;
     }
 
     .grid {
@@ -205,66 +188,97 @@
     }
 
     .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 13px;
-      overflow: hidden;
-      box-shadow: 0 5px 18px rgba(20,43,74,.05);
+      min-width: 0;
       display: flex;
       flex-direction: column;
-      min-width: 0;
+      background: #FFFFFF;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 16px rgba(12,28,49,.08);
     }
 
-    .cover-link {
+    .card-image {
       display: block;
-      background: #E7EDF3;
+      background: #E5ECF3;
+      border-bottom: 1px solid var(--border);
       padding: 14px;
       text-align: center;
-      border-bottom: 1px solid var(--border);
     }
 
     .cover {
-      display: block;
       width: 100%;
-      height: 220px;
+      height: 205px;
+      display: block;
       object-fit: contain;
-      border-radius: 5px;
     }
 
     .card-body {
-      padding: 20px;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 19px;
       flex: 1;
     }
 
+    .card-body p { color: var(--muted); margin: 0 0 8px; }
+
     .category {
-      color: var(--teal-dark);
-      font-size: .75rem;
-      font-weight: 800;
+      color: var(--teal-dark) !important;
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: .7px;
       text-transform: uppercase;
-      letter-spacing: .8px;
-      margin: 0 0 8px;
     }
 
-    .card p { color: var(--muted); margin: 0 0 14px; }
-    .card .button { margin-top: auto; }
+    .card-body .button { margin-top: auto; width: 100%; }
 
-    .isbn-table-wrap {
+    .faq-list { display: grid; gap: 12px; }
+
+    .faq-item {
+      background: #FFFFFF;
+      color: var(--text);
+      border: 1px solid #C6D3E0;
+      border-left: 5px solid var(--teal);
+      border-radius: 9px;
+      padding: 18px 20px;
+      box-shadow: 0 3px 10px rgba(12,28,49,.045);
+    }
+
+    .faq-item h3 { color: var(--navy); margin-bottom: 7px; }
+    .faq-item p { color: #35475A; margin: 0; }
+    .faq-item a { color: #055D66; font-weight: 700; }
+
+    .callout {
+      margin-top: 24px;
+      padding: 20px;
+      background: #DDEFF1;
+      color: #173642;
+      border: 1px solid #A8D4D9;
+      border-left: 5px solid var(--teal-dark);
+      border-radius: 9px;
+    }
+
+    .callout h3 { color: var(--navy); }
+    .callout p { margin-bottom: 10px; }
+
+    .table-wrap {
       overflow-x: auto;
       border: 1px solid var(--border);
-      border-radius: 12px;
-      background: var(--white);
+      border-radius: 10px;
+      background: #FFFFFF;
     }
 
     .isbn-table {
       width: 100%;
-      border-collapse: collapse;
       min-width: 760px;
+      border-collapse: collapse;
     }
 
     .isbn-table th, .isbn-table td {
-      padding: 15px;
+      padding: 14px 15px;
       text-align: left;
       vertical-align: top;
       border-bottom: 1px solid var(--border);
@@ -272,73 +286,61 @@
 
     .isbn-table th {
       background: var(--navy);
-      color: var(--white);
+      color: #FFFFFF;
       font-size: .9rem;
     }
 
-    .isbn-table tr:last-child td { border-bottom: 0; }
-    .isbn-table td { font-size: .94rem; }
+    .isbn-table td { color: #26384A; font-size: .94rem; }
     .isbn-table td strong { color: var(--navy); }
+    .isbn-table tr:nth-child(even) td { background: #F1F5F9; }
+    .isbn-table tr:last-child td { border-bottom: 0; }
     .isbn { white-space: nowrap; font-weight: 750; }
-    .table-link { font-weight: 750; }
 
-    .note {
-      margin-top: 18px;
-      padding: 17px 20px;
-      background: var(--soft-blue);
-      border-left: 4px solid var(--navy);
-      border-radius: 8px;
+    .digital-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .digital-item {
+      background: #FFFFFF;
+      color: var(--text);
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .digital-item h3 { color: var(--navy); }
+    .digital-item p { color: var(--muted); }
+
+    .difference-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .difference-card {
+      padding: 22px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #FFFFFF;
       color: var(--text);
     }
 
-    .feature-band {
-      background: var(--soft-teal);
-      border-left: 5px solid var(--teal);
-      padding: 22px;
-      border-radius: 10px;
-      margin-top: 26px;
-    }
-
-    .feature-band h3 { margin-top: 0; }
-
-    .platform-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .platform {
-      padding: 23px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-    }
-
-    .platform p { color: var(--muted); }
-
-    .faq-list {
-      display: grid;
-      gap: 12px;
-    }
-
-    .faq-item {
-      padding: 19px 21px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-    }
-
-    .faq-item h3 { margin-bottom: 8px; }
-    .faq-item p { margin: 0; color: var(--muted); }
+    .difference-card h3 { color: var(--navy); }
+    .difference-card p, .difference-card li { color: #35475A; }
+    .difference-card ul { padding-left: 20px; }
 
     .footer {
       background: var(--navy-dark);
-      color: #EAF0F6;
-      padding: 30px 0;
+      color: #F0F5FA;
+      padding: 28px 0;
     }
 
-    .footer a { color: #BFE8EB; }
-    .footer p { margin: 5px 0; }
+    .footer p { margin: 5px 0; color: #F0F5FA; }
+    .footer a { color: #C7F0F2; }
+    .footer a:hover { color: #FFFFFF; }
 
     @media (max-width: 900px) {
       .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -347,12 +349,11 @@
     @media (max-width: 640px) {
       .header-inner { align-items: flex-start; }
       .nav { gap: 9px 12px; }
-      .hero { padding: 42px 0; }
-      .section { padding: 36px 0; }
-      .grid, .platform-grid { grid-template-columns: 1fr; }
-      .cover { height: 245px; }
-      .button { width: 100%; }
-      .hero-links { align-items: stretch; }
+      .section { padding: 34px 0; }
+      .hero { padding: 38px 0; }
+      .grid, .digital-grid, .difference-grid { grid-template-columns: 1fr; }
+      .cover { height: 235px; }
+      .hero-actions .button { width: 100%; }
     }
   </style>
 
@@ -381,97 +382,50 @@
     "@type": "CollectionPage",
     "@id": "https://nabalkishorepande.github.io/researcher-products/#webpage",
     "url": "https://nabalkishorepande.github.io/researcher-products/",
-    "name": "Non-Fiction Books, ISBN Publications and Research Tools",
-    "description": "Non-fiction books, ISBN-identified publications, decision-making resources, academic English books, research workbooks and professional planning tools.",
+    "name": "Research Tools, Workbooks and Non-Fiction Books",
+    "description": "Research workbooks, decision-making resources, ISBN publications, academic English books and practical digital products.",
     "inLanguage": "en",
-    "author": {
-      "@id": "https://nabalkishorepande.github.io/#author"
-    },
-    "mainEntity": {
-      "@type": "ItemList",
-      "name": "ISBN-identified non-fiction books",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "Book",
-            "name": "Institutional English: Language Governance for Global Operations, Compliance, and Executive Decision-Making",
-            "isbn": "9789356262461",
-            "bookFormat": "https://schema.org/Hardcover",
-            "author": {"@id": "https://nabalkishorepande.github.io/#author"},
-            "url": "https://www.booktopia.com.au/institutional-english-nabal-kishore-pande/book/9789356262461.html"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "Book",
-            "name": "The Academic Word Engine: EF SET - CEFR - IELTS - PTE - DET - OET - TOEFL Mastery for Global Career Mobility",
-            "isbn": "9789334380378",
-            "bookFormat": "https://schema.org/Paperback",
-            "author": {"@id": "https://nabalkishorepande.github.io/#author"},
-            "url": "https://www.booktopia.com.au/the-academic-word-engine-nabal-kishore-pande/book/9789334380378.html"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "Book",
-            "name": "RDE Field Manual: Practical Decision-Making Tools for Education, Career, Research, and Professional Opportunities",
-            "isbn": "9783695267989",
-            "bookFormat": "https://schema.org/EBook",
-            "author": {"@id": "https://nabalkishorepande.github.io/#author"},
-            "url": "https://amzn.in/d/0b6Cyugm"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "Book",
-            "name": "The Readiness-Decision-Execution Model: A Practical Framework for Better Decision-Making, Opportunity Evaluation, and Execution",
-            "isbn": "9783695267507",
-            "bookFormat": "https://schema.org/EBook",
-            "author": {"@id": "https://nabalkishorepande.github.io/#author"},
-            "url": "https://amzn.in/d/035pXbpA"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "Book",
-            "name": "Cognitive Test Readiness Framework: A Practical CEFR B2 to C1 Study System for ACT, IELTS, TOEFL, PTE Academic, Duolingo English Test, and EF SET",
-            "isbn": "9783695211029",
-            "bookFormat": "https://schema.org/EBook",
-            "author": {"@id": "https://nabalkishorepande.github.io/#author"},
-            "url": "https://amzn.in/d/0dqxbXkX"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "item": {
-            "@type": "Book",
-            "name": "Interview Failure Due to English: A Performance-English Workbook for Global Job Seekers from India, Africa and Southeast Asia",
-            "isbn": "9783695209989",
-            "bookFormat": "https://schema.org/EBook",
-            "author": {"@id": "https://nabalkishorepande.github.io/#author"},
-            "url": "https://amzn.in/d/0doOIuvm"
-          }
+    "author": {"@id": "https://nabalkishorepande.github.io/#author"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which research tools are available for thesis and proposal planning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The catalogue includes a Research Alignment Checklist, a Research Alignment Diagnostic System, a Research Proposal Template, a Response to Reviewers kit, and a systematic review workbook."
         }
-      ]
-    }
+      },
+      {
+        "@type": "Question",
+        "name": "Which non-fiction books by Nabal Kishore Pande have ISBNs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The catalogue lists Institutional English, The Academic Word Engine, RDE Field Manual, The Readiness–Decision–Execution Model, Cognitive Test Readiness Framework, and Interview Failure Due to English with ISBNs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between an ISBN book and a digital product?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An ISBN identifies a specific book edition. Digital products such as spreadsheets, templates, checklists and PDF toolkits are listed separately by product platform; some ebooks also have ISBNs."
+        }
+      }
+    ]
   }
   </script>
 </head>
 
 <body>
   <header class="site-header">
-    <div class="header-inner">
+    <div class="container header-inner">
       <a class="brand" href="/">Nabal Kishore Pande</a>
       <nav class="nav" aria-label="Main navigation">
         <a href="/">Home</a>
@@ -488,376 +442,97 @@
   <main>
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">Non-Fiction Books · ISBN Publications · Practical Digital Resources</p>
-        <h1>Non-Fiction Books, Research Tools and Decision-Making Frameworks</h1>
+        <p class="eyebrow">Research Execution Systems · Ideas Into Action</p>
+        <h1>Research Tools, Workbooks and Practical Decision Systems</h1>
         <p>
-          Explore non-fiction books and practical resources by Nabal Kishore Pande:
-          ISBN-identified publications, institutional English and academic vocabulary,
-          decision-making systems, research workbooks, professional mobility resources,
-          scholarship planning, and execution tools.
+          Find practical tools for research alignment, thesis and proposal development,
+          systematic reviews, peer-review responses, project design and evidence-based
+          decision-making. This page starts with the Gumroad research catalogue, followed
+          by buyer FAQs and the wider book and digital product catalogue.
         </p>
-        <p>
-          This catalogue is dedicated to non-fiction and practical resources. Fiction and
-          literary publications are listed separately on the
-          <a href="/research-profiles-publications/" style="color:#FFFFFF;text-decoration:underline">Research Profiles and Selected Publications</a>
-          authority page.
-        </p>
-        <div class="hero-links">
-          <a class="button button-primary" href="#isbn-books">Browse ISBN Books</a>
-          <a class="button button-outline" href="#digital-products">Explore Digital Products</a>
-          <a class="button button-light" href="#buyer-faq">Read Buyer FAQs</a>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#gumroad-products">Explore Research Tools</a>
+          <a class="button button-outline" href="#buyer-faq">Read FAQs</a>
+          <a class="button button-light" href="#isbn-publications">Browse ISBN Books</a>
         </div>
         <div class="jump-links" aria-label="Page sections">
-          <a href="#isbn-books">ISBN Publications</a>
-          <a href="#leanpub-books">Leanpub Books</a>
-          <a href="#payhip-products">Payhip Products</a>
-          <a href="#gumroad-products">Gumroad Research Tools</a>
-          <a href="#buyer-faq">FAQs</a>
+          <a href="#gumroad-products">Gumroad Products</a>
+          <a href="#buyer-faq">Frequently Asked Questions</a>
+          <a href="#isbn-publications">ISBN Publications</a>
+          <a href="#digital-products">Digital Products</a>
+          <a href="#isbn-difference">ISBN vs Digital Resources</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="isbn-books">
+    <!-- SECTION 1: GUMROAD PRODUCTS FIRST -->
+    <section class="section section-white" id="gumroad-products">
       <div class="container">
-        <h2>ISBN-Identified Non-Fiction Book Publications</h2>
+        <p class="section-label">Researcher Products</p>
+        <h2>Research Tools and Workbooks</h2>
         <p class="section-intro">
-          These books have ISBNs recorded in the supplied publication catalogue. Each entry
-          identifies the title, ISBN-13, format and a retailer link. ISBNs identify specific
-          book editions; retailer prices and availability can change.
-        </p>
-
-        <div class="isbn-table-wrap">
-          <table class="isbn-table">
-            <thead>
-              <tr>
-                <th scope="col">Book and practical focus</th>
-                <th scope="col">ISBN-13</th>
-                <th scope="col">Format</th>
-                <th scope="col">Publication record</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <strong>Institutional English: Language Governance for Global Operations, Compliance, and Executive Decision-Making</strong>
-                  <p>
-                    Examines English as institutional governance infrastructure, covering
-                    language standardisation, documentation architecture, ambiguity management,
-                    decision records and operational continuity.
-                  </p>
-                </td>
-                <td class="isbn">9789356262461<br><small>ISBN-10: 9356262462</small></td>
-                <td>Hardcover<br>334 pages</td>
-                <td>
-                  <a class="table-link" href="https://www.booktopia.com.au/institutional-english-nabal-kishore-pande/book/9789356262461.html" target="_blank" rel="noopener noreferrer">View Booktopia listing</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <strong>The Academic Word Engine: EF SET – CEFR – IELTS – PTE – DET – OET – TOEFL Mastery for Global Career Mobility</strong>
-                  <p>
-                    A structured academic vocabulary and English performance system focused
-                    on B2-to-C1 development, lexical networks, academic register, cohesion,
-                    writing and profession-specific language.
-                  </p>
-                </td>
-                <td class="isbn">9789334380378<br><small>ISBN-10: 9334380373</small></td>
-                <td>Paperback<br>456 pages</td>
-                <td>
-                  <a class="table-link" href="https://www.booktopia.com.au/the-academic-word-engine-nabal-kishore-pande/book/9789334380378.html" target="_blank" rel="noopener noreferrer">View Booktopia listing</a>
-                  <br>
-                  <a href="https://search.worldcat.org/title/1563979749" target="_blank" rel="noopener noreferrer">View WorldCat record</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <strong>RDE Field Manual: Practical Decision-Making Tools for Education, Career, Research, and Professional Opportunities</strong>
-                  <p>
-                    Presents eight practical tools for readiness assessment, opportunity
-                    screening, fit evaluation, risk review, decision recording, execution
-                    planning and learning from results.
-                  </p>
-                </td>
-                <td class="isbn">9783695267989</td>
-                <td>Ebook</td>
-                <td><a class="table-link" href="https://amzn.in/d/0b6Cyugm" target="_blank" rel="noopener noreferrer">View Amazon listing</a></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <strong>The Readiness–Decision–Execution Model: A Practical Framework for Better Decision-Making, Opportunity Evaluation, and Execution</strong>
-                  <p>
-                    A practical three-stage framework for assessing readiness, comparing
-                    opportunities, evaluating risks, checking evidence, planning action and
-                    reviewing outcomes.
-                  </p>
-                </td>
-                <td class="isbn">9783695267507</td>
-                <td>Ebook</td>
-                <td><a class="table-link" href="https://amzn.in/d/035pXbpA" target="_blank" rel="noopener noreferrer">View Amazon listing</a></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <strong>Cognitive Test Readiness Framework: A Practical CEFR B2 to C1 Study System for ACT, IELTS, TOEFL, PTE Academic, Duolingo English Test, and EF SET</strong>
-                  <p>
-                    A structured independent-study resource covering English skills, academic
-                    reasoning, retrieval practice, spaced review, practice planning and
-                    readiness assessment across the named tests.
-                  </p>
-                </td>
-                <td class="isbn">9783695211029</td>
-                <td>Ebook</td>
-                <td><a class="table-link" href="https://amzn.in/d/0dqxbXkX" target="_blank" rel="noopener noreferrer">View Amazon listing</a></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <strong>Interview Failure Due to English: A Performance-English Workbook for Global Job Seekers from India, Africa &amp; Southeast Asia</strong>
-                  <p>
-                    A practical workbook for diagnosing interview communication problems,
-                    organising answers, practising difficult questions and improving clarity
-                    under pressure.
-                  </p>
-                </td>
-                <td class="isbn">9783695209989</td>
-                <td>Ebook</td>
-                <td><a class="table-link" href="https://amzn.in/d/0doOIuvm" target="_blank" rel="noopener noreferrer">View Amazon listing</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="note">
-          <strong>Publication accuracy:</strong> The two print-book ISBNs and four ebook ISBNs
-          above are reproduced from the supplied catalogue. Confirm the retailer's current
-          listing for edition details, availability and price before purchasing. This page
-          does not imply endorsement by examination providers, universities, employers or
-          retailers.
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="leanpub-books">
-      <div class="container">
-        <h2>Decision-Making Books on Leanpub</h2>
-        <p class="section-intro">
-          These non-fiction books focus on practical judgement, strategy, problem diagnosis
-          and evidence-based decisions. The links below lead to the individual Leanpub book
-          pages. The supplied catalogue does not identify ISBNs for these titles, so they
-          are listed as creator-platform books rather than ISBN publications.
+          Research Execution Systems offers practical resources for research planning,
+          methodology checks, proposal writing, systematic reviews, peer-review revisions
+          and project design. Open a product page to confirm current price, format, delivery
+          details and licence terms.
         </p>
 
         <div class="grid">
           <article class="card">
-            <div class="card-body">
-              <p class="category">Decision-making</p>
-              <h3>DECIDE WELL: Making Better Decisions When Information Is Incomplete</h3>
-              <p>
-                An eight-stage method for defining a decision, separating facts from
-                assumptions, identifying constraints, comparing options, testing assumptions,
-                recording the rationale and reviewing results.
-              </p>
-              <a class="button button-primary" href="https://leanpub.com/decide-well" target="_blank" rel="noopener noreferrer">View on Leanpub</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-body">
-              <p class="category">Strategy and priorities</p>
-              <h3>Choosing Strategic Priorities: How to Focus Strategy When Resources Are Limited</h3>
-              <p>
-                A practical resource for assessing strategic choices and focusing limited
-                time, money and organisational resources on priorities.
-              </p>
-              <a class="button button-primary" href="https://leanpub.com/choosing-strategic-priorities" target="_blank" rel="noopener noreferrer">View on Leanpub</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-body">
-              <p class="category">Problem diagnosis</p>
-              <h3>DIAGNOSE FIRST: Finding the Real Problem Before Choosing the Solution</h3>
-              <p>
-                A repeatable approach to describing a problem, comparing explanations,
-                identifying root causes, testing possible diagnoses and choosing a response
-                before committing to a solution.
-              </p>
-              <a class="button button-primary" href="https://leanpub.com/diagnose-first" target="_blank" rel="noopener noreferrer">View on Leanpub</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-body">
-              <p class="category">Evidence and assumptions</p>
-              <h3>The Decision That Changed Nothing: How to Separate Assumptions from Evidence and Make Better Decisions</h3>
-              <p>
-                Uses a fictional account of a prospective career change to explore untested
-                assumptions, evidence gaps, small tests and the cost of delaying decisions
-                while waiting for certainty.
-              </p>
-              <a class="button button-primary" href="https://leanpub.com/the-decision-that-changed-nothing" target="_blank" rel="noopener noreferrer">View on Leanpub</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="feature-band">
-          <h3>Browse the author's Leanpub catalogue</h3>
-          <p>Visit the author profile to explore available books and platform information.</p>
-          <a class="button button-primary" href="https://leanpub.com/u/nabalkishorepande" target="_blank" rel="noopener noreferrer">Open Leanpub Author Profile</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="payhip-products">
-      <div class="container">
-        <h2>Practical Digital Frameworks and Workbooks on Payhip</h2>
-        <p class="section-intro">
-          These creator-platform products are designed for practical planning and execution.
-          They include digital guides, spreadsheets and structured workbooks. They are
-          separate from the ISBN-identified book catalogue above.
-        </p>
-
-        <div class="grid">
-          <article class="card">
-            <a class="cover-link" href="https://payhip.com/b/Z3PJN" target="_blank" rel="noopener noreferrer" aria-label="View Global Career Portability System on Payhip">
-              <img class="cover" src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k5jbsnu08sf2r4bt510ofvb31k.png" alt="Global Career Portability System international career planning workbook cover" loading="lazy">
-            </a>
-            <div class="card-body">
-              <p class="category">International career planning</p>
-              <h3>Global Career Portability System: International Career Planning Workbook</h3>
-              <p>
-                A practical system for assessing skills, comparing international job
-                opportunities, organising qualification and work-requirement checks,
-                estimating relocation costs and building a 90-day career action plan.
-              </p>
-              <a class="button button-primary" href="https://payhip.com/b/Z3PJN" target="_blank" rel="noopener noreferrer">View Product on Payhip</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="cover-link" href="https://payhip.com/b/ptv3O" target="_blank" rel="noopener noreferrer" aria-label="View Evidence-to-Execution Decision System on Payhip">
-              <img class="cover" src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k5evts6a1ah91774cifclrbp81p.png" alt="Evidence-to-Execution Decision System decision-making framework and Excel workbook cover" loading="lazy">
-            </a>
-            <div class="card-body">
-              <p class="category">Decision systems</p>
-              <h3>Evidence-to-Execution Decision System: Decision-Making Framework with Excel Workbook</h3>
-              <p>
-                A structured digital resource for organising decision evidence, evaluating
-                options and translating a decision into documented actions and review steps.
-              </p>
-              <a class="button button-primary" href="https://payhip.com/b/ptv3O" target="_blank" rel="noopener noreferrer">View Product on Payhip</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="cover-link" href="https://payhip.com/b/kjadf" target="_blank" rel="noopener noreferrer" aria-label="View Study Abroad Scholarship Application Guide on Payhip">
-              <img class="cover" src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k5c1ojjdtqjq311veuu291jke1f.png" alt="Study Abroad Scholarship Application Guide Fully Funded Command Centre PDF cover" loading="lazy">
-            </a>
-            <div class="card-body">
-              <p class="category">Scholarship planning</p>
-              <h3>Study Abroad Scholarship Application Guide: Fully Funded Command Centre</h3>
-              <p>
-                A PDF guide for organising scholarship research, eligibility checks,
-                application evidence, deadlines and preparation tasks. Applicants should
-                verify current requirements on official scholarship and university websites.
-              </p>
-              <a class="button button-primary" href="https://payhip.com/b/kjadf" target="_blank" rel="noopener noreferrer">View Product on Payhip</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <a class="cover-link" href="https://payhip.com/b/KNZlT" target="_blank" rel="noopener noreferrer" aria-label="View Research Alignment Diagnostic System on Payhip">
-              <img class="cover" src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k58rav4762kpnh1dg51ro9hgr1k.png" alt="Research Alignment Diagnostic System PDF guide and Excel workbook cover" loading="lazy">
-            </a>
-            <div class="card-body">
-              <p class="category">Research quality checks</p>
-              <h3>Research Alignment Diagnostic System: PDF Guide + Excel Workbook</h3>
-              <p>
-                A guided self-audit for checking whether research questions, objectives,
-                methods, data and analysis fit together. Includes an Excel workbook,
-                mismatch flags, severity reporting and a final audit checklist.
-              </p>
-              <a class="button button-primary" href="https://payhip.com/b/KNZlT" target="_blank" rel="noopener noreferrer">View Product on Payhip</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="feature-band">
-          <h3>More practical digital resources</h3>
-          <p>Browse the complete Frameworks &amp; Systems store for current product details and availability.</p>
-          <a class="button button-primary" href="https://payhip.com/frameworksandsystemsco" target="_blank" rel="noopener noreferrer">Visit the Payhip Store</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="gumroad-products">
-      <div class="container">
-        <h2>Research Tools and Workbooks on Gumroad</h2>
-        <p class="section-intro">
-          Research Execution Systems offers practical tools for research planning,
-          proposal development, systematic reviews, peer-review revisions and project design.
-          Read each product page for current prices, file contents and usage terms.
-        </p>
-
-        <div class="grid">
-          <article class="card">
-            <a class="cover-link" href="https://researchsystems.gumroad.com/l/research-alignment-checklist?layout=profile" target="_blank" rel="noopener noreferrer" aria-label="View Research Alignment Checklist on Gumroad">
-              <img class="cover" src="https://public-files.gumroad.com/jkwk3jtim1yay8ptradwq1zm9qws" alt="Research Alignment Checklist free PDF cover for thesis and research proposal planning" loading="lazy">
+            <a class="card-image" href="https://researchsystems.gumroad.com/l/research-alignment-checklist?layout=profile" target="_blank" rel="noopener noreferrer">
+              <img class="cover" src="https://public-files.gumroad.com/jkwk3jtim1yay8ptradwq1zm9qws" alt="Research Alignment Checklist free PDF for thesis and research proposals" loading="lazy">
             </a>
             <div class="card-body">
               <p class="category">Free research checklist</p>
               <h3>Research Alignment Checklist: Free PDF for Thesis &amp; Proposals</h3>
               <p>
-                A three-page checklist with 25 yes/no checks for reviewing the fit between
-                a research question, objectives, design, methods, data and analysis.
+                A three-page PDF with 25 yes/no checks to review whether the research
+                question, objectives, design, method, data and analysis fit together.
               </p>
-              <a class="button button-primary" href="https://researchsystems.gumroad.com/l/research-alignment-checklist?layout=profile" target="_blank" rel="noopener noreferrer">Get the Checklist</a>
+              <a class="button button-primary" href="https://researchsystems.gumroad.com/l/research-alignment-checklist?layout=profile" target="_blank" rel="noopener noreferrer">View / Get Checklist</a>
             </div>
           </article>
 
           <article class="card">
-            <a class="cover-link" href="https://researchsystems.gumroad.com/l/response-to-reviewers-template?layout=profile" target="_blank" rel="noopener noreferrer" aria-label="View Response to Reviewers Template and Tracker on Gumroad">
-              <img class="cover" src="https://public-files.gumroad.com/7yf8fjqvap6yc6lu5j6h49jfejx6" alt="Response to Reviewers Template and Tracker PDF Word and Excel product cover" loading="lazy">
+            <a class="card-image" href="https://researchsystems.gumroad.com/l/response-to-reviewers-template?layout=profile" target="_blank" rel="noopener noreferrer">
+              <img class="cover" src="https://public-files.gumroad.com/7yf8fjqvap6yc6lu5j6h49jfejx6" alt="Response to Reviewers Template and Tracker with PDF, Word and Excel resources" loading="lazy">
             </a>
             <div class="card-body">
-              <p class="category">Peer-review revision kit</p>
+              <p class="category">Peer-review revisions</p>
               <h3>Response to Reviewers Template &amp; Tracker</h3>
               <p>
-                Word response-letter templates, an Excel revision tracker and a PDF guide
-                to organise reviewer comments, document revisions and prepare resubmissions.
+                Word letter templates, an Excel revision tracker and a PDF guide to help
+                organise reviewer comments, plan revisions and prepare resubmissions.
               </p>
               <a class="button button-primary" href="https://researchsystems.gumroad.com/l/response-to-reviewers-template?layout=profile" target="_blank" rel="noopener noreferrer">View Revision Kit</a>
             </div>
           </article>
 
           <article class="card">
-            <a class="cover-link" href="https://researchsystems.gumroad.com/l/research-alignment-diagnostic?layout=profile" target="_blank" rel="noopener noreferrer" aria-label="View Research Alignment Diagnostic System on Gumroad">
-              <img class="cover" src="https://public-files.gumroad.com/nuyv6kh8k9kjup0yo8buvlkcob2u" alt="Research Alignment Diagnostic System Excel methodology checker cover" loading="lazy">
+            <a class="card-image" href="https://researchsystems.gumroad.com/l/research-alignment-diagnostic?layout=profile" target="_blank" rel="noopener noreferrer">
+              <img class="cover" src="https://public-files.gumroad.com/nuyv6kh8k9kjup0yo8buvlkcob2u" alt="Research Alignment Diagnostic System Excel methodology checker" loading="lazy">
             </a>
             <div class="card-body">
-              <p class="category">Research methodology checker</p>
+              <p class="category">Methodology self-audit</p>
               <h3>Research Alignment Diagnostic System: Excel Methodology Checker</h3>
               <p>
-                An Excel workbook for reviewing alignment across research questions,
-                objectives, methods, data and analysis. Includes mismatch flags, a severity
-                report, a worked example and a PDF guide.
+                An Excel workbook to inspect links between research questions, objectives,
+                methods, data and analysis. Includes mismatch flags, a severity report,
+                a worked example and a PDF guide.
               </p>
               <a class="button button-primary" href="https://researchsystems.gumroad.com/l/research-alignment-diagnostic?layout=profile" target="_blank" rel="noopener noreferrer">View Diagnostic Tool</a>
             </div>
           </article>
 
           <article class="card">
-            <a class="cover-link" href="https://researchsystems.gumroad.com/l/logframe-theory-of-change-toolkit?layout=profile" target="_blank" rel="noopener noreferrer" aria-label="View Logframe and Theory of Change Toolkit on Gumroad">
-              <img class="cover" src="https://public-files.gumroad.com/nofwc4fto6skt08d7wvef2etw8pg" alt="Logframe and Theory of Change Toolkit for NGOs product cover" loading="lazy">
+            <a class="card-image" href="https://researchsystems.gumroad.com/l/logframe-theory-of-change-toolkit?layout=profile" target="_blank" rel="noopener noreferrer">
+              <img class="cover" src="https://public-files.gumroad.com/nofwc4fto6skt08d7wvef2etw8pg" alt="Logframe and Theory of Change Toolkit for NGOs" loading="lazy">
             </a>
             <div class="card-body">
-              <p class="category">Project design toolkit</p>
+              <p class="category">NGO project design</p>
               <h3>Logframe &amp; Theory of Change Toolkit (Excel + Word) for NGOs</h3>
               <p>
-                A connected toolkit for problem analysis, root-cause analysis, theory of
+                A connected toolkit for problem analysis, root-cause review, theory of
                 change, indicators, assumptions, risks and logical framework development.
               </p>
               <a class="button button-primary" href="https://researchsystems.gumroad.com/l/logframe-theory-of-change-toolkit?layout=profile" target="_blank" rel="noopener noreferrer">View Project Toolkit</a>
@@ -865,11 +540,11 @@
           </article>
 
           <article class="card">
-            <a class="cover-link" href="https://researchsystems.gumroad.com/l/research-proposal-template?layout=profile" target="_blank" rel="noopener noreferrer" aria-label="View Research Proposal Template on Gumroad">
-              <img class="cover" src="https://public-files.gumroad.com/yvnar6yd4jcgni8b47slu76dj2z2" alt="Research Proposal Template Word with Rubric and Worked Example cover" loading="lazy">
+            <a class="card-image" href="https://researchsystems.gumroad.com/l/research-proposal-template?layout=profile" target="_blank" rel="noopener noreferrer">
+              <img class="cover" src="https://public-files.gumroad.com/yvnar6yd4jcgni8b47slu76dj2z2" alt="Research Proposal Template in Word with rubric and worked example" loading="lazy">
             </a>
             <div class="card-body">
-              <p class="category">Proposal writing toolkit</p>
+              <p class="category">Proposal development</p>
               <h3>Research Proposal Template (Word) with Rubric &amp; Worked Example</h3>
               <p>
                 An editable Word template with prompts and sentence starters, a scoring
@@ -880,152 +555,379 @@
           </article>
 
           <article class="card">
-            <a class="cover-link" href="https://researchsystems.gumroad.com/l/systematic-review-excel-workbook" target="_blank" rel="noopener noreferrer" aria-label="View Systematic Review Excel Workbook on Gumroad">
-              <img class="cover" src="https://public-files.gumroad.com/jkwk3jtim1yay8ptradwq1zm9qws" alt="Research Execution Systems cover for systematic review and evidence review resources" loading="lazy">
-            </a>
             <div class="card-body">
-              <p class="category">Evidence review workflow</p>
+              <p class="category">Systematic reviews</p>
               <h3>Systematic Review Excel Workbook: PRISMA Flow &amp; Data Extraction</h3>
               <p>
-                A structured workbook for recording search results, screening decisions,
-                exclusion reasons, PRISMA counts, data extraction, appraisal and synthesis.
-                The product also includes a protocol template and PDF guide.
+                A workbook for recording searches, screening decisions, exclusion reasons,
+                PRISMA counts, data extraction, appraisal and synthesis. The supplied
+                catalogue also describes a protocol template and PDF guide.
               </p>
               <a class="button button-primary" href="https://researchsystems.gumroad.com/l/systematic-review-excel-workbook" target="_blank" rel="noopener noreferrer">View Review Workbook</a>
             </div>
           </article>
         </div>
 
-        <div class="feature-band">
+        <div class="callout">
           <h3>Browse the complete Research Execution Systems catalogue</h3>
-          <p>Use the store to check current availability, prices and product contents.</p>
-          <a class="button button-primary" href="https://researchsystems.gumroad.com/" target="_blank" rel="noopener noreferrer">Explore Gumroad Store</a>
+          <p>
+            Check the official store for current product availability, prices, file details
+            and usage terms.
+          </p>
+          <a class="button button-primary" href="https://researchsystems.gumroad.com/" target="_blank" rel="noopener noreferrer">Visit Gumroad Store</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="buyer-faq">
+    <!-- SECTION 2: FAQ IMMEDIATELY AFTER GUMROAD -->
+    <section class="section section-soft" id="buyer-faq">
       <div class="container">
-        <h2>Frequently Asked Questions About Non-Fiction Books and Research Products</h2>
+        <p class="section-label">Buyer Information</p>
+        <h2>Frequently Asked Questions</h2>
         <p class="section-intro">
-          Answers to common questions about ISBN publications, academic English,
-          decision-making books, research workbooks and digital product formats.
+          Practical answers about research tools, book identifiers, digital formats,
+          academic English resources and product availability.
         </p>
 
         <div class="faq-list">
           <article class="faq-item">
-            <h3>Which non-fiction books by Nabal Kishore Pande have ISBNs?</h3>
+            <h3>Which research tools are available for thesis and proposal planning?</h3>
             <p>
-              The catalogue lists six ISBN-identified non-fiction titles: <em>Institutional
-              English</em> (9789356262461), <em>The Academic Word Engine</em>
-              (9789334380378), <em>RDE Field Manual</em> (9783695267989),
-              <em>The Readiness–Decision–Execution Model</em> (9783695267507),
-              <em>Cognitive Test Readiness Framework</em> (9783695211029), and
-              <em>Interview Failure Due to English</em> (9783695209989). Each entry links
-              to a retailer listing.
+              The catalogue includes a free Research Alignment Checklist, a Research
+              Alignment Diagnostic System, a Research Proposal Template, a Response to
+              Reviewers kit and a systematic review workbook. Each serves a different
+              stage of research planning or revision.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>What is the listed price of Institutional English by Nabal Kishore Pande?</h3>
+            <h3>Can these research workbooks guarantee thesis approval or journal publication?</h3>
             <p>
-              The supplied publication catalogue records a price of US$124 for the hardcover.
-              Retail prices may change by retailer, region and date. Check the
-              <a href="https://www.booktopia.com.au/institutional-english-nabal-kishore-pande/book/9789356262461.html" target="_blank" rel="noopener noreferrer">Booktopia listing for Institutional English</a>
-              for the current displayed price and availability.
+              No. They are practical self-audit and planning aids. They do not replace
+              supervisor feedback, discipline-specific methods advice, ethical review or
+              journal requirements, and they do not guarantee approval, funding or publication.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>How does The Academic Word Engine help with the transition from CEFR B2 toward C1?</h3>
+            <h3>Which books by Nabal Kishore Pande have ISBNs?</h3>
             <p>
-              The book describes a structured learning architecture built around academic
-              vocabulary, semantic families, collocations, academic register, cohesion,
-              hedging and controlled use in writing and speaking. Its catalogue description
-              also outlines a review loop and a 90-day activation schedule. Progress depends
-              on the learner's starting level, practice and feedback; no particular exam score
-              or CEFR outcome is guaranteed.
+              The publication catalogue below lists six ISBN-identified non-fiction titles:
+              <em>Institutional English</em>, <em>The Academic Word Engine</em>,
+              <em>RDE Field Manual</em>, <em>The Readiness–Decision–Execution Model</em>,
+              <em>Cognitive Test Readiness Framework</em> and
+              <em>Interview Failure Due to English</em>.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>What is the difference between an ISBN publication and a digital workbook?</h3>
+            <h3>What is the difference between an ISBN book and a digital product?</h3>
             <p>
-              An ISBN identifies a particular book edition. Digital workbooks and creator-platform
-              resources are practical products whose formats and identifiers depend on the
-              individual item. Some ebooks also have ISBNs, so the distinction is not simply
-              print versus digital. This page identifies ISBNs where they are documented and
-              lists practical digital products separately by platform.
+              An ISBN identifies a specific book edition. Digital products such as
+              spreadsheets, templates, checklists and PDF toolkits are listed separately
+              by platform and product format. Some ebooks also have ISBNs, so print versus
+              digital is not the same distinction as ISBN versus non-ISBN.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>Which book covers decision-making and opportunity evaluation?</h3>
+            <h3>Which resource helps with academic English and CEFR B2-to-C1 development?</h3>
             <p>
-              <em>RDE Field Manual</em> and <em>The Readiness–Decision–Execution Model</em>
-              focus on readiness, opportunity fit, evidence, risk, decision records and
-              execution planning. The Leanpub catalogue also includes <em>DECIDE WELL</em>,
-              <em>Choosing Strategic Priorities</em>, <em>DIAGNOSE FIRST</em> and
-              <em>The Decision That Changed Nothing</em>.
+              <em>The Academic Word Engine</em> focuses on academic vocabulary, semantic
+              families, collocations, register, cohesion, hedging and controlled use in
+              writing and speaking. <em>Cognitive Test Readiness Framework</em> addresses
+              independent preparation and transferable skills relevant to ACT, IELTS,
+              TOEFL, PTE Academic, Duolingo English Test and EF SET. Neither guarantees
+              a particular score or proficiency level.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>Which resource helps researchers check a thesis or research proposal?</h3>
+            <h3>Which book focuses on interview communication for international job seekers?</h3>
             <p>
-              The free Research Alignment Checklist provides 25 yes/no checks. The Research
-              Alignment Diagnostic System adds an Excel-based self-audit with mismatch flags
-              and a severity report. The Research Proposal Template provides prompts, a rubric
-              and a worked example. These resources support review but do not guarantee
-              approval, funding or publication.
+              <em>Interview Failure Due to English: A Performance-English Workbook for
+              Global Job Seekers from India, Africa &amp; Southeast Asia</em> focuses on
+              diagnosing unclear interview answers, organising evidence, practising
+              difficult questions and improving clarity under pressure.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>Where can I find scholarship and international career planning resources?</h3>
+            <h3>Where can I find international career and scholarship planning resources?</h3>
             <p>
-              The Payhip catalogue includes the Global Career Portability System and the
-              Study Abroad Scholarship Application Guide. These resources help organise
-              planning tasks, evidence, deadlines and decisions. Always verify immigration,
-              eligibility, funding and qualification requirements with the relevant official
-              sources.
+              The digital products section includes the Global Career Portability System
+              and the Study Abroad Scholarship Application Guide. They help users organise
+              research, evidence, deadlines and planning decisions. Always verify current
+              immigration, eligibility, funding and qualification rules with official sources.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>Are the books and workbooks affiliated with IELTS, TOEFL, PTE, DET, OET or EF SET?</h3>
+            <h3>Are the English preparation books affiliated with IELTS, TOEFL, PTE, DET, OET or EF SET?</h3>
             <p>
-              The titles address preparation or skills related to the named examinations.
-              They are independent educational publications and should not be understood as
-              affiliated with or endorsed by the examination providers unless an official
-              provider explicitly states otherwise. Check each provider's official website
-              for current test formats, registration requirements and acceptance policies.
+              These are independent educational publications. Their references to named
+              examinations describe subject coverage, not provider endorsement. Consult
+              each examination provider's official website for current test formats,
+              registration rules and score acceptance policies.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>Where can I check current prices, file formats and product availability?</h3>
+            <h3>Where can I check current prices, formats and availability?</h3>
             <p>
-              Open the relevant Booktopia, Amazon, Leanpub, Payhip or Gumroad product link.
-              Retailers and creator platforms control their own prices, formats, delivery
-              options and availability, which may change over time.
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3>Where are the fiction books by Nabal Kishore Pande listed?</h3>
-            <p>
-              Fiction and literary publications are intentionally kept separate from this
-              non-fiction product catalogue. Visit the
-              <a href="/research-profiles-publications/">Research Profiles and Selected Publications</a>
-              page and look for the Fiction and Literary Publications section.
+              Open the relevant Amazon, Booktopia, Leanpub, Payhip or Gumroad listing.
+              Retailers and creator platforms control their prices, product availability,
+              file formats and delivery options; these details can change.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-soft">
+    <!-- SECTION 3: ISBN PUBLICATIONS AND DIGITAL PRODUCT DISTINCTION -->
+    <section class="section section-white" id="isbn-publications">
+      <div class="container">
+        <p class="section-label">Bibliographic Catalogue</p>
+        <h2>ISBN-Identified Non-Fiction Publications</h2>
+        <p class="section-intro">
+          These six book records have ISBNs documented in the supplied catalogue. The
+          ISBNs identify specific editions; use the retailer or catalogue link to check
+          current availability and edition information.
+        </p>
+
+        <div class="table-wrap">
+          <table class="isbn-table">
+            <thead>
+              <tr>
+                <th scope="col">Book title and focus</th>
+                <th scope="col">ISBN-13</th>
+                <th scope="col">Format</th>
+                <th scope="col">Listing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Institutional English: Language Governance for Global Operations, Compliance, and Executive Decision-Making</strong>
+                  <br>
+                  Language governance, documentation architecture, ambiguity management and institutional decision records.
+                </td>
+                <td class="isbn">9789356262461<br><small>ISBN-10: 9356262462</small></td>
+                <td>Hardcover<br>334 pages</td>
+                <td><a href="https://www.booktopia.com.au/institutional-english-nabal-kishore-pande/book/9789356262461.html" target="_blank" rel="noopener noreferrer">Booktopia listing</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>The Academic Word Engine: EF SET – CEFR – IELTS – PTE – DET – OET – TOEFL Mastery for Global Career Mobility</strong>
+                  <br>
+                  Academic vocabulary, B2-to-C1 development, register, cohesion and practical English use.
+                </td>
+                <td class="isbn">9789334380378<br><small>ISBN-10: 9334380373</small></td>
+                <td>Paperback<br>456 pages</td>
+                <td>
+                  <a href="https://www.booktopia.com.au/the-academic-word-engine-nabal-kishore-pande/book/9789334380378.html" target="_blank" rel="noopener noreferrer">Booktopia listing</a><br>
+                  <a href="https://search.worldcat.org/title/1563979749" target="_blank" rel="noopener noreferrer">WorldCat record</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>RDE Field Manual: Practical Decision-Making Tools for Education, Career, Research, and Professional Opportunities</strong>
+                  <br>
+                  Readiness assessment, opportunity fit, risk evaluation, decision recording and execution planning.
+                </td>
+                <td class="isbn">9783695267989</td>
+                <td>Ebook</td>
+                <td><a href="https://amzn.in/d/0b6Cyugm" target="_blank" rel="noopener noreferrer">Amazon listing</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>The Readiness–Decision–Execution Model: A Practical Framework for Better Decision-Making, Opportunity Evaluation, and Execution</strong>
+                  <br>
+                  A three-stage framework for assessing readiness, evaluating options and carrying decisions into action.
+                </td>
+                <td class="isbn">9783695267507</td>
+                <td>Ebook</td>
+                <td><a href="https://amzn.in/d/035pXbpA" target="_blank" rel="noopener noreferrer">Amazon listing</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Cognitive Test Readiness Framework: A Practical CEFR B2 to C1 Study System for ACT, IELTS, TOEFL, PTE Academic, Duolingo English Test, and EF SET</strong>
+                  <br>
+                  Independent study, practice planning, retrieval, review and readiness assessment.
+                </td>
+                <td class="isbn">9783695211029</td>
+                <td>Ebook</td>
+                <td><a href="https://amzn.in/d/0dqxbXkX" target="_blank" rel="noopener noreferrer">Amazon listing</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Interview Failure Due to English: A Performance-English Workbook for Global Job Seekers from India, Africa &amp; Southeast Asia</strong>
+                  <br>
+                  Interview-answer structure, communication diagnostics, evidence and practice under pressure.
+                </td>
+                <td class="isbn">9783695209989</td>
+                <td>Ebook</td>
+                <td><a href="https://amzn.in/d/0doOIuvm" target="_blank" rel="noopener noreferrer">Amazon listing</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <h3>Why list ISBNs separately?</h3>
+          <p>
+            ISBNs are useful bibliographic identifiers for matching a book edition to
+            retailer and library records. The product links help readers check the specific
+            listing. ISBNs alone do not guarantee that a book is currently in stock or
+            available in every country.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="digital-products">
+      <div class="container">
+        <p class="section-label">Creator-Platform Catalogue</p>
+        <h2>Other Books and Digital Products</h2>
+        <p class="section-intro">
+          The following titles and tools are listed separately from the six ISBN records
+          above. A product's platform listing does not, by itself, establish whether it
+          has an ISBN. Check the individual record if an ISBN is required.
+        </p>
+
+        <h3>Leanpub books</h3>
+        <div class="digital-grid">
+          <article class="digital-item">
+            <h3>DECIDE WELL: Making Better Decisions When Information Is Incomplete</h3>
+            <p>An eight-stage approach to defining decisions, separating facts from assumptions, comparing options and reviewing outcomes.</p>
+            <a href="https://leanpub.com/decide-well" target="_blank" rel="noopener noreferrer">View on Leanpub</a>
+          </article>
+
+          <article class="digital-item">
+            <h3>Choosing Strategic Priorities: How to Focus Strategy When Resources Are Limited</h3>
+            <p>A practical title about focusing strategy when time, money and organisational resources are limited.</p>
+            <a href="https://leanpub.com/choosing-strategic-priorities" target="_blank" rel="noopener noreferrer">View on Leanpub</a>
+          </article>
+
+          <article class="digital-item">
+            <h3>DIAGNOSE FIRST: Finding the Real Problem Before Choosing the Solution</h3>
+            <p>A structured approach to examining problems and their causes before committing to a solution.</p>
+            <a href="https://leanpub.com/diagnose-first" target="_blank" rel="noopener noreferrer">View on Leanpub</a>
+          </article>
+
+          <article class="digital-item">
+            <h3>The Decision That Changed Nothing: How to Separate Assumptions from Evidence and Make Better Decisions</h3>
+            <p>A fictional case exploring assumptions, evidence gaps and the consequences of delayed decisions.</p>
+            <a href="https://leanpub.com/the-decision-that-changed-nothing" target="_blank" rel="noopener noreferrer">View on Leanpub</a>
+          </article>
+        </div>
+
+        <p style="margin-top:18px">
+          <a class="button button-primary" href="https://leanpub.com/u/nabalkishorepande" target="_blank" rel="noopener noreferrer">Browse Leanpub Author Profile</a>
+        </p>
+
+        <h3 style="margin-top:34px">Payhip practical digital products</h3>
+        <div class="grid">
+          <article class="card">
+            <a class="card-image" href="https://payhip.com/b/Z3PJN" target="_blank" rel="noopener noreferrer">
+              <img class="cover" src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k5jbsnu08sf2r4bt510ofvb31k.png" alt="Global Career Portability System international career planning workbook" loading="lazy">
+            </a>
+            <div class="card-body">
+              <h3>Global Career Portability System: International Career Planning Workbook</h3>
+              <p>Plan skills assessment, opportunity comparison, requirement checks, relocation costs and career actions.</p>
+              <a class="button button-primary" href="https://payhip.com/b/Z3PJN" target="_blank" rel="noopener noreferrer">View Payhip Product</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-image" href="https://payhip.com/b/ptv3O" target="_blank" rel="noopener noreferrer">
+              <img class="cover" src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k5evts6a1ah91774cifclrbp81p.png" alt="Evidence-to-Execution Decision System and Excel workbook" loading="lazy">
+            </a>
+            <div class="card-body">
+              <h3>Evidence-to-Execution Decision System</h3>
+              <p>A decision-making framework and Excel workbook for organising evidence and translating decisions into action.</p>
+              <a class="button button-primary" href="https://payhip.com/b/ptv3O" target="_blank" rel="noopener noreferrer">View Payhip Product</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-image" href="https://payhip.com/b/kjadf" target="_blank" rel="noopener noreferrer">
+              <img class="cover" src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k5c1ojjdtqjq311veuu291jke1f.png" alt="Study Abroad Scholarship Application Guide Fully Funded Command Centre PDF" loading="lazy">
+            </a>
+            <div class="card-body">
+              <h3>Study Abroad Scholarship Application Guide: Fully Funded Command Centre</h3>
+              <p>A PDF planning resource for scholarship research, eligibility checks, application evidence and deadlines.</p>
+              <a class="button button-primary" href="https://payhip.com/b/kjadf" target="_blank" rel="noopener noreferrer">View Payhip Product</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-image" href="https://payhip.com/b/KNZlT" target="_blank" rel="noopener noreferrer">
+              <img class="cover" src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1k58rav4762kpnh1dg51ro9hgr1k.png" alt="Research Alignment Diagnostic System PDF guide and Excel workbook" loading="lazy">
+            </a>
+            <div class="card-body">
+              <h3>Research Alignment Diagnostic System: PDF Guide + Excel Workbook</h3>
+              <p>A guided self-audit for checking alignment among research questions, objectives, methods, data and analysis.</p>
+              <a class="button button-primary" href="https://payhip.com/b/KNZlT" target="_blank" rel="noopener noreferrer">View Payhip Product</a>
+            </div>
+          </article>
+        </div>
+
+        <p style="margin-top:18px">
+          <a class="button button-primary" href="https://payhip.com/frameworksandsystemsco" target="_blank" rel="noopener noreferrer">Browse Payhip Store</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="isbn-difference">
+      <div class="container">
+        <p class="section-label" style="color:#BDECEF">Publication and Product Information</p>
+        <h2>ISBN Books vs Digital Products: What Is the Difference?</h2>
+        <p class="section-intro">
+          These categories help readers understand what they are viewing and which details
+          to check before purchase. They are not mutually exclusive: an ebook may also have
+          an ISBN.
+        </p>
+
+        <div class="difference-grid">
+          <article class="difference-card">
+            <h3>ISBN-identified book publications</h3>
+            <p>Use this category when a specific book edition has a documented ISBN.</p>
+            <ul>
+              <li>Includes the ISBN-13 and, where supplied, ISBN-10.</li>
+              <li>Lists the documented edition format.</li>
+              <li>Links to a retailer or bibliographic record.</li>
+              <li>Useful for identifying and checking a particular edition.</li>
+            </ul>
+            <a href="#isbn-publications">Return to ISBN publication table</a>
+          </article>
+
+          <article class="difference-card">
+            <h3>Digital workbooks and creator-platform products</h3>
+            <p>Use this category for practical resources listed by their product platform.</p>
+            <ul>
+              <li>May include PDFs, Excel workbooks, Word templates or combined toolkits.</li>
+              <li>Purchase pages provide the current file details and usage terms.</li>
+              <li>ISBN status should be checked individually rather than assumed.</li>
+              <li>Prices, formats and availability may change.</li>
+            </ul>
+            <a href="#digital-products">Browse digital products and Leanpub books</a>
+          </article>
+        </div>
+
+        <div class="callout">
+          <h3>Important buying guidance</h3>
+          <p>
+            Check the linked seller or catalogue for the exact edition, current price,
+            format, delivery method and usage licence. Planning tools support judgement;
+            they do not guarantee admission, scholarships, employment, research approval
+            or publication.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white">
       <div class="container">
         <h2>About the Author</h2>
         <p class="section-intro">
@@ -1033,27 +935,11 @@
           decision-making frameworks, institutional English, academic vocabulary, research
           resources and professional planning tools.
         </p>
-
-        <div class="platform-grid">
-          <div class="platform">
-            <h3>Professional and research profiles</h3>
-            <p>
-              Visit the authority page for research profiles, selected publications and
-              bibliographic records.
-            </p>
-            <a class="button button-primary" href="/research-profiles-publications/">View Research Profiles</a>
-          </div>
-
-          <div class="platform">
-            <h3>Contact and official website</h3>
-            <p>
-              Use the official website for author information and links to the relevant
-              publication and product platforms.
-            </p>
-            <a class="button button-primary" href="/">Visit the Homepage</a>
-            <p><a href="mailto:ernawal67@gmail.com">Contact by email</a></p>
-          </div>
-        </div>
+        <p>
+          <a class="button button-primary" href="/">Visit Official Website</a>
+          <a class="button button-primary" href="/research-profiles-publications/">Research Profiles and Selected Publications</a>
+          <a class="button button-primary" href="mailto:ernawal67@gmail.com">Contact by Email</a>
+        </p>
       </div>
     </section>
   </main>
@@ -1061,9 +947,16 @@
   <footer class="footer">
     <div class="container">
       <p><strong>Nabal Kishore Pande</strong> · Author and Independent Researcher</p>
-      <p><a href="/">Home</a> · <a href="/decision-defence/">Decision Defence</a> · <a href="/researcher-products/">Researcher Products</a> · <a href="/professional-mobility/">Professional Mobility</a> · <a href="/research-profiles-publications/">Research Profiles and Selected Publications</a></p>
-      <p><a href="mailto:ernawal67@gmail.com">Contact by email</a></p>
-      <p>Prices, product availability and file contents are controlled by the respective retailers and creator platforms. Product frameworks support decision-making and do not guarantee admission, funding, employment, research approval or publication.</p>
+      <p>
+        <a href="/">Home</a> ·
+        <a href="/decision-defence/">Decision Defence</a> ·
+        <a href="/researcher-products/">Researcher Products</a> ·
+        <a href="/professional-mobility/">Professional Mobility</a> ·
+        <a href="/research-profiles-publications/">Research Profiles</a> ·
+        <a href="/art-profiles/">Art Profiles</a>
+      </p>
+      <p><a href="mailto:ernawal67@gmail.com">ernawal67@gmail.com</a></p>
+      <p>Product descriptions are provided for information. Check each seller for current prices, availability, file formats and licence terms.</p>
     </div>
   </footer>
 </body>
