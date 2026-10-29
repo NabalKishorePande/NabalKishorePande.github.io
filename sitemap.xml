@@ -1,51 +1,31 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Main commercial and author authority homepage -->
   <url>
     <loc>https://nabalkishorepande.github.io/</loc>
   </url>
-
-  <!-- Decision frameworks and products -->
   <url>
     <loc>https://nabalkishorepande.github.io/decision-defence/</loc>
   </url>
-
-  <!-- Researcher-focused products and tools -->
   <url>
     <loc>https://nabalkishorepande.github.io/researcher-products/</loc>
   </url>
-
-  <!-- Professional mobility, English proficiency and scholarships -->
   <url>
     <loc>https://nabalkishorepande.github.io/professional-mobility/</loc>
   </url>
-
-  <!-- Professional profiles, social channels and newsletters -->
   <url>
     <loc>https://nabalkishorepande.github.io/social-media/</loc>
   </url>
-
-  <!-- Research profiles, datasets and selected publications -->
   <url>
     <loc>https://nabalkishorepande.github.io/research-profiles-publications/</loc>
   </url>
-
-  <!-- Artist profiles, exhibition and creative publications -->
   <url>
     <loc>https://nabalkishorepande.github.io/art-profiles/</loc>
-    
-  <!-- Professional Books storefront -->
+  </url>
   <url>
     <loc>https://nabalkishorepande.github.io/professional-books/</loc>
   </url>
-
-  <!-- Professional Workbooks and Digital Toolkits storefront -->
   <url>
     <loc>https://nabalkishorepande.github.io/professional-workbooks/</loc>
   </url>
-
-  </url>
-
 </urlset>
