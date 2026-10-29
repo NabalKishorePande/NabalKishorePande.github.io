@@ -35,6 +35,17 @@
   <!-- Artist profiles, exhibition and creative publications -->
   <url>
     <loc>https://nabalkishorepande.github.io/art-profiles/</loc>
+    
+  <!-- Professional Books storefront -->
+  <url>
+    <loc>https://nabalkishorepande.github.io/professional-books/</loc>
+  </url>
+
+  <!-- Professional Workbooks and Digital Toolkits storefront -->
+  <url>
+    <loc>https://nabalkishorepande.github.io/professional-workbooks/</loc>
+  </url>
+
   </url>
 
 </urlset>
