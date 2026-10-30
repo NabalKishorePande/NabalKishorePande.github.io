@@ -608,22 +608,112 @@
     }
   </style>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Nabal Kishore Pande",
-    "url": "https://nabalkishorepande.github.io/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Portrait_of_Nabal_Kishore_Pande.jpg",
-    "jobTitle": "Independent Researcher and Author",
-    "sameAs": [
-      "https://www.linkedin.com/in/nabal-kishore-pande/",
-      "https://www.scienceopen.com/user/nabal-kishore-pande",
-      "https://orcid.org/0009-0007-3325-9966",
-      "https://openalex.org/authors/A5133520791"
-    ]
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://nabalkishorepande.github.io/#person",
+      "name": "Nabal Kishore Pande",
+      "url": "https://nabalkishorepande.github.io/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Portrait_of_Nabal_Kishore_Pande.jpg",
+      "jobTitle": "Independent Researcher and Author",
+      "sameAs": [
+        "https://www.linkedin.com/in/nabal-kishore-pande/",
+        "https://www.scienceopen.com/user/nabal-kishore-pande",
+        "https://orcid.org/0009-0007-3325-9966",
+        "https://openalex.org/authors/A5133520791"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://nabalkishorepande.github.io/#webpage"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nabalkishorepande.github.io/#website",
+      "url": "https://nabalkishorepande.github.io/",
+      "name": "Nabal Kishore Pande",
+      "publisher": {
+        "@id": "https://nabalkishorepande.github.io/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://nabalkishorepande.github.io/#webpage",
+      "url": "https://nabalkishorepande.github.io/",
+      "name": "Nabal Kishore Pande | Flagship Books, Research Tools & Professional Resources",
+      "isPartOf": {
+        "@id": "https://nabalkishorepande.github.io/#website"
+      },
+      "about": {
+        "@id": "https://nabalkishorepande.github.io/#person"
+      },
+      "mainEntity": {
+        "@id": "https://nabalkishorepande.github.io/#flagship-books"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://nabalkishorepande.github.io/#flagship-books",
+      "name": "Flagship Books by Nabal Kishore Pande",
+      "numberOfItems": 2,
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://nabalkishorepande.github.io/#institutional-english"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://nabalkishorepande.github.io/#academic-word-engine"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Book",
+      "@id": "https://nabalkishorepande.github.io/#institutional-english",
+      "name": "Institutional English",
+      "alternateName": "Language Governance for Global Operations, Compliance, and Executive Decision-Making",
+      "description": "Treat language as governance infrastructure. This book examines linguistic standardisation, register discipline, documentation architecture, ambiguity management, and decision records for organisations operating in high-consequence environments.",
+      "image": "https://nabalkishorepande.github.io/institutional-english-hardcover.png",
+      "url": "https://www.booktopia.com.au/institutional-english-nabal-kishore-pande/book/9789356262461.html",
+      "isbn": "9789356262461",
+      "bookFormat": "https://schema.org/Hardcover",
+      "author": {
+        "@id": "https://nabalkishorepande.github.io/#person"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://nabalkishorepande.github.io/#webpage"
+      }
+    },
+    {
+      "@type": "Book",
+      "@id": "https://nabalkishorepande.github.io/#academic-word-engine",
+      "name": "The Academic Word Engine",
+      "alternateName": "EF SET · CEFR · IELTS · PTE · DET · OET · TOEFL Mastery for Global Career Mobility",
+      "description": "A structured English-learning system designed to move academic vocabulary from B2 recognition toward C1 operational use. The supplied description highlights semantic networks, register control, practical review cycles, and profession-oriented language.",
+      "image": "https://nabalkishorepande.github.io/academic-word-engine-paperback.png",
+      "url": "https://www.booktopia.com.au/the-academic-word-engine-nabal-kishore-pande/book/9789334380378.html",
+      "isbn": "9789334380378",
+      "bookFormat": "https://schema.org/Paperback",
+      "author": {
+        "@id": "https://nabalkishorepande.github.io/#person"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://nabalkishorepande.github.io/#webpage"
+      },
+      "sameAs": "https://search.worldcat.org/title/1563979749"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
